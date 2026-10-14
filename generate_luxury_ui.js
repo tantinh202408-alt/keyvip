@@ -1,0 +1,1327 @@
+import fs from 'node:fs';
+
+const rawData = fs.readFileSync('tiktok_links.json', 'utf8');
+const data = JSON.parse(rawData);
+
+const html = `<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sangdev - Hệ Thống Săn Rương & Túi TikTok</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #07080c;
+      --surface: rgba(18, 20, 29, 0.78);
+      --surface-hover: rgba(26, 29, 44, 0.9);
+      --border: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(37, 244, 238, 0.4);
+      --tiktok-cyan: #25f4ee;
+      --tiktok-red: #fe2c55;
+      --tiktok-orange: #ff7a00;
+      --tiktok-gold: #facc15;
+      --text: #f9fafb;
+      --text-muted: #9ca3af;
+      --font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(circle at 10% 10%, rgba(254, 44, 85, 0.14) 0%, transparent 40%),
+        radial-gradient(circle at 90% 20%, rgba(37, 244, 238, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 50% 80%, rgba(250, 204, 21, 0.08) 0%, transparent 50%);
+      background-attachment: fixed;
+      color: var(--text);
+      min-height: 100vh;
+      padding: 16px 14px 80px 14px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 0 6px;
+    }
+
+    /* TOP NAV / HERO HEADER */
+    .hero-card {
+      background: var(--surface);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 24px 28px;
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 40px rgba(37, 244, 238, 0.06);
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #facc15, #ff7a00, #fe2c55, #25f4ee, #facc15);
+      background-size: 300% 100%;
+      animation: gradientMove 5s linear infinite;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 0;
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #facc15, #fe2c55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 25px rgba(254, 44, 85, 0.35);
+      font-size: 24px;
+    }
+
+    .brand-title {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(45deg, #fff 30%, #25f4ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .live-beacon {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(254, 44, 85, 0.15);
+      border: 1px solid rgba(254, 44, 85, 0.3);
+      color: #fe2c55;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 20px;
+      -webkit-text-fill-color: initial;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .beacon-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #fe2c55;
+      box-shadow: 0 0 10px #fe2c55;
+      animation: blink 1.5s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.8); }
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-icon {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      color: #fff;
+      padding: 9px 14px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.25s ease;
+      user-select: none;
+    }
+
+    .btn-icon:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.25);
+      transform: translateY(-1px);
+    }
+
+    .btn-icon.active {
+      background: rgba(37, 244, 238, 0.15);
+      border-color: var(--tiktok-cyan);
+      color: var(--tiktok-cyan);
+    }
+
+    .btn-help {
+      background: rgba(250, 204, 21, 0.1);
+      border: 1px solid rgba(250, 204, 21, 0.3);
+      color: #facc15;
+    }
+
+    .btn-help:hover {
+      background: rgba(250, 204, 21, 0.2);
+      border-color: #facc15;
+      color: #fff;
+    }
+
+    .btn-primary-flow {
+      background: linear-gradient(90deg, #ff7a00, #fe2c55, #25f4ee, #ff7a00);
+      background-size: 300% 100%;
+      animation: gradientMove 6s linear infinite;
+      color: #fff;
+      font-weight: 700;
+      font-size: 13px;
+      border: none;
+      border-radius: 12px;
+      padding: 10px 18px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 6px 20px rgba(254, 44, 85, 0.3);
+      transition: all 0.25s ease;
+    }
+
+    .btn-primary-flow:hover {
+      box-shadow: 0 8px 25px rgba(37, 244, 238, 0.45);
+      transform: translateY(-1px) scale(1.02);
+    }
+
+    /* AUTH META STRIP */
+    .auth-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 14px 18px;
+      font-size: 13px;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .meta-label {
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .meta-value {
+      font-family: var(--mono);
+      font-weight: 700;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-size: 12px;
+    }
+
+    .meta-value.cyan { color: var(--tiktok-cyan); border: 1px solid rgba(37, 244, 238, 0.25); }
+    .meta-value.gold { color: var(--tiktok-gold); border: 1px solid rgba(250, 204, 21, 0.25); }
+    .meta-value.orange { color: var(--tiktok-orange); border: 1px solid rgba(255, 122, 0, 0.25); }
+
+    /* CATEGORY TABS */
+    .tabs-wrapper {
+      margin-bottom: 20px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+      scrollbar-width: none;
+    }
+    .tabs-wrapper::-webkit-scrollbar { display: none; }
+
+    .tabs-list {
+      display: flex;
+      gap: 10px;
+      min-width: max-content;
+    }
+
+    .tab-pill {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 10px 18px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      user-select: none;
+    }
+
+    .tab-pill:hover {
+      background: var(--surface-hover);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+    }
+
+    .tab-pill.active {
+      background: linear-gradient(135deg, rgba(37, 244, 238, 0.18), rgba(254, 44, 85, 0.12));
+      border-color: var(--tiktok-cyan);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(37, 244, 238, 0.25);
+      transform: translateY(-2px);
+    }
+
+    .tab-pill.special-vip {
+      border-color: rgba(250, 204, 21, 0.4);
+      background: rgba(250, 204, 21, 0.08);
+      color: #facc15;
+    }
+
+    .tab-pill.special-vip.active {
+      background: linear-gradient(135deg, rgba(250, 204, 21, 0.3), rgba(255, 122, 0, 0.25));
+      border-color: #facc15;
+      color: #fff;
+      box-shadow: 0 6px 25px rgba(250, 204, 21, 0.35);
+    }
+
+    .tab-badge {
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 8px;
+      padding: 2px 7px;
+      font-size: 11px;
+      font-weight: 800;
+      font-family: var(--mono);
+      color: var(--tiktok-cyan);
+    }
+
+    .tab-pill.active .tab-badge {
+      background: var(--tiktok-cyan);
+      color: #000;
+    }
+
+    .tab-pill.special-vip .tab-badge {
+      background: rgba(250, 204, 21, 0.2);
+      color: #facc15;
+    }
+
+    .tab-pill.special-vip.active .tab-badge {
+      background: #facc15;
+      color: #000;
+    }
+
+    /* CONTROLS BAR */
+    .controls-panel {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .search-wrap {
+      flex: 1;
+      min-width: 260px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 16px 12px 44px;
+      font-size: 14px;
+      font-family: var(--font);
+      color: #fff;
+      outline: none;
+      transition: all 0.25s ease;
+    }
+
+    .search-input:focus {
+      border-color: var(--tiktok-cyan);
+      box-shadow: 0 0 20px rgba(37, 244, 238, 0.2);
+    }
+
+    .filter-group {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-quick-filter {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 11px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+      user-select: none;
+    }
+
+    .btn-quick-filter:hover {
+      background: var(--surface-hover);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-quick-filter.active {
+      background: rgba(250, 204, 21, 0.15);
+      border-color: #facc15;
+      color: #facc15;
+      box-shadow: 0 0 15px rgba(250, 204, 21, 0.2);
+    }
+
+    .select-custom {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 11px 16px;
+      font-size: 13px;
+      font-family: var(--font);
+      font-weight: 600;
+      color: #fff;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .select-custom:focus {
+      border-color: var(--tiktok-cyan);
+    }
+
+    /* GRID LINKS CONTAINER */
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+      width: 100%;
+    }
+
+    .link-card {
+      background: var(--surface);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .link-card:hover {
+      background: var(--surface-hover);
+      border-color: var(--border-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(37, 244, 238, 0.12);
+    }
+
+    /* KÈO NGON / VIP GOLD GLOW */
+    .link-card.is-top-deal {
+      border: 1.5px solid #facc15 !important;
+      background: radial-gradient(circle at top right, rgba(250, 204, 21, 0.1) 0%, rgba(18, 20, 29, 0.85) 60%) !important;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5), 0 0 25px rgba(250, 204, 21, 0.22) !important;
+    }
+
+    .link-card.is-top-deal:hover {
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6), 0 0 35px rgba(250, 204, 21, 0.35) !important;
+      transform: translateY(-4px) scale(1.01);
+    }
+
+    .vip-ribbon {
+      position: absolute;
+      top: -10px;
+      right: 18px;
+      background: linear-gradient(135deg, #facc15, #ff7a00);
+      color: #000;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(250, 204, 21, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      letter-spacing: 0.5px;
+      z-index: 2;
+    }
+
+    .link-card.interacted {
+      opacity: 0.65;
+      border-color: rgba(255, 122, 0, 0.25) !important;
+    }
+
+    .link-card.interacted::after {
+      content: '✔ ĐÃ MỞ';
+      position: absolute;
+      top: 14px; right: 14px;
+      font-size: 9px;
+      font-weight: 800;
+      background: rgba(255, 122, 0, 0.2);
+      color: #ff7a00;
+      padding: 3px 7px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 122, 0, 0.3);
+      z-index: 3;
+    }
+
+    /* CARD HEADER */
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .user-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1f2937, #374151);
+      border: 1.5px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 15px;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .link-card.is-top-deal .user-avatar {
+      border-color: #facc15;
+      box-shadow: 0 0 12px rgba(250, 204, 21, 0.4);
+    }
+
+    .user-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .user-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 170px;
+    }
+
+    .card-time {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: var(--mono);
+    }
+
+    .cat-chip {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+
+    .cat-chip.ruong_lon { background: rgba(255, 122, 0, 0.15); color: #ff7a00; border: 1px solid rgba(255, 122, 0, 0.3); }
+    .cat-chip.ruong_nho { background: rgba(37, 244, 238, 0.15); color: #25f4ee; border: 1px solid rgba(37, 244, 238, 0.3); }
+    .cat-chip.ruong_treo { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+    .cat-chip.ruong_test { background: rgba(234, 179, 8, 0.15); color: #fde047; border: 1px solid rgba(234, 179, 8, 0.3); }
+    .cat-chip.tui { background: rgba(254, 44, 85, 0.15); color: #fe2c55; border: 1px solid rgba(254, 44, 85, 0.3); }
+    .cat-chip.tui_0xu { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+
+    /* CARD METRICS ROW */
+    .metrics-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .metric-badge {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 10px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .metric-title {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .metric-val {
+      font-size: 16px;
+      font-weight: 800;
+      font-family: var(--mono);
+      color: #fff;
+    }
+
+    .metric-val.ratio {
+      color: var(--tiktok-cyan);
+      text-shadow: 0 0 10px rgba(37, 244, 238, 0.4);
+    }
+
+    .link-card.is-top-deal .metric-val.ratio {
+      color: #facc15;
+      text-shadow: 0 0 12px rgba(250, 204, 21, 0.5);
+    }
+
+    .metric-val.box {
+      color: var(--tiktok-orange);
+    }
+
+    .countdown-strip {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.03);
+      padding: 7px 12px;
+      border-radius: 10px;
+      font-family: var(--mono);
+    }
+
+    .countdown-strip strong {
+      color: #fff;
+    }
+
+    /* CARD ACTIONS */
+    .card-footer {
+      display: flex;
+      gap: 8px;
+      margin-top: auto;
+    }
+
+    .btn-secondary {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      color: #fff;
+      font-weight: 600;
+      font-size: 12px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      transition: all 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-open-tiktok {
+      flex: 1.5;
+      background: linear-gradient(90deg, #ff7a00, #fe2c55, #25f4ee, #ff7a00);
+      background-size: 300% 100%;
+      animation: gradientMove 6s linear infinite;
+      color: #fff;
+      font-weight: 800;
+      font-size: 13px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      box-shadow: 0 4px 15px rgba(254, 44, 85, 0.3);
+      transition: all 0.25s;
+    }
+
+    .btn-open-tiktok:hover {
+      box-shadow: 0 6px 20px rgba(37, 244, 238, 0.45);
+      transform: translateY(-1px);
+    }
+
+    /* MODAL DEEPLINK EXPLANATION */
+    .modal-backdrop {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      z-index: 99999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .modal-backdrop.show { display: flex; }
+
+    .modal-box {
+      background: rgba(18, 20, 30, 0.98);
+      border: 1.5px solid var(--tiktok-cyan);
+      border-radius: 20px;
+      max-width: 520px;
+      width: 100%;
+      padding: 24px 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.8), 0 0 35px rgba(37, 244, 238, 0.2);
+    }
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      background: linear-gradient(45deg, #facc15, #25f4ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .modal-body {
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: #d1d5db;
+    }
+
+    .modal-body strong { color: #fff; }
+
+    .modal-footer {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .btn-modal-close {
+      background: linear-gradient(90deg, #fe2c55, #25f4ee);
+      color: #fff;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    /* TOAST */
+    .toast-box {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: rgba(18, 20, 29, 0.95);
+      border: 1px solid var(--tiktok-cyan);
+      backdrop-filter: blur(20px);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 14px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.7), 0 0 25px rgba(37, 244, 238, 0.2);
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 99999;
+      pointer-events: none;
+    }
+
+    .toast-box.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* FULL MOBILE RESPONSIVE STYLES */
+    @media (max-width: 768px) {
+      body {
+        padding: 8px 6px 60px 6px;
+      }
+      .container {
+        padding: 0;
+      }
+      .hero-card {
+        padding: 16px 14px;
+        border-radius: 18px;
+        margin-bottom: 12px;
+      }
+      .nav-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+      }
+      .brand-title {
+        font-size: 19px;
+      }
+      .brand-logo {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 12px;
+      }
+      .nav-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 6px;
+        width: 100%;
+      }
+      .nav-actions .btn-icon, .nav-actions .btn-primary-flow {
+        padding: 9px 4px;
+        font-size: 11px;
+        justify-content: center;
+        white-space: nowrap;
+        border-radius: 10px;
+      }
+      .tabs-wrapper {
+        margin-bottom: 12px;
+        padding-bottom: 4px;
+        -webkit-overflow-scrolling: touch;
+      }
+      .tab-pill {
+        padding: 8px 14px;
+        font-size: 12px;
+        border-radius: 10px;
+      }
+      .controls-panel {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+      .search-wrap {
+        width: 100%;
+        min-width: 100%;
+      }
+      .search-input {
+        padding: 11px 14px 11px 40px;
+        font-size: 13px;
+        border-radius: 12px;
+      }
+      .filter-group {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+      .btn-quick-filter {
+        grid-column: 1 / -1;
+        justify-content: center;
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 12px;
+      }
+      .select-custom {
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 12px;
+        border-radius: 12px;
+      }
+      .links-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .link-card {
+        padding: 14px 16px;
+        border-radius: 16px;
+        gap: 12px;
+      }
+      .card-footer {
+        gap: 6px;
+      }
+      .btn-secondary {
+        padding: 10px 8px;
+        font-size: 12px;
+        border-radius: 10px;
+      }
+      .btn-open-tiktok {
+        padding: 10px 12px;
+        font-size: 12px;
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Top Hero Header -->
+    <div class="hero-card">
+      <div class="nav-header">
+        <div class="brand-wrap">
+          <div class="brand-logo" style="background: linear-gradient(135deg, #25f4ee, #ff7a00, #fe2c55); box-shadow: 0 0 25px rgba(37, 244, 238, 0.45); border: 1.5px solid rgba(255,255,255,0.3); width: 44px; height: 44px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <div>
+            <div class="brand-title">
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 26px; font-weight: 900; letter-spacing: -0.5px; background: linear-gradient(45deg, #25f4ee 20%, #ff7a00, #fe2c55 90%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: lowercase;">sangdev</span>
+              <span class="live-beacon">
+                <span class="beacon-dot"></span>
+                <span id="totalBadge">${data.links.length} LIVE</span>
+              </span>
+            </div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">
+              Hệ thống quét & lọc link live rương - túi ngon nhất tốc độ cao
+            </div>
+            <div style="font-size: 11.5px; color: var(--tiktok-cyan); margin-top: 4px; font-family: var(--mono); display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+              <span style="color: #facc15; font-weight: 700;">🌐 Link Mobile (TryCloudflare):</span>
+              <a href="https://longitude-speed-keno-cleanup.trycloudflare.com" target="_blank" style="color: #25f4ee; text-decoration: underline; font-weight: 700;">
+                https://longitude-speed-keno-cleanup.trycloudflare.com
+              </a>
+              <button onclick="copyToClipboard('https://longitude-speed-keno-cleanup.trycloudflare.com', '✔ Đã chép link Mobile!')" style="background: rgba(37, 244, 238, 0.15); border: 1px solid rgba(37, 244, 238, 0.3); color: #25f4ee; padding: 1px 7px; border-radius: 6px; font-size: 10px; cursor: pointer;">Copy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-actions">
+          <button class="btn-icon btn-help" onclick="toggleModal(true)" title="Tìm hiểu Deeplink là gì">
+            <span>❓ Deeplink là gì?</span>
+          </button>
+          <button class="btn-icon" id="soundBtn" onclick="toggleSound()" title="Bật/Tắt chuông báo link mới">
+            <span id="soundIcon">🔔</span>
+            <span id="soundText">Chuông: BẬT</span>
+          </button>
+          <button class="btn-primary-flow" onclick="manualRefresh()" id="refreshBtn">
+            <svg id="refreshSvg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+            Làm Mới
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="tabs-wrapper">
+      <div class="tabs-list" id="categoryTabs"></div>
+    </div>
+
+    <!-- Filter & Search Controls -->
+    <div class="controls-panel">
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="searchBox" placeholder="Tìm kiếm kênh, ID TikTok, tỉ lệ xu, thời gian..." oninput="filterAndRender()">
+      </div>
+
+      <div class="filter-group">
+        <button class="btn-quick-filter" id="topDealsBtn" onclick="toggleOnlyTopDeals()">
+          <span>👑 Chỉ hiện KÈO NGON NHẤT</span>
+        </button>
+
+        <select class="select-custom" id="ratioFilter" onchange="filterAndRender()">
+          <option value="0">⚡ Mọi tỉ lệ xu</option>
+          <option value="2">🔥 Tỉ lệ ≥ 2.0 xu</option>
+          <option value="5">💎 Tỉ lệ ≥ 5.0 xu (Ngon)</option>
+          <option value="10">👑 Tỉ lệ ≥ 10.0 xu (Siêu VIP)</option>
+        </select>
+
+        <select class="select-custom" id="sortBy" onchange="filterAndRender()">
+          <option value="ratio-desc">💎 KÈO NGON NHẤT (Tỉ lệ xu cao nhất)</option>
+          <option value="box-desc">📦 RƯƠNG KHỦNG NHẤT (Số xu nhiều nhất)</option>
+          <option value="newest">⏰ MỚI NHẤT VỪA QUÉT</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Links Grid -->
+    <div class="links-grid" id="linksGrid"></div>
+  </div>
+
+  <!-- MODAL GIẢI THÍCH DEEPLINK -->
+  <div class="modal-backdrop" id="deeplinkModal" onclick="handleBackdropClick(event)">
+    <div class="modal-box">
+      <div class="modal-title">
+        <span>📱 DEEPLINK LÀ GÌ & TẠI SAO LẠI NHANH HƠN?</span>
+      </div>
+      <div class="modal-body">
+        <p><b>1. Deeplink là gì?</b><br>
+        Deeplink có dạng <code>snssdk1180://live?room_id=...</code>. Đây là đường dẫn trực tiếp mở thẳng vào <b>ứng dụng TikTok</b> cài trên máy bạn thay vì phải mở qua trình duyệt web (Chrome, Safari).</p>
+        
+        <p style="margin-top: 10px;"><b>2. Tại sao người săn rương đều dùng Deeplink?</b><br>
+        • <b>Mở tức thì (0.1 giây):</b> Nhảy thẳng vào phòng Live trong tích tắc, không bị trễ thời gian tải web.<br>
+        • <b>Đã đăng nhập sẵn:</b> App TikTok của bạn đã có tài khoản sẵn, vào là bấm nhặt rương ngay.<br>
+        • <b>Chống lag:</b> Trình duyệt web khi mở TikTok rất nặng và thường bị lag, Deeplink dùng tài nguyên gốc của ứng dụng mượt mà 100%.</p>
+        
+        <p style="margin-top: 10px;"><b>3. Cách dùng:</b><br>
+        • Bấm <b>"📱 Deeplink"</b> để copy link app rồi dán vào Zalo/Telegram/Ghi chú hoặc mở bằng phím tắt.<br>
+        • Bấm <b>"🚀 Mở TikTok"</b> để mở luồng live trực tiếp trên trình duyệt.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-modal-close" onclick="toggleModal(false)">Đã Hiểu</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-box" id="toast">
+    <span>✔</span>
+    <span id="toastMsg">Đã sao chép!</span>
+  </div>
+
+  <script>
+    const INITIAL_LINKS = ${JSON.stringify(data.links)};
+    const EXPIRES_AT = new Date('${data.auth_info.expires_at}').getTime();
+    const DEVICE_ID = '${data.auth_info.device_id}';
+
+    let allLinks = [...INITIAL_LINKS];
+    let activeCategory = 'all';
+    let onlyTopDeals = false;
+    let soundEnabled = true;
+    let interactedKeys = new Set(JSON.parse(localStorage.getItem('interacted_links') || '[]'));
+
+    // Tiêu chí KÈO NGON NHẤT:
+    // 1. Tỉ lệ xu >= 5.0 xu (nhận được nhiều xu mỗi lượt)
+    // 2. HOẶC Tổng rương >= 200 xu
+    function isTopDeal(l) {
+      const ratio = parseFloat(l.ratio) || 0;
+      const boxCoins = parseInt((l.box_bag || '').split('/')[0], 10) || 0;
+      return ratio >= 5.0 || boxCoins >= 200;
+    }
+
+    function isSuperVIP(l) {
+      const ratio = parseFloat(l.ratio) || 0;
+      const boxCoins = parseInt((l.box_bag || '').split('/')[0], 10) || 0;
+      return ratio >= 10.0 || boxCoins >= 500;
+    }
+
+    function toggleOnlyTopDeals() {
+      onlyTopDeals = !onlyTopDeals;
+      const btn = document.getElementById('topDealsBtn');
+      btn.classList.toggle('active', onlyTopDeals);
+      filterAndRender();
+      showToast(onlyTopDeals ? '👑 Đã bật bộ lọc: CHỈ HIỆN KÈO NGON NHẤT!' : 'Hiển thị tất cả kèo');
+    }
+
+    function toggleModal(show) {
+      const modal = document.getElementById('deeplinkModal');
+      modal.classList.toggle('show', show);
+    }
+
+    function handleBackdropClick(e) {
+      if (e.target.id === 'deeplinkModal') {
+        toggleModal(false);
+      }
+    }
+
+    // Bíp âm thanh thông báo link mới
+    function playChime() {
+      if (!soundEnabled) return;
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(587.33, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(880, ctx.currentTime + 0.12);
+        gain.gain.setValueAtTime(0.12, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.25);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.25);
+      } catch (e) {}
+    }
+
+    function toggleSound() {
+      soundEnabled = !soundEnabled;
+      document.getElementById('soundIcon').textContent = soundEnabled ? '🔔' : '🔕';
+      document.getElementById('soundText').textContent = soundEnabled ? 'Chuông: BẬT' : 'Chuông: TẮT';
+      document.getElementById('soundBtn').classList.toggle('active', soundEnabled);
+      showToast(soundEnabled ? '✔ Đã bật âm thanh báo link mới' : '✔ Đã tắt âm thanh');
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2200);
+    }
+
+    function copyToClipboard(text, successMsg = 'Đã sao chép link!') {
+      if (!text) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => showToast(successMsg)).catch(() => fallbackCopy(text, successMsg));
+      } else {
+        fallbackCopy(text, successMsg);
+      }
+    }
+
+    function fallbackCopy(text, successMsg) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      showToast(successMsg);
+    }
+
+    function markAsInteracted(key) {
+      interactedKeys.add(key);
+      localStorage.setItem('interacted_links', JSON.stringify([...interactedKeys]));
+      const card = document.querySelector(\`[data-key="\${key}"]\`);
+      if (card) card.classList.add('interacted');
+    }
+
+    function handleOpenTikTok(key, url) {
+      markAsInteracted(key);
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    function handleDeeplink(key, deeplink) {
+      markAsInteracted(key);
+      copyToClipboard(deeplink, '✔ Đã chép Deeplink TikTok App!');
+      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (isMobile && deeplink) {
+        showToast('🚀 Đang mở App TikTok...');
+        setTimeout(() => { window.location.href = deeplink; }, 150);
+      }
+    }
+
+    // Countdown auth
+    function updateAuthCountdown() {
+      const diff = EXPIRES_AT - Date.now();
+      const el = document.getElementById('authCountdown');
+      if (!el) return;
+      if (diff <= 0) { el.textContent = 'Đã hết hạn'; return; }
+      const h = Math.floor(diff / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      el.textContent = \`\${h}h \${String(m).padStart(2, '0')}m \${String(s).padStart(2, '0')}s\`;
+    }
+    setInterval(updateAuthCountdown, 1000);
+    updateAuthCountdown();
+
+    const CATEGORIES = [
+      { code: 'all', name: '🔥 Tất cả' },
+      { code: 'keo_ngon', name: '👑 KÈO NGON NHẤT', isVip: true },
+      { code: 'ruong_lon', name: '🎁 Rương Lớn' },
+      { code: 'ruong_nho', name: '📦 Rương Nhỏ' },
+      { code: 'ruong_treo', name: '⚡ Rương Treo' },
+      { code: 'ruong_test', name: '🧪 Rương Test' },
+      { code: 'tui', name: '🎒 Túi' },
+      { code: 'tui_0xu', name: '🪙 Túi 0xu' }
+    ];
+
+    function renderTabs() {
+      const counts = { all: allLinks.length, keo_ngon: 0 };
+      allLinks.forEach(l => {
+        counts[l.category_code] = (counts[l.category_code] || 0) + 1;
+        if (isTopDeal(l)) counts.keo_ngon++;
+      });
+
+      const container = document.getElementById('categoryTabs');
+      container.innerHTML = CATEGORIES.map(cat => {
+        const count = counts[cat.code] || 0;
+        const isActive = activeCategory === cat.code;
+        const vipClass = cat.isVip ? 'special-vip' : '';
+        return \`
+          <button class="tab-pill \${vipClass} \${isActive ? 'active' : ''}" onclick="selectTab('\${cat.code}')">
+            <span>\${cat.name}</span>
+            <span class="tab-badge">\${count}</span>
+          </button>
+        \`;
+      }).join('');
+    }
+
+    function selectTab(code) {
+      activeCategory = code;
+      renderTabs();
+      filterAndRender();
+    }
+
+    function filterAndRender() {
+      const term = (document.getElementById('searchBox').value || '').toLowerCase().trim();
+      const minRatio = parseFloat(document.getElementById('ratioFilter').value) || 0;
+      const sortBy = document.getElementById('sortBy').value;
+
+      let filtered = allLinks.filter(l => {
+        // Tab lọc
+        if (activeCategory === 'keo_ngon') {
+          if (!isTopDeal(l)) return false;
+        } else if (activeCategory !== 'all' && l.category_code !== activeCategory) {
+          return false;
+        }
+
+        // Quick filter nút chỉ hiện kèo ngon
+        if (onlyTopDeals && !isTopDeal(l)) {
+          return false;
+        }
+
+        const ratioNum = parseFloat(l.ratio) || 0;
+        if (minRatio > 0 && ratioNum < minRatio) return false;
+        if (!term) return true;
+        const searchPool = (l.tt_id + ' ' + l.category_name + ' ' + l.box_bag + ' ' + l.ratio + ' ' + l.time_remaining).toLowerCase();
+        return searchPool.includes(term);
+      });
+
+      if (sortBy === 'ratio-desc') {
+        filtered.sort((a, b) => (parseFloat(b.ratio) || 0) - (parseFloat(a.ratio) || 0));
+      } else if (sortBy === 'box-desc') {
+        const getBox = s => parseInt((s || '').split('/')[0], 10) || 0;
+        filtered.sort((a, b) => getBox(b.box_bag) - getBox(a.box_bag));
+      }
+
+      const grid = document.getElementById('linksGrid');
+      if (filtered.length === 0) {
+        grid.innerHTML = \`
+          <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--text-muted);">
+            <div style="font-size: 36px; margin-bottom: 12px;">🔍</div>
+            <div style="font-size: 16px; font-weight: 700; color: #fff;">Không tìm thấy link nào phù hợp</div>
+            <div style="font-size: 13px; margin-top: 4px;">Hãy thử chọn tab khác hoặc tắt nút "Chỉ hiện Kèo Ngon"</div>
+          </div>
+        \`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(l => {
+        const isInteracted = interactedKeys.has(l.key);
+        const avatarInitial = (l.tt_id ? l.tt_id.charAt(0) : 'L').toUpperCase();
+        const topDeal = isTopDeal(l);
+        const superVip = isSuperVIP(l);
+
+        return \`
+          <div class="link-card \${topDeal ? 'is-top-deal' : ''} \${isInteracted ? 'interacted' : ''}" data-key="\${l.key}">
+            \${superVip ? '<div class="vip-ribbon">💎 SIÊU VIP</div>' : (topDeal ? '<div class="vip-ribbon">👑 KÈO NGON</div>' : '')}
+            
+            <div class="card-top">
+              <div class="user-info">
+                <div class="user-avatar">\${avatarInitial}</div>
+                <div class="user-text">
+                  <span class="user-name" title="@\${l.tt_id}">@\${l.tt_id || 'live'}</span>
+                  <span class="card-time">\${l.created_at}</span>
+                </div>
+              </div>
+              <span class="cat-chip \${l.category_code}">\${l.category_name}</span>
+            </div>
+
+            <div class="metrics-row">
+              <div class="metric-badge">
+                <span class="metric-title">💎 Tỉ Lệ Xu</span>
+                <span class="metric-val ratio">\${l.ratio || 'N/A'}</span>
+              </div>
+              <div class="metric-badge">
+                <span class="metric-title">📦 Rương / Túi</span>
+                <span class="metric-val box">\${l.box_bag || 'N/A'}</span>
+              </div>
+            </div>
+
+            <div class="countdown-strip">
+              <span>⏳</span>
+              <span>Thời gian: <strong>\${l.time_remaining || 'Mở ngay'}</strong></span>
+              \${l.live_viewers ? \`<span style="margin-left: auto;">👥 <strong>\${l.live_viewers}</strong></span>\` : ''}
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-secondary" onclick="copyToClipboard('\${l.web_url || l.gateway_url}')" title="Sao chép link Web">
+                📋 Copy
+              </button>
+              <button class="btn-secondary" onclick="handleDeeplink('\${l.key}', '\${l.deeplink}')" title="Sao chép & mở thẳng App TikTok">
+                📱 Deeplink
+              </button>
+              <button class="btn-open-tiktok" onclick="handleOpenTikTok('\${l.key}', '\${l.web_url}')">
+                🚀 Mở TikTok
+              </button>
+            </div>
+          </div>
+        \`;
+      }).join('');
+    }
+
+    // Auto Refresh
+    async function manualRefresh() {
+      const svg = document.getElementById('refreshSvg');
+      svg.style.animation = 'gradientMove 0.8s linear infinite';
+      try {
+        const res = await fetch('tiktok_links.json?t=' + Date.now());
+        if (res.ok) {
+          const fresh = await res.json();
+          const oldLen = allLinks.length;
+          allLinks = fresh.links || [];
+          const tb = document.getElementById('totalBadge');
+          if (tb) tb.textContent = allLinks.length;
+          renderTabs();
+          filterAndRender();
+          if (allLinks.length > oldLen) playChime();
+          showToast(\`✔ Đã cập nhật \${allLinks.length} link mới nhất!\`);
+        }
+      } catch (e) {
+        showToast('⚠️ Không thể tải cập nhật');
+      } finally {
+        svg.style.animation = '';
+      }
+    }
+
+    setInterval(manualRefresh, 6000);
+
+    renderTabs();
+    filterAndRender();
+  </script>
+</body>
+</html>`;
+
+fs.writeFileSync('index.html', html, 'utf8');
+fs.copyFileSync('index.html', 'C:/Users/nguye/.gemini/antigravity/brain/85dd3526-91ce-42e0-905b-b48ad48db2bb/dashboard.html');
+console.log('✔ Đã biên dịch xong giao diện KÈO NGON NHẤT & Cập nhật cả 2 file!');

@@ -1,0 +1,18 @@
+{
+  "name": "device-auth-scanner",
+  "version": "1.0.0",
+  "description": "Tool tự động tạo Device ID và kiểm tra bản quyền API vohoainam.net hàng loạt",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "get-links": "node fetch_links.js",
+    "watch-links": "node fetch_links.js --watch",
+    "watch-fast": "node fetch_links.js --watch --interval 3",
+    "open": "start index.html",
+    "server": "node -e \"const http=require('http'), fs=require('fs'); http.createServer((req,res)=>{ let f = req.url === '/' ? 'index.html' : req.url.slice(1).split('?')[0]; if(fs.existsSync(f)) { res.setHeader('Access-Control-Allow-Origin', '*'); res.writeHead(200); fs.createReadStream(f).pipe(res); } else { res.writeHead(404); res.end('404'); } }).listen(3000, ()=>console.log('✔ Giao diện web chạy tại: http://localhost:3000'));\""
+  },
+  "keywords": ["scanner", "device-id", "checker", "bulk-check"],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sangdev - Hệ Thống Săn Rương & Túi TikTok</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #07080c;
+      --surface: rgba(18, 20, 29, 0.78);
+      --surface-hover: rgba(26, 29, 44, 0.9);
+      --border: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(37, 244, 238, 0.4);
+      --tiktok-cyan: #25f4ee;
+      --tiktok-red: #fe2c55;
+      --tiktok-orange: #ff7a00;
+      --tiktok-gold: #facc15;
+      --text: #f9fafb;
+      --text-muted: #9ca3af;
+      --font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(circle at 10% 10%, rgba(254, 44, 85, 0.14) 0%, transparent 40%),
+        radial-gradient(circle at 90% 20%, rgba(37, 244, 238, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 50% 80%, rgba(250, 204, 21, 0.08) 0%, transparent 50%);
+      background-attachment: fixed;
+      color: var(--text);
+      min-height: 100vh;
+      padding: 16px 14px 80px 14px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 0 6px;
+    }
+
+    /* TOP NAV / HERO HEADER */
+    .hero-card {
+      background: var(--surface);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 24px 28px;
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 40px rgba(37, 244, 238, 0.06);
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #facc15, #ff7a00, #fe2c55, #25f4ee, #facc15);
+      background-size: 300% 100%;
+      animation: gradientMove 5s linear infinite;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 0;
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #facc15, #fe2c55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 25px rgba(254, 44, 85, 0.35);
+      font-size: 24px;
+    }
+
+    .brand-title {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(45deg, #fff 30%, #25f4ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .live-beacon {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(254, 44, 85, 0.15);
+      border: 1px solid rgba(254, 44, 85, 0.3);
+      color: #fe2c55;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 20px;
+      -webkit-text-fill-color: initial;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .beacon-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #fe2c55;
+      box-shadow: 0 0 10px #fe2c55;
+      animation: blink 1.5s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.8); }
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-icon {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      color: #fff;
+      padding: 9px 14px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.25s ease;
+      user-select: none;
+    }
+
+    .btn-icon:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.25);
+      transform: translateY(-1px);
+    }
+
+    .btn-icon.active {
+      background: rgba(37, 244, 238, 0.15);
+      border-color: var(--tiktok-cyan);
+      color: var(--tiktok-cyan);
+    }
+
+    .btn-help {
+      background: rgba(250, 204, 21, 0.1);
+      border: 1px solid rgba(250, 204, 21, 0.3);
+      color: #facc15;
+    }
+
+    .btn-help:hover {
+      background: rgba(250, 204, 21, 0.2);
+      border-color: #facc15;
+      color: #fff;
+    }
+
+    .btn-primary-flow {
+      background: linear-gradient(90deg, #ff7a00, #fe2c55, #25f4ee, #ff7a00);
+      background-size: 300% 100%;
+      animation: gradientMove 6s linear infinite;
+      color: #fff;
+      font-weight: 700;
+      font-size: 13px;
+      border: none;
+      border-radius: 12px;
+      padding: 10px 18px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 6px 20px rgba(254, 44, 85, 0.3);
+      transition: all 0.25s ease;
+    }
+
+    .btn-primary-flow:hover {
+      box-shadow: 0 8px 25px rgba(37, 244, 238, 0.45);
+      transform: translateY(-1px) scale(1.02);
+    }
+
+    /* AUTH META STRIP */
+    .auth-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 14px 18px;
+      font-size: 13px;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .meta-label {
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .meta-value {
+      font-family: var(--mono);
+      font-weight: 700;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-size: 12px;
+    }
+
+    .meta-value.cyan { color: var(--tiktok-cyan); border: 1px solid rgba(37, 244, 238, 0.25); }
+    .meta-value.gold { color: var(--tiktok-gold); border: 1px solid rgba(250, 204, 21, 0.25); }
+    .meta-value.orange { color: var(--tiktok-orange); border: 1px solid rgba(255, 122, 0, 0.25); }
+
+    /* CATEGORY TABS */
+    .tabs-wrapper {
+      margin-bottom: 20px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+      scrollbar-width: none;
+    }
+    .tabs-wrapper::-webkit-scrollbar { display: none; }
+
+    .tabs-list {
+      display: flex;
+      gap: 10px;
+      min-width: max-content;
+    }
+
+    .tab-pill {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 10px 18px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      user-select: none;
+    }
+
+    .tab-pill:hover {
+      background: var(--surface-hover);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+    }
+
+    .tab-pill.active {
+      background: linear-gradient(135deg, rgba(37, 244, 238, 0.18), rgba(254, 44, 85, 0.12));
+      border-color: var(--tiktok-cyan);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(37, 244, 238, 0.25);
+      transform: translateY(-2px);
+    }
+
+    .tab-pill.special-vip {
+      border-color: rgba(250, 204, 21, 0.4);
+      background: rgba(250, 204, 21, 0.08);
+      color: #facc15;
+    }
+
+    .tab-pill.special-vip.active {
+      background: linear-gradient(135deg, rgba(250, 204, 21, 0.3), rgba(255, 122, 0, 0.25));
+      border-color: #facc15;
+      color: #fff;
+      box-shadow: 0 6px 25px rgba(250, 204, 21, 0.35);
+    }
+
+    .tab-badge {
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 8px;
+      padding: 2px 7px;
+      font-size: 11px;
+      font-weight: 800;
+      font-family: var(--mono);
+      color: var(--tiktok-cyan);
+    }
+
+    .tab-pill.active .tab-badge {
+      background: var(--tiktok-cyan);
+      color: #000;
+    }
+
+    .tab-pill.special-vip .tab-badge {
+      background: rgba(250, 204, 21, 0.2);
+      color: #facc15;
+    }
+
+    .tab-pill.special-vip.active .tab-badge {
+      background: #facc15;
+      color: #000;
+    }
+
+    /* CONTROLS BAR */
+    .controls-panel {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .search-wrap {
+      flex: 1;
+      min-width: 260px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 16px 12px 44px;
+      font-size: 14px;
+      font-family: var(--font);
+      color: #fff;
+      outline: none;
+      transition: all 0.25s ease;
+    }
+
+    .search-input:focus {
+      border-color: var(--tiktok-cyan);
+      box-shadow: 0 0 20px rgba(37, 244, 238, 0.2);
+    }
+
+    .filter-group {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-quick-filter {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 11px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+      user-select: none;
+    }
+
+    .btn-quick-filter:hover {
+      background: var(--surface-hover);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-quick-filter.active {
+      background: rgba(250, 204, 21, 0.15);
+      border-color: #facc15;
+      color: #facc15;
+      box-shadow: 0 0 15px rgba(250, 204, 21, 0.2);
+    }
+
+    .select-custom {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 11px 16px;
+      font-size: 13px;
+      font-family: var(--font);
+      font-weight: 600;
+      color: #fff;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .select-custom:focus {
+      border-color: var(--tiktok-cyan);
+    }
+
+    /* GRID LINKS CONTAINER */
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+      width: 100%;
+    }
+
+    .link-card {
+      background: var(--surface);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .link-card:hover {
+      background: var(--surface-hover);
+      border-color: var(--border-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(37, 244, 238, 0.12);
+    }
+
+    /* KÈO NGON / VIP GOLD GLOW */
+    .link-card.is-top-deal {
+      border: 1.5px solid #facc15 !important;
+      background: radial-gradient(circle at top right, rgba(250, 204, 21, 0.1) 0%, rgba(18, 20, 29, 0.85) 60%) !important;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5), 0 0 25px rgba(250, 204, 21, 0.22) !important;
+    }
+
+    .link-card.is-top-deal:hover {
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6), 0 0 35px rgba(250, 204, 21, 0.35) !important;
+      transform: translateY(-4px) scale(1.01);
+    }
+
+    .vip-ribbon {
+      position: absolute;
+      top: -10px;
+      right: 18px;
+      background: linear-gradient(135deg, #facc15, #ff7a00);
+      color: #000;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(250, 204, 21, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      letter-spacing: 0.5px;
+      z-index: 2;
+    }
+
+    .link-card.interacted {
+      opacity: 0.65;
+      border-color: rgba(255, 122, 0, 0.25) !important;
+    }
+
+    .link-card.interacted::after {
+      content: '✔ ĐÃ MỞ';
+      position: absolute;
+      top: 14px; right: 14px;
+      font-size: 9px;
+      font-weight: 800;
+      background: rgba(255, 122, 0, 0.2);
+      color: #ff7a00;
+      padding: 3px 7px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 122, 0, 0.3);
+      z-index: 3;
+    }
+
+    /* CARD HEADER */
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .user-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1f2937, #374151);
+      border: 1.5px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 15px;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .link-card.is-top-deal .user-avatar {
+      border-color: #facc15;
+      box-shadow: 0 0 12px rgba(250, 204, 21, 0.4);
+    }
+
+    .user-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .user-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 170px;
+    }
+
+    .card-time {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: var(--mono);
+    }
+
+    .cat-chip {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+
+    .cat-chip.ruong_lon { background: rgba(255, 122, 0, 0.15); color: #ff7a00; border: 1px solid rgba(255, 122, 0, 0.3); }
+    .cat-chip.ruong_nho { background: rgba(37, 244, 238, 0.15); color: #25f4ee; border: 1px solid rgba(37, 244, 238, 0.3); }
+    .cat-chip.ruong_treo { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+    .cat-chip.ruong_test { background: rgba(234, 179, 8, 0.15); color: #fde047; border: 1px solid rgba(234, 179, 8, 0.3); }
+    .cat-chip.tui { background: rgba(254, 44, 85, 0.15); color: #fe2c55; border: 1px solid rgba(254, 44, 85, 0.3); }
+    .cat-chip.tui_0xu { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+
+    /* CARD METRICS ROW */
+    .metrics-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .metric-badge {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 10px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .metric-title {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .metric-val {
+      font-size: 16px;
+      font-weight: 800;
+      font-family: var(--mono);
+      color: #fff;
+    }
+
+    .metric-val.ratio {
+      color: var(--tiktok-cyan);
+      text-shadow: 0 0 10px rgba(37, 244, 238, 0.4);
+    }
+
+    .link-card.is-top-deal .metric-val.ratio {
+      color: #facc15;
+      text-shadow: 0 0 12px rgba(250, 204, 21, 0.5);
+    }
+
+    .metric-val.box {
+      color: var(--tiktok-orange);
+    }
+
+    .countdown-strip {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.03);
+      padding: 7px 12px;
+      border-radius: 10px;
+      font-family: var(--mono);
+    }
+
+    .countdown-strip strong {
+      color: #fff;
+    }
+
+    /* CARD ACTIONS */
+    .card-footer {
+      display: flex;
+      gap: 8px;
+      margin-top: auto;
+    }
+
+    .btn-secondary {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      color: #fff;
+      font-weight: 600;
+      font-size: 12px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      transition: all 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-open-tiktok {
+      flex: 1.5;
+      background: linear-gradient(90deg, #ff7a00, #fe2c55, #25f4ee, #ff7a00);
+      background-size: 300% 100%;
+      animation: gradientMove 6s linear infinite;
+      color: #fff;
+      font-weight: 800;
+      font-size: 13px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      box-shadow: 0 4px 15px rgba(254, 44, 85, 0.3);
+      transition: all 0.25s;
+    }
+
+    .btn-open-tiktok:hover {
+      box-shadow: 0 6px 20px rgba(37, 244, 238, 0.45);
+      transform: translateY(-1px);
+    }
+
+    /* MODAL DEEPLINK EXPLANATION */
+    .modal-backdrop {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      z-index: 99999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .modal-backdrop.show { display: flex; }
+
+    .modal-box {
+      background: rgba(18, 20, 30, 0.98);
+      border: 1.5px solid var(--tiktok-cyan);
+      border-radius: 20px;
+      max-width: 520px;
+      width: 100%;
+      padding: 24px 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.8), 0 0 35px rgba(37, 244, 238, 0.2);
+    }
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      background: linear-gradient(45deg, #facc15, #25f4ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .modal-body {
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: #d1d5db;
+    }
+
+    .modal-body strong { color: #fff; }
+
+    .modal-footer {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .btn-modal-close {
+      background: linear-gradient(90deg, #fe2c55, #25f4ee);
+      color: #fff;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    /* TOAST */
+    .toast-box {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: rgba(18, 20, 29, 0.95);
+      border: 1px solid var(--tiktok-cyan);
+      backdrop-filter: blur(20px);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 14px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.7), 0 0 25px rgba(37, 244, 238, 0.2);
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 99999;
+      pointer-events: none;
+    }
+
+    .toast-box.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* FULL MOBILE RESPONSIVE STYLES */
+    @media (max-width: 768px) {
+      body {
+        padding: 8px 6px 60px 6px;
+      }
+      .container {
+        padding: 0;
+      }
+      .hero-card {
+        padding: 16px 14px;
+        border-radius: 18px;
+        margin-bottom: 12px;
+      }
+      .nav-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+      }
+      .brand-title {
+        font-size: 19px;
+      }
+      .brand-logo {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 12px;
+      }
+      .nav-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 6px;
+        width: 100%;
+      }
+      .nav-actions .btn-icon, .nav-actions .btn-primary-flow {
+        padding: 9px 4px;
+        font-size: 11px;
+        justify-content: center;
+        white-space: nowrap;
+        border-radius: 10px;
+      }
+      .tabs-wrapper {
+        margin-bottom: 12px;
+        padding-bottom: 4px;
+        -webkit-overflow-scrolling: touch;
+      }
+      .tab-pill {
+        padding: 8px 14px;
+        font-size: 12px;
+        border-radius: 10px;
+      }
+      .controls-panel {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+      .search-wrap {
+        width: 100%;
+        min-width: 100%;
+      }
+      .search-input {
+        padding: 11px 14px 11px 40px;
+        font-size: 13px;
+        border-radius: 12px;
+      }
+      .filter-group {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+      .btn-quick-filter {
+        grid-column: 1 / -1;
+        justify-content: center;
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 12px;
+      }
+      .select-custom {
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 12px;
+        border-radius: 12px;
+      }
+      .links-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .link-card {
+        padding: 14px 16px;
+        border-radius: 16px;
+        gap: 12px;
+      }
+      .card-footer {
+        gap: 6px;
+      }
+      .btn-secondary {
+        padding: 10px 8px;
+        font-size: 12px;
+        border-radius: 10px;
+      }
+      .btn-open-tiktok {
+        padding: 10px 12px;
+        font-size: 12px;
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Top Hero Header -->
+    <div class="hero-card">
+      <div class="nav-header">
+        <div class="brand-wrap">
+          <div class="brand-logo" style="background: linear-gradient(135deg, #25f4ee, #ff7a00, #fe2c55); box-shadow: 0 0 25px rgba(37, 244, 238, 0.45); border: 1.5px solid rgba(255,255,255,0.3); width: 44px; height: 44px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <div>
+            <div class="brand-title">
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 26px; font-weight: 900; letter-spacing: -0.5px; background: linear-gradient(45deg, #25f4ee 20%, #ff7a00, #fe2c55 90%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: lowercase;">sangdev</span>
+              <span class="live-beacon">
+                <span class="beacon-dot"></span>
+                <span id="totalBadge">295 LIVE</span>
+              </span>
+            </div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">
+              Hệ thống quét & lọc link live rương - túi ngon nhất tốc độ cao
+            </div>
+            <div style="font-size: 11.5px; color: var(--tiktok-cyan); margin-top: 4px; font-family: var(--mono); display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+              <span style="color: #facc15; font-weight: 700;">🌐 Link Mobile (TryCloudflare):</span>
+              <a href="https://longitude-speed-keno-cleanup.trycloudflare.com" target="_blank" style="color: #25f4ee; text-decoration: underline; font-weight: 700;">
+                https://longitude-speed-keno-cleanup.trycloudflare.com
+              </a>
+              <button onclick="copyToClipboard('https://longitude-speed-keno-cleanup.trycloudflare.com', '✔ Đã chép link Mobile!')" style="background: rgba(37, 244, 238, 0.15); border: 1px solid rgba(37, 244, 238, 0.3); color: #25f4ee; padding: 1px 7px; border-radius: 6px; font-size: 10px; cursor: pointer;">Copy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-actions">
+          <button class="btn-icon btn-help" onclick="toggleModal(true)" title="Tìm hiểu Deeplink là gì">
+            <span>❓ Deeplink là gì?</span>
+          </button>
+          <button class="btn-icon" id="soundBtn" onclick="toggleSound()" title="Bật/Tắt chuông báo link mới">
+            <span id="soundIcon">🔔</span>
+            <span id="soundText">Chuông: BẬT</span>
+          </button>
+          <button class="btn-primary-flow" onclick="manualRefresh()" id="refreshBtn">
+            <svg id="refreshSvg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+            Làm Mới
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="tabs-wrapper">
+      <div class="tabs-list" id="categoryTabs"></div>
+    </div>
+
+    <!-- Filter & Search Controls -->
+    <div class="controls-panel">
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="searchBox" placeholder="Tìm kiếm kênh, ID TikTok, tỉ lệ xu, thời gian..." oninput="filterAndRender()">
+      </div>
+
+      <div class="filter-group">
+        <button class="btn-quick-filter" id="topDealsBtn" onclick="toggleOnlyTopDeals()">
+          <span>👑 Chỉ hiện KÈO NGON NHẤT</span>
+        </button>
+
+        <select class="select-custom" id="ratioFilter" onchange="filterAndRender()">
+          <option value="0">⚡ Mọi tỉ lệ xu</option>
+          <option value="2">🔥 Tỉ lệ ≥ 2.0 xu</option>
+          <option value="5">💎 Tỉ lệ ≥ 5.0 xu (Ngon)</option>
+          <option value="10">👑 Tỉ lệ ≥ 10.0 xu (Siêu VIP)</option>
+        </select>
+
+        <select class="select-custom" id="sortBy" onchange="filterAndRender()">
+          <option value="ratio-desc">💎 KÈO NGON NHẤT (Tỉ lệ xu cao nhất)</option>
+          <option value="box-desc">📦 RƯƠNG KHỦNG NHẤT (Số xu nhiều nhất)</option>
+          <option value="newest">⏰ MỚI NHẤT VỪA QUÉT</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Links Grid -->
+    <div class="links-grid" id="linksGrid"></div>
+  </div>
+
+  <!-- MODAL GIẢI THÍCH DEEPLINK -->
+  <div class="modal-backdrop" id="deeplinkModal" onclick="handleBackdropClick(event)">
+    <div class="modal-box">
+      <div class="modal-title">
+        <span>📱 DEEPLINK LÀ GÌ & TẠI SAO LẠI NHANH HƠN?</span>
+      </div>
+      <div class="modal-body">
+        <p><b>1. Deeplink là gì?</b><br>
+        Deeplink có dạng <code>snssdk1180://live?room_id=...</code>. Đây là đường dẫn trực tiếp mở thẳng vào <b>ứng dụng TikTok</b> cài trên máy bạn thay vì phải mở qua trình duyệt web (Chrome, Safari).</p>
+        
+        <p style="margin-top: 10px;"><b>2. Tại sao người săn rương đều dùng Deeplink?</b><br>
+        • <b>Mở tức thì (0.1 giây):</b> Nhảy thẳng vào phòng Live trong tích tắc, không bị trễ thời gian tải web.<br>
+        • <b>Đã đăng nhập sẵn:</b> App TikTok của bạn đã có tài khoản sẵn, vào là bấm nhặt rương ngay.<br>
+        • <b>Chống lag:</b> Trình duyệt web khi mở TikTok rất nặng và thường bị lag, Deeplink dùng tài nguyên gốc của ứng dụng mượt mà 100%.</p>
+        
+        <p style="margin-top: 10px;"><b>3. Cách dùng:</b><br>
+        • Bấm <b>"📱 Deeplink"</b> để copy link app rồi dán vào Zalo/Telegram/Ghi chú hoặc mở bằng phím tắt.<br>
+        • Bấm <b>"🚀 Mở TikTok"</b> để mở luồng live trực tiếp trên trình duyệt.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-modal-close" onclick="toggleModal(false)">Đã Hiểu</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-box" id="toast">
+    <span>✔</span>
+    <span id="toastMsg">Đã sao chép!</span>
+  </div>
+
+  <script>
+    const INITIAL_LINKS = [{"key":"royr7rpkfcymzlink188600","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"ri*rima","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15789","time_remaining":"00:40s - 20:55:06","created_at":"20:54:27 14/10/26","room_id":"7696496410535529236","deeplink":"snssdk1180://live?room_id=7696496410535529236","web_url":"https://www.tiktok.com/@ri*rima/live","gateway_url":"https://vohoainam.net/royr7rpkfcymzlink188600"},{"key":"6je0vlkerjeaglink188599","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"offtitok8","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:55:59","created_at":"20:54:27 14/10/26","room_id":"7696492746038709010","deeplink":"snssdk1180://live?room_id=7696492746038709010","web_url":"https://www.tiktok.com/@offtitok8/live","gateway_url":"https://vohoainam.net/6je0vlkerjeaglink188599"},{"key":"f5ou15ge30b73link188598","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"baoyi0*22","box_bag":"20/15","ratio":"1.3 xu","live_viewers":"","time_remaining":"00:40s - 20:55:05","created_at":"20:54:27 14/10/26","room_id":"7696513080389978900","deeplink":"snssdk1180://live?room_id=7696513080389978900","web_url":"https://www.tiktok.com/@baoyi0*22/live","gateway_url":"https://vohoainam.net/f5ou15ge30b73link188598"},{"key":"7d8a02r7imjevlink188597","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"00konkons*m","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15797","time_remaining":"00:40s - 20:55:04","created_at":"20:54:26 14/10/26","room_id":"7696497419373480725","deeplink":"snssdk1180://live?room_id=7696497419373480725","web_url":"https://www.tiktok.com/@00konkons*m/live","gateway_url":"https://vohoainam.net/7d8a02r7imjevlink188597"},{"key":"8zw0nyn9insfolink188596","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"elyc*ei3","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15789","time_remaining":"00:40s - 20:55:05","created_at":"20:54:26 14/10/26","room_id":"7696498900409994005","deeplink":"snssdk1180://live?room_id=7696498900409994005","web_url":"https://www.tiktok.com/@elyc*ei3/live","gateway_url":"https://vohoainam.net/8zw0nyn9insfolink188596"},{"key":"wsx0dn938jlr3link188595","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"._.yu*seul","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:55:03","created_at":"20:54:26 14/10/26","room_id":"7696515794679302933","deeplink":"snssdk1180://live?room_id=7696515794679302933","web_url":"https://www.tiktok.com/@._.yu*seul/live","gateway_url":"https://vohoainam.net/wsx0dn938jlr3link188595"},{"key":"i3f898bgicjhklink188594","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"lq*tar","box_bag":"21/11","ratio":"1.9 xu","live_viewers":"","time_remaining":"00:57s - 20:55:22","created_at":"20:54:26 14/10/26","room_id":"7696492159617534726","deeplink":"snssdk1180://live?room_id=7696492159617534726","web_url":"https://www.tiktok.com/@lq*tar/live","gateway_url":"https://vohoainam.net/i3f898bgicjhklink188594"},{"key":"t2fnmib1y7ehjlink188593","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"new.world*061","box_bag":"50/17","ratio":"2.9 xu","live_viewers":"19000/19759","time_remaining":"01:20s - 20:55:48","created_at":"20:54:25 14/10/26","room_id":"7696489249847184136","deeplink":"snssdk1180://live?room_id=7696489249847184136","web_url":"https://www.tiktok.com/@new.world*061/live","gateway_url":"https://vohoainam.net/t2fnmib1y7ehjlink188593"},{"key":"0jkjkwwyy74xflink188592","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"cikw*ngi26","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:55:04","created_at":"20:54:25 14/10/26","room_id":"7696501694506584853","deeplink":"snssdk1180://live?room_id=7696501694506584853","web_url":"https://www.tiktok.com/@cikw*ngi26/live","gateway_url":"https://vohoainam.net/0jkjkwwyy74xflink188592"},{"key":"w0yw7g13j58zdlink188591","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"kikicici*07","box_bag":"50/25","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:20s - 20:55:48","created_at":"20:54:25 14/10/26","room_id":"7696495387930037010","deeplink":"snssdk1180://live?room_id=7696495387930037010","web_url":"https://www.tiktok.com/@kikicici*07/live","gateway_url":"https://vohoainam.net/w0yw7g13j58zdlink188591"},{"key":"pv4lpefu81ekrlink188590","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"ju*uszz_","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:55:03","created_at":"20:54:25 14/10/26","room_id":"7696520141701417748","deeplink":"snssdk1180://live?room_id=7696520141701417748","web_url":"https://www.tiktok.com/@ju*uszz_/live","gateway_url":"https://vohoainam.net/pv4lpefu81ekrlink188590"},{"key":"4hhzz317nh2oqlink188589","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"mayu.m*rvel.addict","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15797","time_remaining":"00:40s - 20:55:03","created_at":"20:54:24 14/10/26","room_id":"7696483472567536392","deeplink":"snssdk1180://live?room_id=7696483472567536392","web_url":"https://www.tiktok.com/@mayu.m*rvel.addict/live","gateway_url":"https://vohoainam.net/4hhzz317nh2oqlink188589"},{"key":"gpr4a4otgw4hglink188588","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"sa*u_33939","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:55:03","created_at":"20:54:24 14/10/26","room_id":"7696484534182890246","deeplink":"snssdk1180://live?room_id=7696484534182890246","web_url":"https://www.tiktok.com/@sa*u_33939/live","gateway_url":"https://vohoainam.net/gpr4a4otgw4hglink188588"},{"key":"5oko7g4ljeajtlink188587","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"the.han*maids","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15797","time_remaining":"00:40s - 20:55:00","created_at":"20:54:21 14/10/26","room_id":"7696502755594898209","deeplink":"snssdk1180://live?room_id=7696502755594898209","web_url":"https://www.tiktok.com/@the.han*maids/live","gateway_url":"https://vohoainam.net/5oko7g4ljeajtlink188587"},{"key":"1bcg2g4e5hdfglink188586","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"user6*16915767619","box_bag":"39/13","ratio":"3.0 xu","live_viewers":"","time_remaining":"01:20s - 20:55:43","created_at":"20:54:21 14/10/26","room_id":"7696496309162953478","deeplink":"snssdk1180://live?room_id=7696496309162953478","web_url":"https://www.tiktok.com/@user6*16915767619/live","gateway_url":"https://vohoainam.net/1bcg2g4e5hdfglink188586"},{"key":"rmf3qhygepveglink188585","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"ia*_aoao","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15797","time_remaining":"00:40s - 20:55:00","created_at":"20:54:21 14/10/26","room_id":"7696510894129367814","deeplink":"snssdk1180://live?room_id=7696510894129367814","web_url":"https://www.tiktok.com/@ia*_aoao/live","gateway_url":"https://vohoainam.net/rmf3qhygepveglink188585"},{"key":"yzutvyf3ejpaqlink188584","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"z*aoyutong0926","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:59","created_at":"20:54:21 14/10/26","room_id":"7696506670423952146","deeplink":"snssdk1180://live?room_id=7696506670423952146","web_url":"https://www.tiktok.com/@z*aoyutong0926/live","gateway_url":"https://vohoainam.net/yzutvyf3ejpaqlink188584"},{"key":"fdx5dmoimcgzrlink188583","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"cuongcuong12345","box_bag":"50/5","ratio":"10.0 xu","live_viewers":"19000/19790","time_remaining":"01:30s - 20:55:52","created_at":"20:54:20 14/10/26","room_id":"7696496991539481365","deeplink":"snssdk1180://live?room_id=7696496991539481365","web_url":"https://www.tiktok.com/@cuongcuong12345/live","gateway_url":"https://vohoainam.net/fdx5dmoimcgzrlink188583"},{"key":"ebdw6ic3ifmqqlink188582","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"knw*wuja","box_bag":"20/15","ratio":"1.3 xu","live_viewers":"","time_remaining":"00:40s - 20:54:58","created_at":"20:54:19 14/10/26","room_id":"7696486237510601490","deeplink":"snssdk1180://live?room_id=7696486237510601490","web_url":"https://www.tiktok.com/@knw*wuja/live","gateway_url":"https://vohoainam.net/ebdw6ic3ifmqqlink188582"},{"key":"kl23q0wuxgu7slink188581","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"m*genpenguin","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:55:28","created_at":"20:54:19 14/10/26","room_id":"7696481276127890184","deeplink":"snssdk1180://live?room_id=7696481276127890184","web_url":"https://www.tiktok.com/@m*genpenguin/live","gateway_url":"https://vohoainam.net/kl23q0wuxgu7slink188581"},{"key":"r01trzczpg5kxlink188580","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"a.a8374*0","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15796","time_remaining":"00:40s - 20:54:58","created_at":"20:54:19 14/10/26","room_id":"7696500768106498824","deeplink":"snssdk1180://live?room_id=7696500768106498824","web_url":"https://www.tiktok.com/@a.a8374*0/live","gateway_url":"https://vohoainam.net/r01trzczpg5kxlink188580"},{"key":"pfd15ouxeejz1link188579","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"somamo*sen2","box_bag":"20/15","ratio":"1.3 xu","live_viewers":"","time_remaining":"00:40s - 20:54:57","created_at":"20:54:18 14/10/26","room_id":"7696516003697576705","deeplink":"snssdk1180://live?room_id=7696516003697576705","web_url":"https://www.tiktok.com/@somamo*sen2/live","gateway_url":"https://vohoainam.net/pfd15ouxeejz1link188579"},{"key":"d3ejxn0yqueeclink188578","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"100/25","ratio":"4.0 xu","live_viewers":"19000/19790","time_remaining":"","created_at":"20:54:18 14/10/26","room_id":"7696424614390139666","deeplink":"snssdk1180://live?room_id=7696424614390139666","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/d3ejxn0yqueeclink188578"},{"key":"h45nrm75i22telink188577","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"ar*kuyo_satosan","box_bag":"100/25","ratio":"4.0 xu","live_viewers":"","time_remaining":"01:20s - 20:55:39","created_at":"20:54:17 14/10/26","room_id":"7696468978705566471","deeplink":"snssdk1180://live?room_id=7696468978705566471","web_url":"https://www.tiktok.com/@ar*kuyo_satosan/live","gateway_url":"https://vohoainam.net/h45nrm75i22telink188577"},{"key":"3fy3fj6yw3cbdlink188574","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"misslionk","box_bag":"200/100","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:49","created_at":"20:54:17 14/10/26","room_id":"7696484938291661589","deeplink":"snssdk1180://live?room_id=7696484938291661589","web_url":"https://www.tiktok.com/@misslionk/live","gateway_url":"https://vohoainam.net/3fy3fj6yw3cbdlink188574"},{"key":"1v04uh9b3o7splink188575","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"nutseller1","box_bag":"50/1","ratio":"50.0 xu","live_viewers":"19000/19786","time_remaining":"00:55s - 20:55:14","created_at":"20:54:16 14/10/26","room_id":"7696420955196410645","deeplink":"snssdk1180://live?room_id=7696420955196410645","web_url":"https://www.tiktok.com/@nutseller1/live","gateway_url":"https://vohoainam.net/1v04uh9b3o7splink188575"},{"key":"v0bzo2c9l99gplink188573","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"69love__*9","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:54","created_at":"20:54:16 14/10/26","room_id":"7696492733197077300","deeplink":"snssdk1180://live?room_id=7696492733197077300","web_url":"https://www.tiktok.com/@69love__*9/live","gateway_url":"https://vohoainam.net/v0bzo2c9l99gplink188573"},{"key":"kqiv65sydbxm7link188571","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"ba*akyn_","box_bag":"100/50","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:20s - 20:55:37","created_at":"20:54:15 14/10/26","room_id":"7696514752319245077","deeplink":"snssdk1180://live?room_id=7696514752319245077","web_url":"https://www.tiktok.com/@ba*akyn_/live","gateway_url":"https://vohoainam.net/kqiv65sydbxm7link188571"},{"key":"eaxnmialx8u0tlink188570","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"bgcchbvs3w*8tg","box_bag":"31/15","ratio":"2.1 xu","live_viewers":"","time_remaining":"01:20s - 20:55:37","created_at":"20:54:15 14/10/26","room_id":"7696492222775347989","deeplink":"snssdk1180://live?room_id=7696492222775347989","web_url":"https://www.tiktok.com/@bgcchbvs3w*8tg/live","gateway_url":"https://vohoainam.net/eaxnmialx8u0tlink188570"},{"key":"wqzkevi4ca905link188569","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"30/10","ratio":"3.0 xu","live_viewers":"","time_remaining":"","created_at":"20:54:15 14/10/26","room_id":"7696512098554497800","deeplink":"snssdk1180://live?room_id=7696512098554497800","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/wqzkevi4ca905link188569"},{"key":"14py8mgx21vr5link188568","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"termosimon*1","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15796","time_remaining":"00:40s - 20:54:54","created_at":"20:54:15 14/10/26","room_id":"7696492633107204866","deeplink":"snssdk1180://live?room_id=7696492633107204866","web_url":"https://www.tiktok.com/@termosimon*1/live","gateway_url":"https://vohoainam.net/14py8mgx21vr5link188568"},{"key":"m3t9kkvflbccblink188567","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"koiko44*8","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15796","time_remaining":"00:40s - 20:54:53","created_at":"20:54:14 14/10/26","room_id":"7696478728685128500","deeplink":"snssdk1180://live?room_id=7696478728685128500","web_url":"https://www.tiktok.com/@koiko44*8/live","gateway_url":"https://vohoainam.net/m3t9kkvflbccblink188567"},{"key":"jx734641tccjzlink188566","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"piimann14*4","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:53","created_at":"20:54:14 14/10/26","room_id":"7696512475857193736","deeplink":"snssdk1180://live?room_id=7696512475857193736","web_url":"https://www.tiktok.com/@piimann14*4/live","gateway_url":"https://vohoainam.net/jx734641tccjzlink188566"},{"key":"a0x84yixhubmklink188565","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"horry20917","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:47","created_at":"20:54:14 14/10/26","room_id":"7696518580145343284","deeplink":"snssdk1180://live?room_id=7696518580145343284","web_url":"https://www.tiktok.com/@horry20917/live","gateway_url":"https://vohoainam.net/a0x84yixhubmklink188565"},{"key":"2prqd3w6fwwcdlink188564","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"cherylpa*61","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:53","created_at":"20:54:14 14/10/26","room_id":"7696514071776643846","deeplink":"snssdk1180://live?room_id=7696514071776643846","web_url":"https://www.tiktok.com/@cherylpa*61/live","gateway_url":"https://vohoainam.net/2prqd3w6fwwcdlink188564"},{"key":"1ncdvwsrr2svelink188563","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"mi*i_se0201","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15777","time_remaining":"00:40s - 20:54:52","created_at":"20:54:14 14/10/26","room_id":"7696492448171838228","deeplink":"snssdk1180://live?room_id=7696492448171838228","web_url":"https://www.tiktok.com/@mi*i_se0201/live","gateway_url":"https://vohoainam.net/1ncdvwsrr2svelink188563"},{"key":"9xy8wx505u1fnlink188562","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"","created_at":"20:54:13 14/10/26","room_id":"7696517236768426765","deeplink":"snssdk1180://live?room_id=7696517236768426765","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/9xy8wx505u1fnlink188562"},{"key":"kyen6h8a20dp9link188561","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"r*y_xv3.2","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:55:22","created_at":"20:54:13 14/10/26","room_id":"7696500649303395094","deeplink":"snssdk1180://live?room_id=7696500649303395094","web_url":"https://www.tiktok.com/@r*y_xv3.2/live","gateway_url":"https://vohoainam.net/kyen6h8a20dp9link188561"},{"key":"7khh0wvkgl9a3link188560","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"trainingmc.com","box_bag":"100/50","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:46","created_at":"20:54:13 14/10/26","room_id":"7696508235515923220","deeplink":"snssdk1180://live?room_id=7696508235515923220","web_url":"https://www.tiktok.com/@trainingmc.com/live","gateway_url":"https://vohoainam.net/7khh0wvkgl9a3link188560"},{"key":"fv8w7ly38thx9link188559","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"blon*asexy69","box_bag":"20/13","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:55:21","created_at":"20:54:12 14/10/26","room_id":"7696506826564586272","deeplink":"snssdk1180://live?room_id=7696506826564586272","web_url":"https://www.tiktok.com/@blon*asexy69/live","gateway_url":"https://vohoainam.net/fv8w7ly38thx9link188559"},{"key":"4lez2ma19aesrlink188558","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"pauli*ubg","box_bag":"100/25","ratio":"4.0 xu","live_viewers":"","time_remaining":"01:20s - 20:55:34","created_at":"20:54:12 14/10/26","room_id":"7696501556811827986","deeplink":"snssdk1180://live?room_id=7696501556811827986","web_url":"https://www.tiktok.com/@pauli*ubg/live","gateway_url":"https://vohoainam.net/4lez2ma19aesrlink188558"},{"key":"xdxlzifr24gvvlink188557","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"anhthutoc*hien1206","box_bag":"20/20","ratio":"1.0 xu","live_viewers":"","time_remaining":"00:40s - 20:54:51","created_at":"20:54:12 14/10/26","room_id":"7696496269988055828","deeplink":"snssdk1180://live?room_id=7696496269988055828","web_url":"https://www.tiktok.com/@anhthutoc*hien1206/live","gateway_url":"https://vohoainam.net/xdxlzifr24gvvlink188557"},{"key":"tqfylyugl4dbxlink188556","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/25","ratio":"2.0 xu","live_viewers":"","time_remaining":"","created_at":"20:54:11 14/10/26","room_id":"7696510683222985478","deeplink":"snssdk1180://live?room_id=7696510683222985478","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/tqfylyugl4dbxlink188556"},{"key":"vdh75zy564swxlink188555","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"farrux_xus*nboyev1","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:20s - 20:55:30","created_at":"20:54:09 14/10/26","room_id":"7696516826590694165","deeplink":"snssdk1180://live?room_id=7696516826590694165","web_url":"https://www.tiktok.com/@farrux_xus*nboyev1/live","gateway_url":"https://vohoainam.net/vdh75zy564swxlink188555"},{"key":"hosuw5yu0fqiqlink188554","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"___s*s999","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:48","created_at":"20:54:09 14/10/26","room_id":"7696476150856715028","deeplink":"snssdk1180://live?room_id=7696476150856715028","web_url":"https://www.tiktok.com/@___s*s999/live","gateway_url":"https://vohoainam.net/hosuw5yu0fqiqlink188554"},{"key":"li1el12h1mqwelink188553","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"_d*vid_abc","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:55:18","created_at":"20:54:09 14/10/26","room_id":"7696486530022198024","deeplink":"snssdk1180://live?room_id=7696486530022198024","web_url":"https://www.tiktok.com/@_d*vid_abc/live","gateway_url":"https://vohoainam.net/li1el12h1mqwelink188553"},{"key":"brfmz5xr1ktkslink188552","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"ch_candy*00609","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:48","created_at":"20:54:09 14/10/26","room_id":"7696495757394447105","deeplink":"snssdk1180://live?room_id=7696495757394447105","web_url":"https://www.tiktok.com/@ch_candy*00609/live","gateway_url":"https://vohoainam.net/brfmz5xr1ktkslink188552"},{"key":"xc4i32tbsrai8link188551","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"bb12345689","box_bag":"200/100","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:41","created_at":"20:54:08 14/10/26","room_id":"7696490588543617810","deeplink":"snssdk1180://live?room_id=7696490588543617810","web_url":"https://www.tiktok.com/@bb12345689/live","gateway_url":"https://vohoainam.net/xc4i32tbsrai8link188551"},{"key":"1591ztmwxjmxqlink188550","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"luuuu0804","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:55:40","created_at":"20:54:08 14/10/26","room_id":"7696516619045194514","deeplink":"snssdk1180://live?room_id=7696516619045194514","web_url":"https://www.tiktok.com/@luuuu0804/live","gateway_url":"https://vohoainam.net/1591ztmwxjmxqlink188550"},{"key":"bz1xr8ycgvd1xlink188549","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"kayoseda","box_bag":"100/50","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:40","created_at":"20:54:08 14/10/26","room_id":"7696514947241151253","deeplink":"snssdk1180://live?room_id=7696514947241151253","web_url":"https://www.tiktok.com/@kayoseda/live","gateway_url":"https://vohoainam.net/bz1xr8ycgvd1xlink188549"},{"key":"24k8xl3ovmozqlink188548","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"zhaocai81319","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:55:40","created_at":"20:54:08 14/10/26","room_id":"7696513341021408021","deeplink":"snssdk1180://live?room_id=7696513341021408021","web_url":"https://www.tiktok.com/@zhaocai81319/live","gateway_url":"https://vohoainam.net/24k8xl3ovmozqlink188548"},{"key":"il2f8gxqxhvc7link188547","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"king021523","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:55:40","created_at":"20:54:08 14/10/26","room_id":"7696516384334809862","deeplink":"snssdk1180://live?room_id=7696516384334809862","web_url":"https://www.tiktok.com/@king021523/live","gateway_url":"https://vohoainam.net/il2f8gxqxhvc7link188547"},{"key":"dhynaxee3ibc4link188546","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"mi1975918","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:40","created_at":"20:54:07 14/10/26","room_id":"7696478088322485044","deeplink":"snssdk1180://live?room_id=7696478088322485044","web_url":"https://www.tiktok.com/@mi1975918/live","gateway_url":"https://vohoainam.net/dhynaxee3ibc4link188546"},{"key":"qxknr4dtcthcclink188545","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"ko*umii0","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:55:15","created_at":"20:54:07 14/10/26","room_id":"7696514739718982418","deeplink":"snssdk1180://live?room_id=7696514739718982418","web_url":"https://www.tiktok.com/@ko*umii0/live","gateway_url":"https://vohoainam.net/qxknr4dtcthcclink188545"},{"key":"70jccflmkccaflink188544","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"apuzayd22","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:55:39","created_at":"20:54:07 14/10/26","room_id":"7696517068943215367","deeplink":"snssdk1180://live?room_id=7696517068943215367","web_url":"https://www.tiktok.com/@apuzayd22/live","gateway_url":"https://vohoainam.net/70jccflmkccaflink188544"},{"key":"l52by3c2l7zkqlink188543","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"nash*.sindy","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15797","time_remaining":"01:10s - 20:55:15","created_at":"20:54:06 14/10/26","room_id":"7696515782682888961","deeplink":"snssdk1180://live?room_id=7696515782682888961","web_url":"https://www.tiktok.com/@nash*.sindy/live","gateway_url":"https://vohoainam.net/l52by3c2l7zkqlink188543"},{"key":"ileauqai0250olink188542","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"rika*tyle110","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15797","time_remaining":"00:40s - 20:54:45","created_at":"20:54:06 14/10/26","room_id":"7696490810585434900","deeplink":"snssdk1180://live?room_id=7696490810585434900","web_url":"https://www.tiktok.com/@rika*tyle110/live","gateway_url":"https://vohoainam.net/ileauqai0250olink188542"},{"key":"puem1ota6x4uzlink188540","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"kingleonardo12","box_bag":"1000/200","ratio":"5.0 xu","live_viewers":"","time_remaining":"02:00s - 20:56:07","created_at":"20:54:04 14/10/26","room_id":"7696502966287403828","deeplink":"snssdk1180://live?room_id=7696502966287403828","web_url":"https://www.tiktok.com/@kingleonardo12/live","gateway_url":"https://vohoainam.net/puem1ota6x4uzlink188540"},{"key":"s4o2uiouirmkulink188539","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"hectorz*9","box_bag":"21/21","ratio":"1.0 xu","live_viewers":"","time_remaining":"00:40s - 20:54:43","created_at":"20:54:04 14/10/26","room_id":"7696516448281234184","deeplink":"snssdk1180://live?room_id=7696516448281234184","web_url":"https://www.tiktok.com/@hectorz*9/live","gateway_url":"https://vohoainam.net/s4o2uiouirmkulink188539"},{"key":"jihjsgmy1tkc3link188538","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"myra63875","box_bag":"50/1","ratio":"50.0 xu","live_viewers":"","time_remaining":"00:56s - 20:55:00","created_at":"20:54:04 14/10/26","room_id":"7696516868139158293","deeplink":"snssdk1180://live?room_id=7696516868139158293","web_url":"https://www.tiktok.com/@myra63875/live","gateway_url":"https://vohoainam.net/jihjsgmy1tkc3link188538"},{"key":"kujrqlqvqv0z9link188536","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"washi.sai*ou","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:55:13","created_at":"20:54:04 14/10/26","room_id":"7696491951824997140","deeplink":"snssdk1180://live?room_id=7696491951824997140","web_url":"https://www.tiktok.com/@washi.sai*ou/live","gateway_url":"https://vohoainam.net/kujrqlqvqv0z9link188536"},{"key":"6v386y4tycbbblink188535","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"ko_nyaon_5*53","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15785","time_remaining":"00:40s - 20:54:42","created_at":"20:54:03 14/10/26","room_id":"7696491536339208967","deeplink":"snssdk1180://live?room_id=7696491536339208967","web_url":"https://www.tiktok.com/@ko_nyaon_5*53/live","gateway_url":"https://vohoainam.net/6v386y4tycbbblink188535"},{"key":"tnnnnwdjgata8link188534","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"khunmomm_","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:55:36","created_at":"20:54:03 14/10/26","room_id":"7696486190007814930","deeplink":"snssdk1180://live?room_id=7696486190007814930","web_url":"https://www.tiktok.com/@khunmomm_/live","gateway_url":"https://vohoainam.net/tnnnnwdjgata8link188534"},{"key":"a6rc8g0h2yzxslink188533","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"p*inn99","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:42","created_at":"20:54:03 14/10/26","room_id":"7696507919398996757","deeplink":"snssdk1180://live?room_id=7696507919398996757","web_url":"https://www.tiktok.com/@p*inn99/live","gateway_url":"https://vohoainam.net/a6rc8g0h2yzxslink188533"},{"key":"zjhk84s8ufyvllink188532","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"bsphamminhthang","box_bag":"50/5","ratio":"10.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:36","created_at":"20:54:03 14/10/26","room_id":"7696508892356168449","deeplink":"snssdk1180://live?room_id=7696508892356168449","web_url":"https://www.tiktok.com/@bsphamminhthang/live","gateway_url":"https://vohoainam.net/zjhk84s8ufyvllink188532"},{"key":"04lcv2xjendmhlink188530","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"wi*nn252","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15781","time_remaining":"00:39s - 20:54:39","created_at":"20:54:01 14/10/26","room_id":"7696520609455688468","deeplink":"snssdk1180://live?room_id=7696520609455688468","web_url":"https://www.tiktok.com/@wi*nn252/live","gateway_url":"https://vohoainam.net/04lcv2xjendmhlink188530"},{"key":"pjq6yntvy51rnlink188529","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"kyasarin_h*jin","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:40","created_at":"20:54:01 14/10/26","room_id":"7696515760614230804","deeplink":"snssdk1180://live?room_id=7696515760614230804","web_url":"https://www.tiktok.com/@kyasarin_h*jin/live","gateway_url":"https://vohoainam.net/pjq6yntvy51rnlink188529"},{"key":"psvxkgtfdkoetlink188528","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"cri*ti_2111","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:40","created_at":"20:54:01 14/10/26","room_id":"7696483943390645014","deeplink":"snssdk1180://live?room_id=7696483943390645014","web_url":"https://www.tiktok.com/@cri*ti_2111/live","gateway_url":"https://vohoainam.net/psvxkgtfdkoetlink188528"},{"key":"jyqbeoecx0t57link188527","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"bojassi*121","box_bag":"200/200","ratio":"1.0 xu","live_viewers":"15000/15728","time_remaining":"00:40s - 20:54:37","created_at":"20:54:01 14/10/26","room_id":"7696503415384722194","deeplink":"snssdk1180://live?room_id=7696503415384722194","web_url":"https://www.tiktok.com/@bojassi*121/live","gateway_url":"https://vohoainam.net/jyqbeoecx0t57link188527"},{"key":"2wqlkek65axq0link188526","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"mianhaycu*i2904","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"01:20s - 20:55:24","created_at":"20:54:01 14/10/26","room_id":"7696478983336053525","deeplink":"snssdk1180://live?room_id=7696478983336053525","web_url":"https://www.tiktok.com/@mianhaycu*i2904/live","gateway_url":"https://vohoainam.net/2wqlkek65axq0link188526"},{"key":"z5vfkukbfh7uelink188524","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"omame*295","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15781","time_remaining":"00:40s - 20:54:40","created_at":"20:54:01 14/10/26","room_id":"7696516508266908436","deeplink":"snssdk1180://live?room_id=7696516508266908436","web_url":"https://www.tiktok.com/@omame*295/live","gateway_url":"https://vohoainam.net/z5vfkukbfh7uelink188524"},{"key":"hxcdl5a31qfculink188531","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"ch*nm10922","box_bag":"39/20","ratio":"1.9 xu","live_viewers":"15000/15781","time_remaining":"01:10s - 20:55:09","created_at":"20:54:00 14/10/26","room_id":"7696488993000524552","deeplink":"snssdk1180://live?room_id=7696488993000524552","web_url":"https://www.tiktok.com/@ch*nm10922/live","gateway_url":"https://vohoainam.net/hxcdl5a31qfculink188531"},{"key":"kpz3lwkicpsd2link188525","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/16","ratio":"3.1 xu","live_viewers":"19000/19782","time_remaining":"","created_at":"20:54:00 14/10/26","room_id":"7696493051404946177","deeplink":"snssdk1180://live?room_id=7696493051404946177","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/kpz3lwkicpsd2link188525"},{"key":"hrb3qj2v3nb4flink188523","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"zaid_ms*_lives","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:55:07","created_at":"20:53:58 14/10/26","room_id":"7696519265716898582","deeplink":"snssdk1180://live?room_id=7696519265716898582","web_url":"https://www.tiktok.com/@zaid_ms*_lives/live","gateway_url":"https://vohoainam.net/hrb3qj2v3nb4flink188523"},{"key":"2gg98yjzio7otlink188522","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"user82838492748284482985","box_bag":"50/5","ratio":"10.0 xu","live_viewers":"","time_remaining":"00:55s - 20:54:55","created_at":"20:53:58 14/10/26","room_id":"7696518992122448641","deeplink":"snssdk1180://live?room_id=7696518992122448641","web_url":"https://www.tiktok.com/@user82838492748284482985/live","gateway_url":"https://vohoainam.net/2gg98yjzio7otlink188522"},{"key":"cb1el81p3wzjjlink188521","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"lu*ayuexi6","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:37","created_at":"20:53:58 14/10/26","room_id":"7696513130775481108","deeplink":"snssdk1180://live?room_id=7696513130775481108","web_url":"https://www.tiktok.com/@lu*ayuexi6/live","gateway_url":"https://vohoainam.net/cb1el81p3wzjjlink188521"},{"key":"43g56likhb85ylink188520","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"p*iiman81","box_bag":"39/5","ratio":"7.8 xu","live_viewers":"","time_remaining":"00:53s - 20:54:53","created_at":"20:53:57 14/10/26","room_id":"7696482465087458056","deeplink":"snssdk1180://live?room_id=7696482465087458056","web_url":"https://www.tiktok.com/@p*iiman81/live","gateway_url":"https://vohoainam.net/43g56likhb85ylink188520"},{"key":"ky8hyrx88y496link188519","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"y*u_38_9","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15727","time_remaining":"00:40s - 20:54:36","created_at":"20:53:57 14/10/26","room_id":"7696492190696360710","deeplink":"snssdk1180://live?room_id=7696492190696360710","web_url":"https://www.tiktok.com/@y*u_38_9/live","gateway_url":"https://vohoainam.net/ky8hyrx88y496link188519"},{"key":"aixvsz5cudmtnlink188518","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"ouaisouaiso*ais...6.9","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:35","created_at":"20:53:56 14/10/26","room_id":"7696464676758063904","deeplink":"snssdk1180://live?room_id=7696464676758063904","web_url":"https://www.tiktok.com/@ouaisouaiso*ais...6.9/live","gateway_url":"https://vohoainam.net/aixvsz5cudmtnlink188518"},{"key":"itks6u3fiy39vlink188517","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"zeeshankhan_dubai","box_bag":"500/200","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:55:28","created_at":"20:53:56 14/10/26","room_id":"7696471696181660423","deeplink":"snssdk1180://live?room_id=7696471696181660423","web_url":"https://www.tiktok.com/@zeeshankhan_dubai/live","gateway_url":"https://vohoainam.net/itks6u3fiy39vlink188517"},{"key":"allsmqbrauiqelink188515","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"rikoniko25*5","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15547","time_remaining":"00:40s - 20:54:33","created_at":"20:53:55 14/10/26","room_id":"7696520101219978004","deeplink":"snssdk1180://live?room_id=7696520101219978004","web_url":"https://www.tiktok.com/@rikoniko25*5/live","gateway_url":"https://vohoainam.net/allsmqbrauiqelink188515"},{"key":"692zpgdv67x8qlink188514","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"d*rexm.m","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:34","created_at":"20:53:55 14/10/26","room_id":"7696508118692596500","deeplink":"snssdk1180://live?room_id=7696508118692596500","web_url":"https://www.tiktok.com/@d*rexm.m/live","gateway_url":"https://vohoainam.net/692zpgdv67x8qlink188514"},{"key":"lab0dramcyq3jlink188513","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"b*serg0","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:32","created_at":"20:53:53 14/10/26","room_id":"7696517741375916821","deeplink":"snssdk1180://live?room_id=7696517741375916821","web_url":"https://www.tiktok.com/@b*serg0/live","gateway_url":"https://vohoainam.net/lab0dramcyq3jlink188513"},{"key":"f0mdypr729wgulink188512","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"nurlela.aminur91","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:55:26","created_at":"20:53:53 14/10/26","room_id":"7696512290586004231","deeplink":"snssdk1180://live?room_id=7696512290586004231","web_url":"https://www.tiktok.com/@nurlela.aminur91/live","gateway_url":"https://vohoainam.net/f0mdypr729wgulink188512"},{"key":"tka0vo6xnnzwplink188511","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"pecocha*0525","box_bag":"50/1","ratio":"50.0 xu","live_viewers":"19000/19790","time_remaining":"01:20s - 20:55:14","created_at":"20:53:53 14/10/26","room_id":"7696489811204754196","deeplink":"snssdk1180://live?room_id=7696489811204754196","web_url":"https://www.tiktok.com/@pecocha*0525/live","gateway_url":"https://vohoainam.net/tka0vo6xnnzwplink188511"},{"key":"u4sm3hd8iaum3link188510","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"suzuk*_m_62","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15546","time_remaining":"00:40s - 20:54:32","created_at":"20:53:53 14/10/26","room_id":"7696507307968170759","deeplink":"snssdk1180://live?room_id=7696507307968170759","web_url":"https://www.tiktok.com/@suzuk*_m_62/live","gateway_url":"https://vohoainam.net/u4sm3hd8iaum3link188510"},{"key":"fsu8r0kqtkbb0link188509","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"ge*oy81_4","box_bag":"30/12","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:20s - 20:55:15","created_at":"20:53:52 14/10/26","room_id":"7696508676928670470","deeplink":"snssdk1180://live?room_id=7696508676928670470","web_url":"https://www.tiktok.com/@ge*oy81_4/live","gateway_url":"https://vohoainam.net/fsu8r0kqtkbb0link188509"},{"key":"plbkooaxtqpbulink188508","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"sunagi*o.45","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:31","created_at":"20:53:52 14/10/26","room_id":"7696491386140674824","deeplink":"snssdk1180://live?room_id=7696491386140674824","web_url":"https://www.tiktok.com/@sunagi*o.45/live","gateway_url":"https://vohoainam.net/plbkooaxtqpbulink188508"},{"key":"douwpttuata4elink188507","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"na*han.chx_","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15364","time_remaining":"00:40s - 20:54:30","created_at":"20:53:51 14/10/26","room_id":"7696464879972109077","deeplink":"snssdk1180://live?room_id=7696464879972109077","web_url":"https://www.tiktok.com/@na*han.chx_/live","gateway_url":"https://vohoainam.net/douwpttuata4elink188507"},{"key":"3irfqo5yxk85qlink188505","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"atolive_","box_bag":"20/20","ratio":"1.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:26","created_at":"20:53:51 14/10/26","room_id":"7696497545098414880","deeplink":"snssdk1180://live?room_id=7696497545098414880","web_url":"https://www.tiktok.com/@atolive_/live","gateway_url":"https://vohoainam.net/3irfqo5yxk85qlink188505"},{"key":"n8szughyosrdwlink188506","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"lxol*a9","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:29","created_at":"20:53:50 14/10/26","room_id":"7696517916694022933","deeplink":"snssdk1180://live?room_id=7696517916694022933","web_url":"https://www.tiktok.com/@lxol*a9/live","gateway_url":"https://vohoainam.net/n8szughyosrdwlink188506"},{"key":"9b8igkkgs4ncvlink188502","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"apu_*rab","box_bag":"222/100","ratio":"2.2 xu","live_viewers":"19000/19788","time_remaining":"01:19s - 20:55:12","created_at":"20:53:50 14/10/26","room_id":"7696484197338286878","deeplink":"snssdk1180://live?room_id=7696484197338286878","web_url":"https://www.tiktok.com/@apu_*rab/live","gateway_url":"https://vohoainam.net/9b8igkkgs4ncvlink188502"},{"key":"atp3abptqr6qzlink188504","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"miaomiao520*66","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:20s - 20:55:12","created_at":"20:53:49 14/10/26","room_id":"7696515168654232340","deeplink":"snssdk1180://live?room_id=7696515168654232340","web_url":"https://www.tiktok.com/@miaomiao520*66/live","gateway_url":"https://vohoainam.net/atp3abptqr6qzlink188504"},{"key":"33v2zaa5bj7o3link188503","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"rcyan*her","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15364","time_remaining":"00:40s - 20:54:28","created_at":"20:53:49 14/10/26","room_id":"7696484837625826066","deeplink":"snssdk1180://live?room_id=7696484837625826066","web_url":"https://www.tiktok.com/@rcyan*her/live","gateway_url":"https://vohoainam.net/33v2zaa5bj7o3link188503"},{"key":"ftvpukzb57kxylink188501","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"yummy_potatoboats","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:22","created_at":"20:53:49 14/10/26","room_id":"7696511099143457557","deeplink":"snssdk1180://live?room_id=7696511099143457557","web_url":"https://www.tiktok.com/@yummy_potatoboats/live","gateway_url":"https://vohoainam.net/ftvpukzb57kxylink188501"},{"key":"1c0447l9n03cjlink188500","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"13_*money","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:27","created_at":"20:53:49 14/10/26","room_id":"7696520422791138068","deeplink":"snssdk1180://live?room_id=7696520422791138068","web_url":"https://www.tiktok.com/@13_*money/live","gateway_url":"https://vohoainam.net/1c0447l9n03cjlink188500"},{"key":"h5vkrgtx2xd9blink188499","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"sugarfr*e.daddy1","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:28","created_at":"20:53:49 14/10/26","room_id":"7696510479073626902","deeplink":"snssdk1180://live?room_id=7696510479073626902","web_url":"https://www.tiktok.com/@sugarfr*e.daddy1/live","gateway_url":"https://vohoainam.net/h5vkrgtx2xd9blink188499"},{"key":"kooabcadfqcfelink188498","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"izumi_*han_72","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:28","created_at":"20:53:49 14/10/26","room_id":"7696506341305289480","deeplink":"snssdk1180://live?room_id=7696506341305289480","web_url":"https://www.tiktok.com/@izumi_*han_72/live","gateway_url":"https://vohoainam.net/kooabcadfqcfelink188498"},{"key":"ur68327vihckglink188495","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"s.chieh","box_bag":"100/50","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:21","created_at":"20:53:49 14/10/26","room_id":"7696494063780612872","deeplink":"snssdk1180://live?room_id=7696494063780612872","web_url":"https://www.tiktok.com/@s.chieh/live","gateway_url":"https://vohoainam.net/ur68327vihckglink188495"},{"key":"2hrav82oq91pvlink188497","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"6aalaaal","box_bag":"50/50","ratio":"1.0 xu","live_viewers":"15000/15386","time_remaining":"01:30s - 20:55:23","created_at":"20:53:48 14/10/26","room_id":"7696494645473102613","deeplink":"snssdk1180://live?room_id=7696494645473102613","web_url":"https://www.tiktok.com/@6aalaaal/live","gateway_url":"https://vohoainam.net/2hrav82oq91pvlink188497"},{"key":"38dvz2ehq1pnzlink188496","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"lxj18__","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:55:21","created_at":"20:53:48 14/10/26","room_id":"7696516122987744008","deeplink":"snssdk1180://live?room_id=7696516122987744008","web_url":"https://www.tiktok.com/@lxj18__/live","gateway_url":"https://vohoainam.net/38dvz2ehq1pnzlink188496"},{"key":"o9j93hr7v42z9link188493","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"enoch_1228","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:20","created_at":"20:53:47 14/10/26","room_id":"7696496704593480449","deeplink":"snssdk1180://live?room_id=7696496704593480449","web_url":"https://www.tiktok.com/@enoch_1228/live","gateway_url":"https://vohoainam.net/o9j93hr7v42z9link188493"},{"key":"a5gzrgpvm4u1hlink188492","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"supat.sattayawad","box_bag":"200/100","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:20","created_at":"20:53:47 14/10/26","room_id":"7696494312029489928","deeplink":"snssdk1180://live?room_id=7696494312029489928","web_url":"https://www.tiktok.com/@supat.sattayawad/live","gateway_url":"https://vohoainam.net/a5gzrgpvm4u1hlink188492"},{"key":"h39eueuk1q1ualink188491","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"sakura_ko3*39","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15354","time_remaining":"00:40s - 20:54:25","created_at":"20:53:47 14/10/26","room_id":"7696520313299471124","deeplink":"snssdk1180://live?room_id=7696520313299471124","web_url":"https://www.tiktok.com/@sakura_ko3*39/live","gateway_url":"https://vohoainam.net/h39eueuk1q1ualink188491"},{"key":"yrqra06q16bqelink188490","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"u*ique_room1","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"01:20s - 20:55:09","created_at":"20:53:46 14/10/26","room_id":"7696515471597587221","deeplink":"snssdk1180://live?room_id=7696515471597587221","web_url":"https://www.tiktok.com/@u*ique_room1/live","gateway_url":"https://vohoainam.net/yrqra06q16bqelink188490"},{"key":"4pp6flvf8f7cilink188489","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"sjpb77","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:20","created_at":"20:53:45 14/10/26","room_id":"7696516478434134806","deeplink":"snssdk1180://live?room_id=7696516478434134806","web_url":"https://www.tiktok.com/@sjpb77/live","gateway_url":"https://vohoainam.net/4pp6flvf8f7cilink188489"},{"key":"w3652n5vjnk3nlink188488","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"kantwa*4","box_bag":"30/8","ratio":"3.8 xu","live_viewers":"19000/19779","time_remaining":"00:54s - 20:54:42","created_at":"20:53:45 14/10/26","room_id":"7696500539961690881","deeplink":"snssdk1180://live?room_id=7696500539961690881","web_url":"https://www.tiktok.com/@kantwa*4/live","gateway_url":"https://vohoainam.net/w3652n5vjnk3nlink188488"},{"key":"ovn1k0y424zp1link188487","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"manjam*0112","box_bag":"50/8","ratio":"6.2 xu","live_viewers":"","time_remaining":"01:20s - 20:55:07","created_at":"20:53:44 14/10/26","room_id":"7696507566645332757","deeplink":"snssdk1180://live?room_id=7696507566645332757","web_url":"https://www.tiktok.com/@manjam*0112/live","gateway_url":"https://vohoainam.net/ovn1k0y424zp1link188487"},{"key":"nkhym8yj8e5kglink188486","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"m_sep*ya","box_bag":"30/11","ratio":"2.7 xu","live_viewers":"","time_remaining":"01:20s - 20:55:07","created_at":"20:53:44 14/10/26","room_id":"7696507377591290632","deeplink":"snssdk1180://live?room_id=7696507377591290632","web_url":"https://www.tiktok.com/@m_sep*ya/live","gateway_url":"https://vohoainam.net/nkhym8yj8e5kglink188486"},{"key":"jnibaprl8pvyjlink188494","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"wanz_369_","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:55:16","created_at":"20:53:43 14/10/26","room_id":"7696505303835200308","deeplink":"snssdk1180://live?room_id=7696505303835200308","web_url":"https://www.tiktok.com/@wanz_369_/live","gateway_url":"https://vohoainam.net/jnibaprl8pvyjlink188494"},{"key":"bt3h0yfw5d9a1link188485","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":".lun*1004","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"15000/15354","time_remaining":"00:40s - 20:54:22","created_at":"20:53:43 14/10/26","room_id":"7696483843730541313","deeplink":"snssdk1180://live?room_id=7696483843730541313","web_url":"https://www.tiktok.com/@.lun*1004/live","gateway_url":"https://vohoainam.net/bt3h0yfw5d9a1link188485"},{"key":"bjnwjm1hwzzxmlink188484","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"bobocelionemil","box_bag":"200/20","ratio":"10.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:15","created_at":"20:53:42 14/10/26","room_id":"7696476156391918369","deeplink":"snssdk1180://live?room_id=7696476156391918369","web_url":"https://www.tiktok.com/@bobocelionemil/live","gateway_url":"https://vohoainam.net/bjnwjm1hwzzxmlink188484"},{"key":"d517p2fdtbrzllink188483","category_code":"ruong_test","category_name":"Rương Test","group_id":"-1003393920142","tt_id":"dav*danthonystack","box_bag":"20/16","ratio":"1.2 xu","live_viewers":"","time_remaining":"00:40s - 20:54:21","created_at":"20:53:42 14/10/26","room_id":"7696515717324360466","deeplink":"snssdk1180://live?room_id=7696515717324360466","web_url":"https://www.tiktok.com/@dav*danthonystack/live","gateway_url":"https://vohoainam.net/d517p2fdtbrzllink188483"},{"key":"ur9fsisq7khpplink188481","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"gu*akin","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15393","time_remaining":"01:10s - 20:54:45","created_at":"20:53:42 14/10/26","room_id":"7696509925060528916","deeplink":"snssdk1180://live?room_id=7696509925060528916","web_url":"https://www.tiktok.com/@gu*akin/live","gateway_url":"https://vohoainam.net/ur9fsisq7khpplink188481"},{"key":"hbzynfndkcsrqlink188479","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"bobocelionemil","box_bag":"200/20","ratio":"10.0 xu","live_viewers":"15000/15386","time_remaining":"01:30s - 20:55:15","created_at":"20:53:40 14/10/26","room_id":"7696476156391918369","deeplink":"snssdk1180://live?room_id=7696476156391918369","web_url":"https://www.tiktok.com/@bobocelionemil/live","gateway_url":"https://vohoainam.net/hbzynfndkcsrqlink188479"},{"key":"9b2jne1q344yslink188478","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"00konkonsam","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"19000/19747","time_remaining":"01:30s - 20:55:12","created_at":"20:53:39 14/10/26","room_id":"7696497419373480725","deeplink":"snssdk1180://live?room_id=7696497419373480725","web_url":"https://www.tiktok.com/@00konkonsam/live","gateway_url":"https://vohoainam.net/9b2jne1q344yslink188478"},{"key":"dhv0dyubxck8qlink188473","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"pokineo*ora","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"01:20s - 20:54:58","created_at":"20:53:35 14/10/26","room_id":"7696489443071036180","deeplink":"snssdk1180://live?room_id=7696489443071036180","web_url":"https://www.tiktok.com/@pokineo*ora/live","gateway_url":"https://vohoainam.net/dhv0dyubxck8qlink188473"},{"key":"cxogb2iww44qblink188472","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"jaywon_0102","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:10","created_at":"20:53:35 14/10/26","room_id":"7696515405473188615","deeplink":"snssdk1180://live?room_id=7696515405473188615","web_url":"https://www.tiktok.com/@jaywon_0102/live","gateway_url":"https://vohoainam.net/cxogb2iww44qblink188472"},{"key":"7vbxewygvbf1qlink188471","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"syedrafaqatkazmi1","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:55:06","created_at":"20:53:33 14/10/26","room_id":"7696508941044157204","deeplink":"snssdk1180://live?room_id=7696508941044157204","web_url":"https://www.tiktok.com/@syedrafaqatkazmi1/live","gateway_url":"https://vohoainam.net/7vbxewygvbf1qlink188471"},{"key":"r3jgz6yziyci0link188470","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"tiktoknumberone039","box_bag":"50/5","ratio":"10.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:05","created_at":"20:53:32 14/10/26","room_id":"7696514821625334580","deeplink":"snssdk1180://live?room_id=7696514821625334580","web_url":"https://www.tiktok.com/@tiktoknumberone039/live","gateway_url":"https://vohoainam.net/r3jgz6yziyci0link188470"},{"key":"80gp17g5qzkujlink188469","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"sicr*e.cruci.morti","box_bag":"50/5","ratio":"10.0 xu","live_viewers":"","time_remaining":"01:20s - 20:54:54","created_at":"20:53:32 14/10/26","room_id":"7696520088706370326","deeplink":"snssdk1180://live?room_id=7696520088706370326","web_url":"https://www.tiktok.com/@sicr*e.cruci.morti/live","gateway_url":"https://vohoainam.net/80gp17g5qzkujlink188469"},{"key":"wkd3uyflojma1link188467","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"ardelia9653","box_bag":"100/50","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:04","created_at":"20:53:31 14/10/26","room_id":"7696505263343684370","deeplink":"snssdk1180://live?room_id=7696505263343684370","web_url":"https://www.tiktok.com/@ardelia9653/live","gateway_url":"https://vohoainam.net/wkd3uyflojma1link188467"},{"key":"ivdiyus4frsyvlink188466","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"ririchiyo*hann","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:54:40","created_at":"20:53:31 14/10/26","room_id":"7696490441215396628","deeplink":"snssdk1180://live?room_id=7696490441215396628","web_url":"https://www.tiktok.com/@ririchiyo*hann/live","gateway_url":"https://vohoainam.net/ivdiyus4frsyvlink188466"},{"key":"jwac76dffpo2ylink188465","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"s*rila_","box_bag":"100/50","ratio":"2.0 xu","live_viewers":"19000/19786","time_remaining":"00:55s - 20:54:28","created_at":"20:53:31 14/10/26","room_id":"7696487847666813704","deeplink":"snssdk1180://live?room_id=7696487847666813704","web_url":"https://www.tiktok.com/@s*rila_/live","gateway_url":"https://vohoainam.net/jwac76dffpo2ylink188465"},{"key":"wkdi52lxw8f8ilink188464","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"superm*lonchan__","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15388","time_remaining":"01:10s - 20:54:38","created_at":"20:53:29 14/10/26","room_id":"7696508845886688052","deeplink":"snssdk1180://live?room_id=7696508845886688052","web_url":"https://www.tiktok.com/@superm*lonchan__/live","gateway_url":"https://vohoainam.net/wkdi52lxw8f8ilink188464"},{"key":"djc2rcobb2xotlink188463","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"aek_aktyinfinity","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:01","created_at":"20:53:28 14/10/26","room_id":"7696507306876652340","deeplink":"snssdk1180://live?room_id=7696507306876652340","web_url":"https://www.tiktok.com/@aek_aktyinfinity/live","gateway_url":"https://vohoainam.net/djc2rcobb2xotlink188463"},{"key":"z0z5n0ge8kthplink188462","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"farhat_official22","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"15000/15376","time_remaining":"01:30s - 20:55:02","created_at":"20:53:28 14/10/26","room_id":"7696489192951515934","deeplink":"snssdk1180://live?room_id=7696489192951515934","web_url":"https://www.tiktok.com/@farhat_official22/live","gateway_url":"https://vohoainam.net/z0z5n0ge8kthplink188462"},{"key":"js2pyl97mc2twlink188459","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"fitxenon","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:54:59","created_at":"20:53:27 14/10/26","room_id":"7696490706303552277","deeplink":"snssdk1180://live?room_id=7696490706303552277","web_url":"https://www.tiktok.com/@fitxenon/live","gateway_url":"https://vohoainam.net/js2pyl97mc2twlink188459"},{"key":"hqcp9v3p2vcdmlink188458","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"dj.andreacondor","box_bag":"50/50","ratio":"1.0 xu","live_viewers":"","time_remaining":"01:30s - 20:55:02","created_at":"20:53:27 14/10/26","room_id":"7696514972586642198","deeplink":"snssdk1180://live?room_id=7696514972586642198","web_url":"https://www.tiktok.com/@dj.andreacondor/live","gateway_url":"https://vohoainam.net/hqcp9v3p2vcdmlink188458"},{"key":"ul5sckm3k9zinlink188454","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"tia.di_","box_bag":"200/20","ratio":"10.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:59","created_at":"20:53:26 14/10/26","room_id":"7696492677177887506","deeplink":"snssdk1180://live?room_id=7696492677177887506","web_url":"https://www.tiktok.com/@tia.di_/live","gateway_url":"https://vohoainam.net/ul5sckm3k9zinlink188454"},{"key":"q5i5df485zgjwlink188452","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"habi.bi.buu69","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"15000/15338","time_remaining":"01:30s - 20:55:01","created_at":"20:53:26 14/10/26","room_id":"7696482690886912801","deeplink":"snssdk1180://live?room_id=7696482690886912801","web_url":"https://www.tiktok.com/@habi.bi.buu69/live","gateway_url":"https://vohoainam.net/q5i5df485zgjwlink188452"},{"key":"13iu2w4wo2gowlink188451","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"warda.lafleur1","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:54:57","created_at":"20:53:24 14/10/26","room_id":"7696505452435180308","deeplink":"snssdk1180://live?room_id=7696505452435180308","web_url":"https://www.tiktok.com/@warda.lafleur1/live","gateway_url":"https://vohoainam.net/13iu2w4wo2gowlink188451"},{"key":"93sn7m3pq6kn7link188450","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"itsmaryam*e","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:54:34","created_at":"20:53:24 14/10/26","room_id":"7696513944854350600","deeplink":"snssdk1180://live?room_id=7696513944854350600","web_url":"https://www.tiktok.com/@itsmaryam*e/live","gateway_url":"https://vohoainam.net/93sn7m3pq6kn7link188450"},{"key":"u7gk37kiir2ntlink188448","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"___sss*99","box_bag":"33/12","ratio":"2.8 xu","live_viewers":"","time_remaining":"00:54s - 20:54:20","created_at":"20:53:23 14/10/26","room_id":"7696476150856715028","deeplink":"snssdk1180://live?room_id=7696476150856715028","web_url":"https://www.tiktok.com/@___sss*99/live","gateway_url":"https://vohoainam.net/u7gk37kiir2ntlink188448"},{"key":"269vjddw1hs1vlink188447","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"organi*ationxxl","box_bag":"49/3","ratio":"16.3 xu","live_viewers":"","time_remaining":"01:20s - 20:54:45","created_at":"20:53:23 14/10/26","room_id":"7696481636427647762","deeplink":"snssdk1180://live?room_id=7696481636427647762","web_url":"https://www.tiktok.com/@organi*ationxxl/live","gateway_url":"https://vohoainam.net/269vjddw1hs1vlink188447"},{"key":"mkynfloegqfoglink188445","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"prangshop_9988","box_bag":"20/20","ratio":"1.0 xu","live_viewers":"15000/15338","time_remaining":"01:30s - 20:54:57","created_at":"20:53:22 14/10/26","room_id":"7696332200752483092","deeplink":"snssdk1180://live?room_id=7696332200752483092","web_url":"https://www.tiktok.com/@prangshop_9988/live","gateway_url":"https://vohoainam.net/mkynfloegqfoglink188445"},{"key":"st682qz5aiv52link188444","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"edy1*0608","box_bag":"3000/6","ratio":"500.0 xu","live_viewers":"","time_remaining":"02:00s - 20:55:24","created_at":"20:53:22 14/10/26","room_id":"7696500854957853470","deeplink":"snssdk1180://live?room_id=7696500854957853470","web_url":"https://www.tiktok.com/@edy1*0608/live","gateway_url":"https://vohoainam.net/st682qz5aiv52link188444"},{"key":"t6f0nyiankdf3link188443","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"warda.lafleur1","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:54:57","created_at":"20:53:22 14/10/26","room_id":"7696505452435180308","deeplink":"snssdk1180://live?room_id=7696505452435180308","web_url":"https://www.tiktok.com/@warda.lafleur1/live","gateway_url":"https://vohoainam.net/t6f0nyiankdf3link188443"},{"key":"eoasb3rz6xghmlink188442","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"livebyliss","box_bag":"20/20","ratio":"1.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:56","created_at":"20:53:21 14/10/26","room_id":"7696508314746374934","deeplink":"snssdk1180://live?room_id=7696508314746374934","web_url":"https://www.tiktok.com/@livebyliss/live","gateway_url":"https://vohoainam.net/eoasb3rz6xghmlink188442"},{"key":"470dj8bvbrilelink188441","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"chaozangwenhua","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"15000/15338","time_remaining":"01:30s - 20:54:56","created_at":"20:53:21 14/10/26","room_id":"7696476021352712967","deeplink":"snssdk1180://live?room_id=7696476021352712967","web_url":"https://www.tiktok.com/@chaozangwenhua/live","gateway_url":"https://vohoainam.net/470dj8bvbrilelink188441"},{"key":"kosyspmea9i0ylink188440","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"sayasaya102538","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:54:53","created_at":"20:53:21 14/10/26","room_id":"7696454176536005383","deeplink":"snssdk1180://live?room_id=7696454176536005383","web_url":"https://www.tiktok.com/@sayasaya102538/live","gateway_url":"https://vohoainam.net/kosyspmea9i0ylink188440"},{"key":"yjrvixetmysn2link188439","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"naifalsadi7","box_bag":"20/5","ratio":"4.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:55","created_at":"20:53:20 14/10/26","room_id":"7696517613027576582","deeplink":"snssdk1180://live?room_id=7696517613027576582","web_url":"https://www.tiktok.com/@naifalsadi7/live","gateway_url":"https://vohoainam.net/yjrvixetmysn2link188439"},{"key":"l4fbsbqb7x367link188438","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":".2992851","box_bag":"50/50","ratio":"1.0 xu","live_viewers":"15000/15360","time_remaining":"01:30s - 20:54:43","created_at":"20:53:18 14/10/26","room_id":"7696500264735525639","deeplink":"snssdk1180://live?room_id=7696500264735525639","web_url":"https://www.tiktok.com/@.2992851/live","gateway_url":"https://vohoainam.net/l4fbsbqb7x367link188438"},{"key":"vxdtnp6q3np8mlink188436","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"babe.sukma359","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:54:50","created_at":"20:53:17 14/10/26","room_id":"7696513407989861128","deeplink":"snssdk1180://live?room_id=7696513407989861128","web_url":"https://www.tiktok.com/@babe.sukma359/live","gateway_url":"https://vohoainam.net/vxdtnp6q3np8mlink188436"},{"key":"snvm6j2zzipf6link188435","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"yadavsundar143","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"15000/15364","time_remaining":"01:30s - 20:54:52","created_at":"20:53:17 14/10/26","room_id":"7696510809736694536","deeplink":"snssdk1180://live?room_id=7696510809736694536","web_url":"https://www.tiktok.com/@yadavsundar143/live","gateway_url":"https://vohoainam.net/snvm6j2zzipf6link188435"},{"key":"5ufb0mnf7yllolink188433","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"ahmmedramadann","box_bag":"50/50","ratio":"1.0 xu","live_viewers":"15000/15364","time_remaining":"01:30s - 20:54:51","created_at":"20:53:16 14/10/26","room_id":"7696509190411684609","deeplink":"snssdk1180://live?room_id=7696509190411684609","web_url":"https://www.tiktok.com/@ahmmedramadann/live","gateway_url":"https://vohoainam.net/5ufb0mnf7yllolink188433"},{"key":"mjd25dazm9rrhlink188432","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"bigola00011","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"19000/19789","time_remaining":"01:30s - 20:54:48","created_at":"20:53:16 14/10/26","room_id":"7696473055438113550","deeplink":"snssdk1180://live?room_id=7696473055438113550","web_url":"https://www.tiktok.com/@bigola00011/live","gateway_url":"https://vohoainam.net/mjd25dazm9rrhlink188432"},{"key":"7sphw6h210uazlink188431","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"kaerkaer1011","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"00:43s - 20:54:02","created_at":"20:53:16 14/10/26","room_id":"7696502352718662401","deeplink":"snssdk1180://live?room_id=7696502352718662401","web_url":"https://www.tiktok.com/@kaerkaer1011/live","gateway_url":"https://vohoainam.net/7sphw6h210uazlink188431"},{"key":"69r789ltyghxwlink188430","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"ahn...tuan","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:54:48","created_at":"20:53:15 14/10/26","room_id":"7696501875336416020","deeplink":"snssdk1180://live?room_id=7696501875336416020","web_url":"https://www.tiktok.com/@ahn...tuan/live","gateway_url":"https://vohoainam.net/69r789ltyghxwlink188430"},{"key":"q70u0za2938kdlink188429","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"lolli_poli1","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"15000/15363","time_remaining":"01:30s - 20:54:50","created_at":"20:53:15 14/10/26","room_id":"7696502616855612192","deeplink":"snssdk1180://live?room_id=7696502616855612192","web_url":"https://www.tiktok.com/@lolli_poli1/live","gateway_url":"https://vohoainam.net/q70u0za2938kdlink188429"},{"key":"7bcgjhjlg9ml2link188428","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"automatic0092","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"15000/15363","time_remaining":"01:30s - 20:54:49","created_at":"20:53:15 14/10/26","room_id":"7696483311259650823","deeplink":"snssdk1180://live?room_id=7696483311259650823","web_url":"https://www.tiktok.com/@automatic0092/live","gateway_url":"https://vohoainam.net/7bcgjhjlg9ml2link188428"},{"key":"m2w92wek45mzvlink188427","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"popslestenebre","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:50","created_at":"20:53:15 14/10/26","room_id":"7696517317953407776","deeplink":"snssdk1180://live?room_id=7696517317953407776","web_url":"https://www.tiktok.com/@popslestenebre/live","gateway_url":"https://vohoainam.net/m2w92wek45mzvlink188427"},{"key":"1wyozod3il5btlink188423","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"kieuph*ongbolero99","box_bag":"100/60","ratio":"1.7 xu","live_viewers":"15000/15401","time_remaining":"01:10s - 20:54:22","created_at":"20:53:13 14/10/26","room_id":"7696517563891354386","deeplink":"snssdk1180://live?room_id=7696517563891354386","web_url":"https://www.tiktok.com/@kieuph*ongbolero99/live","gateway_url":"https://vohoainam.net/1wyozod3il5btlink188423"},{"key":"4j92p2bd88tlvlink188422","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"hiinoca*tanet","box_bag":"100/25","ratio":"4.0 xu","live_viewers":"","time_remaining":"01:20s - 20:54:36","created_at":"20:53:13 14/10/26","room_id":"7696517837855361800","deeplink":"snssdk1180://live?room_id=7696517837855361800","web_url":"https://www.tiktok.com/@hiinoca*tanet/live","gateway_url":"https://vohoainam.net/4j92p2bd88tlvlink188422"},{"key":"5ns04y1esq63vlink188419","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"actor*hajun","box_bag":"600/400","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:54:20","created_at":"20:53:12 14/10/26","room_id":"7696508414576249608","deeplink":"snssdk1180://live?room_id=7696508414576249608","web_url":"https://www.tiktok.com/@actor*hajun/live","gateway_url":"https://vohoainam.net/5ns04y1esq63vlink188419"},{"key":"mxebxgmpdrkbslink188418","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"at*chigano.1","box_bag":"30/10","ratio":"3.0 xu","live_viewers":"","time_remaining":"00:54s - 20:54:09","created_at":"20:53:12 14/10/26","room_id":"7696512098554497800","deeplink":"snssdk1180://live?room_id=7696512098554497800","web_url":"https://www.tiktok.com/@at*chigano.1/live","gateway_url":"https://vohoainam.net/mxebxgmpdrkbslink188418"},{"key":"rq34yjs3e1ehelink188417","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"s*ilenanachan.7","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:54:21","created_at":"20:53:12 14/10/26","room_id":"7696516149241236242","deeplink":"snssdk1180://live?room_id=7696516149241236242","web_url":"https://www.tiktok.com/@s*ilenanachan.7/live","gateway_url":"https://vohoainam.net/rq34yjs3e1ehelink188417"},{"key":"5arzf5wql30k1link188415","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"hhh99911","box_bag":"100/50","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:44","created_at":"20:53:11 14/10/26","room_id":"7696497279524735752","deeplink":"snssdk1180://live?room_id=7696497279524735752","web_url":"https://www.tiktok.com/@hhh99911/live","gateway_url":"https://vohoainam.net/5arzf5wql30k1link188415"},{"key":"rh542jau3ak87link188414","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"cha*23ri","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15401","time_remaining":"01:10s - 20:54:20","created_at":"20:53:11 14/10/26","room_id":"7696511906205797140","deeplink":"snssdk1180://live?room_id=7696511906205797140","web_url":"https://www.tiktok.com/@cha*23ri/live","gateway_url":"https://vohoainam.net/rh542jau3ak87link188414"},{"key":"u5bpzbcy4p49vlink188412","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"yunwang*hu_3","box_bag":"31/11","ratio":"2.8 xu","live_viewers":"","time_remaining":"01:20s - 20:54:34","created_at":"20:53:11 14/10/26","room_id":"7696482752997444370","deeplink":"snssdk1180://live?room_id=7696482752997444370","web_url":"https://www.tiktok.com/@yunwang*hu_3/live","gateway_url":"https://vohoainam.net/u5bpzbcy4p49vlink188412"},{"key":"yei50ll7i986glink188408","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"whojenjen12","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:54:43","created_at":"20:53:10 14/10/26","room_id":"7696512986424396551","deeplink":"snssdk1180://live?room_id=7696512986424396551","web_url":"https://www.tiktok.com/@whojenjen12/live","gateway_url":"https://vohoainam.net/yei50ll7i986glink188408"},{"key":"3mm53n6mefjb5link188405","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"_*jjyc","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:20s - 20:54:31","created_at":"20:53:08 14/10/26","room_id":"7696500592756460308","deeplink":"snssdk1180://live?room_id=7696500592756460308","web_url":"https://www.tiktok.com/@_*jjyc/live","gateway_url":"https://vohoainam.net/3mm53n6mefjb5link188405"},{"key":"ct8bam8septvvlink188404","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"19000/19790","time_remaining":"","created_at":"20:53:05 14/10/26","room_id":"7696482013319285556","deeplink":"snssdk1180://live?room_id=7696482013319285556","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/ct8bam8septvvlink188404"},{"key":"dqwibdndcbyg9link188401","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"theofficial*adpool","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"00:54s - 20:54:02","created_at":"20:53:05 14/10/26","room_id":"7696517236768426765","deeplink":"snssdk1180://live?room_id=7696517236768426765","web_url":"https://www.tiktok.com/@theofficial*adpool/live","gateway_url":"https://vohoainam.net/dqwibdndcbyg9link188401"},{"key":"8xodjkoq27qdllink188400","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"k.h____*____505","box_bag":"100/25","ratio":"4.0 xu","live_viewers":"19000/19790","time_remaining":"01:20s - 20:54:26","created_at":"20:53:04 14/10/26","room_id":"7696510944150604551","deeplink":"snssdk1180://live?room_id=7696510944150604551","web_url":"https://www.tiktok.com/@k.h____*____505/live","gateway_url":"https://vohoainam.net/8xodjkoq27qdllink188400"},{"key":"wihoegmb9vv8jlink188399","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"sarah.lishaas","box_bag":"50/50","ratio":"1.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:26","created_at":"20:53:04 14/10/26","room_id":"7696511714384202518","deeplink":"snssdk1180://live?room_id=7696511714384202518","web_url":"https://www.tiktok.com/@sarah.lishaas/live","gateway_url":"https://vohoainam.net/wihoegmb9vv8jlink188399"},{"key":"yq202q91dag71link188398","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"lovefromkorea7","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:54:37","created_at":"20:53:04 14/10/26","room_id":"7696482248417184519","deeplink":"snssdk1180://live?room_id=7696482248417184519","web_url":"https://www.tiktok.com/@lovefromkorea7/live","gateway_url":"https://vohoainam.net/yq202q91dag71link188398"},{"key":"az631zyjru2t9link188397","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"lr.ir3","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"19000/19790","time_remaining":"01:30s - 20:54:36","created_at":"20:53:03 14/10/26","room_id":"7696495304535051016","deeplink":"snssdk1180://live?room_id=7696495304535051016","web_url":"https://www.tiktok.com/@lr.ir3/live","gateway_url":"https://vohoainam.net/az631zyjru2t9link188397"},{"key":"t83nf8387hfs2link188396","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"thepunisheur1","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:36","created_at":"20:53:03 14/10/26","room_id":"7696513359830666017","deeplink":"snssdk1180://live?room_id=7696513359830666017","web_url":"https://www.tiktok.com/@thepunisheur1/live","gateway_url":"https://vohoainam.net/t83nf8387hfs2link188396"},{"key":"ornv5dnr0fg96link188395","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"rosto*skyi1991","box_bag":"150/50","ratio":"3.0 xu","live_viewers":"","time_remaining":"01:20s - 20:54:26","created_at":"20:53:03 14/10/26","room_id":"7696505704307952391","deeplink":"snssdk1180://live?room_id=7696505704307952391","web_url":"https://www.tiktok.com/@rosto*skyi1991/live","gateway_url":"https://vohoainam.net/ornv5dnr0fg96link188395"},{"key":"fxiux2yplvd4klink188392","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"lr.ir3","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"15000/15390","time_remaining":"01:30s - 20:54:36","created_at":"20:53:01 14/10/26","room_id":"7696495304535051016","deeplink":"snssdk1180://live?room_id=7696495304535051016","web_url":"https://www.tiktok.com/@lr.ir3/live","gateway_url":"https://vohoainam.net/fxiux2yplvd4klink188392"},{"key":"3m5vwn3qhdwnblink188391","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"thepunisheur1","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:36","created_at":"20:53:01 14/10/26","room_id":"7696513359830666017","deeplink":"snssdk1180://live?room_id=7696513359830666017","web_url":"https://www.tiktok.com/@thepunisheur1/live","gateway_url":"https://vohoainam.net/3m5vwn3qhdwnblink188391"},{"key":"5ysasx84nj0gylink188389","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"yjjdr60","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:36","created_at":"20:53:01 14/10/26","room_id":"7696501586383047430","deeplink":"snssdk1180://live?room_id=7696501586383047430","web_url":"https://www.tiktok.com/@yjjdr60/live","gateway_url":"https://vohoainam.net/5ysasx84nj0gylink188389"},{"key":"5ah1j2fpxzb0slink188388","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"maco10*15","box_bag":"39/1","ratio":"39.0 xu","live_viewers":"19000/19780","time_remaining":"01:20s - 20:54:23","created_at":"20:53:00 14/10/26","room_id":"7696483933984017173","deeplink":"snssdk1180://live?room_id=7696483933984017173","web_url":"https://www.tiktok.com/@maco10*15/live","gateway_url":"https://vohoainam.net/5ah1j2fpxzb0slink188388"},{"key":"htvbmk8g24so5link188387","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"30/12","ratio":"2.5 xu","live_viewers":"","time_remaining":"","created_at":"20:53:00 14/10/26","room_id":"7696484084696042248","deeplink":"snssdk1180://live?room_id=7696484084696042248","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/htvbmk8g24so5link188387"},{"key":"rna100z5dkl6mlink188386","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"lung5994","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:54:33","created_at":"20:53:00 14/10/26","room_id":"7696487524904127252","deeplink":"snssdk1180://live?room_id=7696487524904127252","web_url":"https://www.tiktok.com/@lung5994/live","gateway_url":"https://vohoainam.net/rna100z5dkl6mlink188386"},{"key":"dskynctpg78tvlink188385","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"collegamento_analogico_d","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:33","created_at":"20:53:00 14/10/26","room_id":"7696518057581234976","deeplink":"snssdk1180://live?room_id=7696518057581234976","web_url":"https://www.tiktok.com/@collegamento_analogico_d/live","gateway_url":"https://vohoainam.net/dskynctpg78tvlink188385"},{"key":"o8jbcykgdaw3llink188384","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"charararai_a.h","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:32","created_at":"20:52:59 14/10/26","room_id":"7696515206197693192","deeplink":"snssdk1180://live?room_id=7696515206197693192","web_url":"https://www.tiktok.com/@charararai_a.h/live","gateway_url":"https://vohoainam.net/o8jbcykgdaw3llink188384"},{"key":"g1wex8fwswslylink188382","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"mocha761","box_bag":"100/50","ratio":"2.0 xu","live_viewers":"19000/19780","time_remaining":"01:30s - 20:54:32","created_at":"20:52:59 14/10/26","room_id":"7696494056784497426","deeplink":"snssdk1180://live?room_id=7696494056784497426","web_url":"https://www.tiktok.com/@mocha761/live","gateway_url":"https://vohoainam.net/g1wex8fwswslylink188382"},{"key":"i5ai8srk52gx7link188383","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"collegamento_analogico_d","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:33","created_at":"20:52:58 14/10/26","room_id":"7696518057581234976","deeplink":"snssdk1180://live?room_id=7696518057581234976","web_url":"https://www.tiktok.com/@collegamento_analogico_d/live","gateway_url":"https://vohoainam.net/i5ai8srk52gx7link188383"},{"key":"4dnsv3kqkfwl8link188378","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"user648161094","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"19000/19769","time_remaining":"01:30s - 20:54:30","created_at":"20:52:57 14/10/26","room_id":"7696491550956309249","deeplink":"snssdk1180://live?room_id=7696491550956309249","web_url":"https://www.tiktok.com/@user648161094/live","gateway_url":"https://vohoainam.net/4dnsv3kqkfwl8link188378"},{"key":"n799mg1zzzs92link188377","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"brun*gsouza0","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"15000/15413","time_remaining":"00:57s - 20:53:53","created_at":"20:52:57 14/10/26","room_id":"7696469456244263701","deeplink":"snssdk1180://live?room_id=7696469456244263701","web_url":"https://www.tiktok.com/@brun*gsouza0/live","gateway_url":"https://vohoainam.net/n799mg1zzzs92link188377"},{"key":"ki7htas0rf5p2link188374","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"brun*gsouza0","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"19000/19769","time_remaining":"00:53s - 20:53:52","created_at":"20:52:56 14/10/26","room_id":"7696469456244263701","deeplink":"snssdk1180://live?room_id=7696469456244263701","web_url":"https://www.tiktok.com/@brun*gsouza0/live","gateway_url":"https://vohoainam.net/ki7htas0rf5p2link188374"},{"key":"olonhyt61q89rlink188373","category_code":"tui","category_name":"Túi","group_id":"-1002601067327","tt_id":"numnimm5962","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:30s - 20:54:28","created_at":"20:52:55 14/10/26","room_id":"7696507244602723092","deeplink":"snssdk1180://live?room_id=7696507244602723092","web_url":"https://www.tiktok.com/@numnimm5962/live","gateway_url":"https://vohoainam.net/olonhyt61q89rlink188373"},{"key":"one6g41d2p2gelink188372","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"coac*toy1","box_bag":"50/16","ratio":"3.1 xu","live_viewers":"19000/19743","time_remaining":"00:54s - 20:53:51","created_at":"20:52:54 14/10/26","room_id":"7696493051404946177","deeplink":"snssdk1180://live?room_id=7696493051404946177","web_url":"https://www.tiktok.com/@coac*toy1/live","gateway_url":"https://vohoainam.net/one6g41d2p2gelink188372"},{"key":"i63hzmao44x46link188367","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"30/12","ratio":"2.5 xu","live_viewers":"19000/19792","time_remaining":"","created_at":"20:52:52 14/10/26","room_id":"7696463869040020242","deeplink":"snssdk1180://live?room_id=7696463869040020242","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/i63hzmao44x46link188367"},{"key":"upsqqheii5z0klink188364","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"use.l.minh","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"15000/15389","time_remaining":"01:30s - 20:54:26","created_at":"20:52:51 14/10/26","room_id":"7696507319957441281","deeplink":"snssdk1180://live?room_id=7696507319957441281","web_url":"https://www.tiktok.com/@use.l.minh/live","gateway_url":"https://vohoainam.net/upsqqheii5z0klink188364"},{"key":"m837fmn0c0hotlink188362","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"irisbho*ehtet20","box_bag":"30/6","ratio":"5.0 xu","live_viewers":"","time_remaining":"01:20s - 20:54:13","created_at":"20:52:50 14/10/26","room_id":"7696386861795363585","deeplink":"snssdk1180://live?room_id=7696386861795363585","web_url":"https://www.tiktok.com/@irisbho*ehtet20/live","gateway_url":"https://vohoainam.net/m837fmn0c0hotlink188362"},{"key":"uaa4obpq2ys58link188361","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"l*cyka881","box_bag":"35/9","ratio":"3.9 xu","live_viewers":"19000/19792","time_remaining":"00:54s - 20:53:47","created_at":"20:52:50 14/10/26","room_id":"7696490401708608289","deeplink":"snssdk1180://live?room_id=7696490401708608289","web_url":"https://www.tiktok.com/@l*cyka881/live","gateway_url":"https://vohoainam.net/uaa4obpq2ys58link188361"},{"key":"cfh8exnaoziqplink188360","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"michael89017","box_bag":"20/20","ratio":"1.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:24","created_at":"20:52:50 14/10/26","room_id":"7696516027875511062","deeplink":"snssdk1180://live?room_id=7696516027875511062","web_url":"https://www.tiktok.com/@michael89017/live","gateway_url":"https://vohoainam.net/cfh8exnaoziqplink188360"},{"key":"alq5ck3yzsgs9link188359","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"qu*eeniiieeee","box_bag":"100/25","ratio":"4.0 xu","live_viewers":"","time_remaining":"01:20s - 20:54:12","created_at":"20:52:49 14/10/26","room_id":"7696500138897935126","deeplink":"snssdk1180://live?room_id=7696500138897935126","web_url":"https://www.tiktok.com/@qu*eeniiieeee/live","gateway_url":"https://vohoainam.net/alq5ck3yzsgs9link188359"},{"key":"vmug7fv9rro0nlink188358","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"the*ozyfam","box_bag":"100/50","ratio":"2.0 xu","live_viewers":"19000/19785","time_remaining":"01:20s - 20:54:11","created_at":"20:52:48 14/10/26","room_id":"7696507297345882894","deeplink":"snssdk1180://live?room_id=7696507297345882894","web_url":"https://www.tiktok.com/@the*ozyfam/live","gateway_url":"https://vohoainam.net/vmug7fv9rro0nlink188358"},{"key":"p3moij0e3yifxlink188357","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"mahmoudalbks","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:23","created_at":"20:52:48 14/10/26","room_id":"7696502724451470100","deeplink":"snssdk1180://live?room_id=7696502724451470100","web_url":"https://www.tiktok.com/@mahmoudalbks/live","gateway_url":"https://vohoainam.net/p3moij0e3yifxlink188357"},{"key":"gg5169i3d57z0link188353","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"gusta*gustaa","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:53:56","created_at":"20:52:47 14/10/26","room_id":"7696503325042248480","deeplink":"snssdk1180://live?room_id=7696503325042248480","web_url":"https://www.tiktok.com/@gusta*gustaa/live","gateway_url":"https://vohoainam.net/gg5169i3d57z0link188353"},{"key":"rohv6qnrviafglink188352","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"maryam69*6","box_bag":"35/12","ratio":"2.9 xu","live_viewers":"19000/19780","time_remaining":"01:20s - 20:54:08","created_at":"20:52:46 14/10/26","room_id":"7696491203566619398","deeplink":"snssdk1180://live?room_id=7696491203566619398","web_url":"https://www.tiktok.com/@maryam69*6/live","gateway_url":"https://vohoainam.net/rohv6qnrviafglink188352"},{"key":"caz355cjfvc8glink188351","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"ri*o_ori25","box_bag":"100/25","ratio":"4.0 xu","live_viewers":"19000/19785","time_remaining":"01:20s - 20:54:09","created_at":"20:52:46 14/10/26","room_id":"7696424614390139666","deeplink":"snssdk1180://live?room_id=7696424614390139666","web_url":"https://www.tiktok.com/@ri*o_ori25/live","gateway_url":"https://vohoainam.net/caz355cjfvc8glink188351"},{"key":"gd0zy7lwmy8zhlink188347","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"maluquinhadopara","box_bag":"50/50","ratio":"1.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:18","created_at":"20:52:44 14/10/26","room_id":"7696517995671112468","deeplink":"snssdk1180://live?room_id=7696517995671112468","web_url":"https://www.tiktok.com/@maluquinhadopara/live","gateway_url":"https://vohoainam.net/gd0zy7lwmy8zhlink188347"},{"key":"h4nyfs941bdrdlink188346","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"bang_syahida","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:14","created_at":"20:52:43 14/10/26","room_id":"7696517255416941318","deeplink":"snssdk1180://live?room_id=7696517255416941318","web_url":"https://www.tiktok.com/@bang_syahida/live","gateway_url":"https://vohoainam.net/h4nyfs941bdrdlink188346"},{"key":"ks11pd4dvkg0ylink188343","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"de*usna03","box_bag":"50/25","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:20s - 20:54:04","created_at":"20:52:41 14/10/26","room_id":"7696510683222985478","deeplink":"snssdk1180://live?room_id=7696510683222985478","web_url":"https://www.tiktok.com/@de*usna03/live","gateway_url":"https://vohoainam.net/ks11pd4dvkg0ylink188343"},{"key":"mgigxl8to6mlnlink188339","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"nu*awm_","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:53:48","created_at":"20:52:39 14/10/26","room_id":"7696484420211182388","deeplink":"snssdk1180://live?room_id=7696484420211182388","web_url":"https://www.tiktok.com/@nu*awm_/live","gateway_url":"https://vohoainam.net/mgigxl8to6mlnlink188339"},{"key":"b9wvsi89k0e84link188338","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"giovanniterrana13","box_bag":"50/50","ratio":"1.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:15","created_at":"20:52:39 14/10/26","room_id":"7696503013900372739","deeplink":"snssdk1180://live?room_id=7696503013900372739","web_url":"https://www.tiktok.com/@giovanniterrana13/live","gateway_url":"https://vohoainam.net/b9wvsi89k0e84link188338"},{"key":"hsxoc0k052xodlink188337","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"meme.art.1","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"15000/15418","time_remaining":"01:30s - 20:54:14","created_at":"20:52:39 14/10/26","room_id":"7696507787698834196","deeplink":"snssdk1180://live?room_id=7696507787698834196","web_url":"https://www.tiktok.com/@meme.art.1/live","gateway_url":"https://vohoainam.net/hsxoc0k052xodlink188337"},{"key":"1b85d4t7qpdsklink188333","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/25","ratio":"2.0 xu","live_viewers":"19000/19794","time_remaining":"","created_at":"20:52:36 14/10/26","room_id":"7696492137029929760","deeplink":"snssdk1180://live?room_id=7696492137029929760","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/1b85d4t7qpdsklink188333"},{"key":"u0crrf5pa53t7link188332","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"doareusiatat1213","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:10","created_at":"20:52:35 14/10/26","room_id":"7696509917179497249","deeplink":"snssdk1180://live?room_id=7696509917179497249","web_url":"https://www.tiktok.com/@doareusiatat1213/live","gateway_url":"https://vohoainam.net/u0crrf5pa53t7link188332"},{"key":"ordfnr22sqr8glink188331","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"ketut.juliarta8","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"15000/15416","time_remaining":"01:30s - 20:54:09","created_at":"20:52:34 14/10/26","room_id":"7696502507595303688","deeplink":"snssdk1180://live?room_id=7696502507595303688","web_url":"https://www.tiktok.com/@ketut.juliarta8/live","gateway_url":"https://vohoainam.net/ordfnr22sqr8glink188331"},{"key":"rltany40bz5awlink188329","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"100/50","ratio":"2.0 xu","live_viewers":"19000/19790","time_remaining":"","created_at":"20:52:34 14/10/26","room_id":"7696494897909599006","deeplink":"snssdk1180://live?room_id=7696494897909599006","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/rltany40bz5awlink188329"},{"key":"3x7deu18xkvrtlink188326","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"golfmaeriakkrub","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"15000/15441","time_remaining":"01:30s - 20:54:08","created_at":"20:52:33 14/10/26","room_id":"7696468308623280903","deeplink":"snssdk1180://live?room_id=7696468308623280903","web_url":"https://www.tiktok.com/@golfmaeriakkrub/live","gateway_url":"https://vohoainam.net/3x7deu18xkvrtlink188326"},{"key":"vbhjbco9hrks9link188320","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"a11u*8","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:53:39","created_at":"20:52:30 14/10/26","room_id":"7696500188181711636","deeplink":"snssdk1180://live?room_id=7696500188181711636","web_url":"https://www.tiktok.com/@a11u*8/live","gateway_url":"https://vohoainam.net/vbhjbco9hrks9link188320"},{"key":"xmg3414kdrcyvlink188315","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"nhi*06202","box_bag":"20/10","ratio":"2.0 xu","live_viewers":"","time_remaining":"01:10s - 20:53:37","created_at":"20:52:28 14/10/26","room_id":"7696516454950816530","deeplink":"snssdk1180://live?room_id=7696516454950816530","web_url":"https://www.tiktok.com/@nhi*06202/live","gateway_url":"https://vohoainam.net/xmg3414kdrcyvlink188315"},{"key":"cqupjajys7qy7link188313","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"ny*n99chan","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15420","time_remaining":"01:10s - 20:53:37","created_at":"20:52:27 14/10/26","room_id":"7696507779142306568","deeplink":"snssdk1180://live?room_id=7696507779142306568","web_url":"https://www.tiktok.com/@ny*n99chan/live","gateway_url":"https://vohoainam.net/cqupjajys7qy7link188313"},{"key":"78cfy2mp7t5thlink188310","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":".chaoshausdominant","box_bag":"20/20","ratio":"1.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:02","created_at":"20:52:27 14/10/26","room_id":"7696517126752520993","deeplink":"snssdk1180://live?room_id=7696517126752520993","web_url":"https://www.tiktok.com/@.chaoshausdominant/live","gateway_url":"https://vohoainam.net/78cfy2mp7t5thlink188310"},{"key":"xb0cttvbewqaclink188309","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"roza*nmzv","box_bag":"50/8","ratio":"6.2 xu","live_viewers":"","time_remaining":"00:54s - 20:53:23","created_at":"20:52:26 14/10/26","room_id":"7696472035622472466","deeplink":"snssdk1180://live?room_id=7696472035622472466","web_url":"https://www.tiktok.com/@roza*nmzv/live","gateway_url":"https://vohoainam.net/xb0cttvbewqaclink188309"},{"key":"016ajfkkpxwxhlink188308","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"arabdiabloil2accaunt","box_bag":"50/50","ratio":"1.0 xu","live_viewers":"","time_remaining":"01:30s - 20:54:01","created_at":"20:52:26 14/10/26","room_id":"7696512130715716385","deeplink":"snssdk1180://live?room_id=7696512130715716385","web_url":"https://www.tiktok.com/@arabdiabloil2accaunt/live","gateway_url":"https://vohoainam.net/016ajfkkpxwxhlink188308"},{"key":"x8orddg2fwrfqlink188307","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"ny*nnyunchan","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:53:34","created_at":"20:52:25 14/10/26","room_id":"7696500527919631124","deeplink":"snssdk1180://live?room_id=7696500527919631124","web_url":"https://www.tiktok.com/@ny*nnyunchan/live","gateway_url":"https://vohoainam.net/x8orddg2fwrfqlink188307"},{"key":"c9o4jdwg56a99link188305","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"tatsu*asi","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15457","time_remaining":"01:10s - 20:53:31","created_at":"20:52:22 14/10/26","room_id":"7696493398517435142","deeplink":"snssdk1180://live?room_id=7696493398517435142","web_url":"https://www.tiktok.com/@tatsu*asi/live","gateway_url":"https://vohoainam.net/c9o4jdwg56a99link188305"},{"key":"teo91omn8zb5olink188303","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"zixingg*66","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15457","time_remaining":"01:10s - 20:53:29","created_at":"20:52:20 14/10/26","room_id":"7696498805251328769","deeplink":"snssdk1180://live?room_id=7696498805251328769","web_url":"https://www.tiktok.com/@zixingg*66/live","gateway_url":"https://vohoainam.net/teo91omn8zb5olink188303"},{"key":"ndg5x1zi5bb57link188298","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"bobil.kedut","box_bag":"20/20","ratio":"1.0 xu","live_viewers":"15000/15464","time_remaining":"01:30s - 20:53:53","created_at":"20:52:18 14/10/26","room_id":"7696456556426087174","deeplink":"snssdk1180://live?room_id=7696456556426087174","web_url":"https://www.tiktok.com/@bobil.kedut/live","gateway_url":"https://vohoainam.net/ndg5x1zi5bb57link188298"},{"key":"fopvc83qheoujlink188297","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"yu*ri_0114","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15448","time_remaining":"01:10s - 20:53:27","created_at":"20:52:18 14/10/26","room_id":"7696515001204378389","deeplink":"snssdk1180://live?room_id=7696515001204378389","web_url":"https://www.tiktok.com/@yu*ri_0114/live","gateway_url":"https://vohoainam.net/fopvc83qheoujlink188297"},{"key":"xqi2gv4bhx178link188295","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"oka_maruko223","box_bag":"50/5","ratio":"10.0 xu","live_viewers":"","time_remaining":"01:30s - 20:53:51","created_at":"20:52:16 14/10/26","room_id":"7696459507676809991","deeplink":"snssdk1180://live?room_id=7696459507676809991","web_url":"https://www.tiktok.com/@oka_maruko223/live","gateway_url":"https://vohoainam.net/xqi2gv4bhx178link188295"},{"key":"mc13ldpdaq760link188293","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"taka*arou0126","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15443","time_remaining":"01:10s - 20:53:25","created_at":"20:52:16 14/10/26","room_id":"7696486512501754644","deeplink":"snssdk1180://live?room_id=7696486512501754644","web_url":"https://www.tiktok.com/@taka*arou0126/live","gateway_url":"https://vohoainam.net/mc13ldpdaq760link188293"},{"key":"g3depx02r5rsjlink188292","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"josy*ac_","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15441","time_remaining":"01:10s - 20:53:23","created_at":"20:52:14 14/10/26","room_id":"7696506831686093590","deeplink":"snssdk1180://live?room_id=7696506831686093590","web_url":"https://www.tiktok.com/@josy*ac_/live","gateway_url":"https://vohoainam.net/g3depx02r5rsjlink188292"},{"key":"gkrvbj72e8eoclink188285","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"aminoz18","box_bag":"20/5","ratio":"4.0 xu","live_viewers":"15000/15463","time_remaining":"01:30s - 20:53:48","created_at":"20:52:13 14/10/26","room_id":"7696494088270498566","deeplink":"snssdk1180://live?room_id=7696494088270498566","web_url":"https://www.tiktok.com/@aminoz18/live","gateway_url":"https://vohoainam.net/gkrvbj72e8eoclink188285"},{"key":"3196hwmmn8bqrlink188282","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"saipulgepeng9","box_bag":"50/50","ratio":"1.0 xu","live_viewers":"15000/15463","time_remaining":"01:30s - 20:53:48","created_at":"20:52:12 14/10/26","room_id":"7696327775242406663","deeplink":"snssdk1180://live?room_id=7696327775242406663","web_url":"https://www.tiktok.com/@saipulgepeng9/live","gateway_url":"https://vohoainam.net/3196hwmmn8bqrlink188282"},{"key":"3bumte198srh8link188279","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"universa*_sp","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15436","time_remaining":"01:10s - 20:53:21","created_at":"20:52:12 14/10/26","room_id":"7696445639858244370","deeplink":"snssdk1180://live?room_id=7696445639858244370","web_url":"https://www.tiktok.com/@universa*_sp/live","gateway_url":"https://vohoainam.net/3bumte198srh8link188279"},{"key":"0s5y5xe0c9f45link188275","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"mrdarkknight2.0","box_bag":"100/100","ratio":"1.0 xu","live_viewers":"15000/15463","time_remaining":"01:30s - 20:53:46","created_at":"20:52:11 14/10/26","room_id":"7696503233816152850","deeplink":"snssdk1180://live?room_id=7696503233816152850","web_url":"https://www.tiktok.com/@mrdarkknight2.0/live","gateway_url":"https://vohoainam.net/0s5y5xe0c9f45link188275"},{"key":"nvt5998tarn3llink188271","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"sero.smn","box_bag":"20/20","ratio":"1.0 xu","live_viewers":"","time_remaining":"01:30s - 20:53:44","created_at":"20:52:10 14/10/26","room_id":"7696518255297383190","deeplink":"snssdk1180://live?room_id=7696518255297383190","web_url":"https://www.tiktok.com/@sero.smn/live","gateway_url":"https://vohoainam.net/nvt5998tarn3llink188271"},{"key":"jwh3ch5xvtlfjlink188266","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"yunyun_1179","box_bag":"20/20","ratio":"1.0 xu","live_viewers":"15000/15459","time_remaining":"01:30s - 20:53:43","created_at":"20:52:08 14/10/26","room_id":"7696502319840561940","deeplink":"snssdk1180://live?room_id=7696502319840561940","web_url":"https://www.tiktok.com/@yunyun_1179/live","gateway_url":"https://vohoainam.net/jwh3ch5xvtlfjlink188266"},{"key":"w624j6jmqcj5rlink188261","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"nik*1021","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15462","time_remaining":"01:10s - 20:53:16","created_at":"20:52:07 14/10/26","room_id":"7696496470333180724","deeplink":"snssdk1180://live?room_id=7696496470333180724","web_url":"https://www.tiktok.com/@nik*1021/live","gateway_url":"https://vohoainam.net/w624j6jmqcj5rlink188261"},{"key":"38l4xz2ynaooflink188258","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"y*oniny","box_bag":"50/1","ratio":"50.0 xu","live_viewers":"","time_remaining":"00:54s - 20:53:02","created_at":"20:52:05 14/10/26","room_id":"7696409766171511573","deeplink":"snssdk1180://live?room_id=7696409766171511573","web_url":"https://www.tiktok.com/@y*oniny/live","gateway_url":"https://vohoainam.net/38l4xz2ynaooflink188258"},{"key":"76ziy23zx7yj1link188257","category_code":"tui_0xu","category_name":"Túi 0xu","group_id":"-1003337128065","tt_id":"mabast881","box_bag":"20/20","ratio":"1.0 xu","live_viewers":"15000/15458","time_remaining":"01:30s - 20:53:39","created_at":"20:52:05 14/10/26","room_id":"7696460833599245076","deeplink":"snssdk1180://live?room_id=7696460833599245076","web_url":"https://www.tiktok.com/@mabast881/live","gateway_url":"https://vohoainam.net/76ziy23zx7yj1link188257"},{"key":"mg98m8hzfdhqflink188253","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"ddo*do","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15457","time_remaining":"01:10s - 20:53:14","created_at":"20:52:04 14/10/26","room_id":"7696502875151928084","deeplink":"snssdk1180://live?room_id=7696502875151928084","web_url":"https://www.tiktok.com/@ddo*do/live","gateway_url":"https://vohoainam.net/mg98m8hzfdhqflink188253"},{"key":"pv1guecvukcmylink188248","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"","created_at":"20:52:02 14/10/26","room_id":"7696516724795558677","deeplink":"snssdk1180://live?room_id=7696516724795558677","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/pv1guecvukcmylink188248"},{"key":"dsvhyaa7h7qyolink188244","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/25","ratio":"2.0 xu","live_viewers":"","time_remaining":"","created_at":"20:52:01 14/10/26","room_id":"7696508529657662211","deeplink":"snssdk1180://live?room_id=7696508529657662211","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/dsvhyaa7h7qyolink188244"},{"key":"tc88uucoecyzelink188233","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"yantongej*m","box_bag":"30/10","ratio":"3.0 xu","live_viewers":"","time_remaining":"01:20s - 20:53:21","created_at":"20:51:58 14/10/26","room_id":"7696511151760345874","deeplink":"snssdk1180://live?room_id=7696511151760345874","web_url":"https://www.tiktok.com/@yantongej*m/live","gateway_url":"https://vohoainam.net/tc88uucoecyzelink188233"},{"key":"wwyxpwznlfgkblink188231","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"100/25","ratio":"4.0 xu","live_viewers":"","time_remaining":"","created_at":"20:51:58 14/10/26","room_id":"7696498304170953478","deeplink":"snssdk1180://live?room_id=7696498304170953478","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/wwyxpwznlfgkblink188231"},{"key":"tq7e8j20gcd8mlink188229","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"tracybaby*u","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:10s - 20:53:07","created_at":"20:51:58 14/10/26","room_id":"7696508270663764743","deeplink":"snssdk1180://live?room_id=7696508270663764743","web_url":"https://www.tiktok.com/@tracybaby*u/live","gateway_url":"https://vohoainam.net/tq7e8j20gcd8mlink188229"},{"key":"sqjcghplr7zkklink188224","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"a*rin4479","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15446","time_remaining":"01:10s - 20:53:06","created_at":"20:51:57 14/10/26","room_id":"7696517856705137428","deeplink":"snssdk1180://live?room_id=7696517856705137428","web_url":"https://www.tiktok.com/@a*rin4479/live","gateway_url":"https://vohoainam.net/sqjcghplr7zkklink188224"},{"key":"yk4njidx9v1yklink188222","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"cho*olin","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:53:06","created_at":"20:51:57 14/10/26","room_id":"7696492363003464468","deeplink":"snssdk1180://live?room_id=7696492363003464468","web_url":"https://www.tiktok.com/@cho*olin/live","gateway_url":"https://vohoainam.net/yk4njidx9v1yklink188222"},{"key":"spt9w4k3cr017link188218","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/25","ratio":"2.0 xu","live_viewers":"","time_remaining":"","created_at":"20:51:56 14/10/26","room_id":"7696487125823064853","deeplink":"snssdk1180://live?room_id=7696487125823064853","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/spt9w4k3cr017link188218"},{"key":"7ni5676zgc3kflink188214","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"onyahk*een01","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"19000/19795","time_remaining":"01:20s - 20:53:16","created_at":"20:51:53 14/10/26","room_id":"7696505297271802642","deeplink":"snssdk1180://live?room_id=7696505297271802642","web_url":"https://www.tiktok.com/@onyahk*een01/live","gateway_url":"https://vohoainam.net/7ni5676zgc3kflink188214"},{"key":"k4z9nqw3att7wlink188211","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"efi.*ndrawati","box_bag":"75/35","ratio":"2.1 xu","live_viewers":"15000/15468","time_remaining":"01:10s - 20:53:01","created_at":"20:51:52 14/10/26","room_id":"7696482471941344052","deeplink":"snssdk1180://live?room_id=7696482471941344052","web_url":"https://www.tiktok.com/@efi.*ndrawati/live","gateway_url":"https://vohoainam.net/k4z9nqw3att7wlink188211"},{"key":"29xicdahh5a1vlink188207","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"lm1208*99","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:53:01","created_at":"20:51:51 14/10/26","room_id":"7696498304170953478","deeplink":"snssdk1180://live?room_id=7696498304170953478","web_url":"https://www.tiktok.com/@lm1208*99/live","gateway_url":"https://vohoainam.net/29xicdahh5a1vlink188207"},{"key":"95jtcelqtq4orlink188201","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"kiyomi._*syuan","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:52:58","created_at":"20:51:49 14/10/26","room_id":"7696517484447009544","deeplink":"snssdk1180://live?room_id=7696517484447009544","web_url":"https://www.tiktok.com/@kiyomi._*syuan/live","gateway_url":"https://vohoainam.net/95jtcelqtq4orlink188201"},{"key":"fjpjooci4vvvwlink188199","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"mrs.senorit*98","box_bag":"100/25","ratio":"4.0 xu","live_viewers":"","time_remaining":"01:20s - 20:53:10","created_at":"20:51:48 14/10/26","room_id":"7696519098984827670","deeplink":"snssdk1180://live?room_id=7696519098984827670","web_url":"https://www.tiktok.com/@mrs.senorit*98/live","gateway_url":"https://vohoainam.net/fjpjooci4vvvwlink188199"},{"key":"ms9s9us2wfvp2link188196","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"ami*oz18","box_bag":"500/10","ratio":"50.0 xu","live_viewers":"19000/19790","time_remaining":"02:00s - 20:53:49","created_at":"20:51:46 14/10/26","room_id":"7696494088270498566","deeplink":"snssdk1180://live?room_id=7696494088270498566","web_url":"https://www.tiktok.com/@ami*oz18/live","gateway_url":"https://vohoainam.net/ms9s9us2wfvp2link188196"},{"key":"9ldk3bcykhqxflink188195","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"haibaha*55","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"15000/15463","time_remaining":"01:10s - 20:52:55","created_at":"20:51:46 14/10/26","room_id":"7696482013319285556","deeplink":"snssdk1180://live?room_id=7696482013319285556","web_url":"https://www.tiktok.com/@haibaha*55/live","gateway_url":"https://vohoainam.net/9ldk3bcykhqxflink188195"},{"key":"wslcs5j4ucfeplink188190","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"tracyba*yiu","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"01:20s - 20:53:07","created_at":"20:51:45 14/10/26","room_id":"7696508270663764743","deeplink":"snssdk1180://live?room_id=7696508270663764743","web_url":"https://www.tiktok.com/@tracyba*yiu/live","gateway_url":"https://vohoainam.net/wslcs5j4ucfeplink188190"},{"key":"nm4a5fc8b49gzlink188187","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"pic*.801","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15459","time_remaining":"01:10s - 20:52:53","created_at":"20:51:43 14/10/26","room_id":"7696509082950535956","deeplink":"snssdk1180://live?room_id=7696509082950535956","web_url":"https://www.tiktok.com/@pic*.801/live","gateway_url":"https://vohoainam.net/nm4a5fc8b49gzlink188187"},{"key":"604hs2o2wn557link188180","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"l*sn_sol","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15458","time_remaining":"01:10s - 20:52:50","created_at":"20:51:41 14/10/26","room_id":"7696499755798596359","deeplink":"snssdk1180://live?room_id=7696499755798596359","web_url":"https://www.tiktok.com/@l*sn_sol/live","gateway_url":"https://vohoainam.net/604hs2o2wn557link188180"},{"key":"iq0f70z9rf1a0link188177","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"coco252*397","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15488","time_remaining":"01:10s - 20:52:49","created_at":"20:51:40 14/10/26","room_id":"7696513839222754049","deeplink":"snssdk1180://live?room_id=7696513839222754049","web_url":"https://www.tiktok.com/@coco252*397/live","gateway_url":"https://vohoainam.net/iq0f70z9rf1a0link188177"},{"key":"a0g9np9oekcb6link188172","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"e*i.endrawati","box_bag":"75/35","ratio":"2.1 xu","live_viewers":"19000/19792","time_remaining":"01:20s - 20:53:01","created_at":"20:51:38 14/10/26","room_id":"7696482471941344052","deeplink":"snssdk1180://live?room_id=7696482471941344052","web_url":"https://www.tiktok.com/@e*i.endrawati/live","gateway_url":"https://vohoainam.net/a0g9np9oekcb6link188172"},{"key":"35asoflzykc4xlink188162","category_code":"ruong_lon","category_name":"Rương Lớn","group_id":"-1002889993912","tt_id":"___.m*mi5","box_bag":"33/10","ratio":"3.3 xu","live_viewers":"19000/19789","time_remaining":"00:54s - 20:52:32","created_at":"20:51:35 14/10/26","room_id":"7696504344575986452","deeplink":"snssdk1180://live?room_id=7696504344575986452","web_url":"https://www.tiktok.com/@___.m*mi5/live","gateway_url":"https://vohoainam.net/35asoflzykc4xlink188162"},{"key":"zas78zrr0nrbllink188159","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"jini_l*ve_0904","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"15000/15485","time_remaining":"01:10s - 20:52:43","created_at":"20:51:34 14/10/26","room_id":"7696437408741542708","deeplink":"snssdk1180://live?room_id=7696437408741542708","web_url":"https://www.tiktok.com/@jini_l*ve_0904/live","gateway_url":"https://vohoainam.net/zas78zrr0nrbllink188159"},{"key":"w779loltiygxolink188157","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"aufashaki*a","box_bag":"30/12","ratio":"2.5 xu","live_viewers":"15000/15484","time_remaining":"01:10s - 20:52:42","created_at":"20:51:33 14/10/26","room_id":"7696463869040020242","deeplink":"snssdk1180://live?room_id=7696463869040020242","web_url":"https://www.tiktok.com/@aufashaki*a/live","gateway_url":"https://vohoainam.net/w779loltiygxolink188157"},{"key":"33zo2qv66dw04link188146","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"pi*ra69","box_bag":"50/25","ratio":"2.0 xu","live_viewers":"15000/15483","time_remaining":"01:10s - 20:52:39","created_at":"20:51:30 14/10/26","room_id":"7696482983372671752","deeplink":"snssdk1180://live?room_id=7696482983372671752","web_url":"https://www.tiktok.com/@pi*ra69/live","gateway_url":"https://vohoainam.net/33zo2qv66dw04link188146"},{"key":"ofum0k84dwlpqlink188141","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"oai*aic","box_bag":"600/400","ratio":"1.5 xu","live_viewers":"15000/15482","time_remaining":"01:10s - 20:52:34","created_at":"20:51:27 14/10/26","room_id":"7696482599125060373","deeplink":"snssdk1180://live?room_id=7696482599125060373","web_url":"https://www.tiktok.com/@oai*aic/live","gateway_url":"https://vohoainam.net/ofum0k84dwlpqlink188141"},{"key":"qykl75xfggr0ylink188115","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"vi*xyyyy_","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:52:26","created_at":"20:51:17 14/10/26","room_id":"7696516102403427080","deeplink":"snssdk1180://live?room_id=7696516102403427080","web_url":"https://www.tiktok.com/@vi*xyyyy_/live","gateway_url":"https://vohoainam.net/qykl75xfggr0ylink188115"},{"key":"3q8sp4uprsx82link188112","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"raw3*a26","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:52:26","created_at":"20:51:17 14/10/26","room_id":"7696480863185324821","deeplink":"snssdk1180://live?room_id=7696480863185324821","web_url":"https://www.tiktok.com/@raw3*a26/live","gateway_url":"https://vohoainam.net/3q8sp4uprsx82link188112"},{"key":"z95w7gamufdmulink188111","category_code":"ruong_nho","category_name":"Rương Nhỏ","group_id":"-1003606511380","tt_id":"wcxy*wdm961","box_bag":"120/80","ratio":"1.5 xu","live_viewers":"","time_remaining":"01:10s - 20:52:25","created_at":"20:51:16 14/10/26","room_id":"7696483627794959122","deeplink":"snssdk1180://live?room_id=7696483627794959122","web_url":"https://www.tiktok.com/@wcxy*wdm961/live","gateway_url":"https://vohoainam.net/z95w7gamufdmulink188111"},{"key":"0268qr5hkgp8xlink188070","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/8","ratio":"6.2 xu","live_viewers":"19000/19783","time_remaining":"","created_at":"20:51:03 14/10/26","room_id":"7696481621708442401","deeplink":"snssdk1180://live?room_id=7696481621708442401","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/0268qr5hkgp8xlink188070"},{"key":"ec14g4jyqojhrlink188055","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"101/50","ratio":"2.0 xu","live_viewers":"","time_remaining":"","created_at":"20:50:56 14/10/26","room_id":"7696495735088450311","deeplink":"snssdk1180://live?room_id=7696495735088450311","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/ec14g4jyqojhrlink188055"},{"key":"i0hxbcluzbc20link188051","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"","created_at":"20:50:55 14/10/26","room_id":"7696503901580020500","deeplink":"snssdk1180://live?room_id=7696503901580020500","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/i0hxbcluzbc20link188051"},{"key":"vp3r85y4qcmlmlink188049","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/25","ratio":"2.0 xu","live_viewers":"","time_remaining":"","created_at":"20:50:54 14/10/26","room_id":"7696482147078654741","deeplink":"snssdk1180://live?room_id=7696482147078654741","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/vp3r85y4qcmlmlink188049"},{"key":"tzslak188dtjilink188013","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/25","ratio":"2.0 xu","live_viewers":"19000/19762","time_remaining":"","created_at":"20:50:40 14/10/26","room_id":"7696494411165682453","deeplink":"snssdk1180://live?room_id=7696494411165682453","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/tzslak188dtjilink188013"},{"key":"9my42vo6b0vqflink187986","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"30/12","ratio":"2.5 xu","live_viewers":"","time_remaining":"","created_at":"20:50:30 14/10/26","room_id":"7696494843665419029","deeplink":"snssdk1180://live?room_id=7696494843665419029","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/9my42vo6b0vqflink187986"},{"key":"c2q3mqm8tcctzlink187991","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/7","ratio":"7.1 xu","live_viewers":"","time_remaining":"","created_at":"20:50:27 14/10/26","room_id":"7696502125826886421","deeplink":"snssdk1180://live?room_id=7696502125826886421","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/c2q3mqm8tcctzlink187991"},{"key":"0hbu4jfti2o1xlink187928","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/1","ratio":"50.0 xu","live_viewers":"","time_remaining":"","created_at":"20:50:09 14/10/26","room_id":"7696491995552434952","deeplink":"snssdk1180://live?room_id=7696491995552434952","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/0hbu4jfti2o1xlink187928"},{"key":"nq3oye4tjsjanlink187918","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"200/100","ratio":"2.0 xu","live_viewers":"","time_remaining":"","created_at":"20:50:06 14/10/26","room_id":"7696514926835272455","deeplink":"snssdk1180://live?room_id=7696514926835272455","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/nq3oye4tjsjanlink187918"},{"key":"2hfpkvwarqoeklink187899","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"","time_remaining":"","created_at":"20:49:59 14/10/26","room_id":"7696506469952342816","deeplink":"snssdk1180://live?room_id=7696506469952342816","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/2hfpkvwarqoeklink187899"},{"key":"9ix1hqyn2skaxlink187839","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"500/250","ratio":"2.0 xu","live_viewers":"19000/19792","time_remaining":"","created_at":"20:49:37 14/10/26","room_id":"7696509096069384978","deeplink":"snssdk1180://live?room_id=7696509096069384978","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/9ix1hqyn2skaxlink187839"},{"key":"geqvlot4uagg8link187813","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/25","ratio":"2.0 xu","live_viewers":"","time_remaining":"","created_at":"20:49:31 14/10/26","room_id":"7696492991522949896","deeplink":"snssdk1180://live?room_id=7696492991522949896","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/geqvlot4uagg8link187813"},{"key":"zpk9efbmmqrmmlink187795","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"","created_at":"20:49:26 14/10/26","room_id":"7696431405254150932","deeplink":"snssdk1180://live?room_id=7696431405254150932","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/zpk9efbmmqrmmlink187795"},{"key":"2v53iltw2untglink187788","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"123/50","ratio":"2.5 xu","live_viewers":"","time_remaining":"","created_at":"20:49:25 14/10/26","room_id":"7696456151479028502","deeplink":"snssdk1180://live?room_id=7696456151479028502","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/2v53iltw2untglink187788"},{"key":"gzsyqu05t40gelink187783","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"100/50","ratio":"2.0 xu","live_viewers":"","time_remaining":"","created_at":"20:49:23 14/10/26","room_id":"7696505650481761038","deeplink":"snssdk1180://live?room_id=7696505650481761038","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/gzsyqu05t40gelink187783"},{"key":"77tyje8u1c464link187572","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"30/15","ratio":"2.0 xu","live_viewers":"","time_remaining":"","created_at":"20:47:49 14/10/26","room_id":"7696507757339396884","deeplink":"snssdk1180://live?room_id=7696507757339396884","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/77tyje8u1c464link187572"},{"key":"vpbbfyvwvjgaelink187564","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/25","ratio":"2.0 xu","live_viewers":"","time_remaining":"","created_at":"20:47:46 14/10/26","room_id":"7696495986382474017","deeplink":"snssdk1180://live?room_id=7696495986382474017","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/vpbbfyvwvjgaelink187564"},{"key":"4gka9kxq7fy44link187561","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"51/23","ratio":"2.2 xu","live_viewers":"","time_remaining":"","created_at":"20:47:45 14/10/26","room_id":"7696516001661913876","deeplink":"snssdk1180://live?room_id=7696516001661913876","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/4gka9kxq7fy44link187561"},{"key":"64daloz4v1xq7link187545","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"31/10","ratio":"3.1 xu","live_viewers":"19000/19795","time_remaining":"","created_at":"20:47:39 14/10/26","room_id":"7696461448901331713","deeplink":"snssdk1180://live?room_id=7696461448901331713","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/64daloz4v1xq7link187545"},{"key":"gstqmp6njw21xlink187543","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"45/12","ratio":"3.8 xu","live_viewers":"","time_remaining":"","created_at":"20:47:38 14/10/26","room_id":"7696501609350253320","deeplink":"snssdk1180://live?room_id=7696501609350253320","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/gstqmp6njw21xlink187543"},{"key":"8mycunmdcnzpdlink187541","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"31/15","ratio":"2.1 xu","live_viewers":"","time_remaining":"","created_at":"20:47:36 14/10/26","room_id":"7696490720965774100","deeplink":"snssdk1180://live?room_id=7696490720965774100","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/8mycunmdcnzpdlink187541"},{"key":"aegh6ngdamzjnlink187516","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/10","ratio":"5.0 xu","live_viewers":"19000/19788","time_remaining":"","created_at":"20:47:28 14/10/26","room_id":"7696471601802234644","deeplink":"snssdk1180://live?room_id=7696471601802234644","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/aegh6ngdamzjnlink187516"},{"key":"d434tci18cruglink187511","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"30/3","ratio":"10.0 xu","live_viewers":"19000/19777","time_remaining":"","created_at":"20:47:26 14/10/26","room_id":"7696482914862730002","deeplink":"snssdk1180://live?room_id=7696482914862730002","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/d434tci18cruglink187511"},{"key":"tmhnsjee37xnllink187504","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"33/11","ratio":"3.0 xu","live_viewers":"19000/19754","time_remaining":"","created_at":"20:47:24 14/10/26","room_id":"7696493546506717973","deeplink":"snssdk1180://live?room_id=7696493546506717973","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/tmhnsjee37xnllink187504"},{"key":"855takjpdzq8tlink187496","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"19000/19793","time_remaining":"","created_at":"20:47:22 14/10/26","room_id":"7696508419147352850","deeplink":"snssdk1180://live?room_id=7696508419147352850","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/855takjpdzq8tlink187496"},{"key":"e4y81zumtzb34link187424","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"19000/19773","time_remaining":"","created_at":"20:46:58 14/10/26","room_id":"7696487240823671553","deeplink":"snssdk1180://live?room_id=7696487240823671553","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/e4y81zumtzb34link187424"},{"key":"35s8azvk4t1golink187408","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"30/10","ratio":"3.0 xu","live_viewers":"19000/19796","time_remaining":"","created_at":"20:46:51 14/10/26","room_id":"7696481527236004614","deeplink":"snssdk1180://live?room_id=7696481527236004614","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/35s8azvk4t1golink187408"},{"key":"wggzfpzkk7g6ulink187407","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"31/11","ratio":"2.8 xu","live_viewers":"","time_remaining":"","created_at":"20:46:51 14/10/26","room_id":"7696508193757350662","deeplink":"snssdk1180://live?room_id=7696508193757350662","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/wggzfpzkk7g6ulink187407"},{"key":"lc279ypwl2in6link187399","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"100/25","ratio":"4.0 xu","live_viewers":"","time_remaining":"","created_at":"20:46:48 14/10/26","room_id":"7696491867825064725","deeplink":"snssdk1180://live?room_id=7696491867825064725","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/lc279ypwl2in6link187399"},{"key":"4bqphsskhhpm0link187216","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"200/100","ratio":"2.0 xu","live_viewers":"","time_remaining":"","created_at":"20:45:44 14/10/26","room_id":"7696507002159876884","deeplink":"snssdk1180://live?room_id=7696507002159876884","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/4bqphsskhhpm0link187216"},{"key":"eepsmkhqjctnrlink187198","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/20","ratio":"2.5 xu","live_viewers":"","time_remaining":"","created_at":"20:45:39 14/10/26","room_id":"7696489331648662293","deeplink":"snssdk1180://live?room_id=7696489331648662293","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/eepsmkhqjctnrlink187198"},{"key":"8410sry1y7qz7link187166","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"100/50","ratio":"2.0 xu","live_viewers":"","time_remaining":"","created_at":"20:45:29 14/10/26","room_id":"7696515104048745237","deeplink":"snssdk1180://live?room_id=7696515104048745237","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/8410sry1y7qz7link187166"},{"key":"edjnr1b8rjwcklink186982","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"30/15","ratio":"2.0 xu","live_viewers":"19000/19787","time_remaining":"","created_at":"20:44:33 14/10/26","room_id":"7696491085698321170","deeplink":"snssdk1180://live?room_id=7696491085698321170","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/edjnr1b8rjwcklink186982"},{"key":"66gom5yg2gm82link186920","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"31/10","ratio":"3.1 xu","live_viewers":"","time_remaining":"","created_at":"20:44:13 14/10/26","room_id":"7696508608149801760","deeplink":"snssdk1180://live?room_id=7696508608149801760","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/66gom5yg2gm82link186920"},{"key":"ewwagshorkzualink186896","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"31/15","ratio":"2.1 xu","live_viewers":"19000/19790","time_remaining":"","created_at":"20:44:03 14/10/26","room_id":"7696469114193283847","deeplink":"snssdk1180://live?room_id=7696469114193283847","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/ewwagshorkzualink186896"},{"key":"8o7yyrrsp482nlink186835","category_code":"ruong_treo","category_name":"Rương Treo","group_id":"-1003874158853","tt_id":"","box_bag":"50/15","ratio":"3.3 xu","live_viewers":"19000/19770","time_remaining":"","created_at":"20:43:42 14/10/26","room_id":"7696495510244412166","deeplink":"snssdk1180://live?room_id=7696495510244412166","web_url":"https://www.tiktok.com/@live/live","gateway_url":"https://vohoainam.net/8o7yyrrsp482nlink186835"}];
+    const EXPIRES_AT = new Date('2026-10-15T12:53:30.048Z').getTime();
+    const DEVICE_ID = 'device_1c7fc1c4-278c-41b5-8a37-ea4196c38b77';
+
+    let allLinks = [...INITIAL_LINKS];
+    let activeCategory = 'all';
+    let onlyTopDeals = false;
+    let soundEnabled = true;
+    let interactedKeys = new Set(JSON.parse(localStorage.getItem('interacted_links') || '[]'));
+
+    // Tiêu chí KÈO NGON NHẤT:
+    // 1. Tỉ lệ xu >= 5.0 xu (nhận được nhiều xu mỗi lượt)
+    // 2. HOẶC Tổng rương >= 200 xu
+    function isTopDeal(l) {
+      const ratio = parseFloat(l.ratio) || 0;
+      const boxCoins = parseInt((l.box_bag || '').split('/')[0], 10) || 0;
+      return ratio >= 5.0 || boxCoins >= 200;
+    }
+
+    function isSuperVIP(l) {
+      const ratio = parseFloat(l.ratio) || 0;
+      const boxCoins = parseInt((l.box_bag || '').split('/')[0], 10) || 0;
+      return ratio >= 10.0 || boxCoins >= 500;
+    }
+
+    function toggleOnlyTopDeals() {
+      onlyTopDeals = !onlyTopDeals;
+      const btn = document.getElementById('topDealsBtn');
+      btn.classList.toggle('active', onlyTopDeals);
+      filterAndRender();
+      showToast(onlyTopDeals ? '👑 Đã bật bộ lọc: CHỈ HIỆN KÈO NGON NHẤT!' : 'Hiển thị tất cả kèo');
+    }
+
+    function toggleModal(show) {
+      const modal = document.getElementById('deeplinkModal');
+      modal.classList.toggle('show', show);
+    }
+
+    function handleBackdropClick(e) {
+      if (e.target.id === 'deeplinkModal') {
+        toggleModal(false);
+      }
+    }
+
+    // Bíp âm thanh thông báo link mới
+    function playChime() {
+      if (!soundEnabled) return;
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(587.33, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(880, ctx.currentTime + 0.12);
+        gain.gain.setValueAtTime(0.12, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.25);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.25);
+      } catch (e) {}
+    }
+
+    function toggleSound() {
+      soundEnabled = !soundEnabled;
+      document.getElementById('soundIcon').textContent = soundEnabled ? '🔔' : '🔕';
+      document.getElementById('soundText').textContent = soundEnabled ? 'Chuông: BẬT' : 'Chuông: TẮT';
+      document.getElementById('soundBtn').classList.toggle('active', soundEnabled);
+      showToast(soundEnabled ? '✔ Đã bật âm thanh báo link mới' : '✔ Đã tắt âm thanh');
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2200);
+    }
+
+    function copyToClipboard(text, successMsg = 'Đã sao chép link!') {
+      if (!text) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => showToast(successMsg)).catch(() => fallbackCopy(text, successMsg));
+      } else {
+        fallbackCopy(text, successMsg);
+      }
+    }
+
+    function fallbackCopy(text, successMsg) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      showToast(successMsg);
+    }
+
+    function markAsInteracted(key) {
+      interactedKeys.add(key);
+      localStorage.setItem('interacted_links', JSON.stringify([...interactedKeys]));
+      const card = document.querySelector(`[data-key="${key}"]`);
+      if (card) card.classList.add('interacted');
+    }
+
+    function handleOpenTikTok(key, url) {
+      markAsInteracted(key);
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    function handleDeeplink(key, deeplink) {
+      markAsInteracted(key);
+      copyToClipboard(deeplink, '✔ Đã chép Deeplink TikTok App!');
+      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (isMobile && deeplink) {
+        showToast('🚀 Đang mở App TikTok...');
+        setTimeout(() => { window.location.href = deeplink; }, 150);
+      }
+    }
+
+    // Countdown auth
+    function updateAuthCountdown() {
+      const diff = EXPIRES_AT - Date.now();
+      const el = document.getElementById('authCountdown');
+      if (!el) return;
+      if (diff <= 0) { el.textContent = 'Đã hết hạn'; return; }
+      const h = Math.floor(diff / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      el.textContent = `${h}h ${String(m).padStart(2, '0')}m ${String(s).padStart(2, '0')}s`;
+    }
+    setInterval(updateAuthCountdown, 1000);
+    updateAuthCountdown();
+
+    const CATEGORIES = [
+      { code: 'all', name: '🔥 Tất cả' },
+      { code: 'keo_ngon', name: '👑 KÈO NGON NHẤT', isVip: true },
+      { code: 'ruong_lon', name: '🎁 Rương Lớn' },
+      { code: 'ruong_nho', name: '📦 Rương Nhỏ' },
+      { code: 'ruong_treo', name: '⚡ Rương Treo' },
+      { code: 'ruong_test', name: '🧪 Rương Test' },
+      { code: 'tui', name: '🎒 Túi' },
+      { code: 'tui_0xu', name: '🪙 Túi 0xu' }
+    ];
+
+    function renderTabs() {
+      const counts = { all: allLinks.length, keo_ngon: 0 };
+      allLinks.forEach(l => {
+        counts[l.category_code] = (counts[l.category_code] || 0) + 1;
+        if (isTopDeal(l)) counts.keo_ngon++;
+      });
+
+      const container = document.getElementById('categoryTabs');
+      container.innerHTML = CATEGORIES.map(cat => {
+        const count = counts[cat.code] || 0;
+        const isActive = activeCategory === cat.code;
+        const vipClass = cat.isVip ? 'special-vip' : '';
+        return `
+          <button class="tab-pill ${vipClass} ${isActive ? 'active' : ''}" onclick="selectTab('${cat.code}')">
+            <span>${cat.name}</span>
+            <span class="tab-badge">${count}</span>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function selectTab(code) {
+      activeCategory = code;
+      renderTabs();
+      filterAndRender();
+    }
+
+    function filterAndRender() {
+      const term = (document.getElementById('searchBox').value || '').toLowerCase().trim();
+      const minRatio = parseFloat(document.getElementById('ratioFilter').value) || 0;
+      const sortBy = document.getElementById('sortBy').value;
+
+      let filtered = allLinks.filter(l => {
+        // Tab lọc
+        if (activeCategory === 'keo_ngon') {
+          if (!isTopDeal(l)) return false;
+        } else if (activeCategory !== 'all' && l.category_code !== activeCategory) {
+          return false;
+        }
+
+        // Quick filter nút chỉ hiện kèo ngon
+        if (onlyTopDeals && !isTopDeal(l)) {
+          return false;
+        }
+
+        const ratioNum = parseFloat(l.ratio) || 0;
+        if (minRatio > 0 && ratioNum < minRatio) return false;
+        if (!term) return true;
+        const searchPool = (l.tt_id + ' ' + l.category_name + ' ' + l.box_bag + ' ' + l.ratio + ' ' + l.time_remaining).toLowerCase();
+        return searchPool.includes(term);
+      });
+
+      if (sortBy === 'ratio-desc') {
+        filtered.sort((a, b) => (parseFloat(b.ratio) || 0) - (parseFloat(a.ratio) || 0));
+      } else if (sortBy === 'box-desc') {
+        const getBox = s => parseInt((s || '').split('/')[0], 10) || 0;
+        filtered.sort((a, b) => getBox(b.box_bag) - getBox(a.box_bag));
+      }
+
+      const grid = document.getElementById('linksGrid');
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--text-muted);">
+            <div style="font-size: 36px; margin-bottom: 12px;">🔍</div>
+            <div style="font-size: 16px; font-weight: 700; color: #fff;">Không tìm thấy link nào phù hợp</div>
+            <div style="font-size: 13px; margin-top: 4px;">Hãy thử chọn tab khác hoặc tắt nút "Chỉ hiện Kèo Ngon"</div>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(l => {
+        const isInteracted = interactedKeys.has(l.key);
+        const avatarInitial = (l.tt_id ? l.tt_id.charAt(0) : 'L').toUpperCase();
+        const topDeal = isTopDeal(l);
+        const superVip = isSuperVIP(l);
+
+        return `
+          <div class="link-card ${topDeal ? 'is-top-deal' : ''} ${isInteracted ? 'interacted' : ''}" data-key="${l.key}">
+            ${superVip ? '<div class="vip-ribbon">💎 SIÊU VIP</div>' : (topDeal ? '<div class="vip-ribbon">👑 KÈO NGON</div>' : '')}
+            
+            <div class="card-top">
+              <div class="user-info">
+                <div class="user-avatar">${avatarInitial}</div>
+                <div class="user-text">
+                  <span class="user-name" title="@${l.tt_id}">@${l.tt_id || 'live'}</span>
+                  <span class="card-time">${l.created_at}</span>
+                </div>
+              </div>
+              <span class="cat-chip ${l.category_code}">${l.category_name}</span>
+            </div>
+
+            <div class="metrics-row">
+              <div class="metric-badge">
+                <span class="metric-title">💎 Tỉ Lệ Xu</span>
+                <span class="metric-val ratio">${l.ratio || 'N/A'}</span>
+              </div>
+              <div class="metric-badge">
+                <span class="metric-title">📦 Rương / Túi</span>
+                <span class="metric-val box">${l.box_bag || 'N/A'}</span>
+              </div>
+            </div>
+
+            <div class="countdown-strip">
+              <span>⏳</span>
+              <span>Thời gian: <strong>${l.time_remaining || 'Mở ngay'}</strong></span>
+              ${l.live_viewers ? `<span style="margin-left: auto;">👥 <strong>${l.live_viewers}</strong></span>` : ''}
+            </div>
+
+            <div class="card-footer">
+              <button class="btn-secondary" onclick="copyToClipboard('${l.web_url || l.gateway_url}')" title="Sao chép link Web">
+                📋 Copy
+              </button>
+              <button class="btn-secondary" onclick="handleDeeplink('${l.key}', '${l.deeplink}')" title="Sao chép & mở thẳng App TikTok">
+                📱 Deeplink
+              </button>
+              <button class="btn-open-tiktok" onclick="handleOpenTikTok('${l.key}', '${l.web_url}')">
+                🚀 Mở TikTok
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Auto Refresh
+    async function manualRefresh() {
+      const svg = document.getElementById('refreshSvg');
+      svg.style.animation = 'gradientMove 0.8s linear infinite';
+      try {
+        const res = await fetch('tiktok_links.json?t=' + Date.now());
+        if (res.ok) {
+          const fresh = await res.json();
+          const oldLen = allLinks.length;
+          allLinks = fresh.links || [];
+          const tb = document.getElementById('totalBadge');
+          if (tb) tb.textContent = allLinks.length;
+          renderTabs();
+          filterAndRender();
+          if (allLinks.length > oldLen) playChime();
+          showToast(`✔ Đã cập nhật ${allLinks.length} link mới nhất!`);
+        }
+      } catch (e) {
+        showToast('⚠️ Không thể tải cập nhật');
+      } finally {
+        svg.style.animation = '';
+      }
+    }
+
+    setInterval(manualRefresh, 6000);
+
+    renderTabs();
+    filterAndRender();
+  </script>
+</body>
+</html>
