@@ -5,9 +5,9 @@ const data = JSON.parse(raw);
 
 let html = fs.readFileSync('index.html', 'utf8');
 
-// Thay thế dòng let allLinks = []; bằng dữ liệu thực tế
-const replacement = `let allLinks = ${JSON.stringify(data.links)};`;
-html = html.replace(/let allLinks = \[\];/, replacement);
+// Cập nhật RAW_INITIAL_LINKS (giữ nguyên khóa cứng allLinks = [])
+const replacement = `const RAW_INITIAL_LINKS = ${JSON.stringify(data.links)};`;
+html = html.replace(/const RAW_INITIAL_LINKS = (\[.*?\]|JSON\.parse\(.*?\));/s, replacement);
 
 fs.writeFileSync('index.html', html, 'utf8');
-console.log('✔ Đã nhúng sẵn ' + data.links.length + ' link trực tiếp vào index.html!');
+console.log('✔ Đã nhúng sẵn ' + data.links.length + ' link vào bộ nhớ an toàn của index.html (Khóa cứng bản quyền được duy trì)!');

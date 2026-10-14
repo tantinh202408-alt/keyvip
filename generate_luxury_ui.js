@@ -902,11 +902,332 @@ const html = `<!DOCTYPE html>
         font-size: 12px;
         border-radius: 10px;
       }
+      .key-vip-badge {
+        grid-column: 1 / -1;
+        justify-content: space-between;
+      }
+    }
+
+    /* SANGDEV HARD-LOCK AUTH GATE STYLES */
+    #sangdevAuthGate {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 9999999;
+      background: radial-gradient(circle at 50% 25%, rgba(254, 44, 85, 0.22) 0%, rgba(7, 8, 12, 0.98) 65%), #07080c;
+      backdrop-filter: blur(40px);
+      -webkit-backdrop-filter: blur(40px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      overflow-y: auto;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    #sangdevAuthGate.unlocked {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .auth-card {
+      width: 100%;
+      max-width: 530px;
+      background: rgba(18, 20, 29, 0.94);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 28px;
+      padding: 36px 32px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9), 0 0 50px rgba(37, 244, 238, 0.18);
+      text-align: center;
+      animation: authCardPop 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes authCardPop {
+      0% { opacity: 0; transform: scale(0.92) translateY(20px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .auth-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #facc15, #ff7a00, #fe2c55, #25f4ee, #facc15);
+      background-size: 300% 100%;
+      animation: gradientMove 4s linear infinite;
+    }
+
+    .auth-shield-wrap {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 16px auto;
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(37, 244, 238, 0.22), rgba(254, 44, 85, 0.28));
+      border: 1.5px solid rgba(37, 244, 238, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 30px rgba(37, 244, 238, 0.35);
+      font-size: 36px;
+    }
+
+    .auth-brand {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      background: linear-gradient(45deg, #25f4ee 20%, #ff7a00, #fe2c55 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 6px;
+    }
+
+    .auth-lock-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(254, 44, 85, 0.15);
+      border: 1px solid rgba(254, 44, 85, 0.4);
+      color: #fe2c55;
+      font-size: 11.5px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 14px;
+    }
+
+    .auth-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 24px;
+    }
+
+    .auth-form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      text-align: left;
+    }
+
+    .auth-label {
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #facc15;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .auth-input-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .auth-input-icon {
+      position: absolute;
+      left: 14px;
+      font-size: 16px;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .auth-input {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      border: 1.5px solid rgba(255, 255, 255, 0.15);
+      border-radius: 14px;
+      padding: 13px 80px 13px 44px;
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13.5px;
+      font-weight: 700;
+      outline: none;
+      transition: all 0.25s ease;
+    }
+
+    .auth-input:focus {
+      border-color: var(--tiktok-cyan);
+      box-shadow: 0 0 20px rgba(37, 244, 238, 0.35);
+      background: rgba(0, 0, 0, 0.75);
+    }
+
+    .auth-input::placeholder {
+      color: #6b7280;
+      font-weight: 500;
+      font-family: var(--font);
+    }
+
+    .auth-paste-btn {
+      position: absolute;
+      right: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #25f4ee;
+      border-radius: 8px;
+      padding: 5px 10px;
+      font-size: 11.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .auth-paste-btn:hover {
+      background: rgba(37, 244, 238, 0.2);
+      border-color: #25f4ee;
+    }
+
+    .auth-btn-submit {
+      width: 100%;
+      background: linear-gradient(90deg, #ff7a00, #fe2c55, #25f4ee, #ff7a00);
+      background-size: 300% 100%;
+      animation: gradientMove 5s linear infinite;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 800;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      box-shadow: 0 8px 25px rgba(254, 44, 85, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+    }
+
+    .auth-btn-submit:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 35px rgba(37, 244, 238, 0.5);
+    }
+
+    .auth-btn-submit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .auth-status {
+      min-height: 20px;
+      border-radius: 12px;
+      padding: 11px 14px;
+      font-size: 12.5px;
+      font-weight: 600;
+      line-height: 1.45;
+      display: none;
+    }
+
+    .auth-status.loading {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(37, 244, 238, 0.1);
+      border: 1px solid rgba(37, 244, 238, 0.3);
+      color: var(--tiktok-cyan);
+    }
+
+    .auth-status.error {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(254, 44, 85, 0.14);
+      border: 1px solid rgba(254, 44, 85, 0.4);
+      color: #ff6b81;
+      animation: shakeError 0.4s ease;
+    }
+
+    .auth-status.success {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(34, 197, 94, 0.14);
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: #4ade80;
+    }
+
+    @keyframes shakeError {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-6px); }
+      75% { transform: translateX(6px); }
+    }
+
+    .auth-footer {
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .auth-footer a {
+      color: var(--tiktok-cyan);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .auth-footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* KEY VIP STATUS BADGE IN HEADER */
+    .key-vip-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(37, 244, 238, 0.1);
+      border: 1px solid rgba(37, 244, 238, 0.35);
+      padding: 7px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+      user-select: none;
+    }
+
+    .key-vip-badge .key-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 8px #22c55e;
+    }
+
+    .key-vip-badge .btn-change-key {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #facc15;
+      border-radius: 6px;
+      padding: 2px 8px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-left: 4px;
+      transition: all 0.2s;
+    }
+
+    .key-vip-badge .btn-change-key:hover {
+      background: rgba(250, 204, 21, 0.2);
+      border-color: #facc15;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <!-- KHÓA CỨNG: GIAO DIỆN CHỈ HIỂN THỊ KHI KEY HỢP LỆ -->
+  <div class="container" id="mainAppContainer" style="display: none;">
     <!-- Top Hero Header -->
     <div class="hero-card">
       <div class="nav-header">
@@ -928,6 +1249,10 @@ const html = `<!DOCTYPE html>
             <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">
               Hệ thống quét & lọc link live rương - túi ngon nhất tốc độ cao
             </div>
+            <div style="font-size: 11.5px; color: #22c55e; margin-top: 4px; font-weight: 700; display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+              <span class="beacon-dot" style="background:#22c55e; box-shadow:0 0 8px #22c55e;"></span>
+              <span>⚡ REAL-TIME ON-DEMAND: Chỉ quét link khi có bạn đang xem | Tự động lọc bỏ link cũ trên 8 phút</span>
+            </div>
             <div style="font-size: 11.5px; color: var(--tiktok-cyan); margin-top: 4px; font-family: var(--mono); display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
               <span style="color: #facc15; font-weight: 700;">🌐 Link Mobile (TryCloudflare):</span>
               <a href="https://longitude-speed-keno-cleanup.trycloudflare.com" target="_blank" style="color: #25f4ee; text-decoration: underline; font-weight: 700;">
@@ -939,6 +1264,11 @@ const html = `<!DOCTYPE html>
         </div>
 
         <div class="nav-actions">
+          <div class="key-vip-badge" id="keyVipBadge" style="display: none;">
+            <span class="key-dot"></span>
+            <span id="keyVipText">Key: ...</span>
+            <button class="btn-change-key" onclick="promptChangeKey()" title="Đổi Key bản quyền hoặc Đăng xuất">Đổi</button>
+          </div>
           <button class="btn-icon btn-help" onclick="toggleModal(true)" title="Tìm hiểu Deeplink là gì">
             <span>❓ Deeplink là gì?</span>
           </button>
@@ -1020,16 +1350,285 @@ const html = `<!DOCTYPE html>
     <span id="toastMsg">Đã sao chép!</span>
   </div>
 
+  <!-- MODAL KHÓA CỨNG BẢN QUYỀN SANGDEV.ONLINE -->
+  <div id="sangdevAuthGate">
+    <div class="auth-card">
+      <div class="auth-shield-wrap">
+        <span class="auth-lock-icon">🔒</span>
+      </div>
+      <div class="auth-brand">sangdev.online</div>
+      <div>
+        <span class="auth-lock-tag">
+          <span class="beacon-dot" style="background:#fe2c55; box-shadow:0 0 10px #fe2c55;"></span>
+          HỆ THỐNG ĐÃ KHÓA CỨNG BẢN QUYỀN
+        </span>
+      </div>
+      <div class="auth-desc">
+        Hệ thống Săn Rương TikTok đã được kích hoạt chế độ bảo vệ bản quyền. Vui lòng cung cấp mã Key hợp lệ từ máy chủ <b>sangdev.online</b> để vào hệ thống.
+      </div>
+
+      <div class="auth-form" onsubmit="event.preventDefault(); submitKeyAuth();">
+        <label class="auth-label" for="licenseKeyInput">
+          <span>🔑 Mã Key Bản Quyền</span>
+          <span style="font-weight: 500; font-size: 11px; color: var(--text-muted); text-transform: none;">Check tự động qua API</span>
+        </label>
+        
+        <div class="auth-input-container">
+          <span class="auth-input-icon">⚡</span>
+          <input 
+            type="text" 
+            id="licenseKeyInput" 
+            class="auth-input" 
+            placeholder="Nhập mã Key (ví dụ: FREE-... hoặc TOKEN...)" 
+            autocomplete="off" 
+            spellcheck="false"
+            onkeydown="if(event.key === 'Enter') submitKeyAuth();"
+          >
+          <button type="button" class="auth-paste-btn" onclick="pasteKeyFromClipboard()">📋 Dán</button>
+        </div>
+
+        <button type="button" id="btnSubmitKey" class="auth-btn-submit" onclick="submitKeyAuth()">
+          <span id="btnSubmitIcon">🚀</span>
+          <span id="btnSubmitText">XÁC THỰC & MỞ KHÓA NGAY</span>
+        </button>
+
+        <div id="authGateStatus" class="auth-status"></div>
+      </div>
+
+      <div class="auth-footer">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <span>🌐 Trang chủ: <a href="https://sangdev.online" target="_blank" rel="noopener">sangdev.online</a></span>
+          <span>💬 Zalo Admin: <strong style="color: #facc15;">0335764804</strong></span>
+        </div>
+        <div style="font-size: 11px; color: #6b7280; margin-top: 4px;">
+          API Xác thực: <code>https://sangdev.online/api/key/check?key=</code>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script>
-    const INITIAL_LINKS = ${JSON.stringify(data.links)};
+    const RAW_INITIAL_LINKS = []; // Không dùng dữ liệu cũ đóng băng, nạp Real-time ngay khi vào trang!
     const EXPIRES_AT = new Date('${data.auth_info.expires_at}').getTime();
     const DEVICE_ID = '${data.auth_info.device_id}';
 
-    let allLinks = [...INITIAL_LINKS];
+    const SANGDEV_KEY_STORAGE = 'sangdev_license_key';
+    const SANGDEV_API_BASE = 'https://sangdev.online/api/key/check?key=';
+
+    let isKeyAuthorized = false;
+    let currentValidKey = '';
+    let recheckInterval = null;
+    let autoRefreshInterval = null;
+
+    let allLinks = []; // KHÓA CỨNG: Để trống cho đến khi xác thực Key thành công!
     let activeCategory = 'all';
     let onlyTopDeals = false;
     let soundEnabled = true;
     let interactedKeys = new Set(JSON.parse(localStorage.getItem('interacted_links') || '[]'));
+
+    function parseCreatedAt(str) {
+      if (!str) return 0;
+      const parts = str.trim().split(' ');
+      if (parts.length < 2) return 0;
+      const [h, m, s] = (parts[0] || '').split(':').map(Number);
+      const [dd, mm, yy] = (parts[1] || '').split('/').map(Number);
+      const year = yy < 100 ? 2000 + yy : yy;
+      return new Date(year, (mm || 1) - 1, dd || 1, h || 0, m || 0, s || 0).getTime();
+    }
+
+    function formatRelativeTime(createdAtStr) {
+      const t = parseCreatedAt(createdAtStr);
+      if (!t) return createdAtStr;
+      const diffSec = Math.max(0, Math.round((Date.now() - t) / 1000));
+      if (diffSec < 45) return '⚡ Vừa xong (' + diffSec + 's)';
+      const diffMin = Math.floor(diffSec / 60);
+      return '⚡ ' + diffMin + 'p trước (' + createdAtStr.split(' ')[0] + ')';
+    }
+
+    // ==========================================
+    // CÁC HÀM XÁC THỰC KEY SANGDEV.ONLINE
+    // ==========================================
+    function showAuthStatus(type, msg) {
+      const statusBox = document.getElementById('authGateStatus');
+      if (!statusBox) return;
+      statusBox.className = 'auth-status ' + type;
+      if (type === 'loading') {
+        statusBox.innerHTML = '<span class="beacon-dot" style="background:#25f4ee; box-shadow:0 0 8px #25f4ee;"></span><span>' + msg + '</span>';
+      } else {
+        statusBox.textContent = msg;
+      }
+      statusBox.style.display = 'flex';
+    }
+
+    function setSubmitButtonLoading(isLoading) {
+      const btn = document.getElementById('btnSubmitKey');
+      const icon = document.getElementById('btnSubmitIcon');
+      const text = document.getElementById('btnSubmitText');
+      if (!btn) return;
+      btn.disabled = isLoading;
+      if (isLoading) {
+        if (icon) icon.textContent = '⏳';
+        if (text) text.textContent = 'ĐANG XÁC THỰC...';
+      } else {
+        if (icon) icon.textContent = '🚀';
+        if (text) text.textContent = 'XÁC THỰC & MỞ KHÓA NGAY';
+      }
+    }
+
+    async function pasteKeyFromClipboard() {
+      try {
+        if (navigator.clipboard && navigator.clipboard.readText) {
+          const text = await navigator.clipboard.readText();
+          if (text) {
+            const input = document.getElementById('licenseKeyInput');
+            if (input) {
+              input.value = text.trim();
+              input.focus();
+              showToast('✔ Đã dán Key từ bộ nhớ tạm!');
+            }
+          }
+        } else {
+          showToast('Vui lòng dùng phím Ctrl+V để dán Key');
+        }
+      } catch (err) {
+        showToast('Vui lòng dùng phím Ctrl+V để dán Key');
+      }
+    }
+
+    async function verifySangdevKey(key, isSilent = false) {
+      const cleanKey = String(key || '').trim();
+      if (!cleanKey) {
+        showAuthStatus('error', 'Vui lòng cung cấp mã Key bản quyền!');
+        return false;
+      }
+
+      showAuthStatus('loading', 'Đang kiểm tra mã Key với máy chủ sangdev.online...');
+      setSubmitButtonLoading(true);
+
+      try {
+        const apiUrl = SANGDEV_API_BASE + encodeURIComponent(cleanKey);
+        let data = null;
+
+        try {
+          const res = await fetch(apiUrl, { method: 'GET' });
+          data = await res.json();
+        } catch (fetchErr) {
+          // Thử gọi qua endpoint proxy của server nội bộ nếu có
+          try {
+            const localProxyRes = await fetch('/api/check-key?key=' + encodeURIComponent(cleanKey));
+            data = await localProxyRes.json();
+          } catch (proxyErr) {
+            throw fetchErr;
+          }
+        }
+
+        if (data && data.valid === true) {
+          isKeyAuthorized = true;
+          currentValidKey = cleanKey;
+          localStorage.setItem(SANGDEV_KEY_STORAGE, cleanKey);
+          localStorage.setItem('sangdev_key_data', JSON.stringify(data));
+
+          showAuthStatus('success', '✅ Key hợp lệ! Đang mở khóa và tải hệ thống...');
+
+          setTimeout(() => {
+            // Mở khóa giao diện
+            const gate = document.getElementById('sangdevAuthGate');
+            if (gate) gate.classList.add('unlocked');
+            const app = document.getElementById('mainAppContainer');
+            if (app) app.style.display = 'block';
+
+            // Cập nhật Key Badge trên Header
+            const badge = document.getElementById('keyVipBadge');
+            const keyText = document.getElementById('keyVipText');
+            if (badge && keyText) {
+              badge.style.display = 'inline-flex';
+              const displayShort = cleanKey.length > 16 ? cleanKey.slice(0, 14) + '...' : cleanKey;
+              keyText.textContent = 'Key: ' + displayShort;
+            }
+
+            // Nạp dữ liệu Real-time tức thì khi vào hệ thống
+            manualRefresh(true);
+            showToast('🎉 Xác thực thành công! Đang tải dữ liệu Real-time mới nhất...');
+
+            // Khởi động vòng lặp kiểm tra định kỳ mỗi 3 phút (chống thu hồi key / hết hạn)
+            if (!recheckInterval) {
+              recheckInterval = setInterval(checkKeyValidityPeriodically, 180000);
+            }
+
+            // Khởi động auto refresh dữ liệu mỗi 4.5s
+            if (!autoRefreshInterval) {
+              autoRefreshInterval = setInterval(manualRefresh, 4500);
+            }
+          }, 350);
+
+          return true;
+        } else {
+          isKeyAuthorized = false;
+          allLinks = [];
+          localStorage.removeItem(SANGDEV_KEY_STORAGE);
+          const msg = data?.message || 'Mã Key không tồn tại hoặc đã hết hạn trên hệ thống sangdev.online!';
+          showAuthStatus('error', '❌ ' + msg);
+          return false;
+        }
+      } catch (err) {
+        showAuthStatus('error', '❌ Lỗi kết nối tới máy chủ sangdev.online. Vui lòng kiểm tra mạng!');
+        return false;
+      } finally {
+        setSubmitButtonLoading(false);
+      }
+    }
+
+    function submitKeyAuth() {
+      const input = document.getElementById('licenseKeyInput');
+      const key = (input ? input.value : '').trim();
+      verifySangdevKey(key);
+    }
+
+    function lockSystemDueToInvalidKey(reason) {
+      isKeyAuthorized = false;
+      allLinks = [];
+      localStorage.removeItem(SANGDEV_KEY_STORAGE);
+
+      const grid = document.getElementById('linksGrid');
+      if (grid) grid.innerHTML = '';
+      const app = document.getElementById('mainAppContainer');
+      if (app) app.style.display = 'none';
+      const gate = document.getElementById('sangdevAuthGate');
+      if (gate) gate.classList.remove('unlocked');
+      const badge = document.getElementById('keyVipBadge');
+      if (badge) badge.style.display = 'none';
+
+      showAuthStatus('error', reason || 'Key bản quyền đã hết hạn hoặc bị thu hồi trên máy chủ sangdev.online!');
+      const input = document.getElementById('licenseKeyInput');
+      if (input) {
+        input.value = '';
+        setTimeout(() => input.focus(), 200);
+      }
+    }
+
+    function promptChangeKey() {
+      const ok = confirm('Bạn có muốn đổi mã Key hoặc đăng xuất khỏi hệ thống không?');
+      if (ok) {
+        lockSystemDueToInvalidKey('Vui lòng nhập mã Key mới để tiếp tục truy cập hệ thống.');
+        showToast('Đã đăng xuất Key. Hệ thống đã khóa lại!');
+      }
+    }
+
+    async function checkKeyValidityPeriodically() {
+      if (!isKeyAuthorized || !currentValidKey) return;
+      try {
+        const apiUrl = SANGDEV_API_BASE + encodeURIComponent(currentValidKey);
+        const res = await fetch(apiUrl);
+        if (res.ok) {
+          const data = await res.json();
+          if (!data || data.valid !== true) {
+            lockSystemDueToInvalidKey(data?.message || 'Key của bạn đã hết hạn hoặc bị thu hồi!');
+          }
+        }
+      } catch (e) {
+        // Tạm thời bỏ qua nếu mất mạng chớp nhoáng
+      }
+    }
 
     // Tiêu chí KÈO NGON NHẤT:
     // 1. Tỉ lệ xu >= 5.0 xu (nhận được nhiều xu mỗi lượt)
@@ -1100,6 +1699,10 @@ const html = `<!DOCTYPE html>
     }
 
     function copyToClipboard(text, successMsg = 'Đã sao chép link!') {
+      if (!isKeyAuthorized) {
+        showToast('⚠️ Hệ thống đang bị khóa! Vui lòng nhập Key đúng.');
+        return;
+      }
       if (!text) return;
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(text).then(() => showToast(successMsg)).catch(() => fallbackCopy(text, successMsg));
@@ -1119,6 +1722,7 @@ const html = `<!DOCTYPE html>
     }
 
     function markAsInteracted(key) {
+      if (!isKeyAuthorized) return;
       interactedKeys.add(key);
       localStorage.setItem('interacted_links', JSON.stringify([...interactedKeys]));
       const card = document.querySelector(\`[data-key="\${key}"]\`);
@@ -1126,11 +1730,19 @@ const html = `<!DOCTYPE html>
     }
 
     function handleOpenTikTok(key, url) {
+      if (!isKeyAuthorized) {
+        showToast('⚠️ Hệ thống đang bị khóa! Vui lòng nhập Key đúng.');
+        return;
+      }
       markAsInteracted(key);
       window.open(url, '_blank', 'noopener,noreferrer');
     }
 
     function handleDeeplink(key, deeplink) {
+      if (!isKeyAuthorized) {
+        showToast('⚠️ Hệ thống đang bị khóa! Vui lòng nhập Key đúng.');
+        return;
+      }
       markAsInteracted(key);
       copyToClipboard(deeplink, '✔ Đã chép Deeplink TikTok App!');
       const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
@@ -1193,6 +1805,11 @@ const html = `<!DOCTYPE html>
     }
 
     function filterAndRender() {
+      if (!isKeyAuthorized) {
+        const grid = document.getElementById('linksGrid');
+        if (grid) grid.innerHTML = '';
+        return;
+      }
       const term = (document.getElementById('searchBox').value || '').toLowerCase().trim();
       const minRatio = parseFloat(document.getElementById('ratioFilter').value) || 0;
       const sortBy = document.getElementById('sortBy').value;
@@ -1251,7 +1868,7 @@ const html = `<!DOCTYPE html>
                 <div class="user-avatar">\${avatarInitial}</div>
                 <div class="user-text">
                   <span class="user-name" title="@\${l.tt_id}">@\${l.tt_id || 'live'}</span>
-                  <span class="card-time">\${l.created_at}</span>
+                  <span class="card-time" title="\${l.created_at}">\${formatRelativeTime(l.created_at)}</span>
                 </div>
               </div>
               <span class="cat-chip \${l.category_code}">\${l.category_name}</span>
@@ -1290,12 +1907,20 @@ const html = `<!DOCTYPE html>
       }).join('');
     }
 
-    // Auto Refresh
-    async function manualRefresh() {
+    // Auto Refresh - Realtime On-Demand (Chỉ quét khi đang xem)
+    async function manualRefresh(isFirstLoad = false) {
+      if (!isKeyAuthorized) return;
       const svg = document.getElementById('refreshSvg');
-      svg.style.animation = 'gradientMove 0.8s linear infinite';
+      if (svg) svg.style.animation = 'gradientMove 0.8s linear infinite';
       try {
-        const res = await fetch('tiktok_links.json?t=' + Date.now());
+        const queryParams = new URLSearchParams({
+          key: currentValidKey || '',
+          t: String(Date.now())
+        });
+        const endpoint = (window.location.protocol === 'file:' || !window.location.host)
+          ? 'http://localhost:3000/tiktok_links.json?' + queryParams.toString()
+          : 'tiktok_links.json?' + queryParams.toString();
+        const res = await fetch(endpoint);
         if (res.ok) {
           const fresh = await res.json();
           const oldLen = allLinks.length;
@@ -1304,24 +1929,63 @@ const html = `<!DOCTYPE html>
           if (tb) tb.textContent = allLinks.length;
           renderTabs();
           filterAndRender();
-          if (allLinks.length > oldLen) playChime();
-          showToast(\`✔ Đã cập nhật \${allLinks.length} link mới nhất!\`);
+          if (allLinks.length > oldLen && !isFirstLoad) playChime();
+          if (isFirstLoad) {
+            showToast(\`✔ Đã tải \${allLinks.length} link Real-time mới nhất!\`);
+          } else {
+            showToast(\`✔ Đã cập nhật \${allLinks.length} link mới nhất!\`);
+          }
+        } else if (res.status === 401 || res.status === 403) {
+          lockSystemDueToInvalidKey('Máy chủ từ chối: Key bản quyền không hợp lệ hoặc đã bị khóa!');
         }
       } catch (e) {
-        showToast('⚠️ Không thể tải cập nhật');
+        if (!isFirstLoad) showToast('⚠️ Không thể tải cập nhật');
       } finally {
-        svg.style.animation = '';
+        if (svg) svg.style.animation = '';
       }
     }
 
-    setInterval(manualRefresh, 6000);
+    // Tự động tạm dừng quét khi người dùng ẩn/rời khỏi tab để tiết kiệm tài nguyên
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        if (autoRefreshInterval) {
+          clearInterval(autoRefreshInterval);
+          autoRefreshInterval = null;
+        }
+      } else {
+        if (isKeyAuthorized && !autoRefreshInterval) {
+          manualRefresh();
+          autoRefreshInterval = setInterval(manualRefresh, 4500);
+        }
+      }
+    });
 
-    renderTabs();
-    filterAndRender();
+    // Tự động kiểm tra Key trên URL query (?key=...) hoặc LocalStorage khi tải trang
+    function initSangdevLicense() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlKey = urlParams.get('key');
+      const savedKey = urlKey || localStorage.getItem(SANGDEV_KEY_STORAGE);
+
+      if (savedKey) {
+        const input = document.getElementById('licenseKeyInput');
+        if (input) input.value = savedKey;
+        verifySangdevKey(savedKey, true);
+      } else {
+        const input = document.getElementById('licenseKeyInput');
+        if (input) {
+          setTimeout(() => input.focus(), 300);
+        }
+      }
+    }
+
+    // Bắt đầu khởi tạo hệ thống bảo vệ bản quyền
+    initSangdevLicense();
   </script>
 </body>
 </html>`;
 
 fs.writeFileSync('index.html', html, 'utf8');
-fs.copyFileSync('index.html', 'C:/Users/nguye/.gemini/antigravity/brain/85dd3526-91ce-42e0-905b-b48ad48db2bb/dashboard.html');
-console.log('✔ Đã biên dịch xong giao diện KÈO NGON NHẤT & Cập nhật cả 2 file!');
+try {
+  fs.copyFileSync('index.html', 'C:/Users/nguye/.gemini/antigravity/brain/85dd3526-91ce-42e0-905b-b48ad48db2bb/dashboard.html');
+} catch (e) {}
+console.log('✔ Đã biên dịch xong giao diện KÈO NGON NHẤT & Tích hợp Khóa Cứng Bản Quyền sangdev.online!');

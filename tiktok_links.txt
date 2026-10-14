@@ -1,1440 +1,1420 @@
 ========================================================================
    DANH SÁCH LINK LIVE TIKTOK RƯƠNG - TÚI TỪ VOHOAINAM.NET
    Thiết bị: device_1c7fc1c4-278c-41b5-8a37-ea4196c38b77 | Key: CTV1-ZU4E-AKYL-5YM3 | Hết hạn: 2026-10-15T12:53:30.048Z
-   Tổng số link: 287 | Thời gian lấy: 20:56:38 14/10/2026
+   Tổng số link: 283 | Thời gian lấy: 21:06:21 14/10/2026
 ========================================================================
 
-[20:56:29 14/10/26] [Rương Test] @yu*uun_1203 | Box: 20/15 | Ratio: 1.3 xu | Live: 15000/15592 | Time: 00:40s - 20:57:08
-  • Deeplink App : snssdk1180://live?room_id=7696499846845811508
-  • Web TikTok   : https://www.tiktok.com/@yu*uun_1203/live
-  • Gateway      : https://vohoainam.net/bqdczxofhw5xdlink188990
+[21:06:09 14/10/26] [Rương Test] @joi*devivre241172 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:49
+  • Deeplink App : snssdk1180://live?room_id=7696518925827967776
+  • Web TikTok   : https://www.tiktok.com/@joi*devivre241172/live
+  • Gateway      : https://vohoainam.net/trifda1iu143hlink190759
 
-[20:56:29 14/10/26] [Rương Test] @sisiuse*3 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:57:08
-  • Deeplink App : snssdk1180://live?room_id=7696494472531626759
-  • Web TikTok   : https://www.tiktok.com/@sisiuse*3/live
-  • Gateway      : https://vohoainam.net/023cdp6gr80allink188989
-
-[20:56:28 14/10/26] [Túi] @nankanetetayo | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:58:00
-  • Deeplink App : snssdk1180://live?room_id=7696492651453614849
-  • Web TikTok   : https://www.tiktok.com/@nankanetetayo/live
-  • Gateway      : https://vohoainam.net/4p5kgjndaz8i5link188988
-
-[20:56:27 14/10/26] [Rương Test] @arielu*hoa2 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15590 | Time: 00:40s - 20:57:06
-  • Deeplink App : snssdk1180://live?room_id=7696488344556964626
-  • Web TikTok   : https://www.tiktok.com/@arielu*hoa2/live
-  • Gateway      : https://vohoainam.net/rde3zw2xrmbqslink188987
-
-[20:56:27 14/10/26] [Rương Treo]  | Box: 40/20 | Ratio: 2.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696507951271480086
+[21:06:09 14/10/26] [Rương Treo]  | Box: 1000/500 | Ratio: 2.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696519731299224340
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/pcohsngzmkkd6link188985
+  • Gateway      : https://vohoainam.net/5ggusie6bdn8jlink190758
 
-[20:56:27 14/10/26] [Rương Test] @ni*saannee | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:57:05
-  • Deeplink App : snssdk1180://live?room_id=7696517929449704210
-  • Web TikTok   : https://www.tiktok.com/@ni*saannee/live
-  • Gateway      : https://vohoainam.net/ektl96pw0jmgtlink188984
+[21:06:09 14/10/26] [Rương Test] @ba*is0684 | Box: 20/20 | Ratio: 1.0 xu | Live: N/A | Time: 00:40s - 21:06:48
+  • Deeplink App : snssdk1180://live?room_id=7696521724166146849
+  • Web TikTok   : https://www.tiktok.com/@ba*is0684/live
+  • Gateway      : https://vohoainam.net/q2ttzyb6fxzeklink190757
 
-[20:56:26 14/10/26] [Rương Test] @neme.h*k | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15611 | Time: 00:40s - 20:57:02
-  • Deeplink App : snssdk1180://live?room_id=7696500510010034962
-  • Web TikTok   : https://www.tiktok.com/@neme.h*k/live
-  • Gateway      : https://vohoainam.net/afuwzq0vx38eglink188986
+[21:06:09 14/10/26] [Rương Test] @derstillebeobacht*r | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:47
+  • Deeplink App : snssdk1180://live?room_id=7696513707060284182
+  • Web TikTok   : https://www.tiktok.com/@derstillebeobacht*r/live
+  • Gateway      : https://vohoainam.net/fp9iv0yafkdbmlink190756
 
-[20:56:26 14/10/26] [Rương Nhỏ] @usaginom*rukichi | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15588 | Time: 01:10s - 20:57:35
-  • Deeplink App : snssdk1180://live?room_id=7696473937565223681
-  • Web TikTok   : https://www.tiktok.com/@usaginom*rukichi/live
-  • Gateway      : https://vohoainam.net/h0dxakvo3ohoblink188983
+[21:06:09 14/10/26] [Rương Test] @mademoisel*emeli1 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:48
+  • Deeplink App : snssdk1180://live?room_id=7696521339091749665
+  • Web TikTok   : https://www.tiktok.com/@mademoisel*emeli1/live
+  • Gateway      : https://vohoainam.net/hn4dli8u29tw3link190755
 
-[20:56:25 14/10/26] [Túi] @uyenbe.iu | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:58
-  • Deeplink App : snssdk1180://live?room_id=7696508761537530645
-  • Web TikTok   : https://www.tiktok.com/@uyenbe.iu/live
-  • Gateway      : https://vohoainam.net/nueei7c45ds2wlink188982
-
-[20:56:25 14/10/26] [Rương Test] @kok*tou.milk | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15611 | Time: 00:40s - 20:57:04
-  • Deeplink App : snssdk1180://live?room_id=7696511442742201109
-  • Web TikTok   : https://www.tiktok.com/@kok*tou.milk/live
-  • Gateway      : https://vohoainam.net/ko2kvupibguv8link188981
-
-[20:56:25 14/10/26] [Rương Nhỏ] @ye*an_21 | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:57:34
-  • Deeplink App : snssdk1180://live?room_id=7696517730723220230
-  • Web TikTok   : https://www.tiktok.com/@ye*an_21/live
-  • Gateway      : https://vohoainam.net/entc0yijahotflink188980
-
-[20:56:25 14/10/26] [Rương Test] @yy*yagiyagi | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15611 | Time: 00:40s - 20:57:04
-  • Deeplink App : snssdk1180://live?room_id=7696508804738943751
-  • Web TikTok   : https://www.tiktok.com/@yy*yagiyagi/live
-  • Gateway      : https://vohoainam.net/igoju5of4nioulink188979
-
-[20:56:24 14/10/26] [Rương Test] @ma*i_maristyle8.3 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15611 | Time: 00:40s - 20:57:03
-  • Deeplink App : snssdk1180://live?room_id=7696500088968858386
-  • Web TikTok   : https://www.tiktok.com/@ma*i_maristyle8.3/live
-  • Gateway      : https://vohoainam.net/ehqlv99eto80ylink188978
-
-[20:56:24 14/10/26] [Rương Test] @nana.91*09 | Box: 20/15 | Ratio: 1.3 xu | Live: N/A | Time: 00:40s - 20:57:03
-  • Deeplink App : snssdk1180://live?room_id=7696477688613997333
-  • Web TikTok   : https://www.tiktok.com/@nana.91*09/live
-  • Gateway      : https://vohoainam.net/jord2svuyhisflink188977
-
-[20:56:24 14/10/26] [Túi] @andri2604_ | Box: 50/5 | Ratio: 10.0 xu | Live: N/A | Time: 01:30s - 20:57:55
-  • Deeplink App : snssdk1180://live?room_id=7696517026283457286
-  • Web TikTok   : https://www.tiktok.com/@andri2604_/live
-  • Gateway      : https://vohoainam.net/2rt44dfl7nsdflink188976
-
-[20:56:23 14/10/26] [Rương Test] @l*vekongju | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15611 | Time: 00:40s - 20:57:02
-  • Deeplink App : snssdk1180://live?room_id=7696492739861777170
-  • Web TikTok   : https://www.tiktok.com/@l*vekongju/live
-  • Gateway      : https://vohoainam.net/2uhatzspta4p6link188975
-
-[20:56:23 14/10/26] [Rương Treo]  | Box: 100/25 | Ratio: 4.0 xu | Live: 19000/19793 | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696499755798596359
+[21:06:08 14/10/26] [Rương Treo]  | Box: 111/10 | Ratio: 11.1 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696431550967859969
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/bnm02e7kipwu5link188974
-
-[20:56:23 14/10/26] [Túi] @sayasaya102538 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:56
-  • Deeplink App : snssdk1180://live?room_id=7696454176536005383
-  • Web TikTok   : https://www.tiktok.com/@sayasaya102538/live
-  • Gateway      : https://vohoainam.net/nht7il558litrlink188973
-
-[20:56:23 14/10/26] [Rương Test] @sayak*r07 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15611 | Time: 00:40s - 20:57:02
-  • Deeplink App : snssdk1180://live?room_id=7696476305683974918
-  • Web TikTok   : https://www.tiktok.com/@sayak*r07/live
-  • Gateway      : https://vohoainam.net/5k8brg1ydozv8link188971
-
-[20:56:23 14/10/26] [Rương Test] @i*_a_hero22 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:57:02
-  • Deeplink App : snssdk1180://live?room_id=7696467392629345032
-  • Web TikTok   : https://www.tiktok.com/@i*_a_hero22/live
-  • Gateway      : https://vohoainam.net/dsqtd6vs363b2link188970
-
-[20:56:22 14/10/26] [Rương Test] @yu*iperon | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15609 | Time: 00:40s - 20:57:00
-  • Deeplink App : snssdk1180://live?room_id=7696491255030647573
-  • Web TikTok   : https://www.tiktok.com/@yu*iperon/live
-  • Gateway      : https://vohoainam.net/jly7fdncu1o6plink188969
-
-[20:56:22 14/10/26] [Rương Test] @huy*ntran1928 | Box: 50/50 | Ratio: 1.0 xu | Live: N/A | Time: 00:40s - 20:57:01
-  • Deeplink App : snssdk1180://live?room_id=7696517376598903572
-  • Web TikTok   : https://www.tiktok.com/@huy*ntran1928/live
-  • Gateway      : https://vohoainam.net/tv5c9gz9gyw1glink188968
-
-[20:56:22 14/10/26] [Túi] @bzdx1 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:54
-  • Deeplink App : snssdk1180://live?room_id=7696496727599532808
-  • Web TikTok   : https://www.tiktok.com/@bzdx1/live
-  • Gateway      : https://vohoainam.net/cuvioygpq331klink188967
-
-[20:56:21 14/10/26] [Rương Lớn] @pp.*ilin | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: 01:19s - 20:57:43
-  • Deeplink App : snssdk1180://live?room_id=7696508827154860821
-  • Web TikTok   : https://www.tiktok.com/@pp.*ilin/live
-  • Gateway      : https://vohoainam.net/u8qwo3pi72azqlink188966
-
-[20:56:21 14/10/26] [Rương Lớn] @daniele_negr*ni | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: 01:20s - 20:57:43
-  • Deeplink App : snssdk1180://live?room_id=7696476094744103702
-  • Web TikTok   : https://www.tiktok.com/@daniele_negr*ni/live
-  • Gateway      : https://vohoainam.net/4h300oexmprd6link188964
-
-[20:56:20 14/10/26] [Rương Treo]  | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696517745254238997
-  • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/7r0v917p6zah5link188963
-
-[20:56:20 14/10/26] [Rương Treo]  | Box: 50/25 | Ratio: 2.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696501271494380310
-  • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/r4qslls14bzf5link188961
-
-[20:56:19 14/10/26] [Rương Test] @cha*isa_alk | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:58
-  • Deeplink App : snssdk1180://live?room_id=7696497675719723796
-  • Web TikTok   : https://www.tiktok.com/@cha*isa_alk/live
-  • Gateway      : https://vohoainam.net/vwvf6qzoujlo4link188960
-
-[20:56:18 14/10/26] [Rương Test] @b*serg0 | Box: 20/15 | Ratio: 1.3 xu | Live: N/A | Time: 00:40s - 20:56:57
-  • Deeplink App : snssdk1180://live?room_id=7696517741375916821
-  • Web TikTok   : https://www.tiktok.com/@b*serg0/live
-  • Gateway      : https://vohoainam.net/q9rltuqtm4lqplink188958
-
-[20:56:18 14/10/26] [Túi] @nanachu00 | Box: 100/20 | Ratio: 5.0 xu | Live: N/A | Time: 01:30s - 20:57:50
-  • Deeplink App : snssdk1180://live?room_id=7696507510404008756
-  • Web TikTok   : https://www.tiktok.com/@nanachu00/live
-  • Gateway      : https://vohoainam.net/m5lausiol16bqlink188957
-
-[20:56:18 14/10/26] [Rương Test] @69love*_69 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:57
-  • Deeplink App : snssdk1180://live?room_id=7696492733197077300
-  • Web TikTok   : https://www.tiktok.com/@69love*_69/live
-  • Gateway      : https://vohoainam.net/sav6zszqqzqhklink188956
-
-[20:56:17 14/10/26] [Rương Test] @aj*ns | Box: 501/495 | Ratio: 1.0 xu | Live: 15000/15606 | Time: 00:40s - 20:56:55
-  • Deeplink App : snssdk1180://live?room_id=7696508495004896008
-  • Web TikTok   : https://www.tiktok.com/@aj*ns/live
-  • Gateway      : https://vohoainam.net/kymkvqd7vm97vlink188955
-
-[20:56:17 14/10/26] [Rương Test] @gohantte*isiyone | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:56
-  • Deeplink App : snssdk1180://live?room_id=7696477012453722887
-  • Web TikTok   : https://www.tiktok.com/@gohantte*isiyone/live
-  • Gateway      : https://vohoainam.net/gona627tucw8ylink188954
-
-[20:56:16 14/10/26] [Rương Test] @t.him*o | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:55
-  • Deeplink App : snssdk1180://live?room_id=7696515309313870644
-  • Web TikTok   : https://www.tiktok.com/@t.him*o/live
-  • Gateway      : https://vohoainam.net/63gvat6glsx99link188953
-
-[20:56:16 14/10/26] [Rương Nhỏ] @mitche*wafula5 | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:57:25
-  • Deeplink App : snssdk1180://live?room_id=7696515814250466068
-  • Web TikTok   : https://www.tiktok.com/@mitche*wafula5/live
-  • Gateway      : https://vohoainam.net/evtvr5d1z2imflink188952
-
-[20:56:16 14/10/26] [Rương Treo]  | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696515104048745237
-  • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/7dlljkzjdqvlzlink188950
-
-[20:56:16 14/10/26] [Rương Treo]  | Box: 31/10 | Ratio: 3.1 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696514584444685057
-  • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/qbd4iax2mcdielink188948
-
-[20:56:16 14/10/26] [Rương Nhỏ] @moonlight_r*se_888 | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:57:25
-  • Deeplink App : snssdk1180://live?room_id=7696468961923943189
-  • Web TikTok   : https://www.tiktok.com/@moonlight_r*se_888/live
-  • Gateway      : https://vohoainam.net/c9x4z9bjocmg8link188946
-
-[20:56:15 14/10/26] [Rương Lớn] @ellis*amba2903 | Box: 30/15 | Ratio: 2.0 xu | Live: N/A | Time: 00:54s - 20:57:12
-  • Deeplink App : snssdk1180://live?room_id=7696516491286153992
-  • Web TikTok   : https://www.tiktok.com/@ellis*amba2903/live
-  • Gateway      : https://vohoainam.net/7zqmmzzjdar0olink188947
-
-[20:56:15 14/10/26] [Rương Test] @se*aaluv | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:53
-  • Deeplink App : snssdk1180://live?room_id=7696511547062815508
-  • Web TikTok   : https://www.tiktok.com/@se*aaluv/live
-  • Gateway      : https://vohoainam.net/a6yc7r55aohallink188944
-
-[20:56:14 14/10/26] [Túi] @thony_canal | Box: 200/50 | Ratio: 4.0 xu | Live: N/A | Time: 01:30s - 20:57:47
-  • Deeplink App : snssdk1180://live?room_id=7696516222841572117
-  • Web TikTok   : https://www.tiktok.com/@thony_canal/live
-  • Gateway      : https://vohoainam.net/jc4hy2pqjr0u6link188945
-
-[20:56:14 14/10/26] [Rương Test] @lelouchz*ro06 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:53
-  • Deeplink App : snssdk1180://live?room_id=7696515166246243095
-  • Web TikTok   : https://www.tiktok.com/@lelouchz*ro06/live
-  • Gateway      : https://vohoainam.net/pnkn4zgw5m1e5link188943
-
-[20:56:12 14/10/26] [Rương Test] @kinta*esu1989 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:52
-  • Deeplink App : snssdk1180://live?room_id=7696490386361600776
-  • Web TikTok   : https://www.tiktok.com/@kinta*esu1989/live
-  • Gateway      : https://vohoainam.net/yv5ze68xfku5glink188942
-
-[20:56:12 14/10/26] [Rương Test] @0osa*o | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15604 | Time: 00:40s - 20:56:51
-  • Deeplink App : snssdk1180://live?room_id=7696439933317958407
-  • Web TikTok   : https://www.tiktok.com/@0osa*o/live
-  • Gateway      : https://vohoainam.net/nt6z7082r0beulink188941
-
-[20:56:12 14/10/26] [Rương Lớn] @y*una_mischa | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:20s - 20:57:35
-  • Deeplink App : snssdk1180://live?room_id=7696487125823064853
-  • Web TikTok   : https://www.tiktok.com/@y*una_mischa/live
-  • Gateway      : https://vohoainam.net/883einll6a3p5link188940
-
-[20:56:12 14/10/26] [Rương Test] @zhaoyu*ong0926 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:51
-  • Deeplink App : snssdk1180://live?room_id=7696506670423952146
-  • Web TikTok   : https://www.tiktok.com/@zhaoyu*ong0926/live
-  • Gateway      : https://vohoainam.net/m54jyvx5ghfqflink188939
-
-[20:56:12 14/10/26] [Rương Test] @anna*akiba | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:51
-  • Deeplink App : snssdk1180://live?room_id=7696447358325951250
-  • Web TikTok   : https://www.tiktok.com/@anna*akiba/live
-  • Gateway      : https://vohoainam.net/35k2qyz9ycei6link188938
-
-[20:56:12 14/10/26] [Rương Lớn] @b*gblizz | Box: 300/25 | Ratio: 12.0 xu | Live: 19000/19770 | Time: 01:20s - 20:57:34
-  • Deeplink App : snssdk1180://live?room_id=7696507344498543361
-  • Web TikTok   : https://www.tiktok.com/@b*gblizz/live
-  • Gateway      : https://vohoainam.net/r1zwctpibe7uclink188937
-
-[20:56:11 14/10/26] [Túi] @coin16790 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:43
-  • Deeplink App : snssdk1180://live?room_id=7696518466769095425
-  • Web TikTok   : https://www.tiktok.com/@coin16790/live
-  • Gateway      : https://vohoainam.net/67awl7j3y2c6nlink188936
-
-[20:56:11 14/10/26] [Rương Test] @my*hmi_ | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:49
-  • Deeplink App : snssdk1180://live?room_id=7696499057019194133
-  • Web TikTok   : https://www.tiktok.com/@my*hmi_/live
-  • Gateway      : https://vohoainam.net/wjfmoe3h7s0shlink188933
-
-[20:56:10 14/10/26] [Rương Test] @pin*12750 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:49
-  • Deeplink App : snssdk1180://live?room_id=7696499568116124434
-  • Web TikTok   : https://www.tiktok.com/@pin*12750/live
-  • Gateway      : https://vohoainam.net/tgoy1zz1imaxelink188934
-
-[20:56:10 14/10/26] [Rương Test] @aco*2taquet | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15629 | Time: 00:40s - 20:56:49
-  • Deeplink App : snssdk1180://live?room_id=7696513275323779872
-  • Web TikTok   : https://www.tiktok.com/@aco*2taquet/live
-  • Gateway      : https://vohoainam.net/5sxyb8a0i8q7dlink188931
-
-[20:56:09 14/10/26] [Rương Test] @addhong*8 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15628 | Time: 00:40s - 20:56:48
-  • Deeplink App : snssdk1180://live?room_id=7696497821131000594
-  • Web TikTok   : https://www.tiktok.com/@addhong*8/live
-  • Gateway      : https://vohoainam.net/h68zpnvx9rv23link188930
-
-[20:56:09 14/10/26] [Túi] @wanwanbuwan010925 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:41
-  • Deeplink App : snssdk1180://live?room_id=7696514155729177396
-  • Web TikTok   : https://www.tiktok.com/@wanwanbuwan010925/live
-  • Gateway      : https://vohoainam.net/o78cyrchd0yuglink188928
-
-[20:56:08 14/10/26] [Rương Treo]  | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696469809499867924
-  • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/m5w0dufk1y46vlink188926
-
-[20:56:08 14/10/26] [Rương Test] @rika93165*069455 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15628 | Time: 00:40s - 20:56:47
-  • Deeplink App : snssdk1180://live?room_id=7696447080567065365
-  • Web TikTok   : https://www.tiktok.com/@rika93165*069455/live
-  • Gateway      : https://vohoainam.net/zkilxoiy7w78elink188925
-
-[20:56:08 14/10/26] [Túi] @domesticabuse43 | Box: 50/10 | Ratio: 5.0 xu | Live: 19000/19789 | Time: 01:30s - 20:57:40
-  • Deeplink App : snssdk1180://live?room_id=7696492222170073878
-  • Web TikTok   : https://www.tiktok.com/@domesticabuse43/live
-  • Gateway      : https://vohoainam.net/glwwtxzbyjl5slink188923
-
-[20:56:08 14/10/26] [Rương Test] @su*isapkota22 | Box: 20/19 | Ratio: 1.1 xu | Live: N/A | Time: 00:40s - 20:56:45
-  • Deeplink App : snssdk1180://live?room_id=7696472483868674868
-  • Web TikTok   : https://www.tiktok.com/@su*isapkota22/live
-  • Gateway      : https://vohoainam.net/tslvswb2ycw7slink188922
-
-[20:56:07 14/10/26] [Rương Test] @user24841*6638679 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:47
-  • Deeplink App : snssdk1180://live?room_id=7696510655130225426
-  • Web TikTok   : https://www.tiktok.com/@user24841*6638679/live
-  • Gateway      : https://vohoainam.net/rskh1hamwt19alink188924
-
-[20:56:07 14/10/26] [Rương Test] @.inna*44 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15624 | Time: 00:40s - 20:56:45
-  • Deeplink App : snssdk1180://live?room_id=7696519357472066310
-  • Web TikTok   : https://www.tiktok.com/@.inna*44/live
-  • Gateway      : https://vohoainam.net/4gk0k238c5qxblink188920
-
-[20:56:07 14/10/26] [Rương Nhỏ] @i*1l__ | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:57:16
-  • Deeplink App : snssdk1180://live?room_id=7696516551131269909
-  • Web TikTok   : https://www.tiktok.com/@i*1l__/live
-  • Gateway      : https://vohoainam.net/hy4e08fs037fzlink188919
-
-[20:56:07 14/10/26] [Rương Nhỏ] @i*maeel_madah | Box: 50/25 | Ratio: 2.0 xu | Live: 15000/15626 | Time: 01:10s - 20:57:16
-  • Deeplink App : snssdk1180://live?room_id=7696491821385632533
-  • Web TikTok   : https://www.tiktok.com/@i*maeel_madah/live
-  • Gateway      : https://vohoainam.net/yc02lh33oucrzlink188918
-
-[20:56:06 14/10/26] [Túi] @_sevinc_._ | Box: 200/1 | Ratio: 200.0 xu | Live: N/A | Time: 01:30s - 20:57:39
-  • Deeplink App : snssdk1180://live?room_id=7696520005441243905
-  • Web TikTok   : https://www.tiktok.com/@_sevinc_._/live
-  • Gateway      : https://vohoainam.net/k2uwf70p8xbpglink188916
-
-[20:56:06 14/10/26] [Túi] @arata121006 | Box: 50/5 | Ratio: 10.0 xu | Live: N/A | Time: 00:56s - 20:57:04
-  • Deeplink App : snssdk1180://live?room_id=7696517992674233106
-  • Web TikTok   : https://www.tiktok.com/@arata121006/live
-  • Gateway      : https://vohoainam.net/7yyv288m2e70clink188915
-
-[20:56:06 14/10/26] [Rương Treo]  | Box: 100/40 | Ratio: 2.5 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696510874059574024
-  • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/ru9yhybab8jpxlink188914
-
-[20:56:05 14/10/26] [Rương Test] @miku.yuima_*u | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15624 | Time: 00:40s - 20:56:44
-  • Deeplink App : snssdk1180://live?room_id=7696499917955189525
-  • Web TikTok   : https://www.tiktok.com/@miku.yuima_*u/live
-  • Gateway      : https://vohoainam.net/wqd4f0qpjsps6link188917
-
-[20:56:05 14/10/26] [Túi] @hazuzzu30 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:38
-  • Deeplink App : snssdk1180://live?room_id=7696491983062600455
-  • Web TikTok   : https://www.tiktok.com/@hazuzzu30/live
-  • Gateway      : https://vohoainam.net/b0ssdyzr458m5link188912
-
-[20:56:05 14/10/26] [Rương Test] @ou*ail04 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15622 | Time: 00:40s - 20:56:42
-  • Deeplink App : snssdk1180://live?room_id=7696516403479694101
-  • Web TikTok   : https://www.tiktok.com/@ou*ail04/live
-  • Gateway      : https://vohoainam.net/b100eg7cxnltzlink188910
-
-[20:56:05 14/10/26] [Túi] @singa2.9 | Box: 200/100 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:57:38
-  • Deeplink App : snssdk1180://live?room_id=7696517678986464020
-  • Web TikTok   : https://www.tiktok.com/@singa2.9/live
-  • Gateway      : https://vohoainam.net/q8ppkyyq0tljelink188909
-
-[20:56:04 14/10/26] [Rương Lớn] @imagain*r | Box: 50/1 | Ratio: 50.0 xu | Live: N/A | Time: 01:20s - 20:57:26
-  • Deeplink App : snssdk1180://live?room_id=7696518328949721888
-  • Web TikTok   : https://www.tiktok.com/@imagain*r/live
-  • Gateway      : https://vohoainam.net/04f343pg97e3slink188906
-
-[20:56:03 14/10/26] [Rương Test] @rii._.u*a72 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:41
-  • Deeplink App : snssdk1180://live?room_id=7696511251429591826
-  • Web TikTok   : https://www.tiktok.com/@rii._.u*a72/live
-  • Gateway      : https://vohoainam.net/kh62g3cb4r071link188902
-
-[20:56:03 14/10/26] [Rương Nhỏ] @usermn4a4*mccu | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15622 | Time: 01:10s - 20:57:12
-  • Deeplink App : snssdk1180://live?room_id=7696518436119202581
-  • Web TikTok   : https://www.tiktok.com/@usermn4a4*mccu/live
-  • Gateway      : https://vohoainam.net/k5k5dcqrc2i9alink188901
-
-[20:56:03 14/10/26] [Rương Nhỏ] @user7376737*25661 | Box: 20/12 | Ratio: 1.7 xu | Live: 15000/15622 | Time: 01:10s - 20:57:12
-  • Deeplink App : snssdk1180://live?room_id=7696492858959153941
-  • Web TikTok   : https://www.tiktok.com/@user7376737*25661/live
-  • Gateway      : https://vohoainam.net/lg03ivz11i3yclink188898
-
-[20:56:02 14/10/26] [Túi] @guanaquita.88 | Box: 50/1 | Ratio: 50.0 xu | Live: N/A | Time: 00:55s - 20:57:00
-  • Deeplink App : snssdk1180://live?room_id=7696504923685145396
-  • Web TikTok   : https://www.tiktok.com/@guanaquita.88/live
-  • Gateway      : https://vohoainam.net/rcgmvmmcvuvmdlink188900
-
-[20:56:02 14/10/26] [Rương Test] @suacuach*n | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:41
-  • Deeplink App : snssdk1180://live?room_id=7696518696055196423
-  • Web TikTok   : https://www.tiktok.com/@suacuach*n/live
-  • Gateway      : https://vohoainam.net/5oizensd07g0elink188899
-
-[20:56:02 14/10/26] [Rương Lớn] @kkk07*60323 | Box: 50/15 | Ratio: 3.3 xu | Live: N/A | Time: 00:53s - 20:56:57
-  • Deeplink App : snssdk1180://live?room_id=7696492796811315988
-  • Web TikTok   : https://www.tiktok.com/@kkk07*60323/live
-  • Gateway      : https://vohoainam.net/a5svnylt6n3lilink188897
-
-[20:56:02 14/10/26] [Túi] @eubadmah | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:34
-  • Deeplink App : snssdk1180://live?room_id=7696503869506816788
-  • Web TikTok   : https://www.tiktok.com/@eubadmah/live
-  • Gateway      : https://vohoainam.net/h5694rzxz94fblink188894
-
-[20:56:01 14/10/26] [Rương Lớn] @pauli*ubg | Box: 200/10 | Ratio: 20.0 xu | Live: N/A | Time: 00:55s - 20:56:58
-  • Deeplink App : snssdk1180://live?room_id=7696501556811827986
-  • Web TikTok   : https://www.tiktok.com/@pauli*ubg/live
-  • Gateway      : https://vohoainam.net/rvf3481m830kllink188913
-
-[20:56:01 14/10/26] [Rương Nhỏ] @h_j*n02 | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:57:10
-  • Deeplink App : snssdk1180://live?room_id=7696514304371067656
-  • Web TikTok   : https://www.tiktok.com/@h_j*n02/live
-  • Gateway      : https://vohoainam.net/vpokgh91qp33klink188895
-
-[20:56:01 14/10/26] [Rương Test] @xr28bmwthebo*ss1000 | Box: 50/38 | Ratio: 1.3 xu | Live: 15000/15621 | Time: 00:40s - 20:56:40
-  • Deeplink App : snssdk1180://live?room_id=7696517118549740294
-  • Web TikTok   : https://www.tiktok.com/@xr28bmwthebo*ss1000/live
-  • Gateway      : https://vohoainam.net/zag3hseregqsflink188893
-
-[20:56:00 14/10/26] [Rương Nhỏ] @yu*haan024 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15620 | Time: 01:10s - 20:57:09
-  • Deeplink App : snssdk1180://live?room_id=7696493030408899380
-  • Web TikTok   : https://www.tiktok.com/@yu*haan024/live
-  • Gateway      : https://vohoainam.net/euw6ef7tvhfe3link188892
-
-[20:56:00 14/10/26] [Rương Test] @maveric*_mav01 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:38
-  • Deeplink App : snssdk1180://live?room_id=7696514434109360904
-  • Web TikTok   : https://www.tiktok.com/@maveric*_mav01/live
-  • Gateway      : https://vohoainam.net/ipkp1efi6jfgdlink188891
-
-[20:56:00 14/10/26] [Rương Test] @02oniwa*amaru02 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15618 | Time: 00:40s - 20:56:38
-  • Deeplink App : snssdk1180://live?room_id=7696498693314300680
-  • Web TikTok   : https://www.tiktok.com/@02oniwa*amaru02/live
-  • Gateway      : https://vohoainam.net/1fbeozii8mm0qlink188890
-
-[20:56:00 14/10/26] [Túi] @tala_pricess11 | Box: 200/100 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:57:32
-  • Deeplink App : snssdk1180://live?room_id=7696509819086129940
-  • Web TikTok   : https://www.tiktok.com/@tala_pricess11/live
-  • Gateway      : https://vohoainam.net/59ql4v7jltawhlink188889
-
-[20:55:58 14/10/26] [Túi 0xu] @poyraz.aksu | Box: 20/20 | Ratio: 1.0 xu | Live: 15000/15693 | Time: 01:30s - 20:57:33
-  • Deeplink App : snssdk1180://live?room_id=7696504927787272968
-  • Web TikTok   : https://www.tiktok.com/@poyraz.aksu/live
-  • Gateway      : https://vohoainam.net/03xnpsscea2mdlink188887
-
-[20:55:58 14/10/26] [Rương Nhỏ] @ikeike.tai*o | Box: 25/12 | Ratio: 2.1 xu | Live: 15000/15616 | Time: 01:10s - 20:57:07
-  • Deeplink App : snssdk1180://live?room_id=7696481552691350280
-  • Web TikTok   : https://www.tiktok.com/@ikeike.tai*o/live
-  • Gateway      : https://vohoainam.net/3wj6o6zbr13silink188886
-
-[20:55:58 14/10/26] [Rương Nhỏ] @ny*nnyunchan | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:57:07
-  • Deeplink App : snssdk1180://live?room_id=7696500527919631124
-  • Web TikTok   : https://www.tiktok.com/@ny*nnyunchan/live
-  • Gateway      : https://vohoainam.net/ustvn0wqqz7nflink188885
-
-[20:55:58 14/10/26] [Rương Treo]  | Box: 30/12 | Ratio: 2.5 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696513196141775623
-  • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/qw41ke7rznik8link188884
-
-[20:55:57 14/10/26] [Rương Nhỏ] @ellord1*11 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15616 | Time: 01:10s - 20:57:05
-  • Deeplink App : snssdk1180://live?room_id=7696467309442976544
-  • Web TikTok   : https://www.tiktok.com/@ellord1*11/live
-  • Gateway      : https://vohoainam.net/eopu36pafvbydlink188881
-
-[20:55:56 14/10/26] [Rương Nhỏ] @yun0*23_ | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:57:05
-  • Deeplink App : snssdk1180://live?room_id=7696508627154258689
-  • Web TikTok   : https://www.tiktok.com/@yun0*23_/live
-  • Gateway      : https://vohoainam.net/2hgw5gjihgvaflink188880
-
-[20:55:56 14/10/26] [Túi] @zdd0929 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:28
-  • Deeplink App : snssdk1180://live?room_id=7696509134640515847
-  • Web TikTok   : https://www.tiktok.com/@zdd0929/live
-  • Gateway      : https://vohoainam.net/frsp6elhnopjylink188879
-
-[20:55:55 14/10/26] [Rương Test] @ren*a.no.oyatu | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:34
-  • Deeplink App : snssdk1180://live?room_id=7696504939996695316
-  • Web TikTok   : https://www.tiktok.com/@ren*a.no.oyatu/live
-  • Gateway      : https://vohoainam.net/i0lhhmwi93bk8link188878
-
-[20:55:55 14/10/26] [Rương Test] @c*an23ri | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15653 | Time: 00:40s - 20:56:34
-  • Deeplink App : snssdk1180://live?room_id=7696511906205797140
-  • Web TikTok   : https://www.tiktok.com/@c*an23ri/live
-  • Gateway      : https://vohoainam.net/ure8tqhwxd2z8link188877
-
-[20:55:55 14/10/26] [Túi 0xu] @thang.ol | Box: 50/10 | Ratio: 5.0 xu | Live: 15000/15693 | Time: 01:30s - 20:57:30
-  • Deeplink App : snssdk1180://live?room_id=7696515162609666848
-  • Web TikTok   : https://www.tiktok.com/@thang.ol/live
-  • Gateway      : https://vohoainam.net/8pqyn4m8cv5eplink188876
-
-[20:55:55 14/10/26] [Rương Lớn] @nonebay5*5 | Box: 33/10 | Ratio: 3.3 xu | Live: N/A | Time: 00:54s - 20:56:51
-  • Deeplink App : snssdk1180://live?room_id=7696513630045195014
-  • Web TikTok   : https://www.tiktok.com/@nonebay5*5/live
-  • Gateway      : https://vohoainam.net/sja0k3ynot51vlink188875
-
-[20:55:54 14/10/26] [Rương Test] @s*ra_0320 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15653 | Time: 00:40s - 20:56:34
-  • Deeplink App : snssdk1180://live?room_id=7696492143336753940
-  • Web TikTok   : https://www.tiktok.com/@s*ra_0320/live
-  • Gateway      : https://vohoainam.net/67mik6b0ybs4ilink188873
-
-[20:55:54 14/10/26] [Túi] @mckmautentico | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:57:27
-  • Deeplink App : snssdk1180://live?room_id=7696483903955143431
-  • Web TikTok   : https://www.tiktok.com/@mckmautentico/live
-  • Gateway      : https://vohoainam.net/axf4z54u5eyzqlink188872
-
-[20:55:54 14/10/26] [Rương Test] @ly*bunny | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:32
-  • Deeplink App : snssdk1180://live?room_id=7696516550434933556
-  • Web TikTok   : https://www.tiktok.com/@ly*bunny/live
-  • Gateway      : https://vohoainam.net/6msdu71vldr0klink188871
-
-[20:55:54 14/10/26] [Rương Test] @ban9319*2 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15652 | Time: 00:40s - 20:56:33
-  • Deeplink App : snssdk1180://live?room_id=7696485497497045781
-  • Web TikTok   : https://www.tiktok.com/@ban9319*2/live
-  • Gateway      : https://vohoainam.net/hduhep2ykpnnclink188870
-
-[20:55:54 14/10/26] [Rương Lớn] @ismae*l_madah | Box: 50/25 | Ratio: 2.0 xu | Live: 19000/19794 | Time: 01:20s - 20:57:16
-  • Deeplink App : snssdk1180://live?room_id=7696491821385632533
-  • Web TikTok   : https://www.tiktok.com/@ismae*l_madah/live
-  • Gateway      : https://vohoainam.net/b9ap0qi58as8wlink188868
-
-[20:55:53 14/10/26] [Rương Test] @yduffjk*5il | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:30
-  • Deeplink App : snssdk1180://live?room_id=7696494661883448065
-  • Web TikTok   : https://www.tiktok.com/@yduffjk*5il/live
-  • Gateway      : https://vohoainam.net/kupvhlstz2s7dlink188867
-
-[20:55:53 14/10/26] [Rương Test] @tsugtyz*7000 | Box: 20/18 | Ratio: 1.1 xu | Live: N/A | Time: 00:40s - 20:56:32
-  • Deeplink App : snssdk1180://live?room_id=7696509036599888648
-  • Web TikTok   : https://www.tiktok.com/@tsugtyz*7000/live
-  • Gateway      : https://vohoainam.net/adxqky730bf7rlink188866
-
-[20:55:53 14/10/26] [Túi] @go_doram | Box: 50/20 | Ratio: 2.5 xu | Live: 19000/19794 | Time: 01:30s - 20:57:26
-  • Deeplink App : snssdk1180://live?room_id=7696491837510454036
-  • Web TikTok   : https://www.tiktok.com/@go_doram/live
-  • Gateway      : https://vohoainam.net/wyvcbshvmffaylink188865
-
-[20:55:51 14/10/26] [Rương Test] @schatz.*s.schatz_live | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:30
-  • Deeplink App : snssdk1180://live?room_id=7696517682627218209
-  • Web TikTok   : https://www.tiktok.com/@schatz.*s.schatz_live/live
-  • Gateway      : https://vohoainam.net/j5qdugllapstzlink188864
-
-[20:55:51 14/10/26] [Túi 0xu] @justshow_jsbro | Box: 100/100 | Ratio: 1.0 xu | Live: 15000/15692 | Time: 01:30s - 20:57:26
-  • Deeplink App : snssdk1180://live?room_id=7696513907751471880
-  • Web TikTok   : https://www.tiktok.com/@justshow_jsbro/live
-  • Gateway      : https://vohoainam.net/me2puhsm1dw96link188863
-
-[20:55:51 14/10/26] [Rương Lớn] @wa*e46 | Box: 100/25 | Ratio: 4.0 xu | Live: 19000/19790 | Time: 01:20s - 20:57:14
-  • Deeplink App : snssdk1180://live?room_id=7696501575671319302
-  • Web TikTok   : https://www.tiktok.com/@wa*e46/live
-  • Gateway      : https://vohoainam.net/kunralku9k4i0link188862
-
-[20:55:51 14/10/26] [Rương Nhỏ] @na_na01*200 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15649 | Time: 01:10s - 20:57:00
-  • Deeplink App : snssdk1180://live?room_id=7696494486586723079
-  • Web TikTok   : https://www.tiktok.com/@na_na01*200/live
-  • Gateway      : https://vohoainam.net/cr2vwdsnitjh9link188861
-
-[20:55:49 14/10/26] [Rương Test] @moo*chan130 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 20:56:28
-  • Deeplink App : snssdk1180://live?room_id=7696430640329149191
-  • Web TikTok   : https://www.tiktok.com/@moo*chan130/live
-  • Gateway      : https://vohoainam.net/95e8wgfzdolyllink188869
-
-[20:55:49 14/10/26] [Rương Nhỏ] @ritarow09*3 | Box: 50/30 | Ratio: 1.7 xu | Live: 15000/15649 | Time: 00:54s - 20:56:42
-  • Deeplink App : snssdk1180://live?room_id=7696513586923490055
-  • Web TikTok   : https://www.tiktok.com/@ritarow09*3/live
-  • Gateway      : https://vohoainam.net/wlj2tzemfxdrylink188855
-
-[20:55:48 14/10/26] [Rương Nhỏ] @leloan1*3 | Box: 21/13 | Ratio: 1.6 xu | Live: 15000/15649 | Time: 01:10s - 20:56:57
-  • Deeplink App : snssdk1180://live?room_id=7696498351329233685
-  • Web TikTok   : https://www.tiktok.com/@leloan1*3/live
-  • Gateway      : https://vohoainam.net/83qi6uzft4tyelink188854
-
-[20:55:48 14/10/26] [Túi] @antigoviral | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:57:21
-  • Deeplink App : snssdk1180://live?room_id=7696517341137226516
-  • Web TikTok   : https://www.tiktok.com/@antigoviral/live
-  • Gateway      : https://vohoainam.net/cid8dc12kvipflink188853
-
-[20:55:48 14/10/26] [Rương Nhỏ] @lqf*ar | Box: 41/21 | Ratio: 1.9 xu | Live: N/A | Time: 00:58s - 20:56:44
-  • Deeplink App : snssdk1180://live?room_id=7696492159617534726
-  • Web TikTok   : https://www.tiktok.com/@lqf*ar/live
-  • Gateway      : https://vohoainam.net/6k2rym7pv2zkalink188852
-
-[20:55:48 14/10/26] [Rương Nhỏ] @vanessa.cpi*heiro | Box: 20/12 | Ratio: 1.7 xu | Live: N/A | Time: 01:10s - 20:56:57
-  • Deeplink App : snssdk1180://live?room_id=7696464823118449460
-  • Web TikTok   : https://www.tiktok.com/@vanessa.cpi*heiro/live
-  • Gateway      : https://vohoainam.net/y24ngpjiwgkc4link188851
-
-[20:55:48 14/10/26] [Túi 0xu] @sa7ar397 | Box: 20/20 | Ratio: 1.0 xu | Live: 15000/15725 | Time: 01:30s - 20:57:23
-  • Deeplink App : snssdk1180://live?room_id=7696492956458568456
-  • Web TikTok   : https://www.tiktok.com/@sa7ar397/live
-  • Gateway      : https://vohoainam.net/7jdl2jkh7lcinlink188850
-
-[20:55:45 14/10/26] [Túi] @boyan5788 | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:57:17
-  • Deeplink App : snssdk1180://live?room_id=7696485700392307477
-  • Web TikTok   : https://www.tiktok.com/@boyan5788/live
-  • Gateway      : https://vohoainam.net/kqn2p4qlgkck5link188856
-
-[20:55:44 14/10/26] [Rương Lớn] @warda*lafleur1 | Box: 200/80 | Ratio: 2.5 xu | Live: N/A | Time: 01:20s - 20:57:07
-  • Deeplink App : snssdk1180://live?room_id=7696505452435180308
-  • Web TikTok   : https://www.tiktok.com/@warda*lafleur1/live
-  • Gateway      : https://vohoainam.net/rtwifip4tcpvglink188846
-
-[20:55:44 14/10/26] [Rương Lớn] @chiac*rocoro | Box: 50/10 | Ratio: 5.0 xu | Live: 19000/19778 | Time: 00:54s - 20:56:41
-  • Deeplink App : snssdk1180://live?room_id=7696422360136370965
-  • Web TikTok   : https://www.tiktok.com/@chiac*rocoro/live
-  • Gateway      : https://vohoainam.net/61su06oh8wjerlink188845
-
-[20:55:44 14/10/26] [Túi] @bongamy89 | Box: 500/10 | Ratio: 50.0 xu | Live: N/A | Time: 02:00s - 20:57:46
-  • Deeplink App : snssdk1180://live?room_id=7696487548981365510
-  • Web TikTok   : https://www.tiktok.com/@bongamy89/live
-  • Gateway      : https://vohoainam.net/xylhtoovfuwislink188843
-
-[20:55:43 14/10/26] [Rương Lớn] @mateosodna*kok | Box: 33/2 | Ratio: 16.5 xu | Live: N/A | Time: 01:20s - 20:57:05
-  • Deeplink App : snssdk1180://live?room_id=7696516066760035079
-  • Web TikTok   : https://www.tiktok.com/@mateosodna*kok/live
-  • Gateway      : https://vohoainam.net/0u9pa3qonrb5slink188839
-
-[20:55:42 14/10/26] [Túi 0xu] @mr_mrsplugged | Box: 20/20 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 20:57:17
-  • Deeplink App : snssdk1180://live?room_id=7696491300924787478
-  • Web TikTok   : https://www.tiktok.com/@mr_mrsplugged/live
-  • Gateway      : https://vohoainam.net/a6ianqb2dclodlink188836
-
-[20:55:41 14/10/26] [Túi] @dorosi1213 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:14
-  • Deeplink App : snssdk1180://live?room_id=7696516842264873746
-  • Web TikTok   : https://www.tiktok.com/@dorosi1213/live
-  • Gateway      : https://vohoainam.net/vtq83vy7i3l02link188834
-
-[20:55:41 14/10/26] [Rương Nhỏ] @___gaich*n___ | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15646 | Time: 01:10s - 20:56:50
-  • Deeplink App : snssdk1180://live?room_id=7696518178000259858
-  • Web TikTok   : https://www.tiktok.com/@___gaich*n___/live
-  • Gateway      : https://vohoainam.net/ytp3dd9cj3gmzlink188832
-
-[20:55:41 14/10/26] [Rương Nhỏ] @stefaniesou*a_ | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:56:50
-  • Deeplink App : snssdk1180://live?room_id=7696503663925283592
-  • Web TikTok   : https://www.tiktok.com/@stefaniesou*a_/live
-  • Gateway      : https://vohoainam.net/5oln8b2qw4nmtlink188830
-
-[20:55:38 14/10/26] [Túi] @tuu.jk271098 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:11
-  • Deeplink App : snssdk1180://live?room_id=7696506842469403444
-  • Web TikTok   : https://www.tiktok.com/@tuu.jk271098/live
-  • Gateway      : https://vohoainam.net/0l6mf19b27hbnlink188828
-
-[20:55:38 14/10/26] [Túi] @ice_m01 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:11
-  • Deeplink App : snssdk1180://live?room_id=7696508673589414708
-  • Web TikTok   : https://www.tiktok.com/@ice_m01/live
-  • Gateway      : https://vohoainam.net/actk2lhnjk7tilink188827
-
-[20:55:37 14/10/26] [Rương Lớn] @king*chen7407240 | Box: 100/25 | Ratio: 4.0 xu | Live: 19000/19792 | Time: 01:20s - 20:56:59
-  • Deeplink App : snssdk1180://live?room_id=7696492857393154834
-  • Web TikTok   : https://www.tiktok.com/@king*chen7407240/live
-  • Gateway      : https://vohoainam.net/0dbc7rzcgdgrzlink188837
-
-[20:55:37 14/10/26] [Túi 0xu] @miss.snow889 | Box: 20/20 | Ratio: 1.0 xu | Live: 15000/15725 | Time: 01:30s - 20:57:13
-  • Deeplink App : snssdk1180://live?room_id=7696501483784751924
-  • Web TikTok   : https://www.tiktok.com/@miss.snow889/live
-  • Gateway      : https://vohoainam.net/6twomw430rytclink188824
-
-[20:55:37 14/10/26] [Túi] @jimijuuti | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:09
-  • Deeplink App : snssdk1180://live?room_id=7696504598206499606
-  • Web TikTok   : https://www.tiktok.com/@jimijuuti/live
-  • Gateway      : https://vohoainam.net/xl5rtpyk9a5b3link188822
-
-[20:55:36 14/10/26] [Túi] @duda_a380 | Box: 100/5 | Ratio: 20.0 xu | Live: N/A | Time: 01:30s - 20:57:09
-  • Deeplink App : snssdk1180://live?room_id=7696498646519712533
-  • Web TikTok   : https://www.tiktok.com/@duda_a380/live
-  • Gateway      : https://vohoainam.net/tng0km0qjzix8link188820
-
-[20:55:35 14/10/26] [Rương Nhỏ] @shir*u_belllive | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15699 | Time: 01:10s - 20:56:44
-  • Deeplink App : snssdk1180://live?room_id=7696445783378791189
-  • Web TikTok   : https://www.tiktok.com/@shir*u_belllive/live
-  • Gateway      : https://vohoainam.net/44wtodp8s6dndlink188815
-
-[20:55:35 14/10/26] [Rương Lớn] @ling7822*3 | Box: 50/10 | Ratio: 5.0 xu | Live: N/A | Time: 00:55s - 20:56:32
-  • Deeplink App : snssdk1180://live?room_id=7696507290433620757
-  • Web TikTok   : https://www.tiktok.com/@ling7822*3/live
-  • Gateway      : https://vohoainam.net/m1jmpl2k9bzbjlink188814
-
-[20:55:34 14/10/26] [Túi] @mumuvadau | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:57:07
-  • Deeplink App : snssdk1180://live?room_id=7696472016127380246
-  • Web TikTok   : https://www.tiktok.com/@mumuvadau/live
-  • Gateway      : https://vohoainam.net/jch9lf43yh9helink188813
-
-[20:55:34 14/10/26] [Túi 0xu] @jimijuuti | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:09
-  • Deeplink App : snssdk1180://live?room_id=7696504598206499606
-  • Web TikTok   : https://www.tiktok.com/@jimijuuti/live
-  • Gateway      : https://vohoainam.net/v7536nhp3q7ollink188812
-
-[20:55:33 14/10/26] [Túi 0xu] @abdullah.alasmr.1 | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:57:08
-  • Deeplink App : snssdk1180://live?room_id=7696507218218748692
-  • Web TikTok   : https://www.tiktok.com/@abdullah.alasmr.1/live
-  • Gateway      : https://vohoainam.net/c7dblu9oe6bu4link188810
-
-[20:55:32 14/10/26] [Túi] @sthebahia | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:05
-  • Deeplink App : snssdk1180://live?room_id=7696514555607108359
-  • Web TikTok   : https://www.tiktok.com/@sthebahia/live
-  • Gateway      : https://vohoainam.net/69nk9ygnqaaollink188805
-
-[20:55:32 14/10/26] [Túi] @nuea_loma.narax | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:57:05
-  • Deeplink App : snssdk1180://live?room_id=7696509652674054918
-  • Web TikTok   : https://www.tiktok.com/@nuea_loma.narax/live
-  • Gateway      : https://vohoainam.net/hx6mqctciuwr8link188802
-
-[20:55:32 14/10/26] [Túi 0xu] @mumuvadau | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:57:07
-  • Deeplink App : snssdk1180://live?room_id=7696472016127380246
-  • Web TikTok   : https://www.tiktok.com/@mumuvadau/live
-  • Gateway      : https://vohoainam.net/1xhsu79cb8ykalink188801
-
-[20:55:31 14/10/26] [Túi] @bebemeimei | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:04
-  • Deeplink App : snssdk1180://live?room_id=7696514052773104404
-  • Web TikTok   : https://www.tiktok.com/@bebemeimei/live
-  • Gateway      : https://vohoainam.net/g6ccdib44g5s2link188800
-
-[20:55:31 14/10/26] [Túi] @kevintl7 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:04
-  • Deeplink App : snssdk1180://live?room_id=7696487949055724310
-  • Web TikTok   : https://www.tiktok.com/@kevintl7/live
-  • Gateway      : https://vohoainam.net/h049yg174oey7link188799
-
-[20:55:31 14/10/26] [Rương Nhỏ] @mre*.queen0307 | Box: 50/30 | Ratio: 1.7 xu | Live: 15000/15698 | Time: 00:54s - 20:56:24
-  • Deeplink App : snssdk1180://live?room_id=7696487398697880327
-  • Web TikTok   : https://www.tiktok.com/@mre*.queen0307/live
-  • Gateway      : https://vohoainam.net/fgcbu9fihj2fglink188798
-
-[20:55:31 14/10/26] [Túi 0xu] @darnz_45 | Box: 20/20 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 20:57:06
-  • Deeplink App : snssdk1180://live?room_id=7696437431869147926
-  • Web TikTok   : https://www.tiktok.com/@darnz_45/live
-  • Gateway      : https://vohoainam.net/q8puye6lvb3g2link188797
-
-[20:55:31 14/10/26] [Túi 0xu] @pf35 | Box: 20/20 | Ratio: 1.0 xu | Live: 15000/15764 | Time: 01:30s - 20:57:06
-  • Deeplink App : snssdk1180://live?room_id=7696481831012682504
-  • Web TikTok   : https://www.tiktok.com/@pf35/live
-  • Gateway      : https://vohoainam.net/ack1on342dn0ilink188796
-
-[20:55:29 14/10/26] [Rương Lớn] @.fcomelll1*28 | Box: 69/25 | Ratio: 2.8 xu | Live: 19000/19780 | Time: 01:20s - 20:56:52
-  • Deeplink App : snssdk1180://live?room_id=7696505596551432961
-  • Web TikTok   : https://www.tiktok.com/@.fcomelll1*28/live
-  • Gateway      : https://vohoainam.net/zyk9woouxrcuqlink188793
-
-[20:55:29 14/10/26] [Túi 0xu] @kevintl7 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:57:04
-  • Deeplink App : snssdk1180://live?room_id=7696487949055724310
-  • Web TikTok   : https://www.tiktok.com/@kevintl7/live
-  • Gateway      : https://vohoainam.net/zsuborew3gl7tlink188792
-
-[20:55:28 14/10/26] [Túi 0xu] @amagrandma15 | Box: 20/20 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 20:56:55
-  • Deeplink App : snssdk1180://live?room_id=7696515175662308114
-  • Web TikTok   : https://www.tiktok.com/@amagrandma15/live
-  • Gateway      : https://vohoainam.net/c60y4qcl4c932link188791
-
-[20:55:28 14/10/26] [Túi] @torajabokin | Box: 100/20 | Ratio: 5.0 xu | Live: N/A | Time: 01:30s - 20:57:00
-  • Deeplink App : snssdk1180://live?room_id=7696509583912028948
-  • Web TikTok   : https://www.tiktok.com/@torajabokin/live
-  • Gateway      : https://vohoainam.net/4dqafv7fnmee3link188790
-
-[20:55:28 14/10/26] [Túi 0xu] @taner_220 | Box: 50/10 | Ratio: 5.0 xu | Live: 15000/15764 | Time: 01:30s - 20:57:03
-  • Deeplink App : snssdk1180://live?room_id=7696505425444850465
-  • Web TikTok   : https://www.tiktok.com/@taner_220/live
-  • Gateway      : https://vohoainam.net/286a7pvjdujrolink188789
-
-[20:55:27 14/10/26] [Túi] @pustakabarupress | Box: 200/100 | Ratio: 2.0 xu | Live: 19000/19764 | Time: 01:30s - 20:57:00
-  • Deeplink App : snssdk1180://live?room_id=7696322073421613825
-  • Web TikTok   : https://www.tiktok.com/@pustakabarupress/live
-  • Gateway      : https://vohoainam.net/rku5zd8tjpyddlink188788
-
-[20:55:27 14/10/26] [Túi] @tavynhochapeurosa | Box: 200/10 | Ratio: 20.0 xu | Live: N/A | Time: 01:30s - 20:56:59
-  • Deeplink App : snssdk1180://live?room_id=7696505946998082324
-  • Web TikTok   : https://www.tiktok.com/@tavynhochapeurosa/live
-  • Gateway      : https://vohoainam.net/hkvkutt0n9t54link188787
-
-[20:55:27 14/10/26] [Túi 0xu] @espresso.for.life | Box: 100/100 | Ratio: 1.0 xu | Live: 15000/15764 | Time: 01:30s - 20:57:02
-  • Deeplink App : snssdk1180://live?room_id=7696493182766320406
-  • Web TikTok   : https://www.tiktok.com/@espresso.for.life/live
-  • Gateway      : https://vohoainam.net/sp8sok14px70tlink188785
-
-[20:55:25 14/10/26] [Túi 0xu] @dinonaarea.oficial | Box: 50/50 | Ratio: 1.0 xu | Live: N/A | Time: 00:52s - 20:56:15
-  • Deeplink App : snssdk1180://live?room_id=7696500412404255489
-  • Web TikTok   : https://www.tiktok.com/@dinonaarea.oficial/live
-  • Gateway      : https://vohoainam.net/594sjo5rv4fgplink188784
-
-[20:55:25 14/10/26] [Túi 0xu] @rajja.hassan | Box: 100/100 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 20:57:00
-  • Deeplink App : snssdk1180://live?room_id=7696495079229475587
-  • Web TikTok   : https://www.tiktok.com/@rajja.hassan/live
-  • Gateway      : https://vohoainam.net/ba41o0v6nwvb1link188780
-
-[20:55:24 14/10/26] [Rương Nhỏ] @rust*fy_ | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:56:33
-  • Deeplink App : snssdk1180://live?room_id=7696518618997836545
-  • Web TikTok   : https://www.tiktok.com/@rust*fy_/live
-  • Gateway      : https://vohoainam.net/vq1zncpac3rmjlink188778
-
-[20:55:24 14/10/26] [Rương Lớn] @kr*nastyla | Box: 40/20 | Ratio: 2.0 xu | Live: N/A | Time: 00:54s - 20:56:21
-  • Deeplink App : snssdk1180://live?room_id=7696507951271480086
-  • Web TikTok   : https://www.tiktok.com/@kr*nastyla/live
-  • Gateway      : https://vohoainam.net/tblz2yfgvvi8glink188777
-
-[20:55:23 14/10/26] [Túi] @nutseller1 | Box: 50/1 | Ratio: 50.0 xu | Live: 19000/19794 | Time: 00:56s - 20:56:21
-  • Deeplink App : snssdk1180://live?room_id=7696420955196410645
-  • Web TikTok   : https://www.tiktok.com/@nutseller1/live
-  • Gateway      : https://vohoainam.net/sgbzdomu9xquelink188775
-
-[20:55:23 14/10/26] [Túi] @kanghoon_kor | Box: 50/10 | Ratio: 5.0 xu | Live: 19000/19794 | Time: 01:30s - 20:56:55
-  • Deeplink App : snssdk1180://live?room_id=7696493008682421010
-  • Web TikTok   : https://www.tiktok.com/@kanghoon_kor/live
-  • Gateway      : https://vohoainam.net/xs62p6iumpd2clink188773
-
-[20:55:22 14/10/26] [Túi] @sadsongs.71 | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:56:54
-  • Deeplink App : snssdk1180://live?room_id=7696510596774841096
-  • Web TikTok   : https://www.tiktok.com/@sadsongs.71/live
-  • Gateway      : https://vohoainam.net/i5mm44zpfd0nilink188772
-
-[20:55:21 14/10/26] [Túi] @eceblcx | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:56:54
-  • Deeplink App : snssdk1180://live?room_id=7696515045978622741
-  • Web TikTok   : https://www.tiktok.com/@eceblcx/live
-  • Gateway      : https://vohoainam.net/gvvsts3qgca4alink188770
-
-[20:55:21 14/10/26] [Túi 0xu] @aajme4 | Box: 100/50 | Ratio: 2.0 xu | Live: 15000/15764 | Time: 00:37s - 20:56:03
-  • Deeplink App : snssdk1180://live?room_id=7696505056874613522
-  • Web TikTok   : https://www.tiktok.com/@aajme4/live
-  • Gateway      : https://vohoainam.net/6zsjmq7lau8j0link188769
-
-[20:55:19 14/10/26] [Túi] @alialzankiii | Box: 200/100 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:56:52
-  • Deeplink App : snssdk1180://live?room_id=7696480647195527954
-  • Web TikTok   : https://www.tiktok.com/@alialzankiii/live
-  • Gateway      : https://vohoainam.net/k5hbsbyrc9deglink188766
-
-[20:55:19 14/10/26] [Túi] @onlyuhwan | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:56:52
-  • Deeplink App : snssdk1180://live?room_id=7696494164262783751
-  • Web TikTok   : https://www.tiktok.com/@onlyuhwan/live
-  • Gateway      : https://vohoainam.net/ohbn4k6xw1seelink188765
-
-[20:55:19 14/10/26] [Túi 0xu] @saipulgepeng9 | Box: 50/50 | Ratio: 1.0 xu | Live: 15000/15800 | Time: 01:30s - 20:56:51
-  • Deeplink App : snssdk1180://live?room_id=7696327775242406663
-  • Web TikTok   : https://www.tiktok.com/@saipulgepeng9/live
-  • Gateway      : https://vohoainam.net/5uttqg0x498folink188763
-
-[20:55:19 14/10/26] [Túi] @dj__empire | Box: 50/20 | Ratio: 2.5 xu | Live: 19000/19787 | Time: 01:30s - 20:56:51
-  • Deeplink App : snssdk1180://live?room_id=7696492917103332116
-  • Web TikTok   : https://www.tiktok.com/@dj__empire/live
-  • Gateway      : https://vohoainam.net/6y9xrb1kno2dnlink188762
-
-[20:55:18 14/10/26] [Rương Treo]  | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696515168654232340
-  • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/g4seclbe90poslink188761
-
-[20:55:17 14/10/26] [Rương Nhỏ] @baskets*aq | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15692 | Time: 01:10s - 20:56:26
-  • Deeplink App : snssdk1180://live?room_id=7696422995451267858
-  • Web TikTok   : https://www.tiktok.com/@baskets*aq/live
-  • Gateway      : https://vohoainam.net/08osf2kuisacmlink188759
-
-[20:55:16 14/10/26] [Túi] @panlittlepan | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:56:49
-  • Deeplink App : snssdk1180://live?room_id=7696451267122137877
-  • Web TikTok   : https://www.tiktok.com/@panlittlepan/live
-  • Gateway      : https://vohoainam.net/ska6u66orxixnlink188756
-
-[20:55:16 14/10/26] [Rương Treo]  | Box: 50/8 | Ratio: 6.2 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696507566645332757
-  • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/z12lq8kmnzeailink188755
-
-[20:55:16 14/10/26] [Túi 0xu] @ralph_hausmanns_schmaus | Box: 20/20 | Ratio: 1.0 xu | Live: 15000/15795 | Time: 01:30s - 20:56:50
-  • Deeplink App : snssdk1180://live?room_id=7696491817671445281
-  • Web TikTok   : https://www.tiktok.com/@ralph_hausmanns_schmaus/live
-  • Gateway      : https://vohoainam.net/8dxf4wyamfdi6link188754
-
-[20:55:15 14/10/26] [Túi] @k1707 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:56:48
-  • Deeplink App : snssdk1180://live?room_id=7696509568495782677
-  • Web TikTok   : https://www.tiktok.com/@k1707/live
-  • Gateway      : https://vohoainam.net/095jphhazc3kmlink188753
-
-[20:55:15 14/10/26] [Rương Nhỏ] @tech*ograf1 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15688 | Time: 01:10s - 20:56:24
-  • Deeplink App : snssdk1180://live?room_id=7696519370947791648
-  • Web TikTok   : https://www.tiktok.com/@tech*ograf1/live
-  • Gateway      : https://vohoainam.net/1h5cvioybr1fzlink188752
-
-[20:55:14 14/10/26] [Túi] @come2habibi | Box: 200/20 | Ratio: 10.0 xu | Live: N/A | Time: 01:30s - 20:56:47
-  • Deeplink App : snssdk1180://live?room_id=7696501908848134913
-  • Web TikTok   : https://www.tiktok.com/@come2habibi/live
-  • Gateway      : https://vohoainam.net/pgipmfm8tge5qlink188747
-
-[20:55:14 14/10/26] [Rương Lớn] @brookiebaby*88 | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:20s - 20:56:37
-  • Deeplink App : snssdk1180://live?room_id=7696511843439463181
-  • Web TikTok   : https://www.tiktok.com/@brookiebaby*88/live
-  • Gateway      : https://vohoainam.net/hd4913ycgs5illink188746
-
-[20:55:13 14/10/26] [Túi 0xu] @necunoscutu34 | Box: 20/20 | Ratio: 1.0 xu | Live: 15000/15795 | Time: 01:30s - 20:56:49
-  • Deeplink App : snssdk1180://live?room_id=7696490100959628065
-  • Web TikTok   : https://www.tiktok.com/@necunoscutu34/live
-  • Gateway      : https://vohoainam.net/qt7xsfkzle410link188745
-
-[20:55:11 14/10/26] [Rương Lớn] @devojka_*ez_imena_95 | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: 01:20s - 20:56:34
-  • Deeplink App : snssdk1180://live?room_id=7696498437226875666
-  • Web TikTok   : https://www.tiktok.com/@devojka_*ez_imena_95/live
-  • Gateway      : https://vohoainam.net/vqt78dcbgi9pplink188737
-
-[20:55:10 14/10/26] [Túi] @hangiemreee | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:56:43
-  • Deeplink App : snssdk1180://live?room_id=7696502257705143048
-  • Web TikTok   : https://www.tiktok.com/@hangiemreee/live
-  • Gateway      : https://vohoainam.net/1a8govfj8wf1jlink188734
-
-[20:55:10 14/10/26] [Túi] @phong..24 | Box: 50/10 | Ratio: 5.0 xu | Live: N/A | Time: 01:30s - 20:56:42
-  • Deeplink App : snssdk1180://live?room_id=7696486056388086549
-  • Web TikTok   : https://www.tiktok.com/@phong..24/live
-  • Gateway      : https://vohoainam.net/duhmpjgutt15glink188732
-
-[20:55:09 14/10/26] [Túi] @bojweys | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:56:42
-  • Deeplink App : snssdk1180://live?room_id=7696505804008000276
-  • Web TikTok   : https://www.tiktok.com/@bojweys/live
-  • Gateway      : https://vohoainam.net/ldufxguypz6zwlink188731
-
-[20:55:09 14/10/26] [Rương Nhỏ] @buser*0 | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:10s - 20:56:18
-  • Deeplink App : snssdk1180://live?room_id=7696517741375916821
-  • Web TikTok   : https://www.tiktok.com/@buser*0/live
-  • Gateway      : https://vohoainam.net/zxnartiu7t5l7link188730
-
-[20:55:09 14/10/26] [Túi 0xu] @inichiloks25 | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:56:44
-  • Deeplink App : snssdk1180://live?room_id=7696490148635364117
-  • Web TikTok   : https://www.tiktok.com/@inichiloks25/live
-  • Gateway      : https://vohoainam.net/rt1407wudbefmlink188729
-
-[20:55:08 14/10/26] [Rương Nhỏ] @foreverayakasonlyf*n | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15727 | Time: 01:10s - 20:56:18
-  • Deeplink App : snssdk1180://live?room_id=7696481990358469384
-  • Web TikTok   : https://www.tiktok.com/@foreverayakasonlyf*n/live
-  • Gateway      : https://vohoainam.net/4qvhe2q53pibqlink188728
-
-[20:55:08 14/10/26] [Rương Lớn] @a*inoz18 | Box: 500/100 | Ratio: 5.0 xu | Live: 19000/19794 | Time: 02:00s - 20:57:11
-  • Deeplink App : snssdk1180://live?room_id=7696494088270498566
-  • Web TikTok   : https://www.tiktok.com/@a*inoz18/live
-  • Gateway      : https://vohoainam.net/j5f8eid6oqjlolink188727
-
-[20:55:06 14/10/26] [Rương Lớn] @w5rr*11 | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: 01:20s - 20:56:29
-  • Deeplink App : snssdk1180://live?room_id=7696432937881553682
-  • Web TikTok   : https://www.tiktok.com/@w5rr*11/live
-  • Gateway      : https://vohoainam.net/2c0fcalfy0wzzlink188721
-
-[20:55:06 14/10/26] [Túi] @pingpong_thongkam | Box: 50/10 | Ratio: 5.0 xu | Live: N/A | Time: 01:30s - 20:56:37
+  • Gateway      : https://vohoainam.net/74v1mikwcwx7ulink190753
+
+[21:06:08 14/10/26] [Rương Nhỏ] @ss*ong_48 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15639 | Time: 01:10s - 21:07:17
+  • Deeplink App : snssdk1180://live?room_id=7696508280591420168
+  • Web TikTok   : https://www.tiktok.com/@ss*ong_48/live
+  • Gateway      : https://vohoainam.net/00r4w40025n4slink190752
+
+[21:06:08 14/10/26] [Túi] @woonho_cap | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:40
+  • Deeplink App : snssdk1180://live?room_id=7696519184158821126
+  • Web TikTok   : https://www.tiktok.com/@woonho_cap/live
+  • Gateway      : https://vohoainam.net/mfwhzwcosjnsilink190751
+
+[21:06:07 14/10/26] [Rương Test] @syak.n*.rainbow | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15636 | Time: 00:40s - 21:06:46
+  • Deeplink App : snssdk1180://live?room_id=7696464797332982548
+  • Web TikTok   : https://www.tiktok.com/@syak.n*.rainbow/live
+  • Gateway      : https://vohoainam.net/d5dizn5bhg2hilink190749
+
+[21:06:07 14/10/26] [Rương Test] @its.s*sonia | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:46
+  • Deeplink App : snssdk1180://live?room_id=7696513342274636562
+  • Web TikTok   : https://www.tiktok.com/@its.s*sonia/live
+  • Gateway      : https://vohoainam.net/yzuzlko8n4glxlink190748
+
+[21:06:06 14/10/26] [Rương Lớn] @ha*hao_liao | Box: 50/2 | Ratio: 25.0 xu | Live: N/A | Time: 01:19s - 21:07:28
+  • Deeplink App : snssdk1180://live?room_id=7696492193607076628
+  • Web TikTok   : https://www.tiktok.com/@ha*hao_liao/live
+  • Gateway      : https://vohoainam.net/lpijs43xbdzeelink190747
+
+[21:06:06 14/10/26] [Rương Lớn] @al*ar2309 | Box: 50/1 | Ratio: 50.0 xu | Live: N/A | Time: 01:20s - 21:07:29
+  • Deeplink App : snssdk1180://live?room_id=7696460456327645970
+  • Web TikTok   : https://www.tiktok.com/@al*ar2309/live
+  • Gateway      : https://vohoainam.net/b1ghju8ddzwo7link190746
+
+[21:06:06 14/10/26] [Rương Nhỏ] @brend*matias___ | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:07:14
+  • Deeplink App : snssdk1180://live?room_id=7696499799108881170
+  • Web TikTok   : https://www.tiktok.com/@brend*matias___/live
+  • Gateway      : https://vohoainam.net/2u9zh34yb7hlalink190745
+
+[21:06:06 14/10/26] [Rương Test] @anju_na*aland | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15633 | Time: 00:40s - 21:06:44
+  • Deeplink App : snssdk1180://live?room_id=7696513206130674453
+  • Web TikTok   : https://www.tiktok.com/@anju_na*aland/live
+  • Gateway      : https://vohoainam.net/ufjk2qtvvwg4alink190744
+
+[21:06:06 14/10/26] [Rương Lớn] @e*h.wa5 | Box: 40/10 | Ratio: 4.0 xu | Live: N/A | Time: 01:20s - 21:07:28
+  • Deeplink App : snssdk1180://live?room_id=7696514656281709345
+  • Web TikTok   : https://www.tiktok.com/@e*h.wa5/live
+  • Gateway      : https://vohoainam.net/p3e956b8m4slllink190742
+
+[21:06:05 14/10/26] [Rương Nhỏ] @yeme9*2 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15633 | Time: 01:10s - 21:07:14
+  • Deeplink App : snssdk1180://live?room_id=7696501328524135188
+  • Web TikTok   : https://www.tiktok.com/@yeme9*2/live
+  • Gateway      : https://vohoainam.net/w13q3hokmadr8link190743
+
+[21:06:05 14/10/26] [Rương Nhỏ] @porfr*edomrock | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:10s - 21:07:15
+  • Deeplink App : snssdk1180://live?room_id=7696508653687278337
+  • Web TikTok   : https://www.tiktok.com/@porfr*edomrock/live
+  • Gateway      : https://vohoainam.net/dmo3knknaysi2link190741
+
+[21:06:05 14/10/26] [Rương Nhỏ] @kur*midayo7 | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:07:14
+  • Deeplink App : snssdk1180://live?room_id=7696522094128974600
+  • Web TikTok   : https://www.tiktok.com/@kur*midayo7/live
+  • Gateway      : https://vohoainam.net/ly87f4n3xq0eslink190739
+
+[21:06:05 14/10/26] [Túi] @pingpong_thongkam | Box: 50/10 | Ratio: 5.0 xu | Live: N/A | Time: 01:30s - 21:07:38
   • Deeplink App : snssdk1180://live?room_id=7696499596075338516
   • Web TikTok   : https://www.tiktok.com/@pingpong_thongkam/live
-  • Gateway      : https://vohoainam.net/tl0uweo4rbcy8link188720
+  • Gateway      : https://vohoainam.net/ztft9mhnl3bgvlink190738
 
-[20:55:04 14/10/26] [Rương Lớn] @tyo*12345 | Box: 30/6 | Ratio: 5.0 xu | Live: 19000/19791 | Time: 01:20s - 20:56:27
-  • Deeplink App : snssdk1180://live?room_id=7696483548005436212
-  • Web TikTok   : https://www.tiktok.com/@tyo*12345/live
-  • Gateway      : https://vohoainam.net/8njd63fl2qtk6link188715
+[21:06:05 14/10/26] [Rương Test] @icimdekimele*oldu | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15633 | Time: 00:40s - 21:06:44
+  • Deeplink App : snssdk1180://live?room_id=7696492657220913938
+  • Web TikTok   : https://www.tiktok.com/@icimdekimele*oldu/live
+  • Gateway      : https://vohoainam.net/rfo443rdiyf0clink190737
 
-[20:55:04 14/10/26] [Rương Lớn] @kc*lnctdpnw | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: 01:20s - 20:56:27
-  • Deeplink App : snssdk1180://live?room_id=7696515453469231893
-  • Web TikTok   : https://www.tiktok.com/@kc*lnctdpnw/live
-  • Gateway      : https://vohoainam.net/sjr6pg5yxdu7tlink188714
+[21:06:04 14/10/26] [Túi] @jimijuuti | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:37
+  • Deeplink App : snssdk1180://live?room_id=7696504598206499606
+  • Web TikTok   : https://www.tiktok.com/@jimijuuti/live
+  • Gateway      : https://vohoainam.net/kpf716fl8iuellink190736
 
-[20:55:04 14/10/26] [Túi 0xu] @appellekat | Box: 50/50 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 20:56:39
+[21:06:04 14/10/26] [Rương Test] @faforit*0 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15631 | Time: 00:40s - 21:06:42
+  • Deeplink App : snssdk1180://live?room_id=7696514119096175381
+  • Web TikTok   : https://www.tiktok.com/@faforit*0/live
+  • Gateway      : https://vohoainam.net/b5sshk9n1553vlink190735
+
+[21:06:03 14/10/26] [Rương Test] @everyo*e2209 | Box: 21/21 | Ratio: 1.0 xu | Live: 15000/15631 | Time: 00:40s - 21:06:42
+  • Deeplink App : snssdk1180://live?room_id=7696508342344174342
+  • Web TikTok   : https://www.tiktok.com/@everyo*e2209/live
+  • Gateway      : https://vohoainam.net/fsnk5yhomlxaflink190733
+
+[21:06:03 14/10/26] [Túi] @oka_maruko223 | Box: 50/5 | Ratio: 10.0 xu | Live: N/A | Time: 01:30s - 21:07:36
+  • Deeplink App : snssdk1180://live?room_id=7696459507676809991
+  • Web TikTok   : https://www.tiktok.com/@oka_maruko223/live
+  • Gateway      : https://vohoainam.net/apcnjp4449v0olink190732
+
+[21:06:02 14/10/26] [Rương Test] @miaom*ao520666 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:40
+  • Deeplink App : snssdk1180://live?room_id=7696515168654232340
+  • Web TikTok   : https://www.tiktok.com/@miaom*ao520666/live
+  • Gateway      : https://vohoainam.net/vamycsjyltwbslink190730
+
+[21:06:02 14/10/26] [Rương Nhỏ] @akn*1031 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15630 | Time: 01:10s - 21:07:11
+  • Deeplink App : snssdk1180://live?room_id=7696510515724339969
+  • Web TikTok   : https://www.tiktok.com/@akn*1031/live
+  • Gateway      : https://vohoainam.net/xfbunpmlzfz8glink190729
+
+[21:06:01 14/10/26] [Túi] @sss23i | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:34
+  • Deeplink App : snssdk1180://live?room_id=7696482641524820757
+  • Web TikTok   : https://www.tiktok.com/@sss23i/live
+  • Gateway      : https://vohoainam.net/4l3ah0gwskkoxlink190727
+
+[21:05:59 14/10/26] [Rương Test] @alexzikg*4y | Box: 20/18 | Ratio: 1.1 xu | Live: N/A | Time: 00:40s - 21:06:38
+  • Deeplink App : snssdk1180://live?room_id=7696520271978793780
+  • Web TikTok   : https://www.tiktok.com/@alexzikg*4y/live
+  • Gateway      : https://vohoainam.net/u6w6vrtuxctvflink190724
+
+[21:05:59 14/10/26] [Rương Test] @blunas*ia | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:38
+  • Deeplink App : snssdk1180://live?room_id=7696459285408107296
+  • Web TikTok   : https://www.tiktok.com/@blunas*ia/live
+  • Gateway      : https://vohoainam.net/xh68h47b9z6emlink190722
+
+[21:05:58 14/10/26] [Túi] @3morka.1 | Box: 100/50 | Ratio: 2.0 xu | Live: 19000/19763 | Time: 01:30s - 21:07:30
+  • Deeplink App : snssdk1180://live?room_id=7696514721477905170
+  • Web TikTok   : https://www.tiktok.com/@3morka.1/live
+  • Gateway      : https://vohoainam.net/zo942lk3q4yzklink190721
+
+[21:05:58 14/10/26] [Rương Lớn] @superstar_00*05 | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: 01:20s - 21:07:21
+  • Deeplink App : snssdk1180://live?room_id=7696490369181764359
+  • Web TikTok   : https://www.tiktok.com/@superstar_00*05/live
+  • Gateway      : https://vohoainam.net/k6pmx8oskn360link190720
+
+[21:05:57 14/10/26] [Rương Test] @k_*_s__a | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15619 | Time: 00:40s - 21:06:35
+  • Deeplink App : snssdk1180://live?room_id=7696501527665871624
+  • Web TikTok   : https://www.tiktok.com/@k_*_s__a/live
+  • Gateway      : https://vohoainam.net/3vm3gtx063w3ulink190719
+
+[21:05:57 14/10/26] [Rương Lớn] @official_kamise*poi | Box: 100/30 | Ratio: 3.3 xu | Live: N/A | Time: 01:20s - 21:07:18
+  • Deeplink App : snssdk1180://live?room_id=7696508513228655366
+  • Web TikTok   : https://www.tiktok.com/@official_kamise*poi/live
+  • Gateway      : https://vohoainam.net/r94l8bvzkxhqdlink190718
+
+[21:05:56 14/10/26] [Rương Test] @ho*sencng | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15622 | Time: 00:40s - 21:06:36
+  • Deeplink App : snssdk1180://live?room_id=7696497164159847175
+  • Web TikTok   : https://www.tiktok.com/@ho*sencng/live
+  • Gateway      : https://vohoainam.net/s2e2k9ovqz63xlink190717
+
+[21:05:56 14/10/26] [Túi] @dezhang.l | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:29
+  • Deeplink App : snssdk1180://live?room_id=7696519044995828498
+  • Web TikTok   : https://www.tiktok.com/@dezhang.l/live
+  • Gateway      : https://vohoainam.net/mi6y7x94czb9klink190716
+
+[21:05:55 14/10/26] [Rương Test] @tan*kereminat | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:34
+  • Deeplink App : snssdk1180://live?room_id=7696480575528454919
+  • Web TikTok   : https://www.tiktok.com/@tan*kereminat/live
+  • Gateway      : https://vohoainam.net/kss62td4yflvslink190715
+
+[21:05:55 14/10/26] [Rương Nhỏ] @nevazno3*3 | Box: 23/13 | Ratio: 1.8 xu | Live: N/A | Time: 01:10s - 21:07:04
+  • Deeplink App : snssdk1180://live?room_id=7696516001661913876
+  • Web TikTok   : https://www.tiktok.com/@nevazno3*3/live
+  • Gateway      : https://vohoainam.net/53w5rjkqnwrk3link190714
+
+[21:05:54 14/10/26] [Túi] @sinbi_riu | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:27
+  • Deeplink App : snssdk1180://live?room_id=7696477192351484690
+  • Web TikTok   : https://www.tiktok.com/@sinbi_riu/live
+  • Gateway      : https://vohoainam.net/y68wq85a3oisrlink190713
+
+[21:05:54 14/10/26] [Rương Test] @03*.2020 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15669 | Time: 00:40s - 21:06:33
+  • Deeplink App : snssdk1180://live?room_id=7696491979038903092
+  • Web TikTok   : https://www.tiktok.com/@03*.2020/live
+  • Gateway      : https://vohoainam.net/d01iio8wx4xywlink190711
+
+[21:05:54 14/10/26] [Rương Test] @t*ka_8118 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15669 | Time: 00:40s - 21:06:33
+  • Deeplink App : snssdk1180://live?room_id=7696494083898460949
+  • Web TikTok   : https://www.tiktok.com/@t*ka_8118/live
+  • Gateway      : https://vohoainam.net/bmjxsgwauo0ytlink190710
+
+[21:05:53 14/10/26] [Túi] @guangguang806 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:26
+  • Deeplink App : snssdk1180://live?room_id=7696502273820281652
+  • Web TikTok   : https://www.tiktok.com/@guangguang806/live
+  • Gateway      : https://vohoainam.net/aq4tosdfsq25rlink190709
+
+[21:05:53 14/10/26] [Túi] @judychandayo | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:26
+  • Deeplink App : snssdk1180://live?room_id=7696508878369508116
+  • Web TikTok   : https://www.tiktok.com/@judychandayo/live
+  • Gateway      : https://vohoainam.net/jau04uxutmt8clink190708
+
+[21:05:53 14/10/26] [Rương Test] @su*em_190 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15666 | Time: 00:40s - 21:06:31
+  • Deeplink App : snssdk1180://live?room_id=7696489584867953460
+  • Web TikTok   : https://www.tiktok.com/@su*em_190/live
+  • Gateway      : https://vohoainam.net/1702ggptyfq68link190707
+
+[21:05:53 14/10/26] [Rương Test] @a5y*_jj | Box: 50/50 | Ratio: 1.0 xu | Live: 15000/15666 | Time: 00:40s - 21:06:32
+  • Deeplink App : snssdk1180://live?room_id=7696497050564823829
+  • Web TikTok   : https://www.tiktok.com/@a5y*_jj/live
+  • Gateway      : https://vohoainam.net/72k9txr61s3rmlink190706
+
+[21:05:53 14/10/26] [Rương Test] @neme.h*k | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15666 | Time: 00:40s - 21:06:32
+  • Deeplink App : snssdk1180://live?room_id=7696500510010034962
+  • Web TikTok   : https://www.tiktok.com/@neme.h*k/live
+  • Gateway      : https://vohoainam.net/0sidi7oewd0v5link190705
+
+[21:05:52 14/10/26] [Túi] @teamzaidag | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 21:07:25
+  • Deeplink App : snssdk1180://live?room_id=7696493525688519430
+  • Web TikTok   : https://www.tiktok.com/@teamzaidag/live
+  • Gateway      : https://vohoainam.net/q2shr4wwyj4m8link190704
+
+[21:05:52 14/10/26] [Túi] @nikotin77mg | Box: 50/10 | Ratio: 5.0 xu | Live: N/A | Time: 01:30s - 21:07:25
+  • Deeplink App : snssdk1180://live?room_id=7696509830122572545
+  • Web TikTok   : https://www.tiktok.com/@nikotin77mg/live
+  • Gateway      : https://vohoainam.net/r89zysnl93iaclink190703
+
+[21:05:52 14/10/26] [Rương Treo]  | Box: 50/15 | Ratio: 3.3 xu | Live: 19000/19790 | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696507665468263175
+  • Web TikTok   : https://www.tiktok.com/@live/live
+  • Gateway      : https://vohoainam.net/rv75jhqwg9h60link190700
+
+[21:05:51 14/10/26] [Rương Nhỏ] @ri*arow0903 | Box: 50/30 | Ratio: 1.7 xu | Live: 15000/15666 | Time: 00:52s - 21:06:42
+  • Deeplink App : snssdk1180://live?room_id=7696513586923490055
+  • Web TikTok   : https://www.tiktok.com/@ri*arow0903/live
+  • Gateway      : https://vohoainam.net/5le94f0p524uwlink190699
+
+[21:05:51 14/10/26] [Rương Test] @l*vxjasmine | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:30
+  • Deeplink App : snssdk1180://live?room_id=7696511975857802036
+  • Web TikTok   : https://www.tiktok.com/@l*vxjasmine/live
+  • Gateway      : https://vohoainam.net/lfogbpze106f5link190698
+
+[21:05:50 14/10/26] [Rương Nhỏ] @zixin*g666 | Box: 200/100 | Ratio: 2.0 xu | Live: 15000/15664 | Time: 01:10s - 21:06:59
+  • Deeplink App : snssdk1180://live?room_id=7696498805251328769
+  • Web TikTok   : https://www.tiktok.com/@zixin*g666/live
+  • Gateway      : https://vohoainam.net/kafsjth0uc0m9link190697
+
+[21:05:49 14/10/26] [Rương Test] @official_kotar*2004 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15657 | Time: 00:40s - 21:06:28
+  • Deeplink App : snssdk1180://live?room_id=7696446402247707400
+  • Web TikTok   : https://www.tiktok.com/@official_kotar*2004/live
+  • Gateway      : https://vohoainam.net/otkrq1uisfgqplink190694
+
+[21:05:48 14/10/26] [Rương Test] @ocr*12 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15653 | Time: 00:40s - 21:06:27
+  • Deeplink App : snssdk1180://live?room_id=7696464679619906311
+  • Web TikTok   : https://www.tiktok.com/@ocr*12/live
+  • Gateway      : https://vohoainam.net/c7ygp0sbqfpamlink190692
+
+[21:05:48 14/10/26] [Rương Lớn] @yumi__*13191 | Box: 50/3 | Ratio: 16.7 xu | Live: N/A | Time: 01:20s - 21:07:11
+  • Deeplink App : snssdk1180://live?room_id=7696482352282651413
+  • Web TikTok   : https://www.tiktok.com/@yumi__*13191/live
+  • Gateway      : https://vohoainam.net/f6eknow37lo1rlink190691
+
+[21:05:48 14/10/26] [Túi] @boyan5788 | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 21:07:20
+  • Deeplink App : snssdk1180://live?room_id=7696485700392307477
+  • Web TikTok   : https://www.tiktok.com/@boyan5788/live
+  • Gateway      : https://vohoainam.net/cujy7bwjof4g8link190690
+
+[21:05:48 14/10/26] [Túi] @lr.ir3 | Box: 50/20 | Ratio: 2.5 xu | Live: 19000/19782 | Time: 01:30s - 21:07:21
+  • Deeplink App : snssdk1180://live?room_id=7696495304535051016
+  • Web TikTok   : https://www.tiktok.com/@lr.ir3/live
+  • Gateway      : https://vohoainam.net/kfifhu9h63ye9link190689
+
+[21:05:48 14/10/26] [Rương Nhỏ] @user*bwccu2w3s | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15651 | Time: 01:10s - 21:06:56
+  • Deeplink App : snssdk1180://live?room_id=7696501456367881012
+  • Web TikTok   : https://www.tiktok.com/@user*bwccu2w3s/live
+  • Gateway      : https://vohoainam.net/648w12qm8437flink190688
+
+[21:05:47 14/10/26] [Túi] @mumuvadau | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 21:07:20
+  • Deeplink App : snssdk1180://live?room_id=7696472016127380246
+  • Web TikTok   : https://www.tiktok.com/@mumuvadau/live
+  • Gateway      : https://vohoainam.net/vuvb72abfh7celink190687
+
+[21:05:47 14/10/26] [Rương Treo]  | Box: 31/10 | Ratio: 3.1 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696499552253889288
+  • Web TikTok   : https://www.tiktok.com/@live/live
+  • Gateway      : https://vohoainam.net/68aj54rd192cslink190685
+
+[21:05:47 14/10/26] [Rương Test] @p*180236 | Box: 20/15 | Ratio: 1.3 xu | Live: N/A | Time: 00:40s - 21:06:26
+  • Deeplink App : snssdk1180://live?room_id=7696517264930966279
+  • Web TikTok   : https://www.tiktok.com/@p*180236/live
+  • Gateway      : https://vohoainam.net/x3oz8hhqbdm7ylink190683
+
+[21:05:47 14/10/26] [Rương Test] @myhome*huru | Box: 20/20 | Ratio: 1.0 xu | Live: 15000/15651 | Time: 00:40s - 21:06:26
+  • Deeplink App : snssdk1180://live?room_id=7696471780039052033
+  • Web TikTok   : https://www.tiktok.com/@myhome*huru/live
+  • Gateway      : https://vohoainam.net/94neyfaoonmjglink190682
+
+[21:05:46 14/10/26] [Túi] @kevintl7 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:19
+  • Deeplink App : snssdk1180://live?room_id=7696487949055724310
+  • Web TikTok   : https://www.tiktok.com/@kevintl7/live
+  • Gateway      : https://vohoainam.net/3hez71ekf10q2link190681
+
+[21:05:46 14/10/26] [Rương Test] @7777777*zzz | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:25
+  • Deeplink App : snssdk1180://live?room_id=7696489129609136903
+  • Web TikTok   : https://www.tiktok.com/@7777777*zzz/live
+  • Gateway      : https://vohoainam.net/pdfs7qhxmfy33link190680
+
+[21:05:46 14/10/26] [Rương Nhỏ] @i*am_yuya | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:06:55
+  • Deeplink App : snssdk1180://live?room_id=7696509105532914453
+  • Web TikTok   : https://www.tiktok.com/@i*am_yuya/live
+  • Gateway      : https://vohoainam.net/vqk9efqmdp6pylink190679
+
+[21:05:46 14/10/26] [Rương Nhỏ] @moon_xi*hh | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:10s - 21:06:55
+  • Deeplink App : snssdk1180://live?room_id=7696496412394490625
+  • Web TikTok   : https://www.tiktok.com/@moon_xi*hh/live
+  • Gateway      : https://vohoainam.net/0w0g83hn476qulink190677
+
+[21:05:45 14/10/26] [Rương Test] @minmin*in_08 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:24
+  • Deeplink App : snssdk1180://live?room_id=7696522104573463316
+  • Web TikTok   : https://www.tiktok.com/@minmin*in_08/live
+  • Gateway      : https://vohoainam.net/217c0jndd0jw5link190676
+
+[21:05:45 14/10/26] [Rương Test] @ee1*43 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:24
+  • Deeplink App : snssdk1180://live?room_id=7696492903165692724
+  • Web TikTok   : https://www.tiktok.com/@ee1*43/live
+  • Gateway      : https://vohoainam.net/qhsmn4pdo36uulink190672
+
+[21:05:44 14/10/26] [Rương Test] @argis*s__ | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15643 | Time: 00:40s - 21:06:23
+  • Deeplink App : snssdk1180://live?room_id=7696486961812425494
+  • Web TikTok   : https://www.tiktok.com/@argis*s__/live
+  • Gateway      : https://vohoainam.net/pjvq9o0y8khlwlink190678
+
+[21:05:44 14/10/26] [Rương Nhỏ] @p*kan111 | Box: 20/11 | Ratio: 1.8 xu | Live: N/A | Time: 00:57s - 21:06:40
+  • Deeplink App : snssdk1180://live?room_id=7696475963588135701
+  • Web TikTok   : https://www.tiktok.com/@p*kan111/live
+  • Gateway      : https://vohoainam.net/peg2sh42ysnyolink190671
+
+[21:05:44 14/10/26] [Rương Lớn] @bu*ebasu | Box: 30/14 | Ratio: 2.1 xu | Live: N/A | Time: 01:20s - 21:07:07
+  • Deeplink App : snssdk1180://live?room_id=7696520813033966368
+  • Web TikTok   : https://www.tiktok.com/@bu*ebasu/live
+  • Gateway      : https://vohoainam.net/hnomphaqz0zwulink190670
+
+[21:05:44 14/10/26] [Túi] @guardian_angel1022 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:17
+  • Deeplink App : snssdk1180://live?room_id=7696500731389479686
+  • Web TikTok   : https://www.tiktok.com/@guardian_angel1022/live
+  • Gateway      : https://vohoainam.net/8hatkdczjzhnwlink190669
+
+[21:05:44 14/10/26] [Rương Test] @nininhasu*sse | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:22
+  • Deeplink App : snssdk1180://live?room_id=7696519914854140692
+  • Web TikTok   : https://www.tiktok.com/@nininhasu*sse/live
+  • Gateway      : https://vohoainam.net/kq5rqmt55akdmlink190668
+
+[21:05:43 14/10/26] [Rương Test] @yakult_*800 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15643 | Time: 00:40s - 21:06:23
+  • Deeplink App : snssdk1180://live?room_id=7696494441314142997
+  • Web TikTok   : https://www.tiktok.com/@yakult_*800/live
+  • Gateway      : https://vohoainam.net/8cwvlwl20etr8link190667
+
+[21:05:43 14/10/26] [Rương Test] @9861*_34 | Box: 20/20 | Ratio: 1.0 xu | Live: N/A | Time: 00:40s - 21:06:23
+  • Deeplink App : snssdk1180://live?room_id=7696444419655289620
+  • Web TikTok   : https://www.tiktok.com/@9861*_34/live
+  • Gateway      : https://vohoainam.net/tc2sivhcqx78ulink190666
+
+[21:05:43 14/10/26] [Túi] @moustafasadouki6 | Box: 50/10 | Ratio: 5.0 xu | Live: N/A | Time: 01:30s - 21:07:16
+  • Deeplink App : snssdk1180://live?room_id=7696509285531339538
+  • Web TikTok   : https://www.tiktok.com/@moustafasadouki6/live
+  • Gateway      : https://vohoainam.net/lavueu5wnygp9link190665
+
+[21:05:43 14/10/26] [Rương Treo]  | Box: 30/15 | Ratio: 2.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696510607844526868
+  • Web TikTok   : https://www.tiktok.com/@live/live
+  • Gateway      : https://vohoainam.net/8ixy623xsjsvilink190663
+
+[21:05:43 14/10/26] [Rương Test] @wfq*rfuttbtri8xx | Box: 21/21 | Ratio: 1.0 xu | Live: N/A | Time: 00:40s - 21:06:22
+  • Deeplink App : snssdk1180://live?room_id=7696515934090627860
+  • Web TikTok   : https://www.tiktok.com/@wfq*rfuttbtri8xx/live
+  • Gateway      : https://vohoainam.net/yor90m9tjtzkylink190662
+
+[21:05:42 14/10/26] [Rương Lớn] @ra*z.2001 | Box: 30/10 | Ratio: 3.0 xu | Live: N/A | Time: 01:20s - 21:07:05
+  • Deeplink App : snssdk1180://live?room_id=7696508505622154004
+  • Web TikTok   : https://www.tiktok.com/@ra*z.2001/live
+  • Gateway      : https://vohoainam.net/p3jlrs7ewde7xlink190661
+
+[21:05:42 14/10/26] [Túi] @anneliesezyl.tt | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:15
+  • Deeplink App : snssdk1180://live?room_id=7696519389666954004
+  • Web TikTok   : https://www.tiktok.com/@anneliesezyl.tt/live
+  • Gateway      : https://vohoainam.net/2q83hhpnnatp0link190660
+
+[21:05:41 14/10/26] [Rương Test] @nat*umindesuyo | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15627 | Time: 00:40s - 21:06:20
+  • Deeplink App : snssdk1180://live?room_id=7696498550196144904
+  • Web TikTok   : https://www.tiktok.com/@nat*umindesuyo/live
+  • Gateway      : https://vohoainam.net/0vzh8kjm54h9elink190659
+
+[21:05:41 14/10/26] [Rương Test] @wak*pondayon | Box: 21/16 | Ratio: 1.3 xu | Live: N/A | Time: 00:40s - 21:06:20
+  • Deeplink App : snssdk1180://live?room_id=7696501799489997586
+  • Web TikTok   : https://www.tiktok.com/@wak*pondayon/live
+  • Gateway      : https://vohoainam.net/l1fx5gsyv2mq2link190658
+
+[21:05:41 14/10/26] [Túi] @antigoviral | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:14
+  • Deeplink App : snssdk1180://live?room_id=7696517341137226516
+  • Web TikTok   : https://www.tiktok.com/@antigoviral/live
+  • Gateway      : https://vohoainam.net/aucdh55n64c7ulink190657
+
+[21:05:41 14/10/26] [Rương Test] @5sh*___ | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:20
+  • Deeplink App : snssdk1180://live?room_id=7696502963522767622
+  • Web TikTok   : https://www.tiktok.com/@5sh*___/live
+  • Gateway      : https://vohoainam.net/vsuhfuso0kqe2link190656
+
+[21:05:41 14/10/26] [Rương Test] @ikan*cupan96 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15627 | Time: 00:40s - 21:06:20
+  • Deeplink App : snssdk1180://live?room_id=7696516872837696262
+  • Web TikTok   : https://www.tiktok.com/@ikan*cupan96/live
+  • Gateway      : https://vohoainam.net/7fcq6d3t2sqc9link190655
+
+[21:05:41 14/10/26] [Rương Test] @nxnn*21 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:20
+  • Deeplink App : snssdk1180://live?room_id=7696481441447693077
+  • Web TikTok   : https://www.tiktok.com/@nxnn*21/live
+  • Gateway      : https://vohoainam.net/36mb8lobwpap6link190654
+
+[21:05:39 14/10/26] [Túi] @xuan_612_ | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:12
+  • Deeplink App : snssdk1180://live?room_id=7696522948685073160
+  • Web TikTok   : https://www.tiktok.com/@xuan_612_/live
+  • Gateway      : https://vohoainam.net/ly4e8df6vs1palink190653
+
+[21:05:38 14/10/26] [Rương Test] @ab*erkh83 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:17
+  • Deeplink App : snssdk1180://live?room_id=7696510518776941320
+  • Web TikTok   : https://www.tiktok.com/@ab*erkh83/live
+  • Gateway      : https://vohoainam.net/sn5lrfzz8a1b7link190652
+
+[21:05:38 14/10/26] [Rương Test] @pinky*25207 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:16
+  • Deeplink App : snssdk1180://live?room_id=7696518735633632020
+  • Web TikTok   : https://www.tiktok.com/@pinky*25207/live
+  • Gateway      : https://vohoainam.net/lox33bikt8x3jlink190651
+
+[21:05:37 14/10/26] [Rương Test] @suah1*84 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15667 | Time: 00:40s - 21:06:16
+  • Deeplink App : snssdk1180://live?room_id=7696521305584470804
+  • Web TikTok   : https://www.tiktok.com/@suah1*84/live
+  • Gateway      : https://vohoainam.net/19ru48izjt6wnlink190650
+
+[21:05:37 14/10/26] [Túi] @spiderno11 | Box: 50/10 | Ratio: 5.0 xu | Live: N/A | Time: 01:30s - 21:07:10
+  • Deeplink App : snssdk1180://live?room_id=7696496183649618696
+  • Web TikTok   : https://www.tiktok.com/@spiderno11/live
+  • Gateway      : https://vohoainam.net/3rgcgwgrdmmlplink190649
+
+[21:05:37 14/10/26] [Túi] @alhobalsafe | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:10
+  • Deeplink App : snssdk1180://live?room_id=7696495357693479698
+  • Web TikTok   : https://www.tiktok.com/@alhobalsafe/live
+  • Gateway      : https://vohoainam.net/ptuut4t9z83nplink190648
+
+[21:05:37 14/10/26] [Túi 0xu] @rajja.hassan | Box: 20/20 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 21:07:12
+  • Deeplink App : snssdk1180://live?room_id=7696495079229475587
+  • Web TikTok   : https://www.tiktok.com/@rajja.hassan/live
+  • Gateway      : https://vohoainam.net/lv1mgkhnbw74olink190647
+
+[21:05:36 14/10/26] [Rương Nhỏ] @t*ychan.1217 | Box: 20/10 | Ratio: 2.0 xu | Live: 15000/15662 | Time: 01:10s - 21:06:45
+  • Deeplink App : snssdk1180://live?room_id=7696497499944504084
+  • Web TikTok   : https://www.tiktok.com/@t*ychan.1217/live
+  • Gateway      : https://vohoainam.net/28e0zvv42i72blink190646
+
+[21:05:36 14/10/26] [Rương Lớn] @zixingg*66 | Box: 200/100 | Ratio: 2.0 xu | Live: N/A | Time: 01:20s - 21:06:59
+  • Deeplink App : snssdk1180://live?room_id=7696498805251328769
+  • Web TikTok   : https://www.tiktok.com/@zixingg*66/live
+  • Gateway      : https://vohoainam.net/bmtyb7fvj0hpslink190645
+
+[21:05:36 14/10/26] [Túi] @coin16790 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:09
+  • Deeplink App : snssdk1180://live?room_id=7696518466769095425
+  • Web TikTok   : https://www.tiktok.com/@coin16790/live
+  • Gateway      : https://vohoainam.net/k7g8tysz0yxz9link190644
+
+[21:05:35 14/10/26] [Túi 0xu] @pf35 | Box: 20/20 | Ratio: 1.0 xu | Live: 15000/15761 | Time: 01:30s - 21:07:10
+  • Deeplink App : snssdk1180://live?room_id=7696481831012682504
+  • Web TikTok   : https://www.tiktok.com/@pf35/live
+  • Gateway      : https://vohoainam.net/86ij274r6e7iblink190643
+
+[21:05:35 14/10/26] [Túi 0xu] @spiderno11 | Box: 50/10 | Ratio: 5.0 xu | Live: N/A | Time: 01:30s - 21:07:10
+  • Deeplink App : snssdk1180://live?room_id=7696496183649618696
+  • Web TikTok   : https://www.tiktok.com/@spiderno11/live
+  • Gateway      : https://vohoainam.net/4qklakpdewqt7link190642
+
+[21:05:35 14/10/26] [Rương Test] @nima*uan_ | Box: 20/15 | Ratio: 1.3 xu | Live: N/A | Time: 00:40s - 21:06:13
+  • Deeplink App : snssdk1180://live?room_id=7696466640100772616
+  • Web TikTok   : https://www.tiktok.com/@nima*uan_/live
+  • Gateway      : https://vohoainam.net/qa0kmnqdxgsoylink190641
+
+[21:05:35 14/10/26] [Túi] @kanghoon_kor | Box: 50/10 | Ratio: 5.0 xu | Live: 19000/19786 | Time: 01:30s - 21:07:07
+  • Deeplink App : snssdk1180://live?room_id=7696493008682421010
+  • Web TikTok   : https://www.tiktok.com/@kanghoon_kor/live
+  • Gateway      : https://vohoainam.net/bn00cczton1x0link190640
+
+[21:05:35 14/10/26] [Rương Test] @mochiy0*09 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15657 | Time: 00:40s - 21:06:14
+  • Deeplink App : snssdk1180://live?room_id=7696497180370733844
+  • Web TikTok   : https://www.tiktok.com/@mochiy0*09/live
+  • Gateway      : https://vohoainam.net/8vund3q8p9atwlink190639
+
+[21:05:34 14/10/26] [Rương Test] @ki._.ri_315*kiri1205bd | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15657 | Time: 00:40s - 21:06:13
+  • Deeplink App : snssdk1180://live?room_id=7696484608686902034
+  • Web TikTok   : https://www.tiktok.com/@ki._.ri_315*kiri1205bd/live
+  • Gateway      : https://vohoainam.net/vcxz9r9m3hsurlink190638
+
+[21:05:34 14/10/26] [Túi] @eubadmah | Box: 50/1 | Ratio: 50.0 xu | Live: N/A | Time: 00:56s - 21:06:32
+  • Deeplink App : snssdk1180://live?room_id=7696503869506816788
+  • Web TikTok   : https://www.tiktok.com/@eubadmah/live
+  • Gateway      : https://vohoainam.net/t3sc48x1ooqfglink190637
+
+[21:05:33 14/10/26] [Rương Nhỏ] @bbwi*6 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15655 | Time: 01:10s - 21:06:42
+  • Deeplink App : snssdk1180://live?room_id=7696461448901331713
+  • Web TikTok   : https://www.tiktok.com/@bbwi*6/live
+  • Gateway      : https://vohoainam.net/to0vmqaoir8pglink190636
+
+[21:05:32 14/10/26] [Rương Test] @achanday*o_ | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:11
+  • Deeplink App : snssdk1180://live?room_id=7696493643124853510
+  • Web TikTok   : https://www.tiktok.com/@achanday*o_/live
+  • Gateway      : https://vohoainam.net/tetmowbmlfyjqlink190634
+
+[21:05:32 14/10/26] [Rương Nhỏ] @s.*ihi.8 | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:10s - 21:06:41
+  • Deeplink App : snssdk1180://live?room_id=7696515102870113026
+  • Web TikTok   : https://www.tiktok.com/@s.*ihi.8/live
+  • Gateway      : https://vohoainam.net/5koink50jkgnalink190633
+
+[21:05:32 14/10/26] [Túi 0xu] @aajme4 | Box: 100/50 | Ratio: 2.0 xu | Live: 15000/15799 | Time: 01:30s - 21:07:07
+  • Deeplink App : snssdk1180://live?room_id=7696505056874613522
+  • Web TikTok   : https://www.tiktok.com/@aajme4/live
+  • Gateway      : https://vohoainam.net/dpjfh7gzpeul7link190632
+
+[21:05:32 14/10/26] [Rương Test] @grrrrrrrrrrrskk*k | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:11
+  • Deeplink App : snssdk1180://live?room_id=7696508531656035092
+  • Web TikTok   : https://www.tiktok.com/@grrrrrrrrrrrskk*k/live
+  • Gateway      : https://vohoainam.net/q8xfddd67rhl9link190631
+
+[21:05:32 14/10/26] [Rương Lớn] @i*ichiloks25 | Box: 50/25 | Ratio: 2.0 xu | Live: N/A | Time: 01:20s - 21:06:55
+  • Deeplink App : snssdk1180://live?room_id=7696490148635364117
+  • Web TikTok   : https://www.tiktok.com/@i*ichiloks25/live
+  • Gateway      : https://vohoainam.net/2bmw8maswls90link190630
+
+[21:05:32 14/10/26] [Rương Test] @koharuuuuu_*5 | Box: 21/21 | Ratio: 1.0 xu | Live: N/A | Time: 00:40s - 21:06:11
+  • Deeplink App : snssdk1180://live?room_id=7696504117003602709
+  • Web TikTok   : https://www.tiktok.com/@koharuuuuu_*5/live
+  • Gateway      : https://vohoainam.net/fxxyw9m1mlwk9link190629
+
+[21:05:31 14/10/26] [Rương Nhỏ] @car*7465 | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:06:41
+  • Deeplink App : snssdk1180://live?room_id=7696514387871320854
+  • Web TikTok   : https://www.tiktok.com/@car*7465/live
+  • Gateway      : https://vohoainam.net/xevrwuiztvxmylink190628
+
+[21:05:31 14/10/26] [Rương Test] @go*o26513 | Box: 20/16 | Ratio: 1.2 xu | Live: 15000/15652 | Time: 00:40s - 21:06:11
+  • Deeplink App : snssdk1180://live?room_id=7696505214307732244
+  • Web TikTok   : https://www.tiktok.com/@go*o26513/live
+  • Gateway      : https://vohoainam.net/5qw78qn7jsv8slink190626
+
+[21:05:31 14/10/26] [Túi] @familyloyaltyrespect_ | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:04
+  • Deeplink App : snssdk1180://live?room_id=7696398902865529607
+  • Web TikTok   : https://www.tiktok.com/@familyloyaltyrespect_/live
+  • Gateway      : https://vohoainam.net/0b3wxrgxyms93link190625
+
+[21:05:31 14/10/26] [Rương Test] @ao*mello0 | Box: 20/16 | Ratio: 1.2 xu | Live: N/A | Time: 00:40s - 21:06:10
+  • Deeplink App : snssdk1180://live?room_id=7696502825254472469
+  • Web TikTok   : https://www.tiktok.com/@ao*mello0/live
+  • Gateway      : https://vohoainam.net/xwkpeedh0gspilink190624
+
+[21:05:31 14/10/26] [Túi 0xu] @espresso.for.life | Box: 100/100 | Ratio: 1.0 xu | Live: 15000/15793 | Time: 01:30s - 21:07:05
+  • Deeplink App : snssdk1180://live?room_id=7696493182766320406
+  • Web TikTok   : https://www.tiktok.com/@espresso.for.life/live
+  • Gateway      : https://vohoainam.net/rq152uxrdbo67link190623
+
+[21:05:30 14/10/26] [Túi] @956br | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:07:02
+  • Deeplink App : snssdk1180://live?room_id=7696503169991314198
+  • Web TikTok   : https://www.tiktok.com/@956br/live
+  • Gateway      : https://vohoainam.net/jewjp8fvheovglink190622
+
+[21:05:29 14/10/26] [Rương Lớn] @queeenii*eeee | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: 01:20s - 21:06:52
+  • Deeplink App : snssdk1180://live?room_id=7696500138897935126
+  • Web TikTok   : https://www.tiktok.com/@queeenii*eeee/live
+  • Gateway      : https://vohoainam.net/uj63dx0wucj2mlink190619
+
+[21:05:29 14/10/26] [Rương Nhỏ] @l*mon_3883 | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:06:38
+  • Deeplink App : snssdk1180://live?room_id=7696483348998310676
+  • Web TikTok   : https://www.tiktok.com/@l*mon_3883/live
+  • Gateway      : https://vohoainam.net/0vtu69iyeps3mlink190618
+
+[21:05:28 14/10/26] [Rương Lớn] @musnadib*ngo | Box: 31/11 | Ratio: 2.8 xu | Live: N/A | Time: 01:20s - 21:06:50
+  • Deeplink App : snssdk1180://live?room_id=7696506008925342484
+  • Web TikTok   : https://www.tiktok.com/@musnadib*ngo/live
+  • Gateway      : https://vohoainam.net/ax1ai2pl1sa1hlink190616
+
+[21:05:26 14/10/26] [Túi] @ina50512 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:06:59
+  • Deeplink App : snssdk1180://live?room_id=7696508398996605717
+  • Web TikTok   : https://www.tiktok.com/@ina50512/live
+  • Gateway      : https://vohoainam.net/fs3q0zbb58goqlink190615
+
+[21:05:26 14/10/26] [Túi] @zackazroy01 | Box: 500/200 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:06:59
+  • Deeplink App : snssdk1180://live?room_id=7696522867287591701
+  • Web TikTok   : https://www.tiktok.com/@zackazroy01/live
+  • Gateway      : https://vohoainam.net/bvpy0wvtniq1vlink190614
+
+[21:05:26 14/10/26] [Túi 0xu] @ralph_hausmanns_schmaus | Box: 20/20 | Ratio: 1.0 xu | Live: 15000/15793 | Time: 01:30s - 21:07:00
+  • Deeplink App : snssdk1180://live?room_id=7696491817671445281
+  • Web TikTok   : https://www.tiktok.com/@ralph_hausmanns_schmaus/live
+  • Gateway      : https://vohoainam.net/2zn2keph059rilink190611
+
+[21:05:25 14/10/26] [Túi] @noor_m7md2 | Box: 1000/100 | Ratio: 10.0 xu | Live: N/A | Time: 02:00s - 21:07:28
+  • Deeplink App : snssdk1180://live?room_id=7696521676112104210
+  • Web TikTok   : https://www.tiktok.com/@noor_m7md2/live
+  • Gateway      : https://vohoainam.net/fs9a8kvyj66uvlink190612
+
+[21:05:24 14/10/26] [Túi] @hi_merry2 | Box: 50/1 | Ratio: 50.0 xu | Live: N/A | Time: 01:30s - 21:06:57
+  • Deeplink App : snssdk1180://live?room_id=7696513675855383348
+  • Web TikTok   : https://www.tiktok.com/@hi_merry2/live
+  • Gateway      : https://vohoainam.net/vu3dcs5qkvz41link190610
+
+[21:05:24 14/10/26] [Túi] @dj__empire | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:06:56
+  • Deeplink App : snssdk1180://live?room_id=7696492917103332116
+  • Web TikTok   : https://www.tiktok.com/@dj__empire/live
+  • Gateway      : https://vohoainam.net/s95ds71ib51hvlink190609
+
+[21:05:24 14/10/26] [Túi 0xu] @necunoscutu34 | Box: 20/20 | Ratio: 1.0 xu | Live: 15000/15793 | Time: 01:30s - 21:06:57
+  • Deeplink App : snssdk1180://live?room_id=7696490100959628065
+  • Web TikTok   : https://www.tiktok.com/@necunoscutu34/live
+  • Gateway      : https://vohoainam.net/mlatxxwwstchflink190605
+
+[21:05:23 14/10/26] [Túi] @bojweys | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 21:06:56
+  • Deeplink App : snssdk1180://live?room_id=7696505804008000276
+  • Web TikTok   : https://www.tiktok.com/@bojweys/live
+  • Gateway      : https://vohoainam.net/54abtf0m4qwbhlink190607
+
+[21:05:21 14/10/26] [Túi] @user82838492748284482985 | Box: 50/5 | Ratio: 10.0 xu | Live: N/A | Time: 00:54s - 21:06:18
+  • Deeplink App : snssdk1180://live?room_id=7696521487217642246
+  • Web TikTok   : https://www.tiktok.com/@user82838492748284482985/live
+  • Gateway      : https://vohoainam.net/6k2ulwzh320e7link190601
+
+[21:05:21 14/10/26] [Rương Nhỏ] @fou*.moha | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15709 | Time: 01:10s - 21:06:30
+  • Deeplink App : snssdk1180://live?room_id=7696519557271390983
+  • Web TikTok   : https://www.tiktok.com/@fou*.moha/live
+  • Gateway      : https://vohoainam.net/bp1cpnl82q0t1link190599
+
+[21:05:20 14/10/26] [Túi] @panlittlepan | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:06:53
+  • Deeplink App : snssdk1180://live?room_id=7696451267122137877
+  • Web TikTok   : https://www.tiktok.com/@panlittlepan/live
+  • Gateway      : https://vohoainam.net/immz61xori9zrlink190597
+
+[21:05:19 14/10/26] [Rương Lớn] @chii*hanvvv | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: 01:20s - 21:06:42
+  • Deeplink App : snssdk1180://live?room_id=7696510932846955270
+  • Web TikTok   : https://www.tiktok.com/@chii*hanvvv/live
+  • Gateway      : https://vohoainam.net/l23qs9046ew12link190594
+
+[21:05:18 14/10/26] [Rương Lớn] @al.p*gachev | Box: 120/40 | Ratio: 3.0 xu | Live: N/A | Time: 01:20s - 21:06:40
+  • Deeplink App : snssdk1180://live?room_id=7696516956755905300
+  • Web TikTok   : https://www.tiktok.com/@al.p*gachev/live
+  • Gateway      : https://vohoainam.net/i9jri93qwbe3flink190591
+
+[21:05:16 14/10/26] [Túi] @bumblebee_avtobot | Box: 50/10 | Ratio: 5.0 xu | Live: N/A | Time: 01:30s - 21:06:49
+  • Deeplink App : snssdk1180://live?room_id=7696520659681905460
+  • Web TikTok   : https://www.tiktok.com/@bumblebee_avtobot/live
+  • Gateway      : https://vohoainam.net/vr5x8aa5w48ldlink190589
+
+[21:05:16 14/10/26] [Túi] @hangiemreee | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:06:49
+  • Deeplink App : snssdk1180://live?room_id=7696502257705143048
+  • Web TikTok   : https://www.tiktok.com/@hangiemreee/live
+  • Gateway      : https://vohoainam.net/097cl7s9doedtlink190587
+
+[21:05:15 14/10/26] [Túi 0xu] @realmecus_justin | Box: 20/1 | Ratio: 20.0 xu | Live: N/A | Time: 01:30s - 21:06:50
+  • Deeplink App : snssdk1180://live?room_id=7696521693665250068
+  • Web TikTok   : https://www.tiktok.com/@realmecus_justin/live
+  • Gateway      : https://vohoainam.net/pqd2nzkxu5poklink190585
+
+[21:05:13 14/10/26] [Túi] @phong..24 | Box: 50/10 | Ratio: 5.0 xu | Live: N/A | Time: 01:30s - 21:06:46
+  • Deeplink App : snssdk1180://live?room_id=7696486056388086549
+  • Web TikTok   : https://www.tiktok.com/@phong..24/live
+  • Gateway      : https://vohoainam.net/ssl7d6dj4u3rvlink190581
+
+[21:05:13 14/10/26] [Túi 0xu] @mokdad.3 | Box: 20/5 | Ratio: 4.0 xu | Live: N/A | Time: 01:30s - 21:06:48
+  • Deeplink App : snssdk1180://live?room_id=7696523254093056788
+  • Web TikTok   : https://www.tiktok.com/@mokdad.3/live
+  • Gateway      : https://vohoainam.net/yjejh8bz6o8a0link190580
+
+[21:05:13 14/10/26] [Túi 0xu] @inichiloks25 | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 21:06:48
+  • Deeplink App : snssdk1180://live?room_id=7696490148635364117
+  • Web TikTok   : https://www.tiktok.com/@inichiloks25/live
+  • Gateway      : https://vohoainam.net/258fs3p98zi1zlink190579
+
+[21:05:13 14/10/26] [Túi 0xu] @appellekat | Box: 50/50 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 21:06:48
   • Deeplink App : snssdk1180://live?room_id=7696516827836484375
   • Web TikTok   : https://www.tiktok.com/@appellekat/live
-  • Gateway      : https://vohoainam.net/to7tmm8ayaz9flink188713
+  • Gateway      : https://vohoainam.net/h70v1pdwczmlhlink190578
 
-[20:55:04 14/10/26] [Rương Nhỏ] @lavidab*nita333 | Box: 50/25 | Ratio: 2.0 xu | Live: N/A | Time: 01:10s - 20:56:13
-  • Deeplink App : snssdk1180://live?room_id=7696501271494380310
-  • Web TikTok   : https://www.tiktok.com/@lavidab*nita333/live
-  • Gateway      : https://vohoainam.net/8bzksvj2gfofklink188709
+[21:05:13 14/10/26] [Rương Lớn] @s*lallaing | Box: 35/10 | Ratio: 3.5 xu | Live: 19000/19749 | Time: 01:20s - 21:06:35
+  • Deeplink App : snssdk1180://live?room_id=7696505476299229960
+  • Web TikTok   : https://www.tiktok.com/@s*lallaing/live
+  • Gateway      : https://vohoainam.net/wdg81cot3fb36link190577
 
-[20:55:02 14/10/26] [Rương Nhỏ] @zevi_an*a | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15727 | Time: 01:10s - 20:56:11
-  • Deeplink App : snssdk1180://live?room_id=7696465028262349569
-  • Web TikTok   : https://www.tiktok.com/@zevi_an*a/live
-  • Gateway      : https://vohoainam.net/1vgy6g96kkza1link188705
+[21:05:12 14/10/26] [Rương Lớn] @hannahday*702 | Box: 50/1 | Ratio: 50.0 xu | Live: N/A | Time: 01:20s - 21:06:34
+  • Deeplink App : snssdk1180://live?room_id=7696477689827281671
+  • Web TikTok   : https://www.tiktok.com/@hannahday*702/live
+  • Gateway      : https://vohoainam.net/dbj2phm1o77c4link190573
 
-[20:55:01 14/10/26] [Túi 0xu] @mrs.senorita98 | Box: 50/50 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 20:56:36
-  • Deeplink App : snssdk1180://live?room_id=7696519098984827670
-  • Web TikTok   : https://www.tiktok.com/@mrs.senorita98/live
-  • Gateway      : https://vohoainam.net/3usnmtlr3veyzlink188704
+[21:05:11 14/10/26] [Túi 0xu] @geo.i.i1 | Box: 50/50 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 21:06:46
+  • Deeplink App : snssdk1180://live?room_id=7696508485374151446
+  • Web TikTok   : https://www.tiktok.com/@geo.i.i1/live
+  • Gateway      : https://vohoainam.net/6mthcldt1eqydlink190570
 
-[20:55:01 14/10/26] [Túi 0xu] @cccccccx.__ | Box: 50/10 | Ratio: 5.0 xu | Live: N/A | Time: 01:30s - 20:56:35
-  • Deeplink App : snssdk1180://live?room_id=7696506538899704584
-  • Web TikTok   : https://www.tiktok.com/@cccccccx.__/live
-  • Gateway      : https://vohoainam.net/27j8rqmczee24link188703
+[21:05:10 14/10/26] [Rương Lớn] @warda.lafle*r1 | Box: 200/80 | Ratio: 2.5 xu | Live: N/A | Time: 01:20s - 21:06:32
+  • Deeplink App : snssdk1180://live?room_id=7696505452435180308
+  • Web TikTok   : https://www.tiktok.com/@warda.lafle*r1/live
+  • Gateway      : https://vohoainam.net/357llyyex9aizlink190568
 
-[20:54:59 14/10/26] [Rương Nhỏ] @x*ezzioe | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:56:08
-  • Deeplink App : snssdk1180://live?room_id=7696518185478851329
-  • Web TikTok   : https://www.tiktok.com/@x*ezzioe/live
-  • Gateway      : https://vohoainam.net/2tuodehntbggdlink188698
+[21:05:09 14/10/26] [Rương Nhỏ] @41__djser*fe__41 | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:06:17
+  • Deeplink App : snssdk1180://live?room_id=7696518987525393158
+  • Web TikTok   : https://www.tiktok.com/@41__djser*fe__41/live
+  • Gateway      : https://vohoainam.net/ofx0radnxvbailink190560
 
-[20:54:59 14/10/26] [Rương Nhỏ] @a__*ii22 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15727 | Time: 01:10s - 20:56:08
-  • Deeplink App : snssdk1180://live?room_id=7696444838552931093
-  • Web TikTok   : https://www.tiktok.com/@a__*ii22/live
-  • Gateway      : https://vohoainam.net/gyopgie8jzm5plink188695
+[21:05:08 14/10/26] [Túi] @maccccc55 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:06:41
+  • Deeplink App : snssdk1180://live?room_id=7696514346781936404
+  • Web TikTok   : https://www.tiktok.com/@maccccc55/live
+  • Gateway      : https://vohoainam.net/jj11bbxmg4sk8link190559
 
-[20:54:58 14/10/26] [Túi 0xu] @norbert.zakota | Box: 50/5 | Ratio: 10.0 xu | Live: N/A | Time: 01:30s - 20:56:33
-  • Deeplink App : snssdk1180://live?room_id=7696484463060077334
-  • Web TikTok   : https://www.tiktok.com/@norbert.zakota/live
-  • Gateway      : https://vohoainam.net/r7p30rd75pecilink188693
+[21:05:06 14/10/26] [Rương Nhỏ] @a*beesiak | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15750 | Time: 01:10s - 21:06:15
+  • Deeplink App : snssdk1180://live?room_id=7696522389282753301
+  • Web TikTok   : https://www.tiktok.com/@a*beesiak/live
+  • Gateway      : https://vohoainam.net/rgrfqbso2z0nnlink190553
 
-[20:54:52 14/10/26] [Rương Lớn] @yo.kunlanan.*9 | Box: 500/100 | Ratio: 5.0 xu | Live: N/A | Time: 02:00s - 20:56:54
-  • Deeplink App : snssdk1180://live?room_id=7696491867825064725
-  • Web TikTok   : https://www.tiktok.com/@yo.kunlanan.*9/live
-  • Gateway      : https://vohoainam.net/lmco2sjo0isyylink188676
+[21:05:04 14/10/26] [Túi 0xu] @manonwt1 | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 21:06:39
+  • Deeplink App : snssdk1180://live?room_id=7696522946290027287
+  • Web TikTok   : https://www.tiktok.com/@manonwt1/live
+  • Gateway      : https://vohoainam.net/hx6t6byj6wtbslink190551
 
-[20:54:51 14/10/26] [Rương Lớn] @ltsn*sol | Box: 100/25 | Ratio: 4.0 xu | Live: 19000/19792 | Time: 01:20s - 20:56:14
-  • Deeplink App : snssdk1180://live?room_id=7696499755798596359
-  • Web TikTok   : https://www.tiktok.com/@ltsn*sol/live
-  • Gateway      : https://vohoainam.net/ibuvhjigai9nclink188674
+[21:05:04 14/10/26] [Túi 0xu] @chilareasca | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 21:06:39
+  • Deeplink App : snssdk1180://live?room_id=7696515746645445398
+  • Web TikTok   : https://www.tiktok.com/@chilareasca/live
+  • Gateway      : https://vohoainam.net/wx4wyz435i1nolink190550
 
-[20:54:51 14/10/26] [Rương Nhỏ] @sagioka_m*ry | Box: 100/50 | Ratio: 2.0 xu | Live: 15000/15765 | Time: 01:10s - 20:56:00
-  • Deeplink App : snssdk1180://live?room_id=7696469809499867924
-  • Web TikTok   : https://www.tiktok.com/@sagioka_m*ry/live
-  • Gateway      : https://vohoainam.net/6uqmgaufi56xblink188671
+[21:05:04 14/10/26] [Túi] @sdashti.93 | Box: 200/100 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 21:06:36
+  • Deeplink App : snssdk1180://live?room_id=7696505118455253812
+  • Web TikTok   : https://www.tiktok.com/@sdashti.93/live
+  • Gateway      : https://vohoainam.net/s6wm32wrbmxqrlink190549
 
-[20:54:51 14/10/26] [Rương Nhỏ] @amlr1*9 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15765 | Time: 01:10s - 20:55:59
-  • Deeplink App : snssdk1180://live?room_id=7696488810562997013
-  • Web TikTok   : https://www.tiktok.com/@amlr1*9/live
-  • Gateway      : https://vohoainam.net/0lz5h8qiowiewlink188669
+[21:05:03 14/10/26] [Túi] @aydas | Box: 500/200 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:06:36
+  • Deeplink App : snssdk1180://live?room_id=7696461384619395858
+  • Web TikTok   : https://www.tiktok.com/@aydas/live
+  • Gateway      : https://vohoainam.net/qfyz1w3cr1sj1link190546
 
-[20:54:50 14/10/26] [Rương Lớn] @lavidabonita*33 | Box: 50/25 | Ratio: 2.0 xu | Live: N/A | Time: 01:20s - 20:56:13
-  • Deeplink App : snssdk1180://live?room_id=7696501271494380310
-  • Web TikTok   : https://www.tiktok.com/@lavidabonita*33/live
-  • Gateway      : https://vohoainam.net/confmh7fg8950link188670
+[21:05:03 14/10/26] [Rương Nhỏ] @_*tbnhi03_ | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:10s - 21:06:11
+  • Deeplink App : snssdk1180://live?room_id=7696514452075711239
+  • Web TikTok   : https://www.tiktok.com/@_*tbnhi03_/live
+  • Gateway      : https://vohoainam.net/m49z9sbrig3hilink190544
 
-[20:54:50 14/10/26] [Rương Lớn] @bunga3*27 | Box: 30/12 | Ratio: 2.5 xu | Live: N/A | Time: 00:53s - 20:55:46
-  • Deeplink App : snssdk1180://live?room_id=7696513196141775623
-  • Web TikTok   : https://www.tiktok.com/@bunga3*27/live
-  • Gateway      : https://vohoainam.net/2ucr9uoar0d1vlink188667
+[21:05:03 14/10/26] [Túi] @a5yu_jj | Box: 50/20 | Ratio: 2.5 xu | Live: 19000/19769 | Time: 01:30s - 21:06:35
+  • Deeplink App : snssdk1180://live?room_id=7696497050564823829
+  • Web TikTok   : https://www.tiktok.com/@a5yu_jj/live
+  • Gateway      : https://vohoainam.net/bgwye70ki7t2xlink190542
 
-[20:54:48 14/10/26] [Rương Lớn] @51.*5.11 | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: 01:20s - 20:56:11
-  • Deeplink App : snssdk1180://live?room_id=7696517745254238997
-  • Web TikTok   : https://www.tiktok.com/@51.*5.11/live
-  • Gateway      : https://vohoainam.net/f0chpjt3ic3tqlink188662
+[21:05:01 14/10/26] [Túi] @riodarmawan79 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:06:34
+  • Deeplink App : snssdk1180://live?room_id=7696494450080140053
+  • Web TikTok   : https://www.tiktok.com/@riodarmawan79/live
+  • Gateway      : https://vohoainam.net/3pdpgft7fj0zhlink190540
 
-[20:54:48 14/10/26] [Rương Lớn] @n.new*915 | Box: 50/4 | Ratio: 12.5 xu | Live: N/A | Time: 00:54s - 20:55:45
-  • Deeplink App : snssdk1180://live?room_id=7696495410503846657
-  • Web TikTok   : https://www.tiktok.com/@n.new*915/live
-  • Gateway      : https://vohoainam.net/kq5k2uqq0k1dklink188661
+[21:05:00 14/10/26] [Túi 0xu] @pingorbnithi | Box: 50/10 | Ratio: 5.0 xu | Live: 14917/14917 | Time: 00:41s - 21:05:45
+  • Deeplink App : snssdk1180://live?room_id=7696519187778931476
+  • Web TikTok   : https://www.tiktok.com/@pingorbnithi/live
+  • Gateway      : https://vohoainam.net/o1gewbh0ldzomlink190539
 
-[20:54:48 14/10/26] [Túi 0xu] @rdsbattle | Box: 100/100 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 20:56:23
-  • Deeplink App : snssdk1180://live?room_id=7696499930990611222
-  • Web TikTok   : https://www.tiktok.com/@rdsbattle/live
-  • Gateway      : https://vohoainam.net/s2o7w5pialjkslink188658
+[21:05:00 14/10/26] [Túi] @k274877 | Box: 50/10 | Ratio: 5.0 xu | Live: 19000/19782 | Time: 01:30s - 21:06:23
+  • Deeplink App : snssdk1180://live?room_id=7696494009820138258
+  • Web TikTok   : https://www.tiktok.com/@k274877/live
+  • Gateway      : https://vohoainam.net/9h3t5w7h50j74link190537
 
-[20:54:47 14/10/26] [Túi 0xu] @khokha.66 | Box: 50/20 | Ratio: 2.5 xu | Live: 15000/15799 | Time: 01:30s - 20:56:22
-  • Deeplink App : snssdk1180://live?room_id=7696516367865842452
-  • Web TikTok   : https://www.tiktok.com/@khokha.66/live
-  • Gateway      : https://vohoainam.net/lc322ad9jbsozlink188654
+[21:05:00 14/10/26] [Túi] @meipiao.yu | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:06:33
+  • Deeplink App : snssdk1180://live?room_id=7696516086300248839
+  • Web TikTok   : https://www.tiktok.com/@meipiao.yu/live
+  • Gateway      : https://vohoainam.net/7hpccm39nr677link190536
 
-[20:54:46 14/10/26] [Rương Lớn] @isma.*a007 | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:20s - 20:56:09
-  • Deeplink App : snssdk1180://live?room_id=7696515104048745237
-  • Web TikTok   : https://www.tiktok.com/@isma.*a007/live
-  • Gateway      : https://vohoainam.net/pqwauybatame0link188653
+[21:05:00 14/10/26] [Rương Lớn] @soso777*ive | Box: 104/44 | Ratio: 2.4 xu | Live: N/A | Time: 01:20s - 21:06:21
+  • Deeplink App : snssdk1180://live?room_id=7696507751152864001
+  • Web TikTok   : https://www.tiktok.com/@soso777*ive/live
+  • Gateway      : https://vohoainam.net/o4wn463p80f46link190535
 
-[20:54:45 14/10/26] [Túi 0xu] @zarinajamalullail2 | Box: 20/20 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 20:56:21
-  • Deeplink App : snssdk1180://live?room_id=7696508792611097362
-  • Web TikTok   : https://www.tiktok.com/@zarinajamalullail2/live
-  • Gateway      : https://vohoainam.net/9vr96c0fklu36link188652
+[21:04:59 14/10/26] [Túi] @yamada0509hk12 | Box: 50/10 | Ratio: 5.0 xu | Live: 19000/19754 | Time: 00:55s - 21:05:57
+  • Deeplink App : snssdk1180://live?room_id=7696481782379907860
+  • Web TikTok   : https://www.tiktok.com/@yamada0509hk12/live
+  • Gateway      : https://vohoainam.net/7b0o2pbr8j5whlink190532
 
-[20:54:44 14/10/26] [Rương Lớn] @si*ta0718 | Box: 31/10 | Ratio: 3.1 xu | Live: N/A | Time: 01:20s - 20:56:06
-  • Deeplink App : snssdk1180://live?room_id=7696514584444685057
-  • Web TikTok   : https://www.tiktok.com/@si*ta0718/live
-  • Gateway      : https://vohoainam.net/tqcri3maxsyrzlink188646
+[21:04:59 14/10/26] [Rương Lớn] @xyassx*e | Box: 100/40 | Ratio: 2.5 xu | Live: 19000/19754 | Time: 01:20s - 21:06:22
+  • Deeplink App : snssdk1180://live?room_id=7696503181089475349
+  • Web TikTok   : https://www.tiktok.com/@xyassx*e/live
+  • Gateway      : https://vohoainam.net/rnt4kdl6nbg6glink190531
 
-[20:54:41 14/10/26] [Túi 0xu] @zul2by2_mayathegirls | Box: 100/100 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 20:56:17
+[21:04:59 14/10/26] [Rương Lớn] @l*ftar | Box: 51/25 | Ratio: 2.0 xu | Live: N/A | Time: 00:54s - 21:05:56
+  • Deeplink App : snssdk1180://live?room_id=7696492159617534726
+  • Web TikTok   : https://www.tiktok.com/@l*ftar/live
+  • Gateway      : https://vohoainam.net/yw7ukmogpfty3link190530
+
+[21:04:58 14/10/26] [Túi 0xu] @audrey9.f | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 21:06:34
+  • Deeplink App : snssdk1180://live?room_id=7696521667510307617
+  • Web TikTok   : https://www.tiktok.com/@audrey9.f/live
+  • Gateway      : https://vohoainam.net/0np5jtsasly9tlink190529
+
+[21:04:58 14/10/26] [Rương Nhỏ] @c*i_co2 | Box: 25/15 | Ratio: 1.7 xu | Live: 15000/15750 | Time: 01:10s - 21:06:07
+  • Deeplink App : snssdk1180://live?room_id=7696491708260272903
+  • Web TikTok   : https://www.tiktok.com/@c*i_co2/live
+  • Gateway      : https://vohoainam.net/nyx36b0ud0dkrlink190528
+
+[21:04:58 14/10/26] [Túi 0xu] @zul2by2_mayathegirls | Box: 100/100 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 21:06:32
   • Deeplink App : snssdk1180://live?room_id=7696506811826850568
   • Web TikTok   : https://www.tiktok.com/@zul2by2_mayathegirls/live
-  • Gateway      : https://vohoainam.net/n2emalkwfb03tlink188640
+  • Gateway      : https://vohoainam.net/eis4qmhfulg49link190527
 
-[20:54:41 14/10/26] [Túi 0xu] @aurora.xrysa | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:56:16
-  • Deeplink App : snssdk1180://live?room_id=7696518968458890017
-  • Web TikTok   : https://www.tiktok.com/@aurora.xrysa/live
-  • Gateway      : https://vohoainam.net/jl3t90b7v0uyslink188639
+[21:04:57 14/10/26] [Túi] @iichia_v2 | Box: 50/20 | Ratio: 2.5 xu | Live: 19000/19739 | Time: 01:30s - 21:06:30
+  • Deeplink App : snssdk1180://live?room_id=7696350405887101703
+  • Web TikTok   : https://www.tiktok.com/@iichia_v2/live
+  • Gateway      : https://vohoainam.net/xcje3if43g3h6link190525
 
-[20:54:41 14/10/26] [Rương Nhỏ] @myge_ma*i | Box: 21/11 | Ratio: 1.9 xu | Live: N/A | Time: 00:56s - 20:55:35
-  • Deeplink App : snssdk1180://live?room_id=7696494491519273736
-  • Web TikTok   : https://www.tiktok.com/@myge_ma*i/live
-  • Gateway      : https://vohoainam.net/y9ygetr9v976mlink188638
+[21:04:57 14/10/26] [Rương Lớn] @hxnui*l | Box: 30/15 | Ratio: 2.0 xu | Live: N/A | Time: 01:20s - 21:06:19
+  • Deeplink App : snssdk1180://live?room_id=7696508313703238421
+  • Web TikTok   : https://www.tiktok.com/@hxnui*l/live
+  • Gateway      : https://vohoainam.net/0hcbywtra4xf6link190522
 
-[20:54:40 14/10/26] [Rương Treo]  | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696500592756460308
+[21:04:56 14/10/26] [Rương Treo]  | Box: 50/5 | Ratio: 10.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696522667146496786
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/2lfguwqupj8f1link188636
+  • Gateway      : https://vohoainam.net/i69ilyem8dhzzlink190519
 
-[20:54:38 14/10/26] [Rương Lớn] @__flute*_natsuki | Box: 100/25 | Ratio: 4.0 xu | Live: 19000/19792 | Time: 01:20s - 20:56:01
-  • Deeplink App : snssdk1180://live?room_id=7696497306904202005
-  • Web TikTok   : https://www.tiktok.com/@__flute*_natsuki/live
-  • Gateway      : https://vohoainam.net/fu4bgx5sq06j8link188632
-
-[20:54:38 14/10/26] [Túi 0xu] @eezyneedz | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:56:13
-  • Deeplink App : snssdk1180://live?room_id=7696441527173761814
-  • Web TikTok   : https://www.tiktok.com/@eezyneedz/live
-  • Gateway      : https://vohoainam.net/jsesqbl8n6ubrlink188630
-
-[20:54:38 14/10/26] [Rương Lớn] @sa*ioka_mary | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:20s - 20:56:00
-  • Deeplink App : snssdk1180://live?room_id=7696469809499867924
-  • Web TikTok   : https://www.tiktok.com/@sa*ioka_mary/live
-  • Gateway      : https://vohoainam.net/u5k88o1mrg7n3link188629
-
-[20:54:37 14/10/26] [Rương Treo]  | Box: 100/50 | Ratio: 2.0 xu | Live: 19000/19792 | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696487847666813704
-  • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/nhw3v6lobfgkolink188628
-
-[20:54:36 14/10/26] [Rương Lớn] @umi*59240 | Box: 30/15 | Ratio: 2.0 xu | Live: N/A | Time: 01:20s - 20:55:59
-  • Deeplink App : snssdk1180://live?room_id=7696518693982882568
-  • Web TikTok   : https://www.tiktok.com/@umi*59240/live
-  • Gateway      : https://vohoainam.net/3ogmc0cg82k2olink188624
-
-[20:54:36 14/10/26] [Túi 0xu] @mavie.gece | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 20:56:11
+[21:04:54 14/10/26] [Túi] @mavie.gece | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:06:27
   • Deeplink App : snssdk1180://live?room_id=7696484169769323287
   • Web TikTok   : https://www.tiktok.com/@mavie.gece/live
-  • Gateway      : https://vohoainam.net/8bsk64nw6whnhlink188621
+  • Gateway      : https://vohoainam.net/f2teevlbwt1h3link190516
 
-[20:54:35 14/10/26] [Túi 0xu] @pyojinpark3333 | Box: 50/50 | Ratio: 1.0 xu | Live: 15000/15792 | Time: 01:30s - 20:56:11
-  • Deeplink App : snssdk1180://live?room_id=7696495610450430721
-  • Web TikTok   : https://www.tiktok.com/@pyojinpark3333/live
-  • Gateway      : https://vohoainam.net/7fije6exyzkyjlink188622
+[21:04:54 14/10/26] [Rương Nhỏ] @yolobe*lakr | Box: 1000/500 | Ratio: 2.0 xu | Live: N/A | Time: 01:10s - 21:06:03
+  • Deeplink App : snssdk1180://live?room_id=7696519731299224340
+  • Web TikTok   : https://www.tiktok.com/@yolobe*lakr/live
+  • Gateway      : https://vohoainam.net/jwhjqdkex5t8glink190515
 
-[20:54:33 14/10/26] [Túi 0xu] @jadjomma | Box: 20/20 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 20:56:08
-  • Deeplink App : snssdk1180://live?room_id=7696467499235265281
-  • Web TikTok   : https://www.tiktok.com/@jadjomma/live
-  • Gateway      : https://vohoainam.net/mcmq6uvejv885link188617
+[21:04:54 14/10/26] [Rương Nhỏ] @utahi*e_ramu | Box: 50/25 | Ratio: 2.0 xu | Live: 15000/15800 | Time: 01:10s - 21:06:03
+  • Deeplink App : snssdk1180://live?room_id=7696523041099320072
+  • Web TikTok   : https://www.tiktok.com/@utahi*e_ramu/live
+  • Gateway      : https://vohoainam.net/zvwz8f464n0sblink190514
 
-[20:54:33 14/10/26] [Rương Nhỏ] @ruru*uru2561 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15799 | Time: 01:10s - 20:55:42
-  • Deeplink App : snssdk1180://live?room_id=7696476685307497237
-  • Web TikTok   : https://www.tiktok.com/@ruru*uru2561/live
-  • Gateway      : https://vohoainam.net/cdpwsmejfce5vlink188616
+[21:04:54 14/10/26] [Túi 0xu] @zarinajamalullail2 | Box: 20/20 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 21:06:29
+  • Deeplink App : snssdk1180://live?room_id=7696508792611097362
+  • Web TikTok   : https://www.tiktok.com/@zarinajamalullail2/live
+  • Gateway      : https://vohoainam.net/ega2ghea1501dlink190512
 
-[20:54:33 14/10/26] [Túi 0xu] @miha.741 | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 20:56:08
-  • Deeplink App : snssdk1180://live?room_id=7696487493990566689
-  • Web TikTok   : https://www.tiktok.com/@miha.741/live
-  • Gateway      : https://vohoainam.net/ux9x2o71g3h00link188615
+[21:04:53 14/10/26] [Túi] @beammii13 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:06:25
+  • Deeplink App : snssdk1180://live?room_id=7696510731617569557
+  • Web TikTok   : https://www.tiktok.com/@beammii13/live
+  • Gateway      : https://vohoainam.net/yj7x95bxqkoa5link190511
 
-[20:54:32 14/10/26] [Rương Lớn] @hzm*wd | Box: 100/40 | Ratio: 2.5 xu | Live: N/A | Time: 01:20s - 20:55:55
-  • Deeplink App : snssdk1180://live?room_id=7696510874059574024
-  • Web TikTok   : https://www.tiktok.com/@hzm*wd/live
-  • Gateway      : https://vohoainam.net/r1era43238y0nlink188614
+[21:04:53 14/10/26] [Rương Treo]  | Box: 50/6 | Ratio: 8.3 xu | Live: 19000/19787 | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696479247531068180
+  • Web TikTok   : https://www.tiktok.com/@live/live
+  • Gateway      : https://vohoainam.net/pzwr5vjzmvjtslink190509
 
-[20:54:31 14/10/26] [Túi 0xu] @fafiz.1 | Box: 20/20 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 20:56:06
+[21:04:53 14/10/26] [Rương Lớn] @bobo199*0607 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:20s - 21:06:15
+  • Deeplink App : snssdk1180://live?room_id=7696522848154782485
+  • Web TikTok   : https://www.tiktok.com/@bobo199*0607/live
+  • Gateway      : https://vohoainam.net/twhzpbifzhe16link190507
+
+[21:04:53 14/10/26] [Túi 0xu] @rdsbattle | Box: 100/100 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 21:06:28
+  • Deeplink App : snssdk1180://live?room_id=7696499930990611222
+  • Web TikTok   : https://www.tiktok.com/@rdsbattle/live
+  • Gateway      : https://vohoainam.net/f20yc2aa4s8mblink190506
+
+[21:04:52 14/10/26] [Rương Lớn] @daniele_neg*oni | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: 01:20s - 21:06:14
+  • Deeplink App : snssdk1180://live?room_id=7696476094744103702
+  • Web TikTok   : https://www.tiktok.com/@daniele_neg*oni/live
+  • Gateway      : https://vohoainam.net/hv9lse0rdmvk1link190502
+
+[21:04:51 14/10/26] [Túi 0xu] @mavie.gece | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:06:27
+  • Deeplink App : snssdk1180://live?room_id=7696484169769323287
+  • Web TikTok   : https://www.tiktok.com/@mavie.gece/live
+  • Gateway      : https://vohoainam.net/r1ygd8dysgvx1link190503
+
+[21:04:51 14/10/26] [Túi 0xu] @khokha.66 | Box: 50/20 | Ratio: 2.5 xu | Live: 14915/14915 | Time: 01:30s - 21:06:26
+  • Deeplink App : snssdk1180://live?room_id=7696516367865842452
+  • Web TikTok   : https://www.tiktok.com/@khokha.66/live
+  • Gateway      : https://vohoainam.net/w6h9lin7bh76mlink190499
+
+[21:04:50 14/10/26] [Túi 0xu] @aurora.xrysa | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:06:25
+  • Deeplink App : snssdk1180://live?room_id=7696518968458890017
+  • Web TikTok   : https://www.tiktok.com/@aurora.xrysa/live
+  • Gateway      : https://vohoainam.net/p47yjrck69rp4link190497
+
+[21:04:48 14/10/26] [Rương Lớn] @_ltbnhi0*_ | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:20s - 21:06:11
+  • Deeplink App : snssdk1180://live?room_id=7696514452075711239
+  • Web TikTok   : https://www.tiktok.com/@_ltbnhi0*_/live
+  • Gateway      : https://vohoainam.net/n2btg07xe30uolink190494
+
+[21:04:48 14/10/26] [Rương Nhỏ] @nesya*andrea | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15798 | Time: 01:10s - 21:05:57
+  • Deeplink App : snssdk1180://live?room_id=7696468819985058568
+  • Web TikTok   : https://www.tiktok.com/@nesya*andrea/live
+  • Gateway      : https://vohoainam.net/ageon2s6k45vqlink190493
+
+[21:04:47 14/10/26] [Rương Lớn] @prai*unla9 | Box: 38/18 | Ratio: 2.1 xu | Live: 19000/19775 | Time: 00:54s - 21:05:44
+  • Deeplink App : snssdk1180://live?room_id=7696511122963647250
+  • Web TikTok   : https://www.tiktok.com/@prai*unla9/live
+  • Gateway      : https://vohoainam.net/856eozvasgb0olink190491
+
+[21:04:47 14/10/26] [Rương Lớn] @t*oi12345 | Box: 30/6 | Ratio: 5.0 xu | Live: 19000/19775 | Time: 01:20s - 21:06:10
+  • Deeplink App : snssdk1180://live?room_id=7696483548005436212
+  • Web TikTok   : https://www.tiktok.com/@t*oi12345/live
+  • Gateway      : https://vohoainam.net/9ugtw20d71fx6link190489
+
+[21:04:46 14/10/26] [Rương Lớn] @soyoonee*_ | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: 01:20s - 21:06:09
+  • Deeplink App : snssdk1180://live?room_id=7696489029021387540
+  • Web TikTok   : https://www.tiktok.com/@soyoonee*_/live
+  • Gateway      : https://vohoainam.net/bhqkqlci6xonvlink190488
+
+[21:04:46 14/10/26] [Túi 0xu] @buivinhphuchotboykeokeo | Box: 100/100 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 21:06:21
+  • Deeplink App : snssdk1180://live?room_id=7696509719739550485
+  • Web TikTok   : https://www.tiktok.com/@buivinhphuchotboykeokeo/live
+  • Gateway      : https://vohoainam.net/meija83aqde41link190486
+
+[21:04:45 14/10/26] [Túi 0xu] @dj.andreacondor | Box: 50/50 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 21:06:21
+  • Deeplink App : snssdk1180://live?room_id=7696514972586642198
+  • Web TikTok   : https://www.tiktok.com/@dj.andreacondor/live
+  • Gateway      : https://vohoainam.net/ogus70lbkr0a2link190485
+
+[21:04:45 14/10/26] [Rương Nhỏ] @t*karanno.1 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15788 | Time: 01:10s - 21:05:54
+  • Deeplink App : snssdk1180://live?room_id=7696498918805474054
+  • Web TikTok   : https://www.tiktok.com/@t*karanno.1/live
+  • Gateway      : https://vohoainam.net/bryj51axss023link190483
+
+[21:04:43 14/10/26] [Rương Nhỏ] @nana*eame | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:05:53
+  • Deeplink App : snssdk1180://live?room_id=7696506430300719879
+  • Web TikTok   : https://www.tiktok.com/@nana*eame/live
+  • Gateway      : https://vohoainam.net/tv2iaw81aernzlink190482
+
+[21:04:43 14/10/26] [Rương Treo]  | Box: 30/15 | Ratio: 2.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696513086324951829
+  • Web TikTok   : https://www.tiktok.com/@live/live
+  • Gateway      : https://vohoainam.net/l1hljbjqsliamlink190479
+
+[21:04:41 14/10/26] [Túi 0xu] @ozzy_kaspars | Box: 20/5 | Ratio: 4.0 xu | Live: N/A | Time: 01:30s - 21:06:13
+  • Deeplink App : snssdk1180://live?room_id=7696520971926194976
+  • Web TikTok   : https://www.tiktok.com/@ozzy_kaspars/live
+  • Gateway      : https://vohoainam.net/ygffgehu90xpwlink190476
+
+[21:04:40 14/10/26] [Rương Lớn] @yolobell*kr | Box: 1000/500 | Ratio: 2.0 xu | Live: N/A | Time: 01:20s - 21:06:03
+  • Deeplink App : snssdk1180://live?room_id=7696519731299224340
+  • Web TikTok   : https://www.tiktok.com/@yolobell*kr/live
+  • Gateway      : https://vohoainam.net/j49wvataru4i5link190474
+
+[21:04:39 14/10/26] [Túi 0xu] @fafiz.1 | Box: 20/20 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 21:06:15
   • Deeplink App : snssdk1180://live?room_id=7696476796607630087
   • Web TikTok   : https://www.tiktok.com/@fafiz.1/live
-  • Gateway      : https://vohoainam.net/0zit5t90b3es6link188609
+  • Gateway      : https://vohoainam.net/24ltuz9i4275rlink190469
 
-[20:54:29 14/10/26] [Rương Treo]  | Box: 33/12 | Ratio: 2.8 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696476150856715028
+[21:04:39 14/10/26] [Túi 0xu] @miha.741 | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 21:06:14
+  • Deeplink App : snssdk1180://live?room_id=7696487493990566689
+  • Web TikTok   : https://www.tiktok.com/@miha.741/live
+  • Gateway      : https://vohoainam.net/1g714l5z8q7gwlink190468
+
+[21:04:38 14/10/26] [Rương Lớn] @k.h____*____505 | Box: 100/25 | Ratio: 4.0 xu | Live: 19000/19790 | Time: 01:20s - 21:06:01
+  • Deeplink App : snssdk1180://live?room_id=7696510944150604551
+  • Web TikTok   : https://www.tiktok.com/@k.h____*____505/live
+  • Gateway      : https://vohoainam.net/i70w82033zkyflink190466
+
+[21:04:36 14/10/26] [Rương Nhỏ] @linlin*nl | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:05:45
+  • Deeplink App : snssdk1180://live?room_id=7696503373633293108
+  • Web TikTok   : https://www.tiktok.com/@linlin*nl/live
+  • Gateway      : https://vohoainam.net/gc2b5yerrg2wilink190460
+
+[21:04:36 14/10/26] [Túi 0xu] @pg_afnaan | Box: 20/20 | Ratio: 1.0 xu | Live: N/A | Time: 01:30s - 21:06:11
+  • Deeplink App : snssdk1180://live?room_id=7696461392311782165
+  • Web TikTok   : https://www.tiktok.com/@pg_afnaan/live
+  • Gateway      : https://vohoainam.net/xxd7ivdcqp9b5link190458
+
+[21:04:36 14/10/26] [Rương Nhỏ] @l*v_kitty91 | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:05:45
+  • Deeplink App : snssdk1180://live?room_id=7696460190549642005
+  • Web TikTok   : https://www.tiktok.com/@l*v_kitty91/live
+  • Gateway      : https://vohoainam.net/lo9ctz8fmftevlink190454
+
+[21:04:35 14/10/26] [Túi 0xu] @saipulgepeng9 | Box: 50/50 | Ratio: 1.0 xu | Live: 14976/14976 | Time: 01:30s - 21:06:10
+  • Deeplink App : snssdk1180://live?room_id=7696327775242406663
+  • Web TikTok   : https://www.tiktok.com/@saipulgepeng9/live
+  • Gateway      : https://vohoainam.net/709h7n2rnvq2vlink190453
+
+[21:04:35 14/10/26] [Rương Lớn] @menik_*3 | Box: 111/10 | Ratio: 11.1 xu | Live: 19000/19784 | Time: 01:20s - 21:05:57
+  • Deeplink App : snssdk1180://live?room_id=7696431550967859969
+  • Web TikTok   : https://www.tiktok.com/@menik_*3/live
+  • Gateway      : https://vohoainam.net/gdftajq2ysmcnlink190452
+
+[21:04:33 14/10/26] [Rương Lớn] @jk58*83 | Box: 30/2 | Ratio: 15.0 xu | Live: 19000/19784 | Time: 00:54s - 21:05:30
+  • Deeplink App : snssdk1180://live?room_id=7696498074843089685
+  • Web TikTok   : https://www.tiktok.com/@jk58*83/live
+  • Gateway      : https://vohoainam.net/82z33y50e9vpalink190449
+
+[21:04:31 14/10/26] [Rương Treo]  | Box: 100/50 | Ratio: 2.0 xu | Live: 19000/19773 | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696507297345882894
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/kfudotxxm33oalink188605
+  • Gateway      : https://vohoainam.net/ng2pa823k5ek6link190444
 
-[20:54:28 14/10/26] [Rương Lớn] @ti*apham29.6 | Box: 50/10 | Ratio: 5.0 xu | Live: 19000/19773 | Time: 00:54s - 20:55:25
-  • Deeplink App : snssdk1180://live?room_id=7696512095814159156
-  • Web TikTok   : https://www.tiktok.com/@ti*apham29.6/live
-  • Gateway      : https://vohoainam.net/ipn7n8lwjjsc1link188602
+[21:04:29 14/10/26] [Túi 0xu] @sjpb77 | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:30s - 21:06:04
+  • Deeplink App : snssdk1180://live?room_id=7696516478434134806
+  • Web TikTok   : https://www.tiktok.com/@sjpb77/live
+  • Gateway      : https://vohoainam.net/jcgdivic9wcrblink190436
 
-[20:54:27 14/10/26] [Rương Nhỏ] @ihe*etoken_nn | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:10s - 20:55:37
-  • Deeplink App : snssdk1180://live?room_id=7696486842430327558
-  • Web TikTok   : https://www.tiktok.com/@ihe*etoken_nn/live
-  • Gateway      : https://vohoainam.net/z1dlgz5kd2ys6link188601
+[21:04:29 14/10/26] [Túi 0xu] @habi.bi.buu69 | Box: 20/10 | Ratio: 2.0 xu | Live: 15000/15039 | Time: 01:30s - 21:06:04
+  • Deeplink App : snssdk1180://live?room_id=7696482690886912801
+  • Web TikTok   : https://www.tiktok.com/@habi.bi.buu69/live
+  • Gateway      : https://vohoainam.net/doybbytx40wdrlink190435
 
-[20:54:25 14/10/26] [Rương Lớn] @new.world*061 | Box: 50/17 | Ratio: 2.9 xu | Live: 19000/19759 | Time: 01:20s - 20:55:48
-  • Deeplink App : snssdk1180://live?room_id=7696489249847184136
-  • Web TikTok   : https://www.tiktok.com/@new.world*061/live
-  • Gateway      : https://vohoainam.net/t2fnmib1y7ehjlink188593
+[21:04:28 14/10/26] [Rương Lớn] @ryoka*.27 | Box: 100/30 | Ratio: 3.3 xu | Live: N/A | Time: 01:20s - 21:05:50
+  • Deeplink App : snssdk1180://live?room_id=7696515849775713076
+  • Web TikTok   : https://www.tiktok.com/@ryoka*.27/live
+  • Gateway      : https://vohoainam.net/lt0afsvgnpre2link190434
 
-[20:54:25 14/10/26] [Rương Lớn] @kikicici*07 | Box: 50/25 | Ratio: 2.0 xu | Live: N/A | Time: 01:20s - 20:55:48
-  • Deeplink App : snssdk1180://live?room_id=7696495387930037010
-  • Web TikTok   : https://www.tiktok.com/@kikicici*07/live
-  • Gateway      : https://vohoainam.net/w0yw7g13j58zdlink188591
+[21:04:28 14/10/26] [Túi 0xu] @cccccccx.__ | Box: 100/20 | Ratio: 5.0 xu | Live: N/A | Time: 01:30s - 21:06:03
+  • Deeplink App : snssdk1180://live?room_id=7696506538899704584
+  • Web TikTok   : https://www.tiktok.com/@cccccccx.__/live
+  • Gateway      : https://vohoainam.net/ns82p5joshkpklink190433
 
-[20:54:21 14/10/26] [Rương Lớn] @user6*16915767619 | Box: 39/13 | Ratio: 3.0 xu | Live: N/A | Time: 01:20s - 20:55:43
-  • Deeplink App : snssdk1180://live?room_id=7696496309162953478
-  • Web TikTok   : https://www.tiktok.com/@user6*16915767619/live
-  • Gateway      : https://vohoainam.net/1bcg2g4e5hdfglink188586
-
-[20:54:19 14/10/26] [Rương Nhỏ] @m*genpenguin | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:55:28
-  • Deeplink App : snssdk1180://live?room_id=7696481276127890184
-  • Web TikTok   : https://www.tiktok.com/@m*genpenguin/live
-  • Gateway      : https://vohoainam.net/kl23q0wuxgu7slink188581
-
-[20:54:18 14/10/26] [Rương Treo]  | Box: 100/25 | Ratio: 4.0 xu | Live: 19000/19790 | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696424614390139666
+[21:04:27 14/10/26] [Rương Treo]  | Box: 100/50 | Ratio: 2.0 xu | Live: 19000/19758 | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696516424166116117
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/d3ejxn0yqueeclink188578
+  • Gateway      : https://vohoainam.net/dpfh3atv9rg5plink190432
 
-[20:54:17 14/10/26] [Rương Lớn] @ar*kuyo_satosan | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: 01:20s - 20:55:39
-  • Deeplink App : snssdk1180://live?room_id=7696468978705566471
-  • Web TikTok   : https://www.tiktok.com/@ar*kuyo_satosan/live
-  • Gateway      : https://vohoainam.net/h45nrm75i22telink188577
+[21:04:26 14/10/26] [Túi 0xu] @renethatsme | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:30s - 21:06:02
+  • Deeplink App : snssdk1180://live?room_id=7696422570124413718
+  • Web TikTok   : https://www.tiktok.com/@renethatsme/live
+  • Gateway      : https://vohoainam.net/or0qdfphzg0g6link190425
 
-[20:54:15 14/10/26] [Rương Lớn] @ba*akyn_ | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: 01:20s - 20:55:37
-  • Deeplink App : snssdk1180://live?room_id=7696514752319245077
-  • Web TikTok   : https://www.tiktok.com/@ba*akyn_/live
-  • Gateway      : https://vohoainam.net/kqiv65sydbxm7link188571
-
-[20:54:15 14/10/26] [Rương Lớn] @bgcchbvs3w*8tg | Box: 31/15 | Ratio: 2.1 xu | Live: N/A | Time: 01:20s - 20:55:37
-  • Deeplink App : snssdk1180://live?room_id=7696492222775347989
-  • Web TikTok   : https://www.tiktok.com/@bgcchbvs3w*8tg/live
-  • Gateway      : https://vohoainam.net/eaxnmialx8u0tlink188570
-
-[20:54:15 14/10/26] [Rương Treo]  | Box: 30/10 | Ratio: 3.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696512098554497800
+[21:04:26 14/10/26] [Rương Treo]  | Box: 50/9 | Ratio: 5.6 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696515127038675732
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/wqzkevi4ca905link188569
+  • Gateway      : https://vohoainam.net/rwm5a01o1j2zmlink190422
 
-[20:54:13 14/10/26] [Rương Treo]  | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696517236768426765
-  • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/9xy8wx505u1fnlink188562
+[21:04:25 14/10/26] [Rương Nhỏ] @ha*_mama3 | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:05:29
+  • Deeplink App : snssdk1180://live?room_id=7696507463105596166
+  • Web TikTok   : https://www.tiktok.com/@ha*_mama3/live
+  • Gateway      : https://vohoainam.net/qpqqixvvrkp2tlink190420
 
-[20:54:13 14/10/26] [Rương Nhỏ] @r*y_xv3.2 | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:55:22
-  • Deeplink App : snssdk1180://live?room_id=7696500649303395094
-  • Web TikTok   : https://www.tiktok.com/@r*y_xv3.2/live
-  • Gateway      : https://vohoainam.net/kyen6h8a20dp9link188561
-
-[20:54:12 14/10/26] [Rương Nhỏ] @blon*asexy69 | Box: 20/13 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:55:21
-  • Deeplink App : snssdk1180://live?room_id=7696506826564586272
-  • Web TikTok   : https://www.tiktok.com/@blon*asexy69/live
-  • Gateway      : https://vohoainam.net/fv8w7ly38thx9link188559
-
-[20:54:11 14/10/26] [Rương Treo]  | Box: 50/25 | Ratio: 2.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696510683222985478
-  • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/tqfylyugl4dbxlink188556
-
-[20:54:09 14/10/26] [Rương Lớn] @farrux_xus*nboyev1 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:20s - 20:55:30
-  • Deeplink App : snssdk1180://live?room_id=7696516826590694165
-  • Web TikTok   : https://www.tiktok.com/@farrux_xus*nboyev1/live
-  • Gateway      : https://vohoainam.net/vdh75zy564swxlink188555
-
-[20:54:09 14/10/26] [Rương Nhỏ] @_d*vid_abc | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:55:18
-  • Deeplink App : snssdk1180://live?room_id=7696486530022198024
-  • Web TikTok   : https://www.tiktok.com/@_d*vid_abc/live
-  • Gateway      : https://vohoainam.net/li1el12h1mqwelink188553
-
-[20:54:07 14/10/26] [Rương Nhỏ] @ko*umii0 | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:55:15
-  • Deeplink App : snssdk1180://live?room_id=7696514739718982418
-  • Web TikTok   : https://www.tiktok.com/@ko*umii0/live
-  • Gateway      : https://vohoainam.net/qxknr4dtcthcclink188545
-
-[20:54:06 14/10/26] [Rương Nhỏ] @nash*.sindy | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15797 | Time: 01:10s - 20:55:15
-  • Deeplink App : snssdk1180://live?room_id=7696515782682888961
-  • Web TikTok   : https://www.tiktok.com/@nash*.sindy/live
-  • Gateway      : https://vohoainam.net/l52by3c2l7zkqlink188543
-
-[20:54:04 14/10/26] [Rương Nhỏ] @washi.sai*ou | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:55:13
-  • Deeplink App : snssdk1180://live?room_id=7696491951824997140
-  • Web TikTok   : https://www.tiktok.com/@washi.sai*ou/live
-  • Gateway      : https://vohoainam.net/kujrqlqvqv0z9link188536
-
-[20:54:01 14/10/26] [Rương Lớn] @mianhaycu*i2904 | Box: 50/10 | Ratio: 5.0 xu | Live: N/A | Time: 01:20s - 20:55:24
+[21:04:23 14/10/26] [Rương Lớn] @mianhaycuo*2904 | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: 01:20s - 21:05:46
   • Deeplink App : snssdk1180://live?room_id=7696478983336053525
-  • Web TikTok   : https://www.tiktok.com/@mianhaycu*i2904/live
-  • Gateway      : https://vohoainam.net/2wqlkek65axq0link188526
+  • Web TikTok   : https://www.tiktok.com/@mianhaycuo*2904/live
+  • Gateway      : https://vohoainam.net/3zlqezjgi8dkblink190416
 
-[20:54:00 14/10/26] [Rương Nhỏ] @ch*nm10922 | Box: 39/20 | Ratio: 1.9 xu | Live: 15000/15781 | Time: 01:10s - 20:55:09
-  • Deeplink App : snssdk1180://live?room_id=7696488993000524552
-  • Web TikTok   : https://www.tiktok.com/@ch*nm10922/live
-  • Gateway      : https://vohoainam.net/hxcdl5a31qfculink188531
+[21:04:19 14/10/26] [Rương Lớn] @nengk*i01_ | Box: 50/15 | Ratio: 3.3 xu | Live: 19000/19777 | Time: 01:20s - 21:05:42
+  • Deeplink App : snssdk1180://live?room_id=7696507665468263175
+  • Web TikTok   : https://www.tiktok.com/@nengk*i01_/live
+  • Gateway      : https://vohoainam.net/z3353f5vm9qthlink190401
 
-[20:54:00 14/10/26] [Rương Treo]  | Box: 50/16 | Ratio: 3.1 xu | Live: 19000/19782 | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696493051404946177
+[21:04:19 14/10/26] [Rương Nhỏ] @suisui*ohan | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15788 | Time: 01:10s - 21:05:28
+  • Deeplink App : snssdk1180://live?room_id=7696430666078653190
+  • Web TikTok   : https://www.tiktok.com/@suisui*ohan/live
+  • Gateway      : https://vohoainam.net/zzbb2rxzfly3wlink190400
+
+[21:04:18 14/10/26] [Rương Lớn] @s*msomm85 | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: 01:20s - 21:05:40
+  • Deeplink App : snssdk1180://live?room_id=7696510119127730996
+  • Web TikTok   : https://www.tiktok.com/@s*msomm85/live
+  • Gateway      : https://vohoainam.net/iqafu38j9v6u9link190399
+
+[21:04:17 14/10/26] [Rương Lớn] @_mi*uu05 | Box: 77/10 | Ratio: 7.7 xu | Live: N/A | Time: 01:20s - 21:05:40
+  • Deeplink App : snssdk1180://live?room_id=7696519039683201810
+  • Web TikTok   : https://www.tiktok.com/@_mi*uu05/live
+  • Gateway      : https://vohoainam.net/sokvlx4xqc6sdlink190392
+
+[21:04:16 14/10/26] [Rương Nhỏ] @nekoma_miu_vt*ber | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 01:10s - 21:05:26
+  • Deeplink App : snssdk1180://live?room_id=7696504188167785217
+  • Web TikTok   : https://www.tiktok.com/@nekoma_miu_vt*ber/live
+  • Gateway      : https://vohoainam.net/vxfelhm6o7rr5link190391
+
+[21:04:15 14/10/26] [Rương Lớn] @at*nasman_ | Box: 31/10 | Ratio: 3.1 xu | Live: N/A | Time: 01:20s - 21:05:37
+  • Deeplink App : snssdk1180://live?room_id=7696499552253889288
+  • Web TikTok   : https://www.tiktok.com/@at*nasman_/live
+  • Gateway      : https://vohoainam.net/7sq65c2kq9w11link190385
+
+[21:04:14 14/10/26] [Rương Nhỏ] @kint*ki_gishi0115 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15788 | Time: 01:10s - 21:05:23
+  • Deeplink App : snssdk1180://live?room_id=7696493342191815444
+  • Web TikTok   : https://www.tiktok.com/@kint*ki_gishi0115/live
+  • Gateway      : https://vohoainam.net/ffqq6rrz10qx1link190381
+
+[21:04:11 14/10/26] [Rương Treo]  | Box: 55/20 | Ratio: 2.8 xu | Live: 19000/19754 | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696500846187662101
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/kpz3lwkicpsd2link188525
+  • Gateway      : https://vohoainam.net/g80wk8ykge8l5link190375
 
-[20:53:58 14/10/26] [Rương Nhỏ] @zaid_ms*_lives | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:55:07
-  • Deeplink App : snssdk1180://live?room_id=7696519265716898582
-  • Web TikTok   : https://www.tiktok.com/@zaid_ms*_lives/live
-  • Gateway      : https://vohoainam.net/hrb3qj2v3nb4flink188523
+[21:04:11 14/10/26] [Rương Lớn] @no*y_mn | Box: 30/15 | Ratio: 2.0 xu | Live: N/A | Time: 01:20s - 21:05:34
+  • Deeplink App : snssdk1180://live?room_id=7696510607844526868
+  • Web TikTok   : https://www.tiktok.com/@no*y_mn/live
+  • Gateway      : https://vohoainam.net/lar5btuh7l05vlink190372
 
-[20:53:57 14/10/26] [Rương Lớn] @p*iiman81 | Box: 39/5 | Ratio: 7.8 xu | Live: N/A | Time: 00:53s - 20:54:53
-  • Deeplink App : snssdk1180://live?room_id=7696482465087458056
-  • Web TikTok   : https://www.tiktok.com/@p*iiman81/live
-  • Gateway      : https://vohoainam.net/43g56likhb85ylink188520
+[21:04:07 14/10/26] [Rương Nhỏ] @saaa*handayoo | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15773 | Time: 01:10s - 21:05:16
+  • Deeplink App : snssdk1180://live?room_id=7696505944426957574
+  • Web TikTok   : https://www.tiktok.com/@saaa*handayoo/live
+  • Gateway      : https://vohoainam.net/j58i9yda1t4eclink190365
 
-[20:53:53 14/10/26] [Rương Lớn] @pecocha*0525 | Box: 50/1 | Ratio: 50.0 xu | Live: 19000/19790 | Time: 01:20s - 20:55:14
-  • Deeplink App : snssdk1180://live?room_id=7696489811204754196
-  • Web TikTok   : https://www.tiktok.com/@pecocha*0525/live
-  • Gateway      : https://vohoainam.net/tka0vo6xnnzwplink188511
+[21:04:07 14/10/26] [Rương Lớn] @zaki.li*e95 | Box: 65/30 | Ratio: 2.2 xu | Live: 19000/19786 | Time: 01:20s - 21:05:29
+  • Deeplink App : snssdk1180://live?room_id=7696493542371937025
+  • Web TikTok   : https://www.tiktok.com/@zaki.li*e95/live
+  • Gateway      : https://vohoainam.net/rkqhckvvatqmclink190364
 
-[20:53:52 14/10/26] [Rương Lớn] @ge*oy81_4 | Box: 30/12 | Ratio: 2.5 xu | Live: N/A | Time: 01:20s - 20:55:15
-  • Deeplink App : snssdk1180://live?room_id=7696508676928670470
-  • Web TikTok   : https://www.tiktok.com/@ge*oy81_4/live
-  • Gateway      : https://vohoainam.net/fsu8r0kqtkbb0link188509
-
-[20:53:50 14/10/26] [Rương Lớn] @apu_*rab | Box: 222/100 | Ratio: 2.2 xu | Live: 19000/19788 | Time: 01:19s - 20:55:12
-  • Deeplink App : snssdk1180://live?room_id=7696484197338286878
-  • Web TikTok   : https://www.tiktok.com/@apu_*rab/live
-  • Gateway      : https://vohoainam.net/9b8igkkgs4ncvlink188502
-
-[20:53:49 14/10/26] [Rương Lớn] @miaomiao520*66 | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: 01:20s - 20:55:12
-  • Deeplink App : snssdk1180://live?room_id=7696515168654232340
-  • Web TikTok   : https://www.tiktok.com/@miaomiao520*66/live
-  • Gateway      : https://vohoainam.net/atp3abptqr6qzlink188504
-
-[20:53:42 14/10/26] [Rương Nhỏ] @gu*akin | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15393 | Time: 01:10s - 20:54:45
-  • Deeplink App : snssdk1180://live?room_id=7696509925060528916
-  • Web TikTok   : https://www.tiktok.com/@gu*akin/live
-  • Gateway      : https://vohoainam.net/ur9fsisq7khpplink188481
-
-[20:53:31 14/10/26] [Rương Nhỏ] @ririchiyo*hann | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:54:40
-  • Deeplink App : snssdk1180://live?room_id=7696490441215396628
-  • Web TikTok   : https://www.tiktok.com/@ririchiyo*hann/live
-  • Gateway      : https://vohoainam.net/ivdiyus4frsyvlink188466
-
-[20:53:29 14/10/26] [Rương Nhỏ] @superm*lonchan__ | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15388 | Time: 01:10s - 20:54:38
-  • Deeplink App : snssdk1180://live?room_id=7696508845886688052
-  • Web TikTok   : https://www.tiktok.com/@superm*lonchan__/live
-  • Gateway      : https://vohoainam.net/wkdi52lxw8f8ilink188464
-
-[20:53:24 14/10/26] [Rương Nhỏ] @itsmaryam*e | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 20:54:34
-  • Deeplink App : snssdk1180://live?room_id=7696513944854350600
-  • Web TikTok   : https://www.tiktok.com/@itsmaryam*e/live
-  • Gateway      : https://vohoainam.net/93sn7m3pq6kn7link188450
-
-[20:53:05 14/10/26] [Rương Treo]  | Box: 50/20 | Ratio: 2.5 xu | Live: 19000/19790 | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696482013319285556
+[21:04:06 14/10/26] [Rương Treo]  | Box: 200/80 | Ratio: 2.5 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696499110391597856
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/ct8bam8septvvlink188404
+  • Gateway      : https://vohoainam.net/oqw82w3iyv8cilink190363
 
-[20:53:00 14/10/26] [Rương Treo]  | Box: 30/12 | Ratio: 2.5 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696484084696042248
+[21:04:03 14/10/26] [Rương Nhỏ] @teddythetarotmediu*aster | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15771 | Time: 01:10s - 21:05:12
+  • Deeplink App : snssdk1180://live?room_id=7696514137904073479
+  • Web TikTok   : https://www.tiktok.com/@teddythetarotmediu*aster/live
+  • Gateway      : https://vohoainam.net/2k7wq2ldqgdo3link190356
+
+[21:04:03 14/10/26] [Rương Nhỏ] @mem*kanjana | Box: 20/10 | Ratio: 2.0 xu | Live: N/A | Time: 00:53s - 21:04:54
+  • Deeplink App : snssdk1180://live?room_id=7696521397014629138
+  • Web TikTok   : https://www.tiktok.com/@mem*kanjana/live
+  • Gateway      : https://vohoainam.net/2zewafve5c439link190353
+
+[21:04:01 14/10/26] [Rương Lớn] @khouantavongkh*tt | Box: 50/22 | Ratio: 2.3 xu | Live: 19000/19779 | Time: 01:20s - 21:05:24
+  • Deeplink App : snssdk1180://live?room_id=7696502216802847496
+  • Web TikTok   : https://www.tiktok.com/@khouantavongkh*tt/live
+  • Gateway      : https://vohoainam.net/e6j4jdtds1bkhlink190349
+
+[21:04:01 14/10/26] [Rương Lớn] @sp*derno11 | Box: 30/2 | Ratio: 15.0 xu | Live: N/A | Time: 01:20s - 21:05:23
+  • Deeplink App : snssdk1180://live?room_id=7696496183649618696
+  • Web TikTok   : https://www.tiktok.com/@sp*derno11/live
+  • Gateway      : https://vohoainam.net/leg9g0i6ly6hplink190347
+
+[21:03:57 14/10/26] [Rương Lớn] @elbash_kate*2 | Box: 100/25 | Ratio: 4.0 xu | Live: 19000/19747 | Time: 01:20s - 21:05:18
+  • Deeplink App : snssdk1180://live?room_id=7696490385204710164
+  • Web TikTok   : https://www.tiktok.com/@elbash_kate*2/live
+  • Gateway      : https://vohoainam.net/1dmf6lnqcsvkqlink190336
+
+[21:03:56 14/10/26] [Rương Lớn] @tinh.te*95 | Box: 50/5 | Ratio: 10.0 xu | Live: N/A | Time: 00:54s - 21:04:53
+  • Deeplink App : snssdk1180://live?room_id=7696516641639336722
+  • Web TikTok   : https://www.tiktok.com/@tinh.te*95/live
+  • Gateway      : https://vohoainam.net/gv0a4x422k4nylink190333
+
+[21:03:54 14/10/26] [Rương Nhỏ] @user74577*7454270 | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:05:04
+  • Deeplink App : snssdk1180://live?room_id=7696499336398261044
+  • Web TikTok   : https://www.tiktok.com/@user74577*7454270/live
+  • Gateway      : https://vohoainam.net/c3jkjf2cvsv1glink190328
+
+[21:03:51 14/10/26] [Rương Nhỏ] @ebitaret*na | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:05:00
+  • Deeplink App : snssdk1180://live?room_id=7696516062870555410
+  • Web TikTok   : https://www.tiktok.com/@ebitaret*na/live
+  • Gateway      : https://vohoainam.net/051dy1iixjujzlink190325
+
+[21:03:51 14/10/26] [Rương Treo]  | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696515786651486997
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/htvbmk8g24so5link188387
+  • Gateway      : https://vohoainam.net/e9a2y54e9noewlink190319
 
-[20:52:52 14/10/26] [Rương Treo]  | Box: 30/12 | Ratio: 2.5 xu | Live: 19000/19792 | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696463869040020242
+[21:03:50 14/10/26] [Rương Lớn] @cantf*ndturbo | Box: 50/5 | Ratio: 10.0 xu | Live: N/A | Time: 00:54s - 21:04:47
+  • Deeplink App : snssdk1180://live?room_id=7696522667146496786
+  • Web TikTok   : https://www.tiktok.com/@cantf*ndturbo/live
+  • Gateway      : https://vohoainam.net/gf9he4d0qpq8glink190318
+
+[21:03:49 14/10/26] [Rương Nhỏ] @bene.*ia | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:04:59
+  • Deeplink App : snssdk1180://live?room_id=7696468967925304085
+  • Web TikTok   : https://www.tiktok.com/@bene.*ia/live
+  • Gateway      : https://vohoainam.net/pksiqy9w3j0onlink190316
+
+[21:03:49 14/10/26] [Rương Nhỏ] @kieuphuongbol*ro99 | Box: 100/60 | Ratio: 1.7 xu | Live: 15000/15705 | Time: 01:10s - 21:04:58
+  • Deeplink App : snssdk1180://live?room_id=7696517563891354386
+  • Web TikTok   : https://www.tiktok.com/@kieuphuongbol*ro99/live
+  • Gateway      : https://vohoainam.net/y86qia5oslqhblink190310
+
+[21:03:47 14/10/26] [Rương Nhỏ] @s*io_3.2 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15703 | Time: 01:10s - 21:04:56
+  • Deeplink App : snssdk1180://live?room_id=7696479854548110100
+  • Web TikTok   : https://www.tiktok.com/@s*io_3.2/live
+  • Gateway      : https://vohoainam.net/hxewr0copduhklink190306
+
+[21:03:45 14/10/26] [Rương Lớn] @yaklopa*51 | Box: 50/6 | Ratio: 8.3 xu | Live: 19000/19767 | Time: 00:55s - 21:04:43
+  • Deeplink App : snssdk1180://live?room_id=7696479247531068180
+  • Web TikTok   : https://www.tiktok.com/@yaklopa*51/live
+  • Gateway      : https://vohoainam.net/wvx3rbfq65cg3link190299
+
+[21:03:45 14/10/26] [Rương Nhỏ] @a_*han10_22 | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15411 | Time: 01:10s - 21:04:54
+  • Deeplink App : snssdk1180://live?room_id=7696494856269122325
+  • Web TikTok   : https://www.tiktok.com/@a_*han10_22/live
+  • Gateway      : https://vohoainam.net/pexzxorp6i76flink190298
+
+[21:03:44 14/10/26] [Rương Nhỏ] @myho*echuru | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15410 | Time: 01:10s - 21:04:53
+  • Deeplink App : snssdk1180://live?room_id=7696471780039052033
+  • Web TikTok   : https://www.tiktok.com/@myho*echuru/live
+  • Gateway      : https://vohoainam.net/h05cxhfpcdtv3link190295
+
+[21:03:40 14/10/26] [Rương Nhỏ] @user*xwwxo1dng | Box: 30/16 | Ratio: 1.9 xu | Live: N/A | Time: 01:10s - 21:04:49
+  • Deeplink App : snssdk1180://live?room_id=7696477200852355861
+  • Web TikTok   : https://www.tiktok.com/@user*xwwxo1dng/live
+  • Gateway      : https://vohoainam.net/9n2rn6pvgne65link190284
+
+[21:03:38 14/10/26] [Rương Nhỏ] @calorie_u*shi | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15329 | Time: 01:10s - 21:04:46
+  • Deeplink App : snssdk1180://live?room_id=7696522811199834886
+  • Web TikTok   : https://www.tiktok.com/@calorie_u*shi/live
+  • Gateway      : https://vohoainam.net/0avd7e2r7axwulink190281
+
+[21:03:38 14/10/26] [Rương Treo]  | Box: 100/25 | Ratio: 4.0 xu | Live: 19000/19789 | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696461414606539540
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/i63hzmao44x46link188367
+  • Gateway      : https://vohoainam.net/3c0igg72qf8ktlink190280
 
-[20:52:36 14/10/26] [Rương Treo]  | Box: 50/25 | Ratio: 2.0 xu | Live: 19000/19794 | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696492137029929760
+[21:03:38 14/10/26] [Rương Lớn] @66hulya*06 | Box: 35/4 | Ratio: 8.8 xu | Live: 19000/19789 | Time: 01:20s - 21:05:01
+  • Deeplink App : snssdk1180://live?room_id=7696492123990608661
+  • Web TikTok   : https://www.tiktok.com/@66hulya*06/live
+  • Gateway      : https://vohoainam.net/h6933xwnhw12blink190279
+
+[21:03:38 14/10/26] [Rương Lớn] @9*kham6 | Box: 30/15 | Ratio: 2.0 xu | Live: N/A | Time: 00:54s - 21:04:34
+  • Deeplink App : snssdk1180://live?room_id=7696513086324951829
+  • Web TikTok   : https://www.tiktok.com/@9*kham6/live
+  • Gateway      : https://vohoainam.net/bi8hg6k2h13oelink190276
+
+[21:03:37 14/10/26] [Rương Treo]  | Box: 51/13 | Ratio: 3.9 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696515216323136262
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/1b85d4t7qpdsklink188333
+  • Gateway      : https://vohoainam.net/ky2jipu0unnoklink190277
 
-[20:52:34 14/10/26] [Rương Treo]  | Box: 100/50 | Ratio: 2.0 xu | Live: 19000/19790 | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696494897909599006
+[21:03:37 14/10/26] [Rương Lớn] @onong*8 | Box: 50/1 | Ratio: 50.0 xu | Live: N/A | Time: 01:20s - 21:04:59
+  • Deeplink App : snssdk1180://live?room_id=7696478055992904468
+  • Web TikTok   : https://www.tiktok.com/@onong*8/live
+  • Gateway      : https://vohoainam.net/22ltpfypfvjtnlink190273
+
+[21:03:36 14/10/26] [Rương Nhỏ] @kento*0421.97 | Box: 480/320 | Ratio: 1.5 xu | Live: 15000/15329 | Time: 01:10s - 21:04:46
+  • Deeplink App : snssdk1180://live?room_id=7696492342326397697
+  • Web TikTok   : https://www.tiktok.com/@kento*0421.97/live
+  • Gateway      : https://vohoainam.net/82xye25r297fglink190271
+
+[21:03:33 14/10/26] [Rương Lớn] @nonamenee*ed914 | Box: 30/8 | Ratio: 3.8 xu | Live: N/A | Time: 01:19s - 21:04:55
+  • Deeplink App : snssdk1180://live?room_id=7696523061722008342
+  • Web TikTok   : https://www.tiktok.com/@nonamenee*ed914/live
+  • Gateway      : https://vohoainam.net/y5of81ozlysbflink190267
+
+[21:03:29 14/10/26] [Rương Nhỏ] @yui_oxo_*5 | Box: 120/80 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:04:38
+  • Deeplink App : snssdk1180://live?room_id=7696521659433290503
+  • Web TikTok   : https://www.tiktok.com/@yui_oxo_*5/live
+  • Gateway      : https://vohoainam.net/uiypkf42w876dlink190259
+
+[21:03:28 14/10/26] [Rương Treo]  | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696512393781709588
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/rltany40bz5awlink188329
+  • Gateway      : https://vohoainam.net/6ogmdsnme03e1link190258
 
-[20:52:02 14/10/26] [Rương Treo]  | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696516724795558677
+[21:03:28 14/10/26] [Rương Nhỏ] @actor*hajun | Box: 600/400 | Ratio: 1.5 xu | Live: N/A | Time: 01:10s - 21:04:37
+  • Deeplink App : snssdk1180://live?room_id=7696508414576249608
+  • Web TikTok   : https://www.tiktok.com/@actor*hajun/live
+  • Gateway      : https://vohoainam.net/1gkuzld6j7l9qlink190255
+
+[21:03:28 14/10/26] [Rương Nhỏ] @n*niyatsudayo | Box: 120/80 | Ratio: 1.5 xu | Live: 15000/15297 | Time: 01:10s - 21:04:37
+  • Deeplink App : snssdk1180://live?room_id=7696500502556625672
+  • Web TikTok   : https://www.tiktok.com/@n*niyatsudayo/live
+  • Gateway      : https://vohoainam.net/xx2kap6mex0sqlink190254
+
+[21:03:26 14/10/26] [Rương Lớn] @aminoz*8 | Box: 200/100 | Ratio: 2.0 xu | Live: 19000/19721 | Time: 01:20s - 21:04:49
+  • Deeplink App : snssdk1180://live?room_id=7696494088270498566
+  • Web TikTok   : https://www.tiktok.com/@aminoz*8/live
+  • Gateway      : https://vohoainam.net/k1a4ax8z8exe9link190247
+
+[21:03:22 14/10/26] [Rương Treo]  | Box: 50/25 | Ratio: 2.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696494808416045842
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/pv1guecvukcmylink188248
+  • Gateway      : https://vohoainam.net/n8irz6mmu4wtflink190226
 
-[20:52:01 14/10/26] [Rương Treo]  | Box: 50/25 | Ratio: 2.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696508529657662211
+[21:03:18 14/10/26] [Rương Treo]  | Box: 31/11 | Ratio: 2.8 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696513839923940097
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/dsvhyaa7h7qyolink188244
+  • Gateway      : https://vohoainam.net/bvsmrthvkwvfllink190214
 
-[20:51:58 14/10/26] [Rương Treo]  | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696498304170953478
+[21:03:10 14/10/26] [Rương Treo]  | Box: 99/25 | Ratio: 4.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696488035144502037
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/wwyxpwznlfgkblink188231
+  • Gateway      : https://vohoainam.net/nhr1scetr3etxlink190200
 
-[20:51:56 14/10/26] [Rương Treo]  | Box: 50/25 | Ratio: 2.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696487125823064853
+[21:02:53 14/10/26] [Rương Treo]  | Box: 31/10 | Ratio: 3.1 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696508608149801760
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/spt9w4k3cr017link188218
+  • Gateway      : https://vohoainam.net/pyhofqf6xc4v5link190144
 
-[20:51:03 14/10/26] [Rương Treo]  | Box: 50/8 | Ratio: 6.2 xu | Live: 19000/19783 | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696481621708442401
+[21:02:52 14/10/26] [Rương Treo]  | Box: 31/10 | Ratio: 3.1 xu | Live: 19000/19794 | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696500741649632052
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/0268qr5hkgp8xlink188070
+  • Gateway      : https://vohoainam.net/y5givih5h1djxlink190140
 
-[20:50:56 14/10/26] [Rương Treo]  | Box: 101/50 | Ratio: 2.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696495735088450311
+[21:02:45 14/10/26] [Rương Treo]  | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696512560983591694
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/ec14g4jyqojhrlink188055
+  • Gateway      : https://vohoainam.net/83coskmlocsaylink190113
 
-[20:50:55 14/10/26] [Rương Treo]  | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696503901580020500
+[21:02:24 14/10/26] [Rương Treo]  | Box: 41/10 | Ratio: 4.1 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696510932846955270
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/i0hxbcluzbc20link188051
+  • Gateway      : https://vohoainam.net/aayror4nq8x8wlink190052
 
-[20:50:54 14/10/26] [Rương Treo]  | Box: 50/25 | Ratio: 2.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696482147078654741
-  • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/vp3r85y4qcmlmlink188049
-
-[20:50:40 14/10/26] [Rương Treo]  | Box: 50/25 | Ratio: 2.0 xu | Live: 19000/19762 | Time: N/A
+[21:02:20 14/10/26] [Rương Treo]  | Box: 35/12 | Ratio: 2.9 xu | Live: 19000/19781 | Time: N/A
   • Deeplink App : snssdk1180://live?room_id=7696494411165682453
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/tzslak188dtjilink188013
+  • Gateway      : https://vohoainam.net/9gyotr9dn8mg6link190034
 
-[20:50:30 14/10/26] [Rương Treo]  | Box: 30/12 | Ratio: 2.5 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696494843665419029
+[21:02:11 14/10/26] [Rương Treo]  | Box: 69/30 | Ratio: 2.3 xu | Live: 19000/19730 | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696505596551432961
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/9my42vo6b0vqflink187986
+  • Gateway      : https://vohoainam.net/m5mnak7qqg2f1link190016
 
-[20:50:27 14/10/26] [Rương Treo]  | Box: 50/7 | Ratio: 7.1 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696502125826886421
+[21:02:10 14/10/26] [Rương Treo]  | Box: 100/30 | Ratio: 3.3 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696519315134171910
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/c2q3mqm8tcctzlink187991
+  • Gateway      : https://vohoainam.net/n3s3txtjle50tlink190012
 
-[20:50:09 14/10/26] [Rương Treo]  | Box: 50/1 | Ratio: 50.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696491995552434952
+[21:01:54 14/10/26] [Rương Treo]  | Box: 50/6 | Ratio: 8.3 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696491416092658450
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/0hbu4jfti2o1xlink187928
+  • Gateway      : https://vohoainam.net/xych8qne2yqwalink189962
 
-[20:50:06 14/10/26] [Rương Treo]  | Box: 200/100 | Ratio: 2.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696514926835272455
+[21:01:51 14/10/26] [Rương Treo]  | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696515485294168833
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/nq3oye4tjsjanlink187918
+  • Gateway      : https://vohoainam.net/hbyldjv5re81ylink189956
 
-[20:49:59 14/10/26] [Rương Treo]  | Box: 50/10 | Ratio: 5.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696506469952342816
+[21:01:48 14/10/26] [Rương Treo]  | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696498437226875666
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/2hfpkvwarqoeklink187899
+  • Gateway      : https://vohoainam.net/d4dt8pnurxj56link189940
 
-[20:49:37 14/10/26] [Rương Treo]  | Box: 500/250 | Ratio: 2.0 xu | Live: 19000/19792 | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696509096069384978
+[21:01:41 14/10/26] [Rương Treo]  | Box: 100/30 | Ratio: 3.3 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696472035622472466
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/9ix1hqyn2skaxlink187839
+  • Gateway      : https://vohoainam.net/vfkdwb3tvwietlink189913
 
-[20:49:31 14/10/26] [Rương Treo]  | Box: 50/25 | Ratio: 2.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696492991522949896
+[21:01:27 14/10/26] [Rương Treo]  | Box: 30/15 | Ratio: 2.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696500240552528661
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/geqvlot4uagg8link187813
+  • Gateway      : https://vohoainam.net/inyrp57s6vtnmlink189868
 
-[20:49:26 14/10/26] [Rương Treo]  | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696431405254150932
+[21:01:26 14/10/26] [Rương Treo]  | Box: 69/21 | Ratio: 3.3 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696462545139288852
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/zpk9efbmmqrmmlink187795
+  • Gateway      : https://vohoainam.net/eswunyrlyrthplink189866
 
-[20:49:25 14/10/26] [Rương Treo]  | Box: 123/50 | Ratio: 2.5 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696456151479028502
+[21:01:17 14/10/26] [Rương Treo]  | Box: 300/100 | Ratio: 3.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696492726262483730
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/2v53iltw2untglink187788
+  • Gateway      : https://vohoainam.net/6wdkzc7me9v38link189822
 
-[20:49:23 14/10/26] [Rương Treo]  | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696505650481761038
+[21:00:48 14/10/26] [Rương Treo]  | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696515321397660438
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/gzsyqu05t40gelink187783
+  • Gateway      : https://vohoainam.net/mf9ft37l5i2m4link189741
 
-[20:47:49 14/10/26] [Rương Treo]  | Box: 30/15 | Ratio: 2.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696507757339396884
+[21:00:35 14/10/26] [Rương Treo]  | Box: 71/30 | Ratio: 2.4 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696507564611160853
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/77tyje8u1c464link187572
+  • Gateway      : https://vohoainam.net/4odwrzgmsxsm7link189704
 
-[20:47:46 14/10/26] [Rương Treo]  | Box: 50/25 | Ratio: 2.0 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696495986382474017
+[21:00:28 14/10/26] [Rương Treo]  | Box: 51/25 | Ratio: 2.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696492159617534726
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/vpbbfyvwvjgaelink187564
+  • Gateway      : https://vohoainam.net/0497kfcf1vf9wlink189679
 
-[20:47:45 14/10/26] [Rương Treo]  | Box: 51/23 | Ratio: 2.2 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696516001661913876
+[21:00:20 14/10/26] [Rương Treo]  | Box: 250/100 | Ratio: 2.5 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696508513228655366
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/4gka9kxq7fy44link187561
+  • Gateway      : https://vohoainam.net/qs2jivonwbdktlink189648
 
-[20:47:39 14/10/26] [Rương Treo]  | Box: 31/10 | Ratio: 3.1 xu | Live: 19000/19795 | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696461448901331713
+[21:00:10 14/10/26] [Rương Treo]  | Box: 600/200 | Ratio: 3.0 xu | Live: 19000/19736 | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696503415384722194
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/64daloz4v1xq7link187545
+  • Gateway      : https://vohoainam.net/y8dskf0eb8r2klink189621
 
-[20:47:38 14/10/26] [Rương Treo]  | Box: 45/12 | Ratio: 3.8 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696501609350253320
+[20:59:57 14/10/26] [Rương Treo]  | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696517236768426765
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/gstqmp6njw21xlink187543
+  • Gateway      : https://vohoainam.net/x706gj50utwa4link189569
 
-[20:47:36 14/10/26] [Rương Treo]  | Box: 31/15 | Ratio: 2.1 xu | Live: N/A | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696490720965774100
+[20:59:45 14/10/26] [Rương Treo]  | Box: 30/6 | Ratio: 5.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696510642132929286
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/8mycunmdcnzpdlink187541
+  • Gateway      : https://vohoainam.net/pjenxa1hjdcedlink189539
 
-[20:47:28 14/10/26] [Rương Treo]  | Box: 50/10 | Ratio: 5.0 xu | Live: 19000/19788 | Time: N/A
-  • Deeplink App : snssdk1180://live?room_id=7696471601802234644
+[20:59:43 14/10/26] [Rương Treo]  | Box: 100/50 | Ratio: 2.0 xu | Live: 19000/19759 | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696508906068298517
   • Web TikTok   : https://www.tiktok.com/@live/live
-  • Gateway      : https://vohoainam.net/aegh6ngdamzjnlink187516
+  • Gateway      : https://vohoainam.net/k12dp3pa9lgsylink189529
+
+[20:59:24 14/10/26] [Rương Treo]  | Box: 500/200 | Ratio: 2.5 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696504358306925330
+  • Web TikTok   : https://www.tiktok.com/@live/live
+  • Gateway      : https://vohoainam.net/if3mtz44u6tr2link189484
+
+[20:59:21 14/10/26] [Rương Treo]  | Box: 50/21 | Ratio: 2.4 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696403592962099976
+  • Web TikTok   : https://www.tiktok.com/@live/live
+  • Gateway      : https://vohoainam.net/lu1ctsvza0ed6link189473
+
+[20:58:48 14/10/26] [Rương Treo]  | Box: 50/20 | Ratio: 2.5 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696489331648662293
+  • Web TikTok   : https://www.tiktok.com/@live/live
+  • Gateway      : https://vohoainam.net/m8fsbsixl7k89link189383
+
+[20:58:08 14/10/26] [Rương Treo]  | Box: 49/10 | Ratio: 4.9 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696496556237703988
+  • Web TikTok   : https://www.tiktok.com/@live/live
+  • Gateway      : https://vohoainam.net/sh47pw9f091ghlink189284
+
+[20:58:08 14/10/26] [Rương Treo]  | Box: 100/25 | Ratio: 4.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696498792354351894
+  • Web TikTok   : https://www.tiktok.com/@live/live
+  • Gateway      : https://vohoainam.net/ueex08jzldj40link189280
+
+[20:57:12 14/10/26] [Rương Treo]  | Box: 100/25 | Ratio: 4.0 xu | Live: 19000/19791 | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696492857393154834
+  • Web TikTok   : https://www.tiktok.com/@live/live
+  • Gateway      : https://vohoainam.net/xzjim31ntf5vnlink189122
+
+[20:57:00 14/10/26] [Rương Treo]  | Box: 33/10 | Ratio: 3.3 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696513630045195014
+  • Web TikTok   : https://www.tiktok.com/@live/live
+  • Gateway      : https://vohoainam.net/uwaicbyv88b2slink189088
+
+[20:56:46 14/10/26] [Rương Treo]  | Box: 100/50 | Ratio: 2.0 xu | Live: N/A | Time: N/A
+  • Deeplink App : snssdk1180://live?room_id=7696511843439463181
+  • Web TikTok   : https://www.tiktok.com/@live/live
+  • Gateway      : https://vohoainam.net/bo3f63jz30jfolink189032

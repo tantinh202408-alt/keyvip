@@ -9,8 +9,8 @@
     "get-links": "node fetch_links.js",
     "watch-links": "node fetch_links.js --watch",
     "watch-fast": "node fetch_links.js --watch --interval 3",
-    "open": "start index.html",
-    "server": "node -e \"const http=require('http'), fs=require('fs'); http.createServer((req,res)=>{ let f = req.url === '/' ? 'index.html' : req.url.slice(1).split('?')[0]; if(fs.existsSync(f)) { res.setHeader('Access-Control-Allow-Origin', '*'); res.writeHead(200); fs.createReadStream(f).pipe(res); } else { res.writeHead(404); res.end('404'); } }).listen(3000, ()=>console.log('✔ Giao diện web chạy tại: http://localhost:3000'));\""
+    "server": "node server.js",
+    "build-ui": "node generate_luxury_ui.js"
   },
   "keywords": ["scanner", "device-id", "checker", "bulk-check"],
   "author": "",
