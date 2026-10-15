@@ -5,7 +5,7 @@ import path from 'node:path';
 const PORT = 3000;
 const SANGDEV_API_BASE = 'https://sangdev.online/api/key/check?key=';
 const VOHOAINAM_API = 'https://vohoainam.net';
-const DEVICE_ID = 'device_1c7fc1c4-278c-41b5-8a37-ea4196c38b77';
+const DEVICE_ID = 'device_79e1dc71-5cff-476c-b08b-15b759663c38';
 
 // Phân loại nhóm chat Telegram sang danh mục
 const CHAT_ID_TO_TAB = {
